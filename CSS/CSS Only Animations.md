@@ -9,7 +9,11 @@ It is my hope that this article will clearly illuminate and clear any obfuscatio
 
 ## State Changes
 
-When it comes to animating using CSS only there is one central concept of critical importance that allows this to work. The idea is managing states of various HTML elements. The elements that we will pay particular attention to revolve around 
+When it comes to animating using CSS only there is one central concept of critical importance that allows this to work. The idea is managing states of various HTML elements. The elements that we will pay particular attention to revolve around the `input` tag and its `type` attribute. 
+
+To be more specific `<input type="radio">` and `<input type="checkbox" >`.
+
+Every input HTML element object has properties. We can use this value to help manage the different states of our animation. 
 
 ## Input Type: Radio and Checkbox
 
