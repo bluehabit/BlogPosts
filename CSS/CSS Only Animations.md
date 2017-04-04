@@ -10,7 +10,9 @@ When I initialliay transitioned from building web components in JS to CSS I was 
 
 It is my hope that this article will clearly illuminate and clear any obfuscation on the matter.
 
-## State Changes
+## At the Heart State Changes
+
+**heart animation**
 
 When it comes to animating using CSS only there is one central concept of critical importance that allows this to work. The idea is managing states of various HTML elements. The elements that we will pay particular attention to revolve around the `input` tag and its `type` attribute. 
 
