@@ -13,7 +13,28 @@ When it comes to animating using CSS only there is one central concept of critic
 
 To be more specific `<input type="radio">` and `<input type="checkbox" >`.
 
-Every input HTML element object has properties. We can use this value to help manage the different states of our animation. 
+Every input HTML element object has properties. The property that we are particularly interested in is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation.
+
+To give you a finer level of detail lets look at some simple code that I put together. I introduced an ID to each input element allowing me to quickly grab them from the DOM using JS.
+
+```
+<input id='radio' type="radio">
+<input id='checkbox' type="checkbox" >
+
+var raido = document.getElementById('radio');
+var checkbox = document.getElementById('checkbox');
+```
+
+#### Console.dir()
+We can use `console.dir()` to view all the methods and properties available to the HTML element object. As you can see below, the property that we are interested in is `.checked`. 
+
+![consoledir](http://imgur.com/9Ta5d6x.gif)
+
+#### .checked
+This will provide us with a boolean value indicating the status of a given input element.As you might expect, the value of `.checked` is false when the input element has not been selected, conversley it will become true if selected. See the animation below for clarification. 
+
+![checked](http://imgur.com/ypB5rBp.gif)
+
 
 ## Input Type: Radio and Checkbox
 
