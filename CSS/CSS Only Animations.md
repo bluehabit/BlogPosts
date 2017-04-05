@@ -51,6 +51,11 @@ Keep this in mind as we move to the next section.
 
 Pseudo classes are designed to define special states of an element. For example, the pseudo classs `:hover` will apply a specific CSS styling when the user hovers the element targeted by the selector. Let's take a look at some of the other more commonly used pseudo classes. 
 
+Lets work through a few examples to help cement our understanding. 
+http://codepen.io/bluehabit/pen/EWJZLQ
+
+Guess what else is a pseudo class? `:checked`. This is pseudo selector will play an important role managing states moving forwards. 
+
 ## Click Pseudo Class?
 
 As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunatley, it does not work for most of my animation needs. With `:active` the user has to hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
@@ -58,6 +63,8 @@ As you sort through the basic pseudo-classes you may notice there is a lack of a
 The solution to this problem is what we eluded to earlier. We will utilize the different states of the `input` radio or checkbox elements based on if they have been checked or not. This is how we will register clicks. 
 
 **show strike-through example here**
+
+## CSS Combinators
 
 ## display: block & display: none
 
