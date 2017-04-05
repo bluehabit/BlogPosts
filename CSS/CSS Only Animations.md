@@ -8,7 +8,7 @@ More complex interactions may still require JS, and that is fine, but CSS has ma
 
 When I initialliay transitioned from building web components in JS to CSS I was perplexed. I struggled with the concept quite bit and often found myself questioning why I was bothering to learn this instead of writing a few lines of Javascript instead. If this is you in the beginning, stick with it and you may learn a new trick or two.  
 
-It is my hope that this article will clearly illuminate and clear any obfuscation on the matter.
+It is my hope that this article will clearly illuminate and clear any obfuscation on the matter. As we move through the material you may find that I like to move from simple to complex. If you find yourself already knowledgeable on the subject matter, please feel welcome to skip ahead. If not, please continue to hold the course as each section of this article is like a gear, with many required in unison to make the project work.
 
 ## At the Heart State Changes
 
@@ -18,6 +18,7 @@ When it comes to animating using CSS only there is one central concept of critic
 
 To be more specific `<input type="radio">` and `<input type="checkbox" >`.
 
+## Input Type: Radio and Checkbox
 Every input HTML element object has properties. The property that we are particularly interested in is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation.
 
 To give you a finer level of detail lets look at some simple code that I put together. I introduced an ID to each input element allowing me to quickly grab them from the DOM using JS.
@@ -40,12 +41,15 @@ This will provide us with a boolean value indicating the status of a given input
 
 ![checked](http://imgur.com/ypB5rBp.gif)
 
+Keep this in mind as we move to the next section. 
 
-## Input Type: Radio and Checkbox
+## The Fundamental of CSS
+
+### Pseudo Classes 
+
+Pseudo classes are designed to define special states of an element. 
+
+### State & Class Selectors
 
 ## The Building Blocks
-
-## State & Class Selectors
-
-
 
