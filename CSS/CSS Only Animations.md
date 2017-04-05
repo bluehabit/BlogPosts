@@ -59,6 +59,8 @@ The solution to this problem is what we eluded to earlier. We will utilize the d
 
 **show strike-through example here**
 
+## display: block & display: none
+
 ### State & Class Selectors
 
 ## The Building Blocks
