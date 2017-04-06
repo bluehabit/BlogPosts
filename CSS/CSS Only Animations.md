@@ -44,7 +44,37 @@ This will provide us with a boolean value indicating the status of a given input
 Keep this in mind as we move to the next section. 
 
 ### Building Radio and Checkbox Inputs
+Lets being by practicing building a few input radio elements. We will begin with creating a label. The `for` attribute will specify which radio button the label is intended for. 
 
+```
+<label for="topaz">Topaz</label>
+```
+
+Next lets  create our input element. The `for` label for the input element needs to be the same as the target input elements id, lets do that now. 
+
+```
+<label for="topaz">Topaz</label>
+<input type="radio" id='topaz'>
+```
+
+If the user clicks the *Topaz* label, it will not check the radio input as well. Lets create two more input elements and labels for *Amethyst* and *Diamond*. 
+
+```
+<label for="topaz">Topaz</label>
+<input type="radio" id='topaz' name='gem-stones'>
+
+<label for='amethyst'>Amethyst</label>
+<input type="radio" id='amethyst' name='gem-stones'>
+
+<label for='diamond'>Diamond</label>
+<input type="radio" id='diamond' name='gem-stones'>
+```
+
+Notice in the above example how we added a new attribute to each radio input. The `name` attribute we gave the value of `gem-stones`, this serves as a collection of items that are related. And only allows the user to select *one* at a time. 
+
+As you can see in the finished example below, when we click an input elements label it will automatically select the corresponding radio button, and we can only select one input element at a time.
+
+http://codepen.io/bluehabit/pen/WpBbNG
 
 ### Pseudo Classes 
 
