@@ -43,6 +43,9 @@ This will provide us with a boolean value indicating the status of a given input
 
 Keep this in mind as we move to the next section. 
 
+### Building Radio and Checkbox Inputs
+
+
 ### Pseudo Classes 
 
 Pseudo classes are designed to define special states of an element. For example, the pseudo classs `:hover` will apply a specific CSS styling when the user hovers the element targeted by the selector. Let's take a look at some of the other more commonly used pseudo classes. In the markup below.
@@ -59,7 +62,9 @@ ul.ice-animals li:nth-child(3){
 This makes the third list item 'Walrus' the color white. 
 
 ### :checked Pseudo Class
-Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. Lets look at a few basic examples. 
+Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. Lets look at a few basic example first.
+
+
 
 ## Click Pseudo Class?
 
