@@ -43,22 +43,29 @@ This will provide us with a boolean value indicating the status of a given input
 
 Keep this in mind as we move to the next section. 
 
-## The Fundamental of CSS
-
-
-
 ### Pseudo Classes 
 
 Pseudo classes are designed to define special states of an element. For example, the pseudo classs `:hover` will apply a specific CSS styling when the user hovers the element targeted by the selector. Let's take a look at some of the other more commonly used pseudo classes. In the markup below.
 
 http://codepen.io/bluehabit/pen/EWJZLQ
 
-Guess what else is a pseudo class? `:checked`. This is pseudo selector will play an important role managing states moving forwards. Lets look at a few basic examples. 
+Pay special attention to `:nth-child` pseduo class. Notice we can pass it the value even or odd to specify which list items are affected by the rules. In addition to that, we can also target a specific child as shown with:
+
+```
+ul.ice-animals li:nth-child(3){
+  color: white;
+}
+```
+This makes the third list item 'Walrus' the color white. 
+
+### :checked Pseudo Class
+Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. Lets look at a few basic examples. 
 
 ## Click Pseudo Class?
 
 As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunatley, it does not work for most of my animation needs. With `:active` the user has to hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
 
+### 
 The solution to this problem is what we eluded to earlier. We will utilize the different states of the `input` radio or checkbox elements based on if they have been checked or not. This is how we will register clicks. 
 
 **show strike-through example here**
