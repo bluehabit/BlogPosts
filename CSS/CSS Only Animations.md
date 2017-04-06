@@ -49,12 +49,11 @@ Keep this in mind as we move to the next section.
 
 ### Pseudo Classes 
 
-Pseudo classes are designed to define special states of an element. For example, the pseudo classs `:hover` will apply a specific CSS styling when the user hovers the element targeted by the selector. Let's take a look at some of the other more commonly used pseudo classes. 
+Pseudo classes are designed to define special states of an element. For example, the pseudo classs `:hover` will apply a specific CSS styling when the user hovers the element targeted by the selector. Let's take a look at some of the other more commonly used pseudo classes. In the markup below.
 
-Lets work through a few examples to help cement our understanding. 
 http://codepen.io/bluehabit/pen/EWJZLQ
 
-Guess what else is a pseudo class? `:checked`. This is pseudo selector will play an important role managing states moving forwards. 
+Guess what else is a pseudo class? `:checked`. This is pseudo selector will play an important role managing states moving forwards. Lets look at a few basic examples. 
 
 ## Click Pseudo Class?
 
