@@ -21,7 +21,7 @@ To be more specific `<input type="radio">` and `<input type="checkbox" >`.
 ## Input Type: Radio and Checkbox
 Every input HTML element object has properties. The property that we are particularly interested in is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation.
 
-To give you a finer level of detail lets look at some simple code that I put together. I introduced an ID to each input element allowing me to quickly grab them from the DOM using JS.
+To give you a finer level of detail lets look at some simple code that I put together. I quickly introduced an ID to each input element allowing me to quickly grab them from the DOM using JS.
 
 ```
 <input id='radio' type="radio">
@@ -87,6 +87,15 @@ http://codepen.io/bluehabit/pen/vxwOyx
 There are X type selectors, each of which are very important for building CSS only web components and animations.
 
 ### DOM Tree
+Before we can start building dazzling web components, we must first understand how to select very specific elements on the DOM. We will perform advanced selections using CSS combinators that will be discussed in greater detail below. But before we do that lets review the idea of the Document Object Model Tree. 
+
+We can think of the DOM as a giant tree. With firm roots planted in the soil with branches reaching uptowards the sky. Each branch forks outward and forges its own path.The root of our tree is the `html` tag. Everything else is a descendant that originates from it. Lets take a look at what an actual DOM tree might look like with the help of this diagram. 
+
+![DOM-tree](http://imgur.com/2iEmXaT.png)
+
+In this example we can see a fairly typical HTML structure. Here the `nav` tag that is serving as the parent element. Everything **below** this `nav` tag is considered a descendant. The `ul` tag is a descendant of the parent element `nav` and also its child. 
+
+The `ul` then has descendants of its own in the form of `li` and `a` tags. However, the `li` items are its direct children. Notice how the `li`s are all on the same level. Because they are on the same level, and share a parent element, these are all siblings. 
 
 ### CSS Combinators
 Combinators are symbols that explain the relationship between selectors. There are 4 combinators that we will review. 
