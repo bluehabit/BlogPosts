@@ -44,37 +44,66 @@ This will provide us with a boolean value indicating the status of a given input
 Keep this in mind as we move to the next section. 
 
 ### Building Radio and Checkbox Inputs
-Lets being by practicing building a few input radio elements. We will begin with creating a label. The `for` attribute will specify which radio button the label is intended for. 
+Lets being by practicing building a few input radio elements. We are going to create a collection of gem stones that a user can select from. We will begin with creating our first input element, a topaz. 
 
 ```
-<label for="topaz">Topaz</label>
-```
-
-Next lets  create our input element. The `for` label for the input element needs to be the same as the target input elements id, lets do that now. 
-
-```
-<label for="topaz">Topaz</label>
 <input type="radio" id='topaz'>
+```
+
+Next lets add a label for our input. The `for` attribute will specify which radio button the label is intended for. The `for` label for the input element needs to be the same as the target input elements id, lets do that now. **It should be stressed at this point, that it is critical that the input element comes first, followed by the label element, otherwise erratic behavior will occur**. 
+
+```
+<input type="radio" id='topaz'>
+<label for="topaz">Topaz</label>
 ```
 
 If the user clicks the *Topaz* label, it will not check the radio input as well. Lets create two more input elements and labels for *Amethyst* and *Diamond*. 
 
 ```
-<label for="topaz">Topaz</label>
 <input type="radio" id='topaz' name='gem-stones'>
+<label for="topaz">Topaz</label>
 
-<label for='amethyst'>Amethyst</label>
 <input type="radio" id='amethyst' name='gem-stones'>
+<label for='amethyst'>Amethyst</label>
 
-<label for='diamond'>Diamond</label>
 <input type="radio" id='diamond' name='gem-stones'>
+<label for='diamond'>Diamond</label>
 ```
 
-Notice in the above example how we added a new attribute to each radio input. The `name` attribute we gave the value of `gem-stones`, this serves as a collection of items that are related. And only allows the user to select *one* at a time. 
+Notice in the above example how we added a new attribute to each radio input. The `name` attribute we gave the value of `gem-stones`, effectivley creating a collection of items that are related. Having a collection is useful because it only allows the user to select *one* item at a time. 
 
 As you can see in the finished example below, when we click an input elements label it will automatically select the corresponding radio button, and we can only select one input element at a time.
 
 http://codepen.io/bluehabit/pen/WpBbNG
+
+## CSS Class & Id Selectors
+
+For the sake of being through lets quickly review class and Id selectors. Ids are unique, only one element within the document may have a given ID. In CSS they can be targeted with `#`. On the other hand, multiple elements on the page can share the same class. If you need a refresher, take a look at the example markup below. 
+
+http://codepen.io/bluehabit/pen/vxwOyx
+
+## CSS Type Selectors
+
+There are X type selectors, each of which are very important for building CSS only web components and animations.
+
+### DOM Tree
+
+### CSS Combinators
+Combinators are symbols that explain the relationship between selectors. There are 4 combinators that we will review. 
+
+### Adjacent Sibling Selector +
+For siblings, look for multiple elements on the *same level* sharing the *same parent*. 
+
+### General Sibling Selector ~
+For siblings, look for multiple elements on the *same level* sharing the *same parent*. 
+
+### Child Selector >
+Look one level directly below the current parent element. 
+
+### Descendant Selector
+Follow the branches of a parent element to identify all of its descendants. 
+
+**example here for type selectors**
 
 ### Pseudo Classes 
 
@@ -82,7 +111,7 @@ Pseudo classes are designed to define special states of an element. For example,
 
 http://codepen.io/bluehabit/pen/EWJZLQ
 
-Pay special attention to `:nth-child` pseduo class. Notice we can pass it the value even or odd to specify which list items are affected by the rules. In addition to that, we can also target a specific child as shown with:
+Pay special attention to `:nth-child` pseduo class. Notice we can pass it the value `even` or `odd` to specify which list items are affected by the rules. In addition to that, we can also target a specific child as shown with:
 
 ```
 ul.ice-animals li:nth-child(3){
@@ -92,8 +121,7 @@ ul.ice-animals li:nth-child(3){
 This makes the third list item 'Walrus' the color white. 
 
 ### :checked Pseudo Class
-Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. Lets look at a few basic example first.
-
+Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. Lets target our earlier examples with CSS
 
 
 ## Click Pseudo Class?
@@ -105,7 +133,6 @@ The solution to this problem is what we eluded to earlier. We will utilize the d
 
 **show strike-through example here**
 
-## CSS Combinators
 
 ## display: block & display: none
 
