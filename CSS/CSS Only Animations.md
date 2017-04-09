@@ -150,7 +150,7 @@ ul.ice-animals li:nth-child(3){
 This makes the third list item 'Walrus' the color white. 
 
 ### :checked Pseudo Class
-Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. Lets target our earlier examples with CSS
+Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. We can combine this with our 
 
 
 ## Click Pseudo Class?
