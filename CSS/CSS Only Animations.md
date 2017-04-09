@@ -152,6 +152,8 @@ This makes the third list item 'Walrus' the color white.
 ### :checked Pseudo Class
 Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. We can combine this with our 
 
+http://codepen.io/bluehabit/pen/WpBbNG
+
 
 ## Click Pseudo Class?
 
