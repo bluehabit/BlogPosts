@@ -112,7 +112,27 @@ Look one level directly below the current parent element.
 ### Descendant Selector
 Follow the branches of a parent element to identify all of its descendants. 
 
-**example here for type selectors**
+### Combinator Examples
+
+Lets put this into practice and work through a few examples selecting elements using combinators. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. http://codepen.io/bluehabit/pen/RpmWVe
+
+Lets begin by using a **descendant** selector to target all `li`s that are a descendant of a `ul` tag, and make them have the `background-color` `#4d74f0`. 
+
+![example1](http://imgur.com/OAFEj3P.png)
+
+If we carefully read through this, lets see how it works out. First we are targeting the class `.penguinInformation` then we are using the child selector `>` to target all `p` tags of that are children of that class.
+
+![example2](http://imgur.com/znTukAD.png)
+
+Lets look at our next selector, we are targeting the `.penguinInformation`, and once again using the child selector `>` to target all `p` tags that are direct children of the class specified. In addition, we are now using the adjacent sibling selector `+` to select all `h3` tags that are adjacent siblings to the `p` tags. 
+
+![example3](http://imgur.com/cS8taNG.png)
+
+Lastly, we will target all `label` elements that are general siblings of the `.penguinInformation` class. We will do this using the general sibling selector symbol `~`. 
+
+![example4](http://imgur.com/DaxGIDl.png)
+
+The final result should look something like this, http://codepen.io/bluehabit/pen/aJeZNv.
 
 ### Pseudo Classes 
 
