@@ -122,7 +122,7 @@ Lets begin by using a **descendant** selector to target all `li`s that are a des
 
 If we carefully read through this, lets see how it works out. First we are targeting the class `.penguinInformation` then we are using the child selector `>` to target all `p` tags of that are children of that class.
 
-![example2](http://imgur.com/znTukAD.png)
+![example2](http://imgur.com/o7orRpd.png)
 
 Lets look at our next selector, we are targeting the `.penguinInformation`, and once again using the child selector `>` to target all `p` tags that are direct children of the class specified. In addition, we are now using the adjacent sibling selector `+` to select all `h3` tags that are adjacent siblings to the `p` tags. 
 
