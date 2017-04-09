@@ -7,20 +7,20 @@ More complex interactions may still require JS, and that is fine, but CSS has ma
 
 When I initialliay transitioned from building web components interactivity in JS to CSS only I was a bit perplexed. I struggled with the concept quite bit and often found myself questioning why I was bothering to learn this instead of writing a few lines of Javascript instead. If this is you in the beginning, stick with it and you may learn a new trick or two and add new improvements to your work flow.  
 
-It is my hope that this article will clearly illuminate and clear any obfuscation on the matter. As we move through the material you may find that I like to move from simple examples to complex. If you find yourself already knowledgeable on a particular subject matter, please feel welcome to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous.
+It is my hope that this article will clearly illuminate and clear any obfuscation on the matter. As we move through the material you may find that I like to move from simple examples to complex. If you find yourself already knowledgeable on a particular subject matter or a particular example is too rudimentary, please feel welcome to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous.
 
-## At the Heart State Changes
+## State Change - The Heart of the Matter
 
 **heart animation**
 
-When it comes to animating using CSS only there is one central concept of critical importance that allows this to work. The idea is managing states of various HTML elements. The elements that we will pay particular attention to revolve around the `input` tag and its `type` attribute. 
+When it comes to animating using CSS only there is one central concept of critical importance that allows this to work. The idea is managing different states of various HTML elements. The elements that we will pay particular attention to revolve around the `input` tag and its `type` attribute. 
 
 To be more specific `<input type="radio">` and `<input type="checkbox" >`.
 
 ## Input Type: Radio and Checkbox
-Every input HTML element object has properties. The property that we are particularly interested in is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation.
+Every input HTML element object has properties. HTML elements are just like any other object that we may be accustom to working with inside of Javascript, they have properties and methods. The property that we are particularly interested in for the this post is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation. In the case of the radio and checkbox input element they have two states, checked or unchecked. Not dissimilar to a light switch that has two states, on or off.
 
-To give you a finer level of detail lets look at some simple code that I put together. I quickly introduced an ID to each input element allowing me to quickly grab them from the DOM using JS.
+To give you a finer level of detail lets look at some simple code. I added an ID to each input element allowing me to quickly grab them from the DOM using JS.
 
 ```
 <input id='radio' type="radio">
@@ -36,27 +36,27 @@ We can use `console.dir()` to view all the methods and properties available to t
 ![consoledir](http://imgur.com/9Ta5d6x.gif)
 
 #### .checked
-This will provide us with a boolean value indicating the status of a given input element.As you might expect, the value of `.checked` is false when the input element has not been selected, conversley it will become true if selected. See the animation below for clarification. 
+This will provide us with a boolean value indicating the status of a given input element. As you might expect, the value of `.checked` is false when the input element has not been selected, conversley it will become true once selected. See the animation below for clarification. 
 
 ![checked](http://imgur.com/ypB5rBp.gif)
 
-Keep this in mind as we move to the next section. 
+This is a central tenet to keep this in mind as we move to the next section. 
 
 ### Building Radio and Checkbox Inputs
-Lets being by practicing building a few input radio elements. We are going to create a collection of gem stones that a user can select from. We will begin with creating our first input element, a topaz. 
+Lets being by practicing building a few input radio elements. We are going to create a collection of gem stones that a user can select from. Each gem stone will be its own input element with an accompanying label. Let's begin with creating our first input element, a topaz. 
 
 ```
 <input type="radio" id='topaz'>
 ```
 
-Next lets add a label for our input. The `for` attribute will specify which radio button the label is intended for. The `for` label for the input element needs to be the same as the target input elements id, lets do that now. **It should be stressed at this point, that it is critical that the input element comes first, followed by the label element, otherwise erratic behavior will occur**. 
+Next lets add a label for our input. The `for` attribute will specify which radio button the label is intended for. The `for` label for the input element needs to be the same as the target input elements id, lets do that now. **It should be stressed at this point, that it is critical that the input element comes first, followed by the label element, otherwise erratic behavior will occur when we attempt to add animation later**. 
 
 ```
 <input type="radio" id='topaz'>
 <label for="topaz">Topaz</label>
 ```
 
-If the user clicks the *Topaz* label, it will not check the radio input as well. Lets create two more input elements and labels for *Amethyst* and *Diamond*. 
+If the user clicks the *Topaz* label, it will now check the corresponding radio input as well. Lets create two more input elements and labels for *Amethyst* and *Diamond*. 
 
 ```
 <input type="radio" id='topaz' name='gem-stones'>
@@ -71,24 +71,22 @@ If the user clicks the *Topaz* label, it will not check the radio input as well.
 
 Notice in the above example how we added a new attribute to each radio input. The `name` attribute we gave the value of `gem-stones`, effectivley creating a collection of items that are related. Having a collection is useful because it only allows the user to select *one* item at a time. 
 
-As you can see in the finished example below, when we click an input elements label it will automatically select the corresponding radio button, and we can only select one input element at a time.
+As you can see in the finished example below, when we click an input elements label it will automatically select the corresponding radio button, and we can only select one input element at a time from a given collection.
 
 http://codepen.io/bluehabit/pen/WpBbNG
 
 ## CSS Class & Id Selectors
 
-For the sake of being through lets quickly review class and Id selectors. Ids are unique, only one element within the document may have a given ID. In CSS they can be targeted with `#`. On the other hand, multiple elements on the page can share the same class. If you need a refresher, take a look at the example markup below. 
+For the sake of being through lets quickly review class and Id selectors. **Ids** are unique, only one element within the document may have a given ID. In CSS they can be targeted with `#` symbol. 
+
+**Classes** On the other hand, can be assigned to multiple elements on the page. If you need a refresher, take a look at the example markup below. In CSS classes can be targeted with the `.` symbol. 
 
 http://codepen.io/bluehabit/pen/vxwOyx
 
-## CSS Type Selectors
-
-There are X type selectors, each of which are very important for building CSS only web components and animations.
-
 ### DOM Tree
-Before we can start building dazzling web components, we must first understand how to select very specific elements on the DOM. We will perform advanced selections using CSS combinators that will be discussed in greater detail below. But before we do that lets review the idea of the Document Object Model Tree. 
+Before we can start building dazzling web components, we must first understand how to select very specific elements on the DOM. We will perform advanced selections using CSS combinators that will be discussed in greater detail below. But before we do that lets review the concept behind the Document Object Model. 
 
-We can think of the DOM as a giant tree. With firm roots planted in the soil with branches reaching uptowards the sky. Each branch forks outward and forges its own path.The root of our tree is the `html` tag. Everything else is a descendant that originates from it. Lets take a look at what an actual DOM tree might look like with the help of this diagram. 
+We can think of the DOM as a giant tree, with firm roots planted in the soil with branches reaching uptowards the sky. Each branch forks outward and forges its own path towards the heavens. The root of our tree is the `html` tag. Everything else is a descendant that originates from it. Lets take a look at what an actual DOM tree might look like with the help of this diagram. 
 
 ![DOM-tree](http://imgur.com/2iEmXaT.png)
 
@@ -96,22 +94,22 @@ In this example we can see a fairly typical HTML structure. Here the `nav` tag t
 
 The `ul` then has descendants of its own in the form of `li` and `a` tags. However, the `li` items are its direct children. Notice how the `li`s are all on the same level. Because they are on the same level, and share a parent element, these are all siblings. 
 
-### CSS Combinators
+### Type Selectors
 Combinators are symbols that explain the relationship between selectors. There are 4 combinators that we will review. 
 
 ### Adjacent Sibling Selector +
-For siblings, look for multiple elements on the *same level* sharing the *same parent*. 
+For siblings, look for multiple elements on the *same level* sharing the *same parent*. This selector will select an adjacent sibling. 
 
 ### General Sibling Selector ~
-For siblings, look for multiple elements on the *same level* sharing the *same parent*. 
+For siblings, look for multiple elements on the *same level* sharing the *same parent*. This selector will select all siblings.
 
 ### Child Selector >
-Look one level directly below the current parent element. 
+Look one level directly below the current parent element, that is the child. 
 
 ### Descendant Selector
-Follow the branches of a parent element to identify all of its descendants. 
+Follow the branches of a parent element downward to identify all of its descendants. 
 
-### Combinator Examples
+### Combinators
 
 Lets put this into practice and work through a few examples selecting elements using combinators. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. http://codepen.io/bluehabit/pen/RpmWVe
 
