@@ -6,6 +6,7 @@ Most of us learn the term *'seperation of concerns'* when it comes to web develo
 More complex interactions may still require JS, and that is fine, but CSS has made it possible to do quite a bit without it - and that will be the focus of this blog post. 
 
 When I initialliay transitioned from building web components interactivity in JS to CSS only I was a bit perplexed. I struggled with the concept quite bit and often found myself questioning why I was bothering to learn this instead of writing a few lines of Javascript instead. If this is you in the beginning, stick with it and you may learn a new trick or two and add new improvements to your work flow.  
+
 It is my hope that this article will clearly illuminate and clear any obfuscation on the matter. As we move through the material you may find that I like to move from simple examples to complex. If you find yourself already knowledgeable on a particular subject matter, please feel welcome to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous.
 
 ## At the Heart State Changes
