@@ -281,6 +281,15 @@ Much more pleasant on the eyes. Lets take a look at the finished example: http:/
 
 Now that you understand the basic framework, lets take a look at some finished examples to see what we can accomplish with it. Notice how many different types of components we have. While these examples may appear quite different and have been beautified to be visually pleasing, the underlying foundation remains the same. 
 
+#### Accordion 
+![accordion-demo](http://i.imgur.com/wIsaQi6.gif)
+
+Codepen: http://codepen.io/bluehabit/pen/LWwxeW
+
+![image-gallery](http://imgur.com/rBXH33r.gif)
+
+Codepen: http://codepen.io/bluehabit/pen/VpoPQM
+
 
 ### State & Class Selectors
 
