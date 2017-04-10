@@ -73,7 +73,7 @@ Notice in the above example how we added a new attribute to each radio input. Th
 
 As you can see in the finished example below, when we click an input elements label it will automatically select the corresponding radio button, and we can only select one input element at a time from a given collection.
 
-http://codepen.io/bluehabit/pen/WpBbNG
+http://codepen.io/bluehabit/pen/qreqQE
 
 ## CSS Class & Id Selectors
 
@@ -111,13 +111,13 @@ Follow the branches of a parent element downward to identify all of its descenda
 
 ### Combinators
 
-Lets put this into practice and work through a few examples selecting elements using combinators. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. http://codepen.io/bluehabit/pen/RpmWVe
+Lets put this into practice and work through a few examples selecting elements using combinators. In addition, I highly suggest reading through the selectors through in your mind to very clearly identify what a given combinator is targeting. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. http://codepen.io/bluehabit/pen/RpmWVe
 
-Lets begin by using a **descendant** selector to target all `li`s that are a descendant of a `ul` tag, and make them have the `background-color` `#4d74f0`. 
+Lets begin by using a **descendant** selector to target all `li`s that are a descendant of a `ul` tag, and make them have the `background-color` `#4d74f0`. Note the space between the `li` tag and the `ul` tag indicates this is using the descendant selector.
 
 ![example1](http://imgur.com/OAFEj3P.png)
 
-If we carefully read through this, lets see how it works out. First we are targeting the class `.penguinInformation` then we are using the child selector `>` to target all `p` tags of that are children of that class.
+For our next example we are targeting the class `.penguinInformation` then we are using the child selector `>` to target all `p` tags  that are children of that class.
 
 ![example2](http://imgur.com/o7orRpd.png)
 
@@ -146,18 +146,32 @@ ul.ice-animals li:nth-child(3){
 ```
 This makes the third list item 'Walrus' the color white. 
 
-### :checked Pseudo Class
-Guess what else is a pseudo class that we eluded to earlier? `:checked`. This is pseudo selector will play an important role managing states moving forwards. We can combine this with our 
-
-http://codepen.io/bluehabit/pen/WpBbNG
-
-
 ## Click Pseudo Class?
 
 As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunatley, it does not work for most of my animation needs. With `:active` the user has to hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
 
-### 
 The solution to this problem is what we eluded to earlier. We will utilize the different states of the `input` radio or checkbox elements based on if they have been checked or not. This is how we will register clicks. 
+
+### :checked Pseudo Class
+Guess what else is a pseudo class that we eluded to earlier? `:checked`. This pseudo selector will play an important role managing states moving forwards. Like the other pseudo selectors, this helps identify a special state of the element. Lets revisit our gem stone collection example from earlier. 
+
+### Managing States
+As mentioned earlier, we will be adding interactivity and animations to CSS components by managing states. With the `input` element of type `checkbox` or `radio` the two states are simply checked (on) or unchecked (off). We will manage these states to add interactivity to our gem stone collection. Lets revisit our old example now, before we modify it further: http://codepen.io/bluehabit/pen/qreqQE
+
+Lets begin by using a CSS combinator to specifically target input elements that are checked by using the `:checked` pseudo selector, put into action this will look like `input:checked`.  
+
+This won't do much by itself. Next we will need to add some sort of visual indication that the item has been selected. We can do this by targeting an adjacent label. Adjacent label? That sounds like one of the selectors we performed earlier lets give this a try now. 
+
+```
+input:checked + label {
+  background-color: #a686cd;
+}
+```
+
+The CSS combinator identified above is looking for an `input` element that is in the `:checked` state, then the `+` symbol indicates the adjacent sibling selector. Therefore it is looking for an adjacent sibling, in this case a `label`. Once it has been found, we will make the background color purple. This may not seem super exciting right now, but this is the framework that will enable us to create much more advanced user interaction later. 
+
+Once finished it should look something like this http://codepen.io/bluehabit/pen/WpBbNG if you would like to check your work. 
+
 
 **show strike-through example here**
 
