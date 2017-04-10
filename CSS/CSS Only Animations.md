@@ -10,8 +10,7 @@ When I initialliay transitioned from building web components interactivity in JS
 It is my hope that this article will clearly illuminate and clear any obfuscation on the matter. As we move through the material you may find that I like to move from simple examples to complex. If you find yourself already knowledgeable on a particular subject matter or a particular example is too rudimentary, please feel welcome to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous.
 
 ## State Change - The Heart of the Matter
-
-**heart animation**
+![heart-beat](http://imgur.com/3e2imS2.gif)
 
 When it comes to animating using CSS only there is one central concept of critical importance that allows this to work. The idea is managing different states of various HTML elements. The elements that we will pay particular attention to revolve around the `input` tag and its `type` attribute. 
 
@@ -156,6 +155,9 @@ The solution to this problem is what we eluded to earlier. We will utilize the d
 Guess what else is a pseudo class that we eluded to earlier? `:checked`. This pseudo selector will play an important role managing states moving forwards. Like the other pseudo selectors, this helps identify a special state of the element. Lets revisit our gem stone collection example from earlier. 
 
 ### Managing States
+
+![Gem-collection](http://imgur.com/xxCiS0G.gif)
+
 As mentioned earlier, we will be adding interactivity and animations to CSS components by managing states. With the `input` element of type `checkbox` or `radio` the two states are simply checked (on) or unchecked (off). We will manage these states to add interactivity to our gem stone collection. Lets revisit our old example now, before we modify it further: http://codepen.io/bluehabit/pen/qreqQE
 
 Lets begin by using a CSS combinator to specifically target input elements that are checked by using the `:checked` pseudo selector, put into action this will look like `input:checked`.  
