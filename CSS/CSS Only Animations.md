@@ -349,6 +349,8 @@ Keyframes are the foundation of CSS animations. They define what the animation l
 * **Stages of teh Animation**: Each stage of the animation is represented as a percentage. `0%` represents the beginning state of the animation. `100%` represents the ending state of the animation. Multiple intermediate states can be added in between.
 * **CSS Properties**: The CSS properties defined for each stage of the animation timeline.
 
+![box-spin](http://imgur.com/39pnhqX.gif)
+
 Lets take a look at a simple `@keyframes` I've created named *'rotate360'*. This `@keyframes` has two stages, aka keyframes. At the first stage `0%` we have a `transform: rotate(0deg)`. In the final stage we set the transform value to `transform: rotate(360deg)`. The end result is the box rotating a full 360deg. 
 
 ```
