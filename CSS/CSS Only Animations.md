@@ -185,6 +185,8 @@ All we have to do is add the following attribute, `checked='checked'`. As we can
 
 ## Skeleton Frameworks
 
+![skeleton-framework](http://imgur.com/LdZnIKm.gif)
+
 Lets continue building the framework for more complex user interactions. This example will be the skeleton for building a CSS only tabs components, but this framework can have many more applications such as an image gallery, or accordion. We will combine what we learned in the previous example while introducing a new idea. 
 
 Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. We can create this behavior by adding seperate `div` container that only shows specific content when a given input element is checked. 
@@ -273,11 +275,11 @@ There is nothing wrong with the above code, but we can refactor it a bit more so
 }
 ```
 
-Much more pleasant on the eyes.
+Much more pleasant on the eyes. Lets take a look at the finished example: http://codepen.io/bluehabit/pen/OpKWyQ
 
 ### Examples Built with this Framework
 
-Now that you understand the basic framework, lets take a look at some finished examples to see what we can accomplish with it. Notice how many applications that we have, and while these examples may have been beautified to be visually pleasing the underlying foundation remains the same. 
+Now that you understand the basic framework, lets take a look at some finished examples to see what we can accomplish with it. Notice how many different types of components we have. While these examples may appear quite different and have been beautified to be visually pleasing, the underlying foundation remains the same. 
 
 
 ### State & Class Selectors
