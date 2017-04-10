@@ -302,8 +302,15 @@ CSS animations are made up of two basic building blocks.
 
 **Keyframes** - define the stages and styles of the animation.
 
-**Animation Properties** - assign the **@keyframes** to a specific CSS element and define how it is animated.
+**Animation Properties** - assigned using the **@keyframes** to a specific CSS element and define how it is animated.
 Let’s look at each individually.
+
+### Building Block #1: Keyframes
+
+Keyframes are the foundation of CSS animations. They define what the animation looks like at each stage of the animation timeline. Each @keyframes is composed of:
+
+* **Name of the Animation**: A name that describes the animation, for example `fadeOut`. 
+* **Stages of teh Animation**: Each stage of the animation is represented as a percentage. `0%` represents the beginning state of the animation. `100%` represents the ending state of the animation. Multiple intermediate states can be added in between.
 
 
 ## Animating SVGs
@@ -313,6 +320,11 @@ Next lets explore animating SVGs (scaleable vector graphics). Unlike pixel based
 SVGs can be found all over the internet, a few of my favorite resources to download them include:
 
 You can also create your own using Adobe Illustrator if that is your fancy.
+
+
+## Weather Animation
+
+Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast
 
 
 
