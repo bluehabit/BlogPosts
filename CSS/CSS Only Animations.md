@@ -175,7 +175,7 @@ The CSS combinator identified above is looking for an `input` element that is in
 Once finished it should look something like this http://codepen.io/bluehabit/pen/WpBbNG if you would like to check your work. 
 
 
-**show strike-through example here**
+## Skeleton Frameworks
 
 
 ## display: block & display: none
