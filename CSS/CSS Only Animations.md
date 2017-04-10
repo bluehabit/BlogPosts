@@ -221,10 +221,10 @@ For this important step we will simply target the `.content` container and set i
 }
 ```
 
-Lets read this combinator out loud to better understand it. We will be targeting the `.content` class and then use the `>` symbol to select its direct children of type `div`. For the elements selected we will set their `display` to `none`. 
+Lets read through this combinator to better understand it. We will be targeting the `.content` class and then use the `>` symbol to select its direct children of type `div`. For the elements selected we will set their `display` to `none`. 
 
 
-Its important here that we use the `display` property and set its value to `none`. The reason for using `display` is it doesn't take up any space in the document when its value is set to `none`. In contrast, if we were to use a property such as `visibility` and set it to `hidden` the text would still be hidden, but the content would be stacked on top of one another because it would still exist in the normal flow of the document.
+Its important here that we use the `display` property and set its value to `none`. The reason for using `display` is it doesn't take up any space in the document when its value is set to `none`. In contrast, if we were to use a property such as `visibility` and set it to `hidden` the text would still remain hidden; however, the content would be stacked on top of one another because it would still exist in the normal flow of the document.
 
 
 ### id:checked
