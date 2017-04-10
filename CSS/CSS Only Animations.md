@@ -296,12 +296,25 @@ Codepen: http://codepen.io/bluehabit/pen/VpoPQM
 
 Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
+## The Building Blocks of Animation
 
-### State & Class Selectors
+CSS animations are made up of two basic building blocks.
 
-## The Building Blocks
+**Keyframes** - define the stages and styles of the animation.
+
+**Animation Properties** - assign the **@keyframes** to a specific CSS element and define how it is animated.
+Let’s look at each individually.
+
 
 ## Animating SVGs
+
+Next lets explore animating SVGs (scaleable vector graphics). Unlike pixel based images that can become blurry and distorted once scaled beyond their intended resolution, SVGs can scale to any size small, or large, and still maintain their graphical fidelity. 
+
+SVGs can be found all over the internet, a few of my favorite resources to download them include:
+
+You can also create your own using Adobe Illustrator if that is your fancy.
+
+
 
 ## Additional Resources
 
