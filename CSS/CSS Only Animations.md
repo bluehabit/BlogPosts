@@ -160,6 +160,7 @@ Lastly, we will target all `label` elements that are general siblings of the `.p
 
 The final result should look something like the codepen below.
 Codepen: http://codepen.io/bluehabit/pen/aJeZNv.
+-----
 
 ### Pseudo Classes 
 
