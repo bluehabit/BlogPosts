@@ -187,10 +187,52 @@ All we have to do is add the following attribute, `checked='checked'`. As we can
 
 Lets continue building the framework for more complex user interactions. This example will be the skeleton for building a CSS only tabs components, but this framework can have many more applications such as an image gallery, or accordion. We will combine what we learned in the previous example while introducing a new idea. 
 
-Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. When we click an image within a gallery, we expect something to happen as well. We can create this behavior by adding seperate `div` container that only shows the contents for a given tab once selected. 
+Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. When we click an image within a gallery, we expect something to happen as well. We can create this behavior by adding seperate `div` container that only shows specific content when a given input element is checked. 
 
 Here will mark the beginning of the project if you would like to follow along. http://codepen.io/bluehabit/pen/OpKWyQ
-Lets examine the code, inr our HTML we have a seperate `div` with class `.content`, and contained within it we have additional `div`s with text descriptions
+
+The content below is the seperate `div` container we mentioned earlier. Notice the `div` contains additional subsections each with its own unique `id` and contents.
+
+```
+<div class='content'>
+	<div id='furniture-content'>
+		<p>Stuff about furniture</p>
+	</div>
+
+	<div id='homedecor-content'>
+		<p>Stuff about homedecor</p>
+	</div>
+
+	<div id='kitchen-content'>
+		<p>Stuff about kitchens</p>
+	</div>
+</div>
+```
+
+We will manage the state changes such that specific information will only show up when a particular input element is checked. As you may have noticed, as the project stands right now, all of this information: 'stuff about furniture', 'stuff about homedecor' and 'stuff about kitchens' is visibile by default, we will change that.
+
+### id:checked
+
+Very important, notice ho we are using the `id` selector here, and its pseduo selector `:checked` to see if that particular element with the corresponding `id` has been checked.
+
+### refactoring
+
+```
+#furniture:checked ~ .content #furniture-content {
+  display: block;
+}
+
+#homedecor:checked ~ .content #homedecor-content {
+  display: block;
+}
+
+#kitchen:checked ~ .content #kitchen-content {
+  display: block;
+}
+```
+
+There is nothing wrong with the above code
+
 
 
 
