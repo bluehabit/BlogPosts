@@ -231,8 +231,17 @@ Very important, notice ho we are using the `id` selector here, and its pseduo se
 }
 ```
 
-There is nothing wrong with the above code
+There is nothing wrong with the above code, but we can refactor it a bit more so its more condensed. Lets do that now.
 
+```
+#furniture:checked ~ .content #furniture-content, 
+#homedecor:checked ~ .content #homedecor-content, 
+#kitchen:checked   ~ .content #kitchen-content {
+  display: block;
+}
+```
+
+Much more pleasant on the eyes. 
 
 
 
