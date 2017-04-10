@@ -72,7 +72,7 @@ Notice in the above example how we added a new attribute to each radio input. Th
 
 As you can see in the finished example below, when we click an input elements label it will automatically select the corresponding radio button, and we can only select one input element at a time from a given collection.
 
-http://codepen.io/bluehabit/pen/qreqQE
+Codepen: http://codepen.io/bluehabit/pen/qreqQE
 
 ## CSS Class & Id Selectors
 
@@ -80,7 +80,7 @@ For the sake of being through lets quickly review class and Id selectors. **Ids*
 
 **Classes** On the other hand, can be assigned to multiple elements on the page. If you need a refresher, take a look at the example markup below. In CSS classes can be targeted with the `.` symbol. 
 
-http://codepen.io/bluehabit/pen/vxwOyx
+Codepe: http://codepen.io/bluehabit/pen/vxwOyx
 
 ### DOM Tree
 Before we can start building dazzling web components, we must first understand how to select very specific elements on the DOM. We will perform advanced selections using CSS combinators that will be discussed in greater detail below. But before we do that lets review the concept behind the Document Object Model. 
@@ -110,7 +110,9 @@ Follow the branches of a parent element downward to identify all of its descenda
 
 ### Combinators
 
-Lets put this into practice and work through a few examples selecting elements using combinators. In addition, I highly suggest reading through the selectors through in your mind to very clearly identify what a given combinator is targeting. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. http://codepen.io/bluehabit/pen/RpmWVe
+Lets put this into practice and work through a few examples selecting elements using combinators. In addition, I highly suggest reading through the selectors through in your mind to very clearly identify what a given combinator is targeting. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. 
+
+Codepen: http://codepen.io/bluehabit/pen/RpmWVe
 
 Lets begin by using a **descendant** selector to target all `li`s that are a descendant of a `ul` tag, and make them have the `background-color` `#4d74f0`. Note the space between the `li` tag and the `ul` tag indicates this is using the descendant selector.
 
@@ -128,13 +130,14 @@ Lastly, we will target all `label` elements that are general siblings of the `.p
 
 ![example4](http://imgur.com/DaxGIDl.png)
 
-The final result should look something like this, http://codepen.io/bluehabit/pen/aJeZNv.
+The final result should look something like the codepen below.
+Codepen: http://codepen.io/bluehabit/pen/aJeZNv.
 
 ### Pseudo Classes 
 
 Pseudo classes are designed to define special states of an element. For example, the pseudo classs `:hover` will apply a specific CSS styling when the user hovers the element targeted by the selector. Let's take a look at some of the other more commonly used pseudo classes. In the markup below.
 
-http://codepen.io/bluehabit/pen/EWJZLQ
+Codepen: http://codepen.io/bluehabit/pen/EWJZLQ
 
 Pay special attention to `:nth-child` pseduo class. Notice we can pass it the value `even` or `odd` to specify which list items are affected by the rules. In addition to that, we can also target a specific child as shown with:
 
@@ -172,7 +175,9 @@ input:checked + label {
 
 The CSS combinator identified above is looking for an `input` element that is in the `:checked` state, then the `+` symbol indicates the adjacent sibling selector. Therefore it is looking for an adjacent sibling, in this case a `label`. Once it has been found, we will make the background color purple. This may not seem super exciting right now, but this is the framework that will enable us to create much more advanced user interaction later. 
 
-Once finished it should look something like this http://codepen.io/bluehabit/pen/WpBbNG if you would like to check your work.  
+Once finished it should look something like the below codepen if you would like to check your work. 
+
+Codepen: http://codepen.io/bluehabit/pen/WpBbNG 
 
 ### Checked Attribute
 
@@ -180,7 +185,9 @@ One thing you may have noticed is that by default, when the user loads the page,
 
 Lets revisit this line of code from the HTML `<input type="radio" id='topaz' name='gem-stones'>`
 
-All we have to do is add the following attribute, `checked='checked'`. As we can see in the finished markup here `<input type="radio" id='topaz' name='gem-stones' checked='checked'>`. Compare your work here http://codepen.io/bluehabit/pen/ZegLYN
+All we have to do is add the following attribute, `checked='checked'`. As we can see in the finished markup here `<input type="radio" id='topaz' name='gem-stones' checked='checked'>`. Compare your work to the codepen shown below. 
+
+Codepen: http://codepen.io/bluehabit/pen/ZegLYN
 
 
 ## Skeleton Frameworks
@@ -191,7 +198,9 @@ Lets continue building the framework for more complex user interactions. This ex
 
 Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. We can create this behavior by adding seperate `div` container that only shows specific content when a given input element is checked. 
 
-Here will mark the beginning of the project if you would like to follow along. http://codepen.io/bluehabit/pen/OpKWyQ
+Here will mark the beginning of the project if you would like to follow along. 
+
+Codepen: http://codepen.io/bluehabit/pen/OpKWyQ
 
 The content below is the seperate `div` container we mentioned earlier. Notice the `div` contains additional subsections each with its own unique `id` and contents. Also notice how the content all has its own unique `id` assigned to it. 
 
@@ -275,7 +284,8 @@ There is nothing wrong with the above code, but we can refactor it a bit more so
 }
 ```
 
-Much more pleasant on the eyes. Lets take a look at the finished example: http://codepen.io/bluehabit/pen/OpKWyQ
+Much more pleasant on the eyes. Lets take a look at the finished example below. 
+Codepen: http://codepen.io/bluehabit/pen/OpKWyQ
 
 ### Examples Built with this Framework
 
@@ -311,7 +321,24 @@ Keyframes are the foundation of CSS animations. They define what the animation l
 
 * **Name of the Animation**: A name that describes the animation, for example `fadeOut`. 
 * **Stages of teh Animation**: Each stage of the animation is represented as a percentage. `0%` represents the beginning state of the animation. `100%` represents the ending state of the animation. Multiple intermediate states can be added in between.
+* **CSS Properties**: The CSS properties defined for each stage of the animation timeline.
 
+Lets take a look at a simple `@keyframes` I've created named *'rotate360'*. This `@keyframes` has two stages. At the first stage `0%`. 
+
+Codepen: http://codepen.io/bluehabit/pen/bqXqqG
+
+Alternativley, if a animation only has two stages you can use the keyword `from` for `0%` and `to` for `100%` as shown in the example below. 
+
+```
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+```
 
 ## Animating SVGs
 
@@ -324,7 +351,7 @@ You can also create your own using Adobe Illustrator if that is your fancy.
 
 ## Weather Animation
 
-Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast
+Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2
 
 
 
