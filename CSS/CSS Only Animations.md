@@ -179,11 +179,16 @@ This makes the third list item 'Walrus' the color white.
 
 ## ::before and ::after
 
-## Unicode HTML entities
+With these pseudo selectors, its pretty common to use HTML entities. We will discuss this in greater depth in the next section. 
 
-Resources: 
-https://unicode-table.com/en/
-https://www.w3schools.com/charsets/ref_utf_symbols.asp
+Codepen: http://codepen.io/bluehabit/pen/RpXXwJ
+
+## Unicode HTML entities
+Select the unicode character that you would like to use. For the `content` property set the value equal to `\` followed by the hex value of your unicode character. For example if I would like to use the heart symbol, my code might looks something like this `content: "\2764"`. 
+
+Unicode Character Resources: 
+* https://unicode-table.com/en/
+* https://www.w3schools.com/charsets/ref_utf_symbols.asp
 
 ## Click Pseudo Class?
 
