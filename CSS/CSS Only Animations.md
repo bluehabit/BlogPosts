@@ -411,7 +411,9 @@ You can also create your own using Adobe Illustrator if that is your fancy.
 
 Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2
 
-## Transform and Transition
+## Transform 
+
+## Transition
 
 ## Filter grayscale, blur etc.
 
