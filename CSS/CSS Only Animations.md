@@ -116,18 +116,44 @@ Codepen: http://codepen.io/bluehabit/pen/RpmWVe
 
 Lets begin by using a **descendant** selector to target all `li`s that are a descendant of a `ul` tag, and make them have the `background-color` `#4d74f0`. Note the space between the `li` tag and the `ul` tag indicates this is using the descendant selector.
 
+```
+ul li {
+  background-color: #4d74f0;
+}
+```
+
 ![example1](http://imgur.com/OAFEj3P.png)
 
 For our next example we are targeting the class `.penguinInformation` then we are using the child selector `>` to target all `p` tags  that are children of that class.
+
+```
+.penguinInformation > p {
+	color: pink;
+}
+```
+-----
 
 ![example2](http://imgur.com/o7orRpd.png)
 
 Lets look at our next selector, we are targeting the `.penguinInformation`, and once again using the child selector `>` to target all `p` tags that are direct children of the class specified. In addition, we are now using the adjacent sibling selector `+` to select all `h3` tags that are adjacent siblings to the `p` tags. 
 
+```
+.penguinInformation > p + h3 {
+	color: green;
+}
+```
+-----
+
 ![example3](http://imgur.com/cS8taNG.png)
 
 Lastly, we will target all `label` elements that are general siblings of the `.penguinInformation` class. We will do this using the general sibling selector symbol `~`. 
 
+```
+.penguinInformation ~ label {
+	color: gold;
+}
+```
+-----
 ![example4](http://imgur.com/DaxGIDl.png)
 
 The final result should look something like the codepen below.
@@ -325,6 +351,17 @@ Keyframes are the foundation of CSS animations. They define what the animation l
 
 Lets take a look at a simple `@keyframes` I've created named *'rotate360'*. This `@keyframes` has two stages, aka keyframes. At the first stage `0%` we have a `transform: rotate(0deg)`. In the final stage we set the transform value to `transform: rotate(360deg)`. The end result is the box rotating a full 360deg. 
 
+```
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+```
+
 Codepen: http://codepen.io/bluehabit/pen/bqXqqG
 
 Alternativley, if a animation only has two stages you can use the keyword `from` for `0%` and `to` for `100%` as shown in the example below. 
@@ -340,6 +377,21 @@ Alternativley, if a animation only has two stages you can use the keyword `from`
 }
 ```
 
+### Building Block #2: Animation Properties
+
+Once the `@keyframes` are defined, the animation properties must be added in order for your animation to function.
+
+Animation properties do two things:
+
+1. They assign the @keyframes to the elements that you want to animate.
+2. They define how it is animated.
+
+The animation properties are added to the CSS selectors (or elements) that you want to animate. You must add the following two animation properties for the animation to take effect:
+
+* `animation-name`: The name of the animation, defined in the `@keyframes`
+* `animation-duration`: The duration of the animation, in seconds (e.g., 5s) or milliseconds (e.g., 200ms).
+
+
 ## Animating SVGs
 
 Next lets explore animating SVGs (scaleable vector graphics). Unlike pixel based images that can become blurry and distorted once scaled beyond their intended resolution, SVGs can scale to any size small, or large, and still maintain their graphical fidelity. 
@@ -353,7 +405,9 @@ You can also create your own using Adobe Illustrator if that is your fancy.
 
 Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2
 
+## Transform and Transition
 
+## Filter grayscale, blur etc.
 
 ## Additional Resources
 
