@@ -402,6 +402,10 @@ The animation properties are added to the CSS selectors (or elements) that you w
 * `animation-name`: The name of the animation, defined in the `@keyframes`
 * `animation-duration`: The duration of the animation, in seconds (e.g., 5s) or milliseconds (e.g., 200ms).
 
+## Animation Delay
+
+make loading example like this http://codepen.io/ahmedelmsery/pen/zZVLMN
+
 
 ## Animating SVGs
 
