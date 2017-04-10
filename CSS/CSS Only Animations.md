@@ -185,7 +185,7 @@ All we have to do is add the following attribute, `checked='checked'`. As we can
 
 ## Skeleton Frameworks
 
-Lets continue building the scaffolding for more complex user interaction. This example will be the skeleton for building a CSS only tabs components, but this framework can have many more applications such as an image gallery, or accordion. We will combine what we learned in the previous example while introducing a new idea. 
+Lets continue building the framework for more complex user interactions. This example will be the skeleton for building a CSS only tabs components, but this framework can have many more applications such as an image gallery, or accordion. We will combine what we learned in the previous example while introducing a new idea. 
 
 Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. When we click an image within a gallery, we expect something to happen as well. We can create this behavior by adding seperate `div` container that only shows the contents for a given tab once selected. 
 
