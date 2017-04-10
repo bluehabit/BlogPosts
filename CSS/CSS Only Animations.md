@@ -211,9 +211,25 @@ The content below is the seperate `div` container we mentioned earlier. Notice t
 
 We will manage the state changes such that specific information will only show up when a particular input element is checked. As you may have noticed, as the project stands right now, all of this information: 'stuff about furniture', 'stuff about homedecor' and 'stuff about kitchens' is visibile by default, we will change that.
 
+### Setting Content to display:none
+
+For this important step we will simply target the `.content` container and set its subsection `divs` set to `display:none`. We will use a combinator to accomplish this.
+
+```
+.content > div {
+  display: none;
+}
+```
+
+Lets read this combinator out loud to better understand it. We will be targeting the `.content` class and then use the `>` symbol to select its direct children of type `div`. For the elements selected we will set their `display` to `none`. 
+
+
+Its important here that we use the `display` property and set its value to `none`. The reason for using `display` is it doesn't take up any space in the document when its value is set to `none`. In contrast, if we were to use a property such as `visibility` and set it to `hidden` the text would still be hidden, but the content would be stacked on top of one another because it would still exist in the normal flow of the document.
+
+
 ### id:checked
 
-Very important, notice ho we are using the `id` selector here, and its pseduo selector `:checked` to see if that particular element with the corresponding `id` has been checked.
+The next very important concept is how we can use the type selector, in this case `id`, and combine it with a pseduo selector, in this case `:checked'`. Notice ho we are using the `id` selector here, and its pseduo selector `:checked` to see if that particular element with the corresponding `id` has been checked.
 
 ### refactoring
 
@@ -241,15 +257,18 @@ There is nothing wrong with the above code, but we can refactor it a bit more so
 }
 ```
 
-Much more pleasant on the eyes. 
+Much more pleasant on the eyes.
 
+### Examples Built with this Framework
 
+Now that you understand the basic framework, lets take a look at some finished examples to see what we can accomplish with it. Notice how many applications that we have, and while these examples may have been beautified to be visually pleasing the underlying foundation remains the same. 
 
-## display: block & display: none
 
 ### State & Class Selectors
 
 ## The Building Blocks
+
+## Animating SVGs
 
 ## Additional Resources
 
