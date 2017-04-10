@@ -187,11 +187,11 @@ All we have to do is add the following attribute, `checked='checked'`. As we can
 
 Lets continue building the framework for more complex user interactions. This example will be the skeleton for building a CSS only tabs components, but this framework can have many more applications such as an image gallery, or accordion. We will combine what we learned in the previous example while introducing a new idea. 
 
-Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. When we click an image within a gallery, we expect something to happen as well. We can create this behavior by adding seperate `div` container that only shows specific content when a given input element is checked. 
+Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. We can create this behavior by adding seperate `div` container that only shows specific content when a given input element is checked. 
 
 Here will mark the beginning of the project if you would like to follow along. http://codepen.io/bluehabit/pen/OpKWyQ
 
-The content below is the seperate `div` container we mentioned earlier. Notice the `div` contains additional subsections each with its own unique `id` and contents.
+The content below is the seperate `div` container we mentioned earlier. Notice the `div` contains additional subsections each with its own unique `id` and contents. Also notice how the content all has its own unique `id` assigned to it. 
 
 ```
 <div class='content'>
@@ -227,11 +227,23 @@ Lets read through this combinator to better understand it. We will be targeting 
 Its important here that we use the `display` property and set its value to `none`. The reason for using `display` is it doesn't take up any space in the document when its value is set to `none`. In contrast, if we were to use a property such as `visibility` and set it to `hidden` the text would still remain hidden; however, the content would be stacked on top of one another because it would still exist in the normal flow of the document.
 
 
-### id:checked
+### id:checked Combinator
 
 The next very important concept is how we can use the type selector, in this case `id`, and combine it with a pseduo selector, in this case `:checked'`. Notice ho we are using the `id` selector here, and its pseduo selector `:checked` to see if that particular element with the corresponding `id` has been checked.
 
-### refactoring
+Lets work through our first example. We only want the content for `furniture-content` to show up when its corresponding input element is selected. We can provide this interactivity using the `id:checked` combinator.
+
+```
+#furniture:checked ~ .content #furniture-content {
+  display: block;
+}
+
+```
+
+Lets break it down and step through this code. We begin by using the `id` selector to select `#furniture`, while also utilizing the `:checked` pseudo selector to manage the state. Then we use the `~` symbol to select its sibling with the class `.content`. From here there is a space indicating a descendent selector. Therefore, we are selecting all descendents of `.content` with the `id` of `#furniture-content`. When this item is selected we will set the `display` to `block`. Recall its previous value was `display:none`. 
+
+
+Lets finish up the other selectors now. 
 
 ```
 #furniture:checked ~ .content #furniture-content {
@@ -246,6 +258,10 @@ The next very important concept is how we can use the type selector, in this cas
   display: block;
 }
 ```
+
+We now have our interactivity, with this simple scaffolding we have achieved the desired effect. Only specific content will reveal itself based on the input element that is selected.
+
+### refactoring
 
 There is nothing wrong with the above code, but we can refactor it a bit more so its more condensed. Lets do that now.
 
