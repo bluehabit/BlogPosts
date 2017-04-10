@@ -172,10 +172,26 @@ input:checked + label {
 
 The CSS combinator identified above is looking for an `input` element that is in the `:checked` state, then the `+` symbol indicates the adjacent sibling selector. Therefore it is looking for an adjacent sibling, in this case a `label`. Once it has been found, we will make the background color purple. This may not seem super exciting right now, but this is the framework that will enable us to create much more advanced user interaction later. 
 
-Once finished it should look something like this http://codepen.io/bluehabit/pen/WpBbNG if you would like to check your work. 
+Once finished it should look something like this http://codepen.io/bluehabit/pen/WpBbNG if you would like to check your work.  
+
+### Checked Attribute
+
+One thing you may have noticed is that by default, when the user loads the page, no item is selected. If you would like an item to be selected by default we can utilize the `checked` attribute for the element. Lets say we want topaz to be selected by default.
+
+Lets revisit this line of code from the HTML `<input type="radio" id='topaz' name='gem-stones'>`
+
+All we have to do is add the following attribute, `checked='checked'`. As we can see in the finished markup here `<input type="radio" id='topaz' name='gem-stones' checked='checked'>`. Compare your work here http://codepen.io/bluehabit/pen/ZegLYN
 
 
 ## Skeleton Frameworks
+
+Lets continue building the scaffolding for more complex user interaction. This example will be the skeleton for building a CSS only tabs components, but this framework can have many more applications such as an image gallery, or accordion. We will combine what we learned in the previous example while introducing a new idea. 
+
+Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. When we click an image within a gallery, we expect something to happen as well. We can create this behavior by adding seperate `div` container that only shows the contents for a given tab once selected. 
+
+Here will mark the beginning of the project if you would like to follow along. http://codepen.io/bluehabit/pen/OpKWyQ
+Lets examine the code, inr our HTML we have a seperate `div` with class `.content`, and contained within it we have additional `div`s with text descriptions
+
 
 
 ## display: block & display: none
@@ -183,4 +199,9 @@ Once finished it should look something like this http://codepen.io/bluehabit/pen
 ### State & Class Selectors
 
 ## The Building Blocks
+
+## Additional Resources
+
+-rocket project
+etc.
 
