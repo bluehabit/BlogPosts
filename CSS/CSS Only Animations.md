@@ -179,6 +179,12 @@ This makes the third list item 'Walrus' the color white.
 
 ## ::before and ::after
 
+## Unicode HTML entities
+
+Resources: 
+https://unicode-table.com/en/
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
+
 ## Click Pseudo Class?
 
 As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunatley, it does not work for most of my animation needs. With `:active` the user has to hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
