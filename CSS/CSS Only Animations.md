@@ -712,6 +712,29 @@ Lets continue building up our animation by adding life to the lighting bolts. Le
 
 Now lets grab our thunder bolt shapes in the SVG with their classes `.bolt1` and `.bolt2`. Just like we did with the cloudBreath animation. We will make the animation loop indefinitley by giving it the value of `infinite` for `animation-iteration-count`. To reuse the the same animation for `.bolt2` we will stagger the animation by giving it a slight delay `animation-delay: .5s`. 
 
+```
+.bolt1 {
+	animation: thunderClap1 ease-in-out 2.2s infinite;
+	transform: translateY(-50px);
+}
+
+.bolt2{
+	animation: thunderClap1 ease-in-out 2.2s infinite;
+	animation-delay: .5s;
+	transform: translateY(25px);
+}
+```
+
+One thing you might notice is `transform: translateY(-50px)` and `transform: translateY(25px)` in the selectors shown above. What we are doing here is using `translate` to adjust the default positioning of the SVG shapes so they are more staggered before the animation begins. 
+
+#### Before
+
+![thunder-before](http://imgur.com/HVoszA9.png)
+
+#### After
+
+![thunder-after](http://imgur.com/svqWVII.png)
+
 Here is what you should have so far:
 
 ![thunder-bolt](http://imgur.com/wNj048X.gif)
