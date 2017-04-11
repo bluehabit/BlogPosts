@@ -489,13 +489,15 @@ Codepen: http://codepen.io/bluehabit/pen/KmPKNr
 
 ## Opacity
 
+![opacity](http://imgur.com/PpA3isn.gif)
+
+Codepen: http://codepen.io/bluehabit/pen/rmBaPG
+
 ## Cubic-bezier
 
 ## Animation Properties
 
 ## Animation Property Shorthand
-
-## Opacity
 
 ## Animation Delay
 
