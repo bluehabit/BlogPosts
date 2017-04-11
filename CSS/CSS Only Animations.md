@@ -679,6 +679,7 @@ svg{
 ```
 
 What you should have so far:
+![example-so-far](http://imgur.com/WXiBdCx.gif)
 
 
 ## Additional Resources
