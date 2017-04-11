@@ -679,7 +679,40 @@ svg{
 ```
 
 What you should have so far:
+
 ![example-so-far](http://imgur.com/WXiBdCx.gif)
+
+### Animating Lightning Bolts
+
+Lets continue building up our animation by adding life to the lighting bolts. Lets create a new `@keyframes` with the name `thunderClap1`. One thing that may appear new at this juncture is the stacked keyframes at the top. This is a preference, if you have multiple keyframes that will do the same thing you can stack them on top of one another. To bring the lightning bolts to life the main thing we are going to do is use `transform: translateX(50px)` and `transform: translateY(70px)` to move them downward. While this is occuring we adjust the `opacity` at various points so they appear to flicker. 
+
+```
+@keyframes thunderClap1 {
+	0%, 31%, 35%, 40%{
+		opacity: 0;
+	}
+
+	32%{
+		opacity: 1;
+	}
+
+	41%{
+		opacity: .55;
+	}
+	100%{
+		opacity: 0;
+		transform: translateX(50px);
+		transform: translateY(70px);
+	}
+}
+```
+
+Now lets grab our thunder bolt shapes in the SVG with their classes `.bolt1` and `.bolt2`. Just like we did with the cloudBreath animation. We will make the animation loop indefinitley by giving it the value of `infinite` for `animation-iteration-count`. To reuse the the same animation for `.bolt2` we will stagger the animation by giving it a slight delay `animation-delay: .5s`. 
+
+Here is what you should have so far:
+
+![thunder-bolt](http://imgur.com/wNj048X.gif)
+
 
 
 ## Additional Resources
