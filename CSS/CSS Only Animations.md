@@ -524,6 +524,8 @@ Codepen: http://codepen.io/bluehabit/pen/bqXqqG
 
 ![opacity](http://imgur.com/PpA3isn.gif)
 
+Sets how transparent an element is on the scale from `0` to `1`. For example `opacity{0.25}`.
+
 Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 
 ## Cubic-bezier
