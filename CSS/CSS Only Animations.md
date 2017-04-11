@@ -521,10 +521,15 @@ SVGs can be found all over the internet, a few of my favorite resources to downl
 * http://www.flaticon.com
 * http://fontawesome.io/
 
-You can also create your own using Adobe Illustrator if that is your fancy.
-After downloading a SVG you can open the source in your text editor and it may look a bit complicated. 
+You can also create your own SVG graphics using Adobe Illustrator if that is your fancy.
+After downloading a SVG you can open the source in your text editor and it may look a bit complicated. This will be the raw code that we paste into our HTML file.
 
 ![raw-svg](http://imgur.com/z5qviZQ.png)
+
+If you have a copy of Adobe Illustrater you can actually view the different layers as they are named within the editor. This makes it easy to visualize what is what before you start targeting different sections in CSS. However, a good portion of the SVGs you download off the internet unfortunately will not be labeled. 
+
+![svg-adobe](http://imgur.com/JJRBQmO.jpg)
+Pictured above, opening a SVG image in Adobe Illustrator and viewing different layer names. 
 
 ## What we will be building
 
