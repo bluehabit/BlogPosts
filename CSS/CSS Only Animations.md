@@ -512,6 +512,20 @@ Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 `animation-delay` can set a delay before the animation plays.
 Codepen: http://codepen.io/bluehabit/pen/zwOxNZ
 
+## animation-fill-mode
+
+`forwards` useful for holding the last keyframe of an animation. 
+
+## filter: blur()
+
+![motion-blur](http://imgur.com/6o4JRXV.gif)
+
+Can blur pixels out. In this example using `blur` to mimic the effects of motion blur. 
+
+Codepen: http://codepen.io/bluehabit/pen/GmKMLj
+
+Codepen: http://codepen.io/bluehabit/pen/GmKMLj
+
 
 ## Animating SVGs
 
