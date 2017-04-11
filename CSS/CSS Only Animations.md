@@ -483,9 +483,13 @@ Codepen: http://codepen.io/bluehabit/pen/KmPKNr
 
 ## Animation Properties
 
+## Animation Property Shorthand
+
+## Opacity
+
 ## Animation Delay
 
-make loading example like this http://codepen.io/ahmedelmsery/pen/zZVLMN
+Codepen: http://codepen.io/bluehabit/pen/zwOxNZ
 
 
 ## Animating SVGs
@@ -504,10 +508,6 @@ You can also create your own using Adobe Illustrator if that is your fancy.
 ## Weather Animation
 
 Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2
-
-## Transform 
-
-## Transition
 
 ## Filter grayscale, blur etc.
 
