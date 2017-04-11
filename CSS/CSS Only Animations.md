@@ -542,6 +542,12 @@ Begin by pasting the raw `svg` code into our `index.html` file.
 
 ## Filter grayscale, blur etc.
 
+## grayscale
+
+![grayscale](http://imgur.com/i9AE1xU.gif)
+
+Codepen: http://codepen.io/bluehabit/pen/WjevQo
+
 ## Additional Resources
 
 -rocket project
