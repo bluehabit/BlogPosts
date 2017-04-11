@@ -350,9 +350,38 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
 ## Using Targeted URI's for Animations
 
-Another method we will utilize for building animations with CSS only revolves around using the `href` attribute of `a` tags. Whenever you visit a link. We can use the `id` to create a unique URL to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. 
+Another method we will utilize for building animations with CSS only revolves around using the `href` attribute of `a` tags. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector that we will discuss in much greater detail. 
+
 
 ![target-uri](http://imgur.com/N0BmIKz.gif);
+
+## :target
+
+The `:target` pseudo-class will look for an element with an `id` matching the fragment identifier of the URI of the document. Fragment identifier, URI what is all of this - let's take a quick look.
+
+Let's say you are visiting wikipedia to read more information about the history of the automobile. The main page you would likely land on is `https://en.wikipedia.org/wiki/Car`. Many times sections have their own unique ID, so that the user can click a page and the page will automatically jump to that section.
+
+Lets continue looking at our wikipedia example. If we view the page source for different sections we can see a pattern emerging. Each section has its own unique ID that will serve as *fragment identifier*. 
+
+`<h2><span class="mw-headline" id="History">History</span></h2>`
+
+Notice the `id` of `History`
+
+`<h2><span class="mw-headline" id="Safety">Safety</span></h2>`
+
+Notice the `id` of `Safety`
+
+`<h2><span class="mw-headline" id="Environmental_impact">Environmental impact</span></h2>`
+
+Notice the `id` of `Environmental_impact` 
+
+You get the idea. The point is we can target these *fragment identifiers* in our URIs to jump to specific sections of the page. From our root URL `https://en.wikipedia.org/wiki/Car` we can add the fragment identifier to jump, all we are doing is providing the `id` as part of the fragment identifier to jump to that section. 
+
+`https://en.wikipedia.org/wiki/Car#History` will jump to the History section. 
+`https://en.wikipedia.org/wiki/Car#Safety` will jump to the Safety section.
+`https://en.wikipedia.org/wiki/Car#Environmental_impact` will jump to the Environmental Impact section
+
+Lets work through a basic example to see how we can use fragment identifiers. 
 
 Codepen: http://codepen.io/bluehabit/pen/pPzzWp
 
