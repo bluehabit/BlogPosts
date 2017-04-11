@@ -350,7 +350,7 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
 ## Using Targeted URI's for Animations
 
-Another method we will utilize for building animations with CSS only revolves around using the `href` attribute of `a` tags. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector that we will discuss in much greater detail. 
+Another method we will utilize for building animations with CSS only revolves around using the `href` attribute of `a` tags. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector along with URI fragment identifiers that we will discuss in much greater detail. 
 
 ![target-uri](http://imgur.com/N0BmIKz.gif);
 
@@ -359,6 +359,8 @@ Codepen: http://codepen.io/bluehabit/pen/pPzzWp
 ## :target
 
 The `:target` pseudo-class will look for an element with an `id` matching the fragment identifier of the URI of the document. Fragment identifier, URI what is all of this - let's take a quick look.
+
+![fragment](http://imgur.com/kA5QI16.png)
 
 Let's say you are visiting wikipedia to read more information about the history of the automobile. The main page you would likely land on is `https://en.wikipedia.org/wiki/Car`. Many times sections have their own unique ID, so that the user can click a page and the page will automatically jump to that section.
 
