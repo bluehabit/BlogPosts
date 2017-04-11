@@ -515,6 +515,14 @@ Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 
 Codepen: http://codepen.io/bluehabit/pen/WjevQo
 
+## Animation Iteration Count
+
+The `animation-iteration-count` 
+
+`infinite`
+
+`#` value
+
 ## Animation Delay
 
 `animation-delay` can set a delay before the animation plays. This is usefull because we can reuse the same animation for multiple elements on the screen, but stagger them using `animation-delay`. 
@@ -624,32 +632,53 @@ Here is what we have so far:
 
 ![clouds](http://imgur.com/UZ9hdri.png)
 
-Our clouds are looking a bit stagnant, don't you think? Lets breathe some life into them and start animating. First lets define our animation. 
+Our clouds are looking a bit stagnant, don't you think? Lets breathe some life into them and start animating. First lets define our animation using `@keyframes`, I am going to call this animation `cloudBreath`. Next we will set 3 keyframes the first at `0%`, the next at `50%` and the last at `100%`. 
+
+As we transition through the keyframes we are only modifying the `scale` of the element. The cloud shrinks and inflates slightly to give it a bit of life. 
 
 ```
 @keyframes cloudBreath{
 	0%{
 		transform: scale(1.12);
-		opacity: 55;
 	}
 	50%{
 		transform: scale(1.2);
-		opacity: 15;
 	}
 	100%{
 		transform: scale(1.12);
-		opacity: 25;
 	}
 }
 ```
 
-As you may have noticed there is some clipping occuring from the animation. The clouds seem to be cut off by a wall. We can fix this by adding some breathing room to the SVGs with some `padding`. 
+Next we need to add the animation to our clouds. I have targeted the specific paths in the raw SVG and assigned them the classes `.cloud` and `.cloud2` both of these represent the two different cloud shapes in the SVG. Lets go ahead and give them `animation: cloudBreath 2s ease infinite`. We will use `infinite` for the `animation-iteration-count` so the animation loops continously over and over again. 
+
+```
+.cloud{
+	animation: cloudBreath 2s ease infinite;
+}
+```
+
+Next we can recycle the same animation and use it for `cloud2` only we will add a slight delay to the animation so it doesn't perfectly sync up with the other clouds animation. We will use `animation-delay: .3s`
+
+```
+.cloud2{
+	animation: cloudBreath 2s ease infinite;
+	animation-delay: .3s;
+}
+```
+
+As you may have noticed there is some clipping occuring from the animation. The clouds seem to be cut off by a wall, as you can see in the example below. We can fix this by adding some breathing room to the SVGs with some `padding`. 
+
+#### Clipping Example
+![clipping-example](http://imgur.com/a2Ki810.gif)
 
 ```
 svg{
   padding: 35px;
 }
 ```
+
+What you should have so far:
 
 
 ## Additional Resources
