@@ -1,7 +1,5 @@
 ## CSS Only Animations
 
-**Some cool animation example here**
-
 Most of us learn the term *'seperation of concerns'* when it comes to web developement. In practice this means seperating markup into structured html, the visual and aesthetic preferences into CSS, and the behavior and interaction of the program into Javascript. However, we are going to do something a bit different. We are going to focus on building web components and animations using only CSS.
 More complex interactions may still require JS, and that is fine, but CSS has made it possible to do quite a bit without it - and that will be the focus of this blog post. 
 
