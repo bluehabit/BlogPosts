@@ -517,7 +517,8 @@ Codepen: http://codepen.io/bluehabit/pen/WjevQo
 
 ## Animation Delay
 
-`animation-delay` can set a delay before the animation plays.
+`animation-delay` can set a delay before the animation plays. This is usefull because we can reuse the same animation for multiple elements on the screen, but stagger them using `animation-delay`. 
+
 Codepen: http://codepen.io/bluehabit/pen/zwOxNZ
 
 ## animation-fill-mode
