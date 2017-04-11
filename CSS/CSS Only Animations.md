@@ -540,7 +540,7 @@ Before:
 After:
 ```
 .item:hover .ball {
-  animation: motionBlur 1.3s 1 cubic-bezier(.41,0,.19,1);
+  animation: motionBlur 5.3s 1 cubic-bezier(.09,1.83,.37,.78);
 }
 ```
 
