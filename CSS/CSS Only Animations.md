@@ -469,15 +469,25 @@ The animation properties are added to the CSS selectors (or elements) that you w
 * `animation-name`: The name of the animation, defined in the `@keyframes`
 * `animation-duration`: The duration of the animation, in seconds (e.g., 5s) or milliseconds (e.g., 200ms).
 
-## Transform Translate
+## TranslateX
 
-![translate](http://imgur.com/biPSpYR.gif)
+![translateX](http://imgur.com/biPSpYR.gif)
 
-## Transform Scale
+Codepen: http://codepen.io/bluehabit/pen/OmLPrL
+
+## TranslateY
+
+![translateY](http://imgur.com/2RplRik.gif)
+
+Codepen: http://codepen.io/bluehabit/pen/OmLPdJ
+
+## Scale
 
 ![scale](http://imgur.com/rSaxI2Z.gif)
 
 Codepen: http://codepen.io/bluehabit/pen/KmPKNr
+
+## Opacity
 
 ## Cubic-bezier
 
