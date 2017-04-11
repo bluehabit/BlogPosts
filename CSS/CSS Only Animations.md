@@ -623,15 +623,14 @@ Codepen: http://codepen.io/bluehabit/pen/zwOxNZ
 
 ## animation-fill-mode
 
-`normal` default behavior
+`normal` Default behavior. Notice in the example below how once the animation completes, it resets to the first keyframe. 
 
 Codepen: http://codepen.io/bluehabit/pen/eWOVYG
 
-`forwards` useful for holding the last keyframe of an animation. Notice how the ball remains at the right hand side of the screen.
+`forwards` Useful for holding the last keyframe of an animation. Notice how the ball remains at the right hand side of the screen.
 
 Codepen: http://codepen.io/bluehabit/pen/ZKzrEJ
 
-## Animation Property Shorthand
 
 ## Filter Properties
 
