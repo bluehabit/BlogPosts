@@ -793,6 +793,5 @@ Here is what your final animation should look like:
 
 ## Additional Resources
 
--rocket project
-etc.
+* http://animista.net/
 
