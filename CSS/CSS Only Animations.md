@@ -528,6 +528,22 @@ Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 
 ## Cubic-bezier
 
+Can be used to give your more control over your `animation-timing-function`. 
+
+Before:
+```
+.item:hover .ball {
+  animation: motionBlur 1.3s 1 ease;
+}
+```
+
+After:
+```
+.item:hover .ball {
+  animation: motionBlur 1.3s 1 cubic-bezier(.41,0,.19,1);
+}
+```
+
 ## Transforms Shorthand
 Transformations can all be written on a single line. Instead of putting each transformation on its own line.
 
