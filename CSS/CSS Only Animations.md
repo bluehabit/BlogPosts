@@ -546,6 +546,8 @@ Begin by pasting the raw `svg` code into our `index.html` file.
 
 ![animated-weather](https://s7.postimg.org/rjk2sdzkb/bassss.gif)
 
+![weth](http://imgur.com/0SPt9K3.gif)
+
 Codepen: http://codepen.io/bluehabit/pen/WjevQo
 
 ## Additional Resources
