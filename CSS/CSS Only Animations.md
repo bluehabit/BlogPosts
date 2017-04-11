@@ -735,6 +735,10 @@ Lets get started animating the snow flakes. To do this we are going to create a 
 }
 ```
 
+Here is what your final animation should look like:
+
+![final-animation](http://imgur.com/XwmTj1T.gif)
+
 
 ## Additional Resources
 
