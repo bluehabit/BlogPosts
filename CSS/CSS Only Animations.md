@@ -487,6 +487,12 @@ Codepen: http://codepen.io/bluehabit/pen/OmLPdJ
 
 Codepen: http://codepen.io/bluehabit/pen/KmPKNr
 
+## Rotate
+
+![rotate](http://imgur.com/nzi2h7a.gif)
+
+Codepen: http://codepen.io/bluehabit/pen/bqXqqG
+
 ## Opacity
 
 ![opacity](http://imgur.com/PpA3isn.gif)
