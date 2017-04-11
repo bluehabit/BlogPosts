@@ -352,8 +352,9 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
 Another method we will utilize for building animations with CSS only revolves around using the `href` attribute of `a` tags. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector that we will discuss in much greater detail. 
 
-
 ![target-uri](http://imgur.com/N0BmIKz.gif);
+
+Codepen: http://codepen.io/bluehabit/pen/pPzzWp
 
 ## :target
 
@@ -377,13 +378,33 @@ Notice the `id` of `Environmental_impact`
 
 You get the idea. The point is we can target these *fragment identifiers* in our URIs to jump to specific sections of the page. From our root URL `https://en.wikipedia.org/wiki/Car` we can add the fragment identifier to jump, all we are doing is providing the `id` as part of the fragment identifier to jump to that section. 
 
-`https://en.wikipedia.org/wiki/Car#History` will jump to the History section. 
-`https://en.wikipedia.org/wiki/Car#Safety` will jump to the Safety section.
-`https://en.wikipedia.org/wiki/Car#Environmental_impact` will jump to the Environmental Impact section
+`https://en.wikipedia.org/wiki/Car#History` will jump to the History section, notice at the top of your browser how `#History` is added to the URI.
 
-Lets work through a basic example to see how we can use fragment identifiers. 
+`https://en.wikipedia.org/wiki/Car#Safety` will jump to the Safety section, notice at the top of your browser how `#Safety` is added to the URI.
 
-Codepen: http://codepen.io/bluehabit/pen/pPzzWp
+`https://en.wikipedia.org/wiki/Car#Environmental_impact` will jump to the Environmental Impact section, notice at the top of your browser how `#Environmental_impact` is added to the URI. 
+
+Lets work through a basic example to see how we can use fragment identifiers. In the HTML we can see two `a` tags. 
+
+```
+<a href='#'>Home</a>
+<a href='#alert1'>Click Me</a>
+```
+
+The `href` attribute with the value of `#` will take you to the same page. However, the second `a` tag has an `href` value of `#alert1` this is a fragment identifier. Notice our `div` has the `id` of `alert1`, the same as the fragment identifier value we provided. 
+
+When we use `:target` we can now specify that specific fragment identifier. 
+
+```
+#alert1:target {
+  background-color: pink;
+}
+
+```
+
+When the `id` *alert1* is the `:target` it will change the background-color to pink. 
+
+Codepen: http://codepen.io/bluehabit/pen/OmLLQb
 
 ## The Building Blocks of Animation
 
