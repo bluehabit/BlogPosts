@@ -1,52 +1,57 @@
 ## CSS Only Animations
 
-Most of us learn the term *'seperation of concerns'* when it comes to web developement. In practice this means seperating markup into structured html, the visual and aesthetic preferences into CSS, and the behavior and interaction of the program into Javascript. However, we are going to do something a bit different. We are going to focus on building web components and animations using only CSS.
-More complex interactions may still require JS, and that is fine, but CSS has made it possible to do quite a bit without it - and that will be the focus of this blog post. 
+Most of us learn the term *'seperation of concerns'* when it comes to web developement. In practice this means seperating markup into its own html, the visual and aesthetic preferences into a CSS file, and the behavior and interaction of the program into a javascript file. However, we are going to do something a bit different. We are going to focus on building web components and animations using only CSS, no javascript required.More complex interactions may still require JS, and that is fine, but CSS has made it possible to do quite a bit without it - and that will be the focus of this blog post. 
 
-When I initialliay transitioned from building web components interactivity in JS to CSS only I was a bit perplexed. I struggled with the concept quite bit and often found myself questioning why I was bothering to learn this instead of writing a few lines of Javascript instead. If this is you in the beginning, stick with it and you may learn a new trick or two and add new improvements to your work flow.  
+When I initialliay transitioned from building web components interactivity in javascript to CSS only I was a bit perplexed. I struggled with the concept quite bit and often found myself questioning why I was bothering to learn this instead of writing a few lines of javascript instead. If this is you in the beginning, stick with it and you may learn a new trick or two and add new improvements to your work flow.  
 
-It is my hope that this article will clearly illuminate and clear any obfuscation on the matter. As we move through the material you may find that I like to move from simple examples to complex. If you find yourself already knowledgeable on a particular subject matter or a particular example is too rudimentary, please feel welcome to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous. In the final section of this blog post we will explore animating a weather sequence by hand using SVGs and techniques we have learned in this article.
+It is my hope that this article will clearly illuminate and clear any confusion on the matter. As we move through the material you may find that I like to move from simple examples to more complex. If you find yourself already knowledgeable on a particular subject matter, or if a particular example is too rudimentary, please feel free to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous. 
+
+There will be several web components we build throughout this article such as: image galleries, tabs and accordions just to name a few. In the final section of this blog post we will explore animating a weather sequence by hand using SVGs and techniques we have learned in throughout this article.
+
+Lets get started.
 
 ## State Change - The Heart of the Matter
 ![heart-beat](http://imgur.com/3e2imS2.gif)
 
-When it comes to animating using CSS only there is one central concept of critical importance that allows this to work. The idea is managing different states of various HTML elements. The elements that we will pay particular attention to revolve around the `input` tag and its `type` attribute. 
+When it comes to animation using CSS only there is one central concept that allows this to work. The idea is managing different **states** of HTML elements. The elements that we will pay particular attention to revolve around the `input` tag and its `type` attribute. 
 
 To be more specific `<input type="radio">` and `<input type="checkbox" >`.
 
 ## Input Type: Radio and Checkbox
-Every input HTML element object has properties. HTML elements are just like any other object that we may be accustom to working with inside of Javascript, they have properties and methods. The property that we are particularly interested in for the this post is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation. In the case of the radio and checkbox input element they have two states, checked or unchecked. Not dissimilar to a light switch that has two states, on or off.
+Every HTML element object has properties. HTML elements are just like any other object that we may be accustom to working within javascript, they have properties and methods. The property that we are particularly interested in for our purposes is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation. 
 
-To give you a finer level of detail lets look at some simple code. I added an ID to each input element allowing me to quickly grab them from the DOM using JS.
+In the case of the radio and checkbox input element they have two states, checked or unchecked. Just like a light switch that has two states, on or off.
+
+To give you a finer level of detail lets look at some simple input elements. I added an ID to each input element allowing me to quickly grab them from the DOM using JS.
 
 ```
 <input id='radio' type="radio">
 <input id='checkbox' type="checkbox" >
 
-var raido = document.getElementById('radio');
+var radio = document.getElementById('radio');
 var checkbox = document.getElementById('checkbox');
 ```
 
 #### Console.dir()
-We can use `console.dir()` to view all the methods and properties available to the HTML element object. Look at all the available properties and methods available to us on the HTML element radio object. 
+We can use `console.dir()` to view all the methods and properties available to the HTML element object. In the example below, look at all the available methods and properties available to us on the HTML element radio object. 
 
 ![consoledir](http://imgur.com/9Ta5d6x.gif)
 
 #### .checked
-This will provide us with a boolean value indicating the status of a given input element. As you might expect, the value of `.checked` is false when the input element has not been selected, conversley it will become true once selected. See the animation below for clarification. As you can see below, the property that we are interested in is `.checked`. 
+This will provide us with a boolean value indicating the status of a given input element. As you might expect, the value of `.checked` is false when the input element has not been selected, conversley it will become true once selected. See the animation below for clarification. 
 
 ![checked](http://imgur.com/ypB5rBp.gif)
 
-This is a central tenet to keep this in mind as we move to the next section. 
+Keep this in mind as we move to the next section. 
 
 ### Building Radio and Checkbox Inputs
-Lets being by practicing building a few input radio elements. We are going to create a collection of gem stones that a user can select from. Each gem stone will be its own input element with an accompanying label. Let's begin with creating our first input element, a topaz. 
+Lets being by practicing building a few basic input radio elements. We are going to create a collection of gem stones that a user can select from. Each gem stone will be its own input element with an accompanying label. Let's begin with creating our first input element, a topaz. 
 
 ```
 <input type="radio" id='topaz'>
 ```
 
-Next lets add a label for our input. The `for` attribute will specify which radio button the label is intended for. The `for` label for the input element needs to be the same as the target input elements id, lets do that now. **It should be stressed at this point, that it is critical that the input element comes first, followed by the label element, otherwise erratic behavior will occur when we attempt to add animation later**. 
+Next lets add a label for our input. The `for` attribute will specify which radio button the label is intended for. The `for` label for the input element needs to be the same as the target input elements id, lets do that now. **It should be stressed at this point, that it is critical that the input element comes first in the markup, followed by the label element, otherwise erratic behavior may occur when we attempt to add animation later**. 
 
 ```
 <input type="radio" id='topaz'>
@@ -66,22 +71,22 @@ If the user clicks the *Topaz* label, it will now check the corresponding radio 
 <label for='diamond'>Diamond</label>
 ```
 
-Notice in the above example how we added a new attribute to each radio input. The `name` attribute we gave the value of `gem-stones`, effectivley creating a collection of items that are related. Having a collection is useful because it only allows the user to select *one* item at a time. 
+Notice in the above example how we added a new attribute to each radio input. With the `name` attribute we gave the value of `gem-stones` to all items in the list, effectivley creating a collection of items that are related. Having a collection is useful because it only allows the user to select *one* item at a time when using a radio input. 
 
-As you can see in the finished example below, when we click an input elements label it will automatically select the corresponding radio button, and we can only select one input element at a time from a given collection.
+As you can see in the finished example below, when we click a label it will automatically select the corresponding radio button with the matching `id`, and we can only select one input element at a time from a given collection.
 
 Codepen: http://codepen.io/bluehabit/pen/qreqQE
 
 ## CSS Class & Id Selectors
 
-For the sake of being through lets quickly review class and Id selectors. **Ids** are unique, only one element within the document may have a given ID. In CSS they can be targeted with `#` symbol. 
+For the sake of being thorough lets quickly review class and Id selectors. **Ids** are unique, only one element within the document may have a given ID. In CSS they can be targeted with `#` symbol. 
 
-**Classes** On the other hand, can be assigned to multiple elements on the page. If you need a refresher, take a look at the example markup below. In CSS classes can be targeted with the `.` symbol. 
+**Classes** On the other hand, can be assigned to multiple elements on the page. In CSS classes can be targeted with the `.` symbol. If you need a refresher, take a look at the example markup below showing the differences between ids and classes.
 
 Codepe: http://codepen.io/bluehabit/pen/vxwOyx
 
 ### DOM Tree
-Before we can start building dazzling web components, we must first understand how to select very specific elements on the DOM. We will perform advanced selections using CSS combinators that will be discussed in greater detail below. But before we do that lets review the concept behind the Document Object Model. 
+Before we can start building web components, we must first understand how to drill down and select very specific elements on the DOM. We will perform advanced selections using CSS combinators that will be discussed in greater detail in the coming section. But before we do that lets review the concept behind the Document Object Model. 
 
 We can think of the DOM as a giant tree, with firm roots planted in the soil with branches reaching uptowards the sky. Each branch forks outward and forges its own path towards the heavens. The root of our tree is the `html` tag. Everything else is a descendant that originates from it. Lets take a look at what an actual DOM tree might look like with the help of this diagram. 
 
