@@ -544,7 +544,7 @@ Begin by pasting the raw `svg` code into our `index.html` file.
 
 ## grayscale
 
-![grayscale](http://imgur.com/i9AE1xU.gif)
+![animated-weather](http://imgur.com/P3XLMzt.gif)
 
 Codepen: http://codepen.io/bluehabit/pen/WjevQo
 
