@@ -495,6 +495,9 @@ Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 
 ## Cubic-bezier
 
+## One line Transforms
+## transform: rotate(395deg) translate(130px, 120px) scale(.69);
+
 ## Animation Properties
 
 `animation-name` the name of the `@keyframes` animation you want to play
