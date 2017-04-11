@@ -168,7 +168,26 @@ Pseudo classes are designed to define special states of an element. For example,
 
 Codepen: http://codepen.io/bluehabit/pen/EWJZLQ
 
-Pay special attention to `:nth-child` pseduo class. Notice we can pass it the value `even` or `odd` to specify which list items are affected by the rules. In addition to that, we can also target a specific child as shown with:
+Pay special attention to `:nth-child` pseduo class. Notice we can pass it the value `even` or `odd` to specify which list items are affected by the rules. As we can see in the following examples:
+
+```
+ul.ice-animals li:nth-child(even) {
+  background-color: #1f82f1;
+  width: 20%;
+}
+```
+
+and
+
+```
+ul.ice-animals li:nth-child(odd){
+  background-color: #a686cd;
+  width: 20%;
+}
+```
+
+
+In addition to that, we can also target a specific child as shown with:
 
 ```
 ul.ice-animals li:nth-child(3){
