@@ -471,6 +471,8 @@ The animation properties are added to the CSS selectors (or elements) that you w
 
 ## Transform Scale
 
+![scale](http://imgur.com/rSaxI2Z.gif)
+
 Codepen: http://codepen.io/bluehabit/pen/KmPKNr
 
 ## Cubic-bezier
