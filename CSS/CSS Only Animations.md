@@ -513,6 +513,8 @@ Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 
 ![weth](http://imgur.com/0SPt9K3.gif)
 
+Codepen: http://codepen.io/bluehabit/pen/WjevQo
+
 ## Animation Delay
 
 `animation-delay` can set a delay before the animation plays.
@@ -564,8 +566,34 @@ Raw SVG with edited path names: http://codepen.io/bluehabit/pen/vmBWzJ
 
 Begin by pasting the raw `svg` code into our `index.html` file. 
 
+First we will begin by setting the background to a dark grey color.
+```
+html {
+	background-color: #121212;
+}
+```
 
-Codepen: http://codepen.io/bluehabit/pen/WjevQo
+As you may have noticed, these SVGs in there default state are huge. We will go ahead and start working directly with the individual SVGs now. Lets shrink their `width` and `height` to `90px` and set their fill color to `white`. `Fill` to set the color of SVG paths, instead of using properties such as `background-color`. Lastly we will add a bit of breathing room between the two clouds using `margin-left: 50px`.  
+
+```
+.weather > svg {
+	width: 90px;
+	height: 90px;
+	fill: white;
+	margin-left: 50px;
+}
+```
+
+Next we have a `div` container with a class of `.weather` that is storing our weather animations. We will go ahead and use this container to center our animations. 
+
+```
+.weather {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 20%;
+}
+```
+
 
 ## Additional Resources
 
