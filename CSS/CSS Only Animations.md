@@ -492,11 +492,15 @@ The animation properties are added to the CSS selectors (or elements) that you w
 
 ![translateX](http://imgur.com/biPSpYR.gif)
 
+Moves the element horizontally, left or right. 
+
 Codepen: http://codepen.io/bluehabit/pen/OmLPrL
 
 ## TranslateY
 
 ![translateY](http://imgur.com/2RplRik.gif)
+
+Moves the element vertically, up or down. 
 
 Codepen: http://codepen.io/bluehabit/pen/OmLPdJ
 
@@ -504,11 +508,15 @@ Codepen: http://codepen.io/bluehabit/pen/OmLPdJ
 
 ![scale](http://imgur.com/rSaxI2Z.gif)
 
+Modifies the size of an element, it can either enlarge in size or shrink.
+
 Codepen: http://codepen.io/bluehabit/pen/KmPKNr
 
 ## Rotate
 
 ![rotate](http://imgur.com/nzi2h7a.gif)
+
+Defines an angle to rotate an element. There is also `rotateX`, `rotateY` and `rotateZ`. 
 
 Codepen: http://codepen.io/bluehabit/pen/bqXqqG
 
