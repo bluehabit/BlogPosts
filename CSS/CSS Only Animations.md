@@ -525,24 +525,6 @@ After:
 
 `animation-direction` can take your animation and play it in `reverse`, `alternate` or `alternate-reverse` 
 
-## Animation Property Shorthand
-
-## Filter grayscale, blur etc.
-
-## grayscale
-
-![weth](http://imgur.com/0SPt9K3.gif)
-
-Codepen: http://codepen.io/bluehabit/pen/WjevQo
-
-## Animation Iteration Count
-
-The `animation-iteration-count` 
-
-`infinite`
-
-`#` value
-
 ## Animation Delay
 
 `animation-delay` can set a delay before the animation plays. This is usefull because we can reuse the same animation for multiple elements on the screen, but stagger them using `animation-delay`. 
@@ -576,6 +558,24 @@ Codepen: http://codepen.io/bluehabit/pen/eWOVYG
 
 Codepen: http://codepen.io/bluehabit/pen/ZKzrEJ
 
+## Animation Property Shorthand
+
+## Filter Properties
+
+## grayscale
+
+![weth](http://imgur.com/0SPt9K3.gif)
+
+Codepen: http://codepen.io/bluehabit/pen/WjevQo
+
+## Animation Iteration Count
+
+The `animation-iteration-count` 
+
+`infinite`
+
+`#` value
+
 ## filter: blur()
 
 ![motion-blur](http://imgur.com/6o4JRXV.gif)
@@ -586,6 +586,7 @@ Codepen: http://codepen.io/bluehabit/pen/GmKMLj
 
 Codepen: http://codepen.io/bluehabit/pen/GmKMLj
 
+-----
 
 ## Animating SVGs
 
