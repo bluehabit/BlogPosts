@@ -498,9 +498,12 @@ Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 ## Animation Properties
 
 `animation-name` the name of the `@keyframes` animation you want to play
+
 `animation-duration` can be in seconds for example `2s` or milliseconds `300ms` 
+
 `animation-iteration-count` how many times the animation plays before stopping. 
 
+`animation-direction` can take your animation and play it in `reverse`, `alternate` or `alternate-reverse` 
 
 ## Animation Property Shorthand
 
