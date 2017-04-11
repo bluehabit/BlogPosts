@@ -196,7 +196,7 @@ ul.ice-animals li:nth-child(3){
 ```
 This makes the third list item 'Walrus' the color white. 
 
-## ::before and ::after
+## :before and :after
 
 With these pseudo selectors, its pretty common to use HTML entities. We will discuss this in greater depth in the next section. 
 
