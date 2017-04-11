@@ -30,12 +30,12 @@ var checkbox = document.getElementById('checkbox');
 ```
 
 #### Console.dir()
-We can use `console.dir()` to view all the methods and properties available to the HTML element object. As you can see below, the property that we are interested in is `.checked`. 
+We can use `console.dir()` to view all the methods and properties available to the HTML element object. Look at all the available properties and methods available to us on the HTML element radio object. 
 
 ![consoledir](http://imgur.com/9Ta5d6x.gif)
 
 #### .checked
-This will provide us with a boolean value indicating the status of a given input element. As you might expect, the value of `.checked` is false when the input element has not been selected, conversley it will become true once selected. See the animation below for clarification. 
+This will provide us with a boolean value indicating the status of a given input element. As you might expect, the value of `.checked` is false when the input element has not been selected, conversley it will become true once selected. See the animation below for clarification. As you can see below, the property that we are interested in is `.checked`. 
 
 ![checked](http://imgur.com/ypB5rBp.gif)
 
