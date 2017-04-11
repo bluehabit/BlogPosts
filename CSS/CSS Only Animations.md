@@ -515,7 +515,7 @@ After:
 `transform: rotate(395deg) translate(130px, 120px) scale(.69)`.
 
 
-## Animation Properties
+# Animation Properties
 
 `animation-name` the name of the `@keyframes` animation you want to play
 
@@ -576,7 +576,7 @@ The `animation-iteration-count`
 
 `#` value
 
-## filter: blur()
+# filter: blur()
 
 ![motion-blur](http://imgur.com/6o4JRXV.gif)
 
