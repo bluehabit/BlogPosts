@@ -518,9 +518,10 @@ Codepen: http://codepen.io/bluehabit/pen/zwOxNZ
 Next lets explore animating SVGs (scaleable vector graphics). Unlike pixel based images that can become blurry and distorted once scaled beyond their intended resolution, SVGs can scale to any size small, or large, and still maintain their graphical fidelity. 
 
 SVGs can be found all over the internet, a few of my favorite resources to download them include:
+* http://www.flaticon.com
+* http://fontawesome.io/
 
 You can also create your own using Adobe Illustrator if that is your fancy.
-
 After downloading a SVG you can open the source in your text editor and it may look a bit complicated. 
 
 ![raw-svg](http://imgur.com/z5qviZQ.png)
