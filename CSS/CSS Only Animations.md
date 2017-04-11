@@ -519,6 +519,23 @@ Codepen: http://codepen.io/bluehabit/pen/WjevQo
 
 `animation-delay` can set a delay before the animation plays. This is usefull because we can reuse the same animation for multiple elements on the screen, but stagger them using `animation-delay`. 
 
+Note in this example how I am giving a separate animation to the main `.container` so it fades in initially when the animation begins.
+
+```
+.container {
+  animation: fadeIn 1s 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1; 
+  }
+}
+```
+
 Codepen: http://codepen.io/bluehabit/pen/zwOxNZ
 
 ## animation-fill-mode
