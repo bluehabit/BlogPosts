@@ -546,7 +546,29 @@ After:
 
 `animation-delay` delays the start of the animation by a specific amount of time. For example `2s` or milliseconds `300ms`
 
-`animation-fill-mode` CSS animations by default do not effect the element until the first keyframe is played and stops once the last keyframe has finished. `animation-fill-mode` can override this behavior allowing to do things such as holding the last keyframe. 
+`animation-fill-mode` CSS animations by default do not effect the element until the first keyframe is played and stops once the last keyframe has finished. `animation-fill-mode` can override this behavior allowing to do things such as holding the last keyframe.
+
+## Animation Property Shorthand
+
+Animation properties also have a short hand version. 
+
+Before:
+
+```
+.snowflake {
+  animation: slowFall;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+```
+
+After:
+
+```
+.snowflake { 
+  animation: slowFall 2s forwards;
+}
+```
 
 ## Animation Delay
 
