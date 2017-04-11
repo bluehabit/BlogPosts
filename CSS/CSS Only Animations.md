@@ -7,7 +7,7 @@ More complex interactions may still require JS, and that is fine, but CSS has ma
 
 When I initialliay transitioned from building web components interactivity in JS to CSS only I was a bit perplexed. I struggled with the concept quite bit and often found myself questioning why I was bothering to learn this instead of writing a few lines of Javascript instead. If this is you in the beginning, stick with it and you may learn a new trick or two and add new improvements to your work flow.  
 
-It is my hope that this article will clearly illuminate and clear any obfuscation on the matter. As we move through the material you may find that I like to move from simple examples to complex. If you find yourself already knowledgeable on a particular subject matter or a particular example is too rudimentary, please feel welcome to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous.
+It is my hope that this article will clearly illuminate and clear any obfuscation on the matter. As we move through the material you may find that I like to move from simple examples to complex. If you find yourself already knowledgeable on a particular subject matter or a particular example is too rudimentary, please feel welcome to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous. In the final section of this blog post we will explore animating a weather sequence by hand using SVGs and techniques we have learned in this article.
 
 ## State Change - The Heart of the Matter
 ![heart-beat](http://imgur.com/3e2imS2.gif)
