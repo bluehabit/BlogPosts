@@ -596,6 +596,10 @@ Next we have a `div` container with a class of `.weather` that is storing our we
 }
 ```
 
+Here is what we have so far:
+
+![clouds](http://imgur.com/UZ9hdri.png)
+
 Our clouds are looking a bit stagnant, don't you think? Lets breathe some life into them and start animating. First lets define our animation. 
 
 ```
