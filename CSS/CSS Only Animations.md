@@ -713,6 +713,24 @@ Here is what you should have so far:
 
 ![thunder-bolt](http://imgur.com/wNj048X.gif)
 
+### Animating Snow Flakes
+
+Lets get started animating the snow flakes. To do this we are going to create a new `@keyframes` with the name `snowflake` for our new animation. To bring life to the snow flakes we will predominantly be using `transform: rotate` to make the snowflakes appear to spin as they flutter towards the ground. For a final touch we will add `opacity:0` to make the snowflakes disappear as they approach the ground. 
+
+```
+@keyframes snowflake {
+	0%{
+		transform: rotate(180deg);
+	}
+
+	95% {
+		transform: rotate(395deg) translate(130px, 120px) scale(.69);
+	}
+  100%{
+    opacity: 0;
+  }
+}
+```
 
 
 ## Additional Resources
