@@ -507,6 +507,12 @@ Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 
 ## Animation Property Shorthand
 
+## Filter grayscale, blur etc.
+
+## grayscale
+
+![weth](http://imgur.com/0SPt9K3.gif)
+
 ## Animation Delay
 
 `animation-delay` can set a delay before the animation plays.
@@ -558,11 +564,6 @@ Raw SVG with edited path names: http://codepen.io/bluehabit/pen/vmBWzJ
 
 Begin by pasting the raw `svg` code into our `index.html` file. 
 
-## Filter grayscale, blur etc.
-
-## grayscale
-
-![weth](http://imgur.com/0SPt9K3.gif)
 
 Codepen: http://codepen.io/bluehabit/pen/WjevQo
 
