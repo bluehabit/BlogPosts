@@ -495,8 +495,19 @@ Codepen: http://codepen.io/bluehabit/pen/rmBaPG
 
 ## Cubic-bezier
 
-## One line Transforms
-## transform: rotate(395deg) translate(130px, 120px) scale(.69);
+## Transforms Shorthand
+Transformations can all be written on a single line. Instead of putting each transformation on its own line.
+
+Before:
+```
+transform: rotate(395deg);
+transform: translate(130px, 120px);
+transform: scale(.69)
+```
+
+After:
+`transform: rotate(395deg) translate(130px, 120px) scale(.69)`.
+
 
 ## Animation Properties
 
