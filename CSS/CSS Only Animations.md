@@ -521,6 +521,10 @@ SVGs can be found all over the internet, a few of my favorite resources to downl
 
 You can also create your own using Adobe Illustrator if that is your fancy.
 
+After downloading a SVG you can open the source in your text editor and it may look a bit complicated. 
+
+![raw-svg](http://imgur.com/z5qviZQ.png)
+
 ## What we will be building
 
 ![animated-weather](http://imgur.com/P3XLMzt.gif)
