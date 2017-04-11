@@ -794,4 +794,5 @@ Here is what your final animation should look like:
 ## Additional Resources
 
 * http://animista.net/
+* https://robots.thoughtbot.com/css-animation-for-beginners#building-block-1-keyframes
 
