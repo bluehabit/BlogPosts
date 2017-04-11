@@ -735,6 +735,25 @@ Lets get started animating the snow flakes. To do this we are going to create a 
 }
 ```
 
+```
+.snowflake1, .snowflake2, .snowflake3 {
+	animation: snowflake 3s ease infinite;
+	transform-origin: center;
+}
+  
+.snowflake3 {
+	animation: snowflake 3s ease infinite;
+  	animation-delay: .34s;
+	transform-origin: center;
+}
+  
+ .snowflake2 {
+	animation: snowflake 3s ease infinite;
+  	animation-delay: .48s;
+	transform-origin: center;
+}
+```
+
 Here is what your final animation should look like:
 
 ![final-animation](http://imgur.com/XwmTj1T.gif)
