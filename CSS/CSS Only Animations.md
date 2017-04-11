@@ -718,7 +718,7 @@ Here is what you should have so far:
 
 ### Animating Snow Flakes
 
-Lets get started animating the snow flakes. To do this we are going to create a new `@keyframes` with the name `snowflake` for our new animation. To bring life to the snow flakes we will predominantly be using `transform: rotate` to make the snowflakes appear to spin as they flutter towards the ground. For a final touch we will add `opacity:0` to make the snowflakes disappear as they approach the ground. 
+Lets get started animating the snow flakes. To do this we are going to create a new `@keyframes` with the name `snowflake` for our new animation. To bring life to the snow flakes we will predominantly be using `transform: rotate` to make the snowflakes appear to spin as they flutter towards the ground. For a final touch we will add `opacity:0` and `scale(.69)` to make the snowflakes shrink and disappear as they approach the ground. 
 
 ```
 @keyframes snowflake {
