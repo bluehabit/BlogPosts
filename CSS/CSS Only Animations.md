@@ -575,6 +575,8 @@ html {
 
 As you may have noticed, these SVGs in there default state are huge. We will go ahead and start working directly with the individual SVGs now. Lets shrink their `width` and `height` to `90px` and set their fill color to `white`. `Fill` to set the color of SVG paths, instead of using properties such as `background-color`. Lastly we will add a bit of breathing room between the two clouds using `margin-left: 50px`.  
 
+Notice how we are selecting these elements with a combinator as discussed earlier. We aer selecting the `.weather` container and all of its direct children of type `svg` with the `>` symbol. 
+
 ```
 .weather > svg {
 	width: 90px;
@@ -591,6 +593,33 @@ Next we have a `div` container with a class of `.weather` that is storing our we
 	width: 50%;
 	margin: 0 auto;
 	margin-top: 20%;
+}
+```
+
+Our clouds are looking a bit stagnant, don't you think? Lets breathe some life into them and start animating. First lets define our animation. 
+
+```
+@keyframes cloudBreath{
+	0%{
+		transform: scale(1.12);
+		opacity: 55;
+	}
+	50%{
+		transform: scale(1.2);
+		opacity: 15;
+	}
+	100%{
+		transform: scale(1.12);
+		opacity: 25;
+	}
+}
+```
+
+As you may have noticed there is some clipping occuring from the animation. The clouds seem to be cut off by a wall. We can fix this by adding some breathing room to the SVGs with some `padding`. 
+
+```
+svg{
+  padding: 35px;
 }
 ```
 
