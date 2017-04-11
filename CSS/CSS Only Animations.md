@@ -350,7 +350,11 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
 ## Using Targeted URI's for Animations
 
-Modal example
+Another method we will utilize for building animations with CSS only revolves around using the `href` attribute of `a` tags. Whenever you visit a link. We can use the `id` to create a unique URL to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. 
+
+![target-uri](http://imgur.com/N0BmIKz.gif);
+
+Codepen: http://codepen.io/bluehabit/pen/pPzzWp
 
 ## The Building Blocks of Animation
 
@@ -412,6 +416,10 @@ The animation properties are added to the CSS selectors (or elements) that you w
 
 * `animation-name`: The name of the animation, defined in the `@keyframes`
 * `animation-duration`: The duration of the animation, in seconds (e.g., 5s) or milliseconds (e.g., 200ms).
+
+## Cubic-bezier
+
+## Animation Properties
 
 ## Animation Delay
 
