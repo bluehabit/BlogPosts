@@ -725,7 +725,7 @@ Now lets grab our thunder bolt shapes in the SVG with their classes `.bolt1` and
 }
 ```
 
-One thing you might notice is `transform: translateY(-50px)` and `transform: translateY(25px)` in the selectors shown above. What we are doing here is using `translate` to adjust the default positioning of the SVG shapes so they are more staggered before the animation begins. 
+One thing you might notice is `transform: translateY(-50px)` and `transform: translateY(25px)` in the selectors shown above. What we are doing here is using `translate` to adjust the default positioning of the SVG shapes so they are more staggered before the animation begins. Similar to giving a parent element a position of `relative` and a child element you want to reposition `absolute` and using `top, left, right, bottom` to finely adjust its position. 
 
 #### Before
 
