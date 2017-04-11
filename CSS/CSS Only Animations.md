@@ -540,7 +540,13 @@ Codepen: http://codepen.io/bluehabit/pen/zwOxNZ
 
 ## animation-fill-mode
 
-`forwards` useful for holding the last keyframe of an animation. 
+`normal` default behavior
+
+Codepen: http://codepen.io/bluehabit/pen/eWOVYG
+
+`forwards` useful for holding the last keyframe of an animation. Notice how the ball remains at the right hand side of the screen.
+
+Codepen: http://codepen.io/bluehabit/pen/ZKzrEJ
 
 ## filter: blur()
 
