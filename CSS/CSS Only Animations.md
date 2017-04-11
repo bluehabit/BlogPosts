@@ -529,16 +529,16 @@ After downloading a SVG you can open the source in your text editor and it may l
 If you have a copy of Adobe Illustrater you can actually view the different layers as they are named within the editor. This makes it easy to visualize what is what before you start targeting different sections in CSS. However, a good portion of the SVGs you download off the internet unfortunately will not be labeled. 
 
 ![svg-adobe](http://imgur.com/JJRBQmO.jpg)
+
 Pictured above, opening a SVG image in Adobe Illustrator and viewing different layer names. 
 
-## What we will be building
+## Building a Weather Animation
 
 ![animated-weather](http://imgur.com/P3XLMzt.gif)
 
+Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2 if you would like to follow along the SVGs from this pack that we will be using for our demo include `storm.svg` and `snowing.svg`. 
 
-## Weather Animation
-
-Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2
+Begin by pasting the raw `svg` code into our `index.html` file. 
 
 ## Filter grayscale, blur etc.
 
