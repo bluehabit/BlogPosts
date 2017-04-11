@@ -555,9 +555,11 @@ Animation properties also have a short hand version.
 Before:
 
 ```
-.snowflake {
-  animation: slowFall;
-  animation-duration: 2s;
+.item:hover .ball{
+  animation: motionBlur;
+  animation-timing-function: ease;
+  animation-duration: 1.3s;
+  animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 ```
@@ -565,8 +567,8 @@ Before:
 After:
 
 ```
-.snowflake { 
-  animation: slowFall 2s forwards;
+.item:hover .ball {
+  animation: motionBlur 1.3s 1 ease forwards;
 }
 ```
 
