@@ -710,6 +710,8 @@ After:
 
 ## Animating SVGs
 
+### Intro to SVGs
+
 Next lets explore animating SVGs (scaleable vector graphics). Unlike pixel based images that can become blurry and distorted once scaled beyond their intended resolution, SVGs can scale to any size small, or large, and still maintain their graphical fidelity. 
 
 SVGs can be found all over the internet, a few of my favorite resources to download them include:
@@ -726,6 +728,12 @@ If you have a copy of Adobe Illustrater you can actually view the different laye
 ![svg-adobe](http://imgur.com/JJRBQmO.jpg)
 
 Pictured above, opening a SVG image in Adobe Illustrator and viewing different layer names. 
+
+### Targetting SVGs with CSS
+
+Lets take a look at this SVG of a kiwi http://codepen.io/bluehabit/pen/vmBPLK. As you look through the HTML markup you will see different sections such as `path` and `ellipse` these represent different shape layers in the Adobe Illustrator document. Notice how the `path` has an `id` of `bird`, while the `ellipse` has an `id` of `shadow`. We can target these elements just like anything else with CSS and change their color. 
+
+![kiwi](http://imgur.com/a/MibJa.png)
 
 ## Building a Weather Animation
 
