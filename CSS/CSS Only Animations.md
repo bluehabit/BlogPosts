@@ -737,11 +737,13 @@ Lets take a look at this SVG of a kiwi http://codepen.io/bluehabit/pen/vmBPLK. A
 
 ## Building a Weather Animation
 
+Now that we know how to target SVGs with CSS lets put our animation skills to the test. Here is what we will be building:
+
 ![animated-weather](http://imgur.com/P3XLMzt.gif)
 
 Finished Codepen: http://codepen.io/bluehabit/pen/mWgeRo
 
-Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2 if you would like to follow along the SVGs from this pack that we will be using for our demo include `storm.svg` and `snowing.svg`. Alternativly, copy and paste the raw SVG code from the codepen here. The benefit to using this is the paths have already been assigned classes by me so they are easy to target. The raw SVG does not have names by default, and unless you have adobe illustrator to view the different paths, you will have to figure out which path represents what by trial and error. 
+Lets Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2 if you would like to follow along the SVGs from this pack that we will be using for our demo include `storm.svg` and `snowing.svg`. Alternativly, copy and paste the raw SVG code from the codepen here. The benefit to using this is the paths have already been assigned classes by me so they are easy to target. The raw SVG does not have names by default, and unless you have adobe illustrator to view the different paths, you will have to figure out which path represents what by trial and error. 
 
 Raw SVG with edited path names: http://codepen.io/bluehabit/pen/vmBWzJ
 
