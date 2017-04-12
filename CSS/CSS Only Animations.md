@@ -117,7 +117,7 @@ Combinators are symbols that explain the relationship between selectors. Lets pu
 
 Codepen: http://codepen.io/bluehabit/pen/RpmWVe
 
-Lets begin by using a **descendant** selector to target all `li`s that are a descendant of a `ul` tag, and make them have the `background-color` `#4d74f0`. Note the space between the `li` tag and the `ul` tag indicates this is using the descendant selector.
+Lets begin by using a **descendant** selector to target all `li`s that are a descendant of a `ul` tag, and then make them have the `background-color` `#4d74f0`. Note the space between the `li` tag and the `ul` tag indicates this is using the descendant selector.
 
 ```
 ul li {
@@ -127,16 +127,17 @@ ul li {
 
 ![example1](http://imgur.com/OAFEj3P.png)
 
-For our next example we are targeting the class `.penguinInformation` then we are using the child selector `>` to target all `p` tags  that are children of that class.
+For our next example we are targeting the class `.penguinInformation` then we are using the child selector `>` to target all `p` tags  that are children of that class and making them `color: pink`.
 
 ```
 .penguinInformation > p {
 	color: pink;
 }
 ```
------
 
-![example2](http://imgur.com/o7orRpd.png)
+![example2](http://imgur.com/P9gJJJf.png)
+
+-----
 
 Lets look at our next selector, we are targeting the `.penguinInformation`, and once again using the child selector `>` to target all `p` tags that are direct children of the class specified. In addition, we are now using the adjacent sibling selector `+` to select all `h3` tags that are adjacent siblings to the `p` tags. 
 
