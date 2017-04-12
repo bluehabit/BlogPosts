@@ -427,23 +427,23 @@ The `:target` pseudo-class will look for an element with an `id` matching the fr
 
 ![fragment](http://imgur.com/kA5QI16.png)
 
-Let's say you are visiting wikipedia to read more information about the history of the automobile. The main page you would likely land on is `https://en.wikipedia.org/wiki/Car`. Many times sections have their own unique ID, so that the user can click a page and the page will automatically jump to that section.
+Let's say you are visiting wikipedia to read more information about the history of the automobile. The main page you would likely land on is `https://en.wikipedia.org/wiki/Car`. Many times sections have their own unique ID, so that the user can click a particular link on the table of contents and the page will automatically jump to that section.
 
 Lets continue looking at our wikipedia example. If we view the page source for different sections we can see a pattern emerging. Each section has its own unique ID that will serve as *fragment identifier*. 
 
 `<h2><span class="mw-headline" id="History">History</span></h2>`
 
-Notice the `id` of `History`
+Notice the `id` of `History`, this will be the  *fragment identifier* in the URI for this section. 
 
 `<h2><span class="mw-headline" id="Safety">Safety</span></h2>`
 
-Notice the `id` of `Safety`
+Notice the `id` of `Safety`, this will be the  *fragment identifier* in the URI for this section. 
 
 `<h2><span class="mw-headline" id="Environmental_impact">Environmental impact</span></h2>`
 
-Notice the `id` of `Environmental_impact` 
+Notice the `id` of `Environmental_impact`, this will be the  *fragment identifier* in the URI for this section. 
 
-You get the idea. The point is we can target these *fragment identifiers* in our URIs to jump to specific sections of the page. From our root URL `https://en.wikipedia.org/wiki/Car` we can add the fragment identifier to jump, all we are doing is providing the `id` as part of the fragment identifier to jump to that section. 
+You get the idea. The point is we can target these *fragment identifiers* in our URIs to jump to specific sections of the page. From our root URL `https://en.wikipedia.org/wiki/Car` we can add the fragment identifiers to jump, all we are doing is providing the `id` as part of the fragment identifier to jump to that section. 
 
 `https://en.wikipedia.org/wiki/Car#History` will jump to the History section, notice at the top of your browser how `#History` is added to the URI.
 
@@ -473,27 +473,37 @@ When the `id` *alert1* is the `:target` it will change the background-color to p
 
 Codepen: http://codepen.io/bluehabit/pen/OmLLQb
 
-## The Building Blocks of Animation
+## CSS Animations
 
 CSS animations are made up of two basic building blocks.
 
 **Keyframes** - define the stages and styles of the animation.
 
-**Animation Properties** - assigned using the **@keyframes** to a specific CSS element and define how it is animated.
-Let’s look at each individually.
+**Animation Properties** - assigned using the **@keyframes** to specific CSS elements and define how it will be animated.
 
 ### Building Block #1: Keyframes
 
-Keyframes are the foundation of CSS animations. They define what the animation looks like at each stage of the animation timeline. Each @keyframes is composed of:
+Keyframes are the foundation of CSS animations. They define what the animation looks like at each stage of the animation timeline. Eacg stage of an animation is known as a keyframe. Each @keyframes is composed of:
 
 * **Name of the Animation**: A name that describes the animation, for example `fadeOut`. 
-* **Stages of teh Animation**: Each stage of the animation is represented as a percentage. `0%` represents the beginning state of the animation. `100%` represents the ending state of the animation. Multiple intermediate states can be added in between.
-* **CSS Properties**: The CSS properties defined for each stage of the animation timeline.
+* **Stages of thh Animation**: Each stage of the animation is represented as a percentage. `0%` represents the beginning state of the animation. `100%` represents the ending state of the animation. Multiple intermediate states can be added in between. Note, you can use the keyword `from` instead of `0%` and `to` instead of `100%`. 
+* **CSS Properties**: The CSS properties defined for each stage of the animation timeline, each stage of the animation can have its own unique CSS properties.
 
 ![box-spin](http://imgur.com/39pnhqX.gif)
 
-Lets take a look at a simple `@keyframes` I've created named *'rotate360'*. This `@keyframes` has two stages, aka keyframes. At the first stage `0%` we have a `transform: rotate(0deg)`. In the final stage we set the transform value to `transform: rotate(360deg)`. The end result is the box rotating a full 360deg. 
+Lets take a look at a simple `@keyframes` I've created named *'rotate360'*. This `@keyframes` has two stages, aka 2 keyframes. At the first stage `0%` we have a `transform: rotate(0deg)`. In the final stage we set the transform value to `transform: rotate(360deg)`. The end result is the box rotating a full 360deg. 
 
+Notice that the element we are targeting, in this case a `div` which representing a green box,  is where we specify the `animation` to occur. Not only that be also specify a `animation-duration`, `animation-timing-function` and `animation-iteration-count`. More on these properties later.
+
+
+Element
+```
+div {
+  animation: rotate360 3s linear infinite;
+}
+```
+
+Animation
 ```
 @keyframes rotate360 {
   0% {
@@ -507,18 +517,6 @@ Lets take a look at a simple `@keyframes` I've created named *'rotate360'*. This
 
 Codepen: http://codepen.io/bluehabit/pen/bqXqqG
 
-Alternativley, if a animation only has two stages you can use the keyword `from` for `0%` and `to` for `100%` as shown in the example below. 
-
-```
-@keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-```
 
 ### Building Block #2: Animation Properties
 
@@ -532,79 +530,9 @@ Animation properties do two things:
 The animation properties are added to the CSS selectors (or elements) that you want to animate. You must add the following two animation properties for the animation to take effect:
 
 * `animation-name`: The name of the animation, defined in the `@keyframes`
-* `animation-duration`: The duration of the animation, in seconds (e.g., 5s) or milliseconds (e.g., 200ms).
+* `animation-duration`: The duration of the animation, in seconds (e.g., 5s) or milliseconds (e.g., 200ms
 
-## TranslateX
-
-![translateX](http://imgur.com/biPSpYR.gif)
-
-Moves the element horizontally, left or right. 
-
-Codepen: http://codepen.io/bluehabit/pen/OmLPrL
-
-## TranslateY
-
-![translateY](http://imgur.com/2RplRik.gif)
-
-Moves the element vertically, up or down. 
-
-Codepen: http://codepen.io/bluehabit/pen/OmLPdJ
-
-## Scale
-
-![scale](http://imgur.com/rSaxI2Z.gif)
-
-Modifies the size of an element, it can either enlarge in size or shrink.
-
-Codepen: http://codepen.io/bluehabit/pen/KmPKNr
-
-## Rotate
-
-![rotate](http://imgur.com/nzi2h7a.gif)
-
-Defines an angle to rotate an element. There is also `rotateX`, `rotateY` and `rotateZ`. 
-
-Codepen: http://codepen.io/bluehabit/pen/bqXqqG
-
-## Opacity
-
-![opacity](http://imgur.com/PpA3isn.gif)
-
-Sets how transparent an element is on the scale from `0` to `1`. For example `opacity{0.25}`.
-
-Codepen: http://codepen.io/bluehabit/pen/rmBaPG
-
-## Cubic-bezier
-
-Can be used to give your more control over your `animation-timing-function`. 
-
-Before:
-```
-.item:hover .ball {
-  animation: motionBlur 1.3s 1 ease;
-}
-```
-
-After:
-```
-.item:hover .ball {
-  animation: motionBlur 5.3s 1 cubic-bezier(.09,1.83,.37,.78);
-}
-```
-
-## Transforms Shorthand
-Transformations can all be written on a single line. Instead of putting each transformation on its own line.
-
-Before:
-```
-transform: rotate(395deg);
-transform: translate(130px, 120px);
-transform: scale(.69)
-```
-
-After:
-`transform: rotate(395deg) translate(130px, 120px) scale(.69)`.
-
+Lets take a look at a few commonly used animation properties individually. 
 
 # Animation Properties
 
@@ -680,6 +608,8 @@ Codepen: http://codepen.io/bluehabit/pen/ZKzrEJ
 
 ## Filter Properties
 
+We can also use `filter` properties with our animations to create stunning effects.
+
 ## grayscale
 
 ![weth](http://imgur.com/0SPt9K3.gif)
@@ -705,6 +635,78 @@ Codepen: http://codepen.io/bluehabit/pen/GmKMLj
 Codepen: http://codepen.io/bluehabit/pen/GmKMLj
 
 -----
+
+
+## TranslateX
+
+![translateX](http://imgur.com/biPSpYR.gif)
+
+Moves the element horizontally, left or right. 
+
+Codepen: http://codepen.io/bluehabit/pen/OmLPrL
+
+## TranslateY
+
+![translateY](http://imgur.com/2RplRik.gif)
+
+Moves the element vertically, up or down. 
+
+Codepen: http://codepen.io/bluehabit/pen/OmLPdJ
+
+## Scale
+
+![scale](http://imgur.com/rSaxI2Z.gif)
+
+Modifies the size of an element, it can either enlarge in size or shrink.
+
+Codepen: http://codepen.io/bluehabit/pen/KmPKNr
+
+## Rotate
+
+![rotate](http://imgur.com/nzi2h7a.gif)
+
+Defines an angle to rotate an element. There is also `rotateX`, `rotateY` and `rotateZ`. 
+
+Codepen: http://codepen.io/bluehabit/pen/bqXqqG
+
+## Opacity
+
+![opacity](http://imgur.com/PpA3isn.gif)
+
+Sets how transparent an element is on the scale from `0` to `1`. For example `opacity{0.25}`.
+
+Codepen: http://codepen.io/bluehabit/pen/rmBaPG
+
+## Cubic-bezier
+
+Can be used to give your more control over your `animation-timing-function`. 
+
+Before:
+```
+.item:hover .ball {
+  animation: motionBlur 1.3s 1 ease;
+}
+```
+
+After:
+```
+.item:hover .ball {
+  animation: motionBlur 5.3s 1 cubic-bezier(.09,1.83,.37,.78);
+}
+```
+
+## Transforms Shorthand
+Transformations can all be written on a single line. Instead of putting each transformation on its own line.
+
+Before:
+```
+transform: rotate(395deg);
+transform: translate(130px, 120px);
+transform: scale(.69)
+```
+
+After:
+`transform: rotate(395deg) translate(130px, 120px) scale(.69)`.
 
 ## Animating SVGs
 
