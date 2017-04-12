@@ -733,7 +733,7 @@ Pictured above, opening a SVG image in Adobe Illustrator and viewing different l
 
 Lets take a look at this SVG of a kiwi http://codepen.io/bluehabit/pen/vmBPLK. As you look through the HTML markup you will see different sections such as `path` and `ellipse` these represent different shape layers in the Adobe Illustrator document. Notice how the `path` has an `id` of `bird`, while the `ellipse` has an `id` of `shadow`. We can target these elements just like anything else with CSS and change their color. 
 
-![kiwi](http://imgur.com/a/MibJa.png)
+![kiwi](http://imgur.com/hVt9Mfa.png)
 
 ## Building a Weather Animation
 
