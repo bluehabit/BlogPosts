@@ -148,7 +148,7 @@ Lets look at our next selector, we are targeting the `.penguinInformation`, and 
 	color: green;
 }
 ```
------
+
 
 ![example3](http://imgur.com/cS8taNG.png)
 
