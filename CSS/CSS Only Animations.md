@@ -127,6 +127,8 @@ ul li {
 
 ![example1](http://imgur.com/OAFEj3P.png)
 
+-----
+
 For our next example we are targeting the class `.penguinInformation` then we are using the child selector `>` to target all `p` tags  that are children of that class and making them `color: pink`.
 
 ```
