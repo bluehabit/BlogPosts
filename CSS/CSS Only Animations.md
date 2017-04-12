@@ -35,7 +35,7 @@ var checkbox = document.getElementById('checkbox');
 ```
 
 ### Console.dir()
-We can use `console.dir()` to view all the methods and properties available to the HTML element object. In the example below, look at all the available methods and properties available to us on the HTML element radio object. 
+We can use `console.dir()` to view all the methods and properties available to the HTML element object. In the example below, look at all the available methods and properties available to us on the HTML element radio object. The property that we are keenly of the HTML element object we are interested in is `.checked`.
 ![consoledir](http://imgur.com/9Ta5d6x.gif)
 
 #### .checked
