@@ -109,7 +109,7 @@ For siblings, look for multiple elements on the *same level* sharing the *same p
 Look one level directly below the current parent element, that is the child. 
 
 ### Descendant Selector (no symbol, use a space between two selectors)
-Follow the branches of a parent element downward to identify all of its descendants. 
+*Any* node underneath a parent element can be considered a descendant. 
 
 ### Combinators
 
