@@ -85,22 +85,22 @@ For the sake of being thorough lets quickly review class and Id selectors. **Ids
 
 Codepe: http://codepen.io/bluehabit/pen/vxwOyx
 
-### DOM Tree
-Before we can start building web components, we must first understand how to drill down and select very specific elements on the DOM. We will perform advanced selections using CSS combinators that will be discussed in greater detail in the coming section. But before we do that lets review the concept behind the Document Object Model. 
+### Document Object Model (DOM) Tree
+Before we can start building web components, we must first understand how to drill down and select very specific elements on the DOM. We will learn to perform advanced selections using CSS combinators, but before we do that lets review the concept behind the Document Object Model. 
 
-We can think of the DOM as a giant tree, with firm roots planted in the soil with branches reaching uptowards the sky. Each branch forks outward and forges its own path towards the heavens. The root of our tree is the `html` tag. Everything else is a descendant that originates from it. Lets take a look at what an actual DOM tree might look like with the help of this diagram. 
+We can think of the DOM as a giant tree, with firm roots planted in the soil and branches reaching uptowards the sky. Each branch forks outward and forges its own path towards the heavens. The root of our tree is the `html` tag. Everything else is a descendant that originates from it. Lets take a look at what an example DOM tree might look like with the help of this diagram. 
 
 ![DOM-tree](http://imgur.com/2iEmXaT.png)
 
-In this example we can see a fairly typical HTML structure. Here the `nav` tag that is serving as the parent element. Everything **below** this `nav` tag is considered a descendant. The `ul` tag is a descendant of the parent element `nav` and also its child. 
+In this example we can see a fairly typical HTML structure. Here the `nav` tag is serving as the parent element. Everything **below** this `nav` tag is considered a descendant. The `ul` tag is a descendant of the parent element `nav` and also its child. 
 
 The `ul` then has descendants of its own in the form of `li` and `a` tags. However, the `li` items are its direct children. Notice how the `li`s are all on the same level. Because they are on the same level, and share a parent element, these are all siblings. 
 
 ### Type Selectors
-Combinators are symbols that explain the relationship between selectors. There are 4 combinators that we will review. 
+There are 4 type selectors that we will review. 
 
 ### Adjacent Sibling Selector +
-For siblings, look for multiple elements on the *same level* sharing the *same parent*. This selector will select an adjacent sibling. 
+For siblings, look for multiple elements on the *same level* sharing the *same parent*. This selector will select an *adjacent* sibling. 
 
 ### General Sibling Selector ~
 For siblings, look for multiple elements on the *same level* sharing the *same parent*. This selector will select all siblings.
@@ -113,7 +113,7 @@ Follow the branches of a parent element downward to identify all of its descenda
 
 ### Combinators
 
-Lets put this into practice and work through a few examples selecting elements using combinators. In addition, I highly suggest reading through the selectors through in your mind to very clearly identify what a given combinator is targeting. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. 
+Combinators are symbols that explain the relationship between selectors. Lets put this into practice and work through a few examples. In addition, I highly suggest reading through the selectors through in your mind or out loud to very clearly identify what a given combinator is targeting. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. 
 
 Codepen: http://codepen.io/bluehabit/pen/RpmWVe
 
