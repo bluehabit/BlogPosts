@@ -152,7 +152,7 @@ Lets look at our next selector, we are targeting the `.penguinInformation`, and 
 
 ![example3](http://imgur.com/cS8taNG.png)
 
------
+
 
 Lastly, we will target all `label` elements that are general siblings of the `.penguinInformation` class. We will do this using the general sibling selector symbol `~`. 
 
