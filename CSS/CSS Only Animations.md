@@ -929,7 +929,7 @@ Lets get started animating the snow flakes. To do this we are going to create a 
 
 One important thing to note when using `transform: rotate` you need to specify where the `transform-origin` is. By using `transform-origin: center` it anchors the rotate to the center of each snowflake. Otherwise, strange undesirable rotations may occur. 
 
-If you don't use `transform-origin: center` this happens:
+If you don't use `transform-origin: center` this happens, while an interesting effect, its not quite what we are trying to achieve.
 
 ![strange-transform](http://imgur.com/rDIv1CL.gif)
 
