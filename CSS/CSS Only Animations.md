@@ -1,8 +1,8 @@
 ## CSS Only Animations
 
-Most of us learn the term *'seperation of concerns'* when it comes to web developement. In practice this means seperating markup into its own html, the visual and aesthetic preferences into a CSS file, and the behavior and interaction of the program into a javascript file. However, we are going to do something a bit different. We are going to focus on building web components and animations using only CSS, no javascript required.More complex interactions may still require JS, and that is fine, but CSS has made it possible to do quite a bit without it - and that will be the focus of this blog post. 
+Most of us learn the term *'separation of concerns'* when it comes to web development. In practice this means separating markup into its own html, the visual and aesthetic preferences into a CSS file, and the behavior and interaction of the program into a JavaScript file. However, we are going to do something a bit different. We are going to focus on building web components and animations using only CSS, no JavaScript required. More complex interactions may still require JS, and that is fine, but CSS has made it possible to do quite a bit without it - and that will be the focus of this blog post. 
 
-When I initialliay transitioned from building web components interactivity in javascript to CSS only I was a bit perplexed. I struggled with the concept quite bit and often found myself questioning why I was bothering to learn this instead of writing a few lines of javascript instead. If this is you in the beginning, stick with it and you may learn a new trick or two and add new improvements to your work flow.  
+When I initially transitioned from building web components interactivity in JavaScript to CSS only I was a bit perplexed. I struggled with the concept quite bit and often found myself questioning why I was bothering to learn this instead of writing a few lines of JavaScript instead. If this is you in the beginning, stick with it and you may learn a new trick or two and add new improvements to your work flow.  
 
 It is my hope that this article will clearly illuminate and clear any confusion on the matter. As we move through the material you may find that I like to move from simple examples to more complex. If you find yourself already knowledgeable on a particular subject matter, or if a particular example is too rudimentary, please feel free to skip ahead. If not, please continue to hold the course as each section of this article builds on the previous. 
 
@@ -11,6 +11,7 @@ There will be several web components we build throughout this article such as: i
 Lets get started.
 
 ## State Change - The Heart of the Matter
+
 ![heart-beat](http://imgur.com/3e2imS2.gif)
 
 When it comes to animation using CSS only there is one central concept that allows this to work. The idea is managing different **states** of HTML elements. The elements that we will pay particular attention to revolve around the `input` tag and its `type` attribute. 
@@ -18,7 +19,8 @@ When it comes to animation using CSS only there is one central concept that allo
 To be more specific `<input type="radio">` and `<input type="checkbox" >`.
 
 ## Input Type: Radio and Checkbox
-Every HTML element object has properties. HTML elements are just like any other object that we may be accustom to working within javascript, they have properties and methods. The property that we are particularly interested in for our purposes is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation. 
+
+Every HTML element object has properties. HTML elements are just like any other object that we may be accustom to working within JavaScript, they have properties and methods. The property that we are particularly interested in for our purposes is `.checked`, this is something every input type of radio and checkbox have. We can leverage this to our advantage to manage the different states of our animation. 
 
 In the case of the radio and checkbox input element they have two states, checked or unchecked. Just like a light switch that has two states, on or off.
 
@@ -34,11 +36,11 @@ var checkbox = document.getElementById('checkbox');
 
 ### Console.dir()
 We can use `console.dir()` to view all the methods and properties available to the HTML element object. In the example below, look at all the available methods and properties available to us on the HTML element radio object. 
-
 ![consoledir](http://imgur.com/9Ta5d6x.gif)
 
 #### .checked
-This will provide us with a boolean value indicating the status of a given input element. As you might expect, the value of `.checked` is false when the input element has not been selected, conversley it will become true once selected. See the animation below for clarification. 
+
+This will provide us with a boolean value indicating the status of a given input element. As you might expect, the value of `.checked` is false when the input element has not been selected, conversely it will become true once selected. See the animation below for clarification. 
 
 ![checked](http://imgur.com/ypB5rBp.gif)
 
@@ -71,7 +73,7 @@ If the user clicks the *Topaz* label, it will now check the corresponding radio 
 <label for='diamond'>Diamond</label>
 ```
 
-Notice in the above example how we added a new attribute to each radio input. With the `name` attribute we gave the value of `gem-stones` to all items in the list, effectivley creating a collection of items that are related. Having a collection is useful because it only allows the user to select *one* item at a time when using a radio input. 
+Notice in the above example how we added a new attribute to each radio input. With the `name` attribute we gave the value of `gem-stones` to all items in the list, effectively creating a collection of items that are related. Having a collection is useful because it only allows the user to select *one* item at a time when using a radio input. 
 
 As you can see in the finished example below, when we click a label it will automatically select the corresponding radio button with the matching `id`, and we can only select one input element at a time from a given collection.
 
@@ -88,7 +90,7 @@ Codepe: http://codepen.io/bluehabit/pen/vxwOyx
 ### Document Object Model (DOM) Tree
 Before we can start building web components, we must first understand how to drill down and select very specific elements on the DOM. We will learn to perform advanced selections using CSS combinators, but before we do that lets review the concept behind the Document Object Model. 
 
-We can think of the DOM as a giant tree, with firm roots planted in the soil and branches reaching uptowards the sky. Each branch forks outward and forges its own path towards the heavens. The root of our tree is the `html` tag. Everything else is a descendant that originates from it. Lets take a look at what an example DOM tree might look like with the help of this diagram. 
+We can think of the DOM as a giant tree, with firm roots planted in the soil and branches reaching up towards the sky. Each branch forks outward and forges its own path towards the heavens. The root of our tree is the `html` tag. Everything else is a descendant that originates from it. Lets take a look at what an example DOM tree might look like with the help of this diagram. 
 
 ![DOM-tree](http://imgur.com/2iEmXaT.png)
 
@@ -243,7 +245,7 @@ Unicode Character Resources:
 
 ## Click Pseudo Class?
 
-As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunatley, it does not work for most animation requirements. With `:active` the user must hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
+As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunately, it does not work for most animation requirements. With `:active` the user must hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
 
 The solution to this problem is what we eluded to earlier, managing states of input elements. We will utilize the different states of the `input` radio or checkbox elements based on if they have been checked or not. This is how we will register when a user clicks the element. 
 
@@ -329,7 +331,7 @@ We will manage the state changes for the inputs so its corresponding content in 
 
 ### Setting Content to display:none
 
-As you may have noticed all of this information: 'stuff about furniture', 'stuff about homedecor' and 'stuff about kitchens' is visibile by default, we will need to change that. For this important step we will simply target the `.content` container and set its `divs` to `display:none`. We will use a combinator to accomplish this.
+As you may have noticed all of this information: 'stuff about furniture', 'stuff about homedecor' and 'stuff about kitchens' is visible by default, we will need to change that. For this important step we will simply target the `.content` container and set its `divs` to `display:none`. We will use a combinator to accomplish this.
 
 ```
 .content > div {
@@ -345,7 +347,7 @@ Its important here that we use the `display` property here and set its value to 
 
 ### id:checked Combinator
 
-The next very important concept is how we can use the type selector, in this case `id`, and combine it with a pseduo selector, in this case `:checked'`. 
+The next very important concept is how we can use the type selector, in this case `id`, and combine it with a pseudo selector, in this case `:checked'`. 
 
 Lets work through our first example. We only want the content for `furniture-content` to show up when its corresponding input element with the `id` of `furniture` is selected. We can provide this interactivity using the `id:checked` combinator.
 
@@ -415,7 +417,7 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
 ## Using Targeted URI's for Animations
 
-Another state method we will utilize for building animations revolves around using the `href` attribute of `a` elements. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector along with URI fragment identifiers that we will discuss in much greater detail. 
+Another state method we will utilize for building animations revolves around using the `href` attribute of `a` elements. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occurring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector along with URI fragment identifiers that we will discuss in much greater detail. 
 
 ![target-uri](http://imgur.com/N0BmIKz.gif)
 
@@ -574,7 +576,7 @@ After:
 
 ## Animation Delay
 
-`animation-delay` can set a delay before the animation plays. This is usefull because we can reuse the same animation for multiple elements on the screen, but stagger them using `animation-delay`. 
+`animation-delay` can set a delay before the animation plays. This is useful because we can reuse the same animation for multiple elements on the screen, but stagger them using `animation-delay`. 
 
 Note in this example how I am giving a separate animation to the main `.container` so it fades in initially when the animation begins.
 
@@ -597,11 +599,11 @@ Codepen: http://codepen.io/bluehabit/pen/zwOxNZ
 
 ## animation-fill-mode
 
-`normal` Default behavior. Notice in the example below how once the animation completes, it resets to the first keyframe. 
+`normal` Default behavior. Notice in the example below how once the animation completes, it resets to the first key frame. 
 
 Codepen: http://codepen.io/bluehabit/pen/eWOVYG
 
-`forwards` Useful for holding the last keyframe of an animation. Notice how the ball remains at the right hand side of the screen.
+`forwards` Useful for holding the last key frame of an animation. Notice how the ball remains at the right hand side of the screen.
 
 Codepen: http://codepen.io/bluehabit/pen/ZKzrEJ
 
@@ -712,7 +714,7 @@ After:
 
 ### Intro to SVGs
 
-Next lets explore animating SVGs (scaleable vector graphics). Unlike pixel based images that can become blurry and distorted once scaled beyond their intended resolution, SVGs can scale to any size small, or large, and still maintain their graphical fidelity. 
+Next lets explore animating SVGs (scalable vector graphics). Unlike pixel based images that can become blurry and distorted once scaled beyond their intended resolution, SVGs can scale to any size small, or large, and still maintain their graphical fidelity. 
 
 SVGs can be found all over the internet, a few of my favorite resources to download them include:
 * http://www.flaticon.com
@@ -723,13 +725,13 @@ After downloading a SVG you can open the source in your text editor and it may l
 
 ![raw-svg](http://imgur.com/z5qviZQ.png)
 
-If you have a copy of Adobe Illustrater you can actually view the different layers as they are named within the editor. This makes it easy to visualize what is what before you start targeting different sections in CSS. However, a good portion of the SVGs you download off the internet unfortunately will not be labeled. 
+If you have a copy of Adobe Illustrator you can actually view the different layers as they are named within the editor. This makes it easy to visualize what is what before you start targeting different sections in CSS. However, a good portion of the SVGs you download off the internet unfortunately will not be labeled. 
 
 ![svg-adobe](http://imgur.com/JJRBQmO.jpg)
 
 Pictured above, opening a SVG image in Adobe Illustrator and viewing different layer names. 
 
-### Targetting SVGs with CSS
+### Targeting SVGs with CSS
 
 Lets take a look at this SVG of a kiwi http://codepen.io/bluehabit/pen/vmBPLK. As you look through the HTML markup you will see different sections such as `path` and `ellipse` these represent different shape layers in the Adobe Illustrator document. Notice how the `path` has an `id` of `bird`, while the `ellipse` has an `id` of `shadow`. We can target these elements just like anything else with CSS and change their color. 
 
@@ -743,7 +745,7 @@ Now that we know how to target SVGs with CSS lets put our animation skills to th
 
 Finished Codepen: http://codepen.io/bluehabit/pen/mWgeRo
 
-Lets Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2 if you would like to follow along the SVGs from this pack that we will be using for our demo include `storm.svg` and `snowing.svg`. Alternativly, copy and paste the raw SVG code from the codepen here. The benefit to using this is the paths have already been assigned classes by me so they are easy to target. The raw SVG does not have names by default, and unless you have adobe illustrator to view the different paths, you will have to figure out which path represents what by trial and error. 
+Lets Lets download the SVG weather pack found here and follow along http://www.flaticon.com/packs/weather-forecast-2 if you would like to follow along the SVGs from this pack that we will be using for our demo include `storm.svg` and `snowing.svg`. Alternatively, copy and paste the raw SVG code from the codepen here. The benefit to using this is the paths have already been assigned classes by me so they are easy to target. The raw SVG does not have names by default, and unless you have adobe illustrator to view the different paths, you will have to figure out which path represents what by trial and error. 
 
 Raw SVG with edited path names: http://codepen.io/bluehabit/pen/vmBWzJ
 
@@ -758,7 +760,7 @@ html {
 
 As you may have noticed, these SVGs in there default state are huge. We will go ahead and start working directly with the individual SVGs now. Lets shrink their `width` and `height` to `90px` and set their fill color to `white`. `Fill` to set the color of SVG paths, instead of using properties such as `background-color`. Lastly we will add a bit of breathing room between the two clouds using `margin-left: 50px`.  
 
-Notice how we are selecting these elements with a combinator as discussed earlier. We aer selecting the `.weather` container and all of its direct children of type `svg` with the `>` symbol. 
+Notice how we are selecting these elements with a combinator as discussed earlier. We are selecting the `.weather` container and all of its direct children of type `svg` with the `>` symbol. 
 
 ```
 .weather > svg {
@@ -783,9 +785,9 @@ Here is what we have so far:
 
 ![clouds](http://imgur.com/UZ9hdri.png)
 
-Our clouds are looking a bit stagnant, don't you think? Lets breathe some life into them and start animating. First lets define our animation using `@keyframes`, I am going to call this animation `cloudBreath`. Next we will set 3 keyframes the first at `0%`, the next at `50%` and the last at `100%`. 
+Our clouds are looking a bit stagnant, don't you think? Lets breathe some life into them and start animating. First lets define our animation using `@keyframes`, I am going to call this animation `cloudBreath`. Next we will set 3 key frames the first at `0%`, the next at `50%` and the last at `100%`. 
 
-As we transition through the keyframes we are only modifying the `scale` of the element. The cloud shrinks and inflates slightly to give it a bit of life. 
+As we transition through the key frames we are only modifying the `scale` of the element. The cloud shrinks and inflates slightly to give it a bit of life. 
 
 ```
 @keyframes cloudBreath{
@@ -801,7 +803,7 @@ As we transition through the keyframes we are only modifying the `scale` of the 
 }
 ```
 
-Next we need to add the animation to our clouds. I have targeted the specific paths in the raw SVG and assigned them the classes `.cloud` and `.cloud2` both of these represent the two different cloud shapes in the SVG. Lets go ahead and give them `animation: cloudBreath 2s ease infinite`. We will use `infinite` for the `animation-iteration-count` so the animation loops continously over and over again. 
+Next we need to add the animation to our clouds. I have targeted the specific paths in the raw SVG and assigned them the classes `.cloud` and `.cloud2` both of these represent the two different cloud shapes in the SVG. Lets go ahead and give them `animation: cloudBreath 2s ease infinite`. We will use `infinite` for the `animation-iteration-count` so the animation loops continuously over and over again. 
 
 ```
 .cloud{
@@ -818,7 +820,7 @@ Next we can recycle the same animation and use it for `cloud2` only we will add 
 }
 ```
 
-As you may have noticed there is some clipping occuring from the animation. The clouds seem to be cut off by a wall, as you can see in the example below. We can fix this by adding some breathing room to the SVGs with some `padding`. 
+As you may have noticed there is some clipping occurring from the animation. The clouds seem to be cut off by a wall, as you can see in the example below. We can fix this by adding some breathing room to the SVGs with some `padding`. 
 
 #### Clipping Example
 ![clipping-example](http://imgur.com/a2Ki810.gif)
@@ -835,7 +837,7 @@ What you should have so far:
 
 ### Animating Lightning Bolts
 
-Lets continue building up our animation by adding life to the lighting bolts. Lets create a new `@keyframes` with the name `thunderClap1`. One thing that may appear new at this juncture is the stacked keyframes at the top. This is a preference, if you have multiple keyframes that will do the same thing you can stack them on top of one another. To bring the lightning bolts to life the main thing we are going to do is use `transform: translateX(50px)` and `transform: translateY(70px)` to move them downward. While this is occuring we adjust the `opacity` at various points so they appear to flicker. 
+Lets continue building up our animation by adding life to the lighting bolts. Lets create a new `@keyframes` with the name `thunderClap1`. One thing that may appear new at this juncture is the stacked key frames at the top. This is a preference, if you have multiple key frames that will do the same thing you can stack them on top of one another. To bring the lightning bolts to life the main thing we are going to do is use `transform: translateX(50px)` and `transform: translateY(70px)` to move them downward. While this is occurring we adjust the `opacity` at various points so they appear to flicker. 
 
 ```
 @keyframes thunderClap1 {
@@ -858,7 +860,7 @@ Lets continue building up our animation by adding life to the lighting bolts. Le
 }
 ```
 
-Now lets grab our thunder bolt shapes in the SVG with their classes `.bolt1` and `.bolt2`. Just like we did with the cloudBreath animation. We will make the animation loop indefinitley by giving it the value of `infinite` for `animation-iteration-count`. To reuse the the same animation for `.bolt2` we will stagger the animation by giving it a slight delay `animation-delay: .5s`. 
+Now lets grab our thunder bolt shapes in the SVG with their classes `.bolt1` and `.bolt2`. Just like we did with the cloudBreath animation. We will make the animation loop indefinitely by giving it the value of `infinite` for `animation-iteration-count`. To reuse the the same animation for `.bolt2` we will stagger the animation by giving it a slight delay `animation-delay: .5s`. 
 
 ```
 .bolt1 {
@@ -925,7 +927,7 @@ Lets get started animating the snow flakes. To do this we are going to create a 
 }
 ```
 
-One important thing to note when using `transform: rotate` you need to specify where the `transform-origin` is. By using `transform-origin: center` it anchors the rotate to the center of each snowflake. Otherwise, strange undesireable rotations may occur. 
+One important thing to note when using `transform: rotate` you need to specify where the `transform-origin` is. By using `transform-origin: center` it anchors the rotate to the center of each snowflake. Otherwise, strange undesirable rotations may occur. 
 
 If you don't use `transform-origin: center` this happens:
 
