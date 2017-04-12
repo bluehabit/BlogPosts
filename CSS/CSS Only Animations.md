@@ -417,7 +417,7 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
 Another state method we will utilize for building animations revolves around using the `href` attribute of `a` elements. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector along with URI fragment identifiers that we will discuss in much greater detail. 
 
-![target-uri](http://imgur.com/N0BmIKz.gif);
+![target-uri](http://imgur.com/N0BmIKz.gif)
 
 Codepen: http://codepen.io/bluehabit/pen/pPzzWp
 
