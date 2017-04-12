@@ -169,11 +169,23 @@ The final result should look something like the codepen below.
 Codepen: http://codepen.io/bluehabit/pen/aJeZNv
 -----
 
-### Pseudo Classes 
+## Pseudo Classes 
 
-Pseudo classes are designed to define special states of an element. For example, the pseudo classs `:hover` will apply a specific CSS styling when the user hovers the element targeted by the selector. Let's take a look at some of the other more commonly used pseudo classes. In the markup below.
+Pseudo classes are designed to define special states of an element. For example, the pseudo classs `:hover` will apply a specific CSS styling when the user hovers over the element targeted by the selector. Let's take a look at some of the other more commonly used pseudo classes. In the markup below.
 
 Codepen: http://codepen.io/bluehabit/pen/EWJZLQ
+
+### :hover
+
+When we hover over the text `Hover Over me!` the `background-color` changes to pink. 
+
+```
+.first-example:hover {
+  background-color: #f11f82;
+}
+```
+
+### :nth-child 
 
 Pay special attention to `:nth-child` pseduo class. Notice we can pass it the value `even` or `odd` to specify which list items are affected by the rules. As we can see in the following examples:
 
@@ -203,14 +215,27 @@ ul.ice-animals li:nth-child(3){
 ```
 This makes the third list item 'Walrus' the color white. 
 
+### :active
+
+With the `:active` pseudo class, the effect only occurs while the user is holding down the mouse. If we go to the text `click & HOLD` and hold our mouse down, it will change the color.
+
+```
+.activeButton:active {
+  background-color: #f11f82;
+}
+```
+-----
+
 ## :before and :after
 
-With these pseudo selectors, its pretty common to use HTML entities. We will discuss this in greater depth in the next section. 
+With these `:before` and `:after` its pretty common to use HTML entities. `:before` will insert content before each of the selected elements, while `:after` will insert content after the selected elements. 
+
+Lets take a look at the example markup below:
 
 Codepen: http://codepen.io/bluehabit/pen/RpXXwJ
 
-## Unicode HTML entities
-Select the unicode character that you would like to use. For the `content` property set the value equal to `\` followed by the hex value of your unicode character. For example if I would like to use the heart symbol, my code might looks something like this `content: "\2764"`. 
+## Unicode entities
+Notice in the above code we are using unicode characters for our content. Unicode characters are symbols things like weather, telephones etc. First select the unicode character that you would like to use. For the `content` property set the value equal to `\` followed by the hex value of your unicode character. For example if I would like to use the heart symbol, your code will look like this `content: "\2764"`. 
 
 Unicode Character Resources: 
 * https://unicode-table.com/en/
@@ -218,22 +243,36 @@ Unicode Character Resources:
 
 ## Click Pseudo Class?
 
-As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunatley, it does not work for most of my animation needs. With `:active` the user has to hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
+As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunatley, it does not work for most animation requirements. With `:active` the user must hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
 
-The solution to this problem is what we eluded to earlier. We will utilize the different states of the `input` radio or checkbox elements based on if they have been checked or not. This is how we will register clicks. 
+The solution to this problem is what we eluded to earlier, managing states of input elements. We will utilize the different states of the `input` radio or checkbox elements based on if they have been checked or not. This is how we will register when a user clicks the element. 
 
-### :checked Pseudo Class
-Guess what else is a pseudo class that we eluded to earlier? `:checked`. This pseudo selector will play an important role managing states moving forwards. Like the other pseudo selectors, this helps identify a special state of the element. Lets revisit our gem stone collection example from earlier. 
+### :checked 
+Introducing `:checked`. This pseudo selector will play an important role managing states. Like the other pseudo selectors, this helps identify a special state of the element. Lets revisit our gem stone collection example from earlier. 
 
-### Managing States
+### Managing States with :checked
 
 ![Gem-collection](http://imgur.com/xxCiS0G.gif)
 
 As mentioned earlier, we will be adding interactivity and animations to CSS components by managing states. With the `input` element of type `checkbox` or `radio` the two states are simply checked (on) or unchecked (off). We will manage these states to add interactivity to our gem stone collection. Lets revisit our old example now, before we modify it further: http://codepen.io/bluehabit/pen/qreqQE
 
-Lets begin by using a CSS combinator to specifically target input elements that are checked by using the `:checked` pseudo selector, put into action this will look like `input:checked`.  
+HTML
+```
+<div class='gems'>
+  <input type="radio" id='topaz' name='gem-stones'>
+  <label for="topaz">Topaz</label>
+  
+  <input type="radio" id='amethyst' name='gem-stones'>
+  <label for='amethyst'>Amethyst</label>
+    
+  <input type="radio" id='diamond' name='gem-stones'>
+  <label for='diamond'>Diamond</label>
+</div>
+```
 
-This won't do much by itself. Next we will need to add some sort of visual indication that the item has been selected. We can do this by targeting an adjacent label. Adjacent label? That sounds like one of the selectors we performed earlier lets give this a try now. 
+Lets begin by using a CSS combinator to specifically target input elements that are in the checked state by using the `:checked` pseudo selector, this will appear as `input:checked`.  
+
+This won't do much by itself. Next we will need to add some sort of visual indication that the item has been selected. We can do this by targeting an adjacent label. Adjacent? That sounds like one of the selectors we performed earlier, adjacent sibling selector, recall it uses the `+` symbol. Lets give this a try now. 
 
 ```
 input:checked + label {
@@ -241,7 +280,7 @@ input:checked + label {
 }
 ```
 
-The CSS combinator identified above is looking for an `input` element that is in the `:checked` state, then the `+` symbol indicates the adjacent sibling selector. Therefore it is looking for an adjacent sibling, in this case a `label`. Once it has been found, we will make the background color purple. This may not seem super exciting right now, but this is the framework that will enable us to create much more advanced user interaction later. 
+The CSS combinator identified above is looking for an `input` element that is in the `:checked` state. The `+` symbol indicates the adjacent sibling selector. Therefore it is looking for an adjacent sibling, in this case a `label`. Once it has been found, we will make the background color purple. This may not seem super exciting right now, but this is the framework that will enable us to create much more advanced user interaction later. 
 
 Once finished it should look something like the below codepen if you would like to check your work. 
 
@@ -249,9 +288,7 @@ Codepen: http://codepen.io/bluehabit/pen/WpBbNG
 
 ### Checked Attribute
 
-One thing you may have noticed is that by default, when the user loads the page, no item is selected. If you would like an item to be selected by default we can utilize the `checked` attribute for the element. Lets say we want topaz to be selected by default.
-
-Lets revisit this line of code from the HTML `<input type="radio" id='topaz' name='gem-stones'>`
+One thing you may have noticed is that by default, when the user loads the page, no item is selected. If you would like an item to be selected by default we can utilize the `checked` attribute for the input element. Lets say we want topaz to be selected by default. We can revisit this line of code from the HTML `<input type="radio" id='topaz' name='gem-stones'>`
 
 All we have to do is add the following attribute, `checked='checked'`. As we can see in the finished markup here `<input type="radio" id='topaz' name='gem-stones' checked='checked'>`. Compare your work to the codepen shown below. 
 
@@ -262,15 +299,15 @@ Codepen: http://codepen.io/bluehabit/pen/ZegLYN
 
 ![skeleton-framework](http://imgur.com/LdZnIKm.gif)
 
-Lets continue building the framework for more complex user interactions. This example will be the skeleton for building a CSS only tabs components, but this framework can have many more applications such as an image gallery, or accordion. We will combine what we learned in the previous example while introducing a new idea. 
+Lets continue building on the framework for more complex user interactions. This example will be the skeleton for building a CSS only tabs components, but this framework can have many more applications such as an image gallery, or accordion. We will combine what we learned in the previous example while introducing a few new ideas. 
 
-Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up. We can create this behavior by adding seperate `div` container that only shows specific content when a given input element is checked. 
+Often when we select something, we want a particular action to take place. For example when we click a tab we expect new information to show up, and hiding the rest. We can create this behavior by adding seperate `div` container to store all of our content. This container will only show specific content when a specific input element is checked. 
 
 Here will mark the beginning of the project if you would like to follow along. 
 
-Codepen: http://codepen.io/bluehabit/pen/OpKWyQ
+Codepen: http://codepen.io/bluehabit/pen/OmLdzN
 
-The content below is the seperate `div` container we mentioned earlier. Notice the `div` contains additional subsections each with its own unique `id` and contents. Also notice how the content all has its own unique `id` assigned to it. 
+The content below is the seperate `div` container. Notice how the content all has its own unique `id` assigned to it, for example: `furniture-content` or `kitchen-content`. 
 
 ```
 <div class='content'>
@@ -288,11 +325,11 @@ The content below is the seperate `div` container we mentioned earlier. Notice t
 </div>
 ```
 
-We will manage the state changes such that specific information will only show up when a particular input element is checked. As you may have noticed, as the project stands right now, all of this information: 'stuff about furniture', 'stuff about homedecor' and 'stuff about kitchens' is visibile by default, we will change that.
+We will manage the state changes for the inputs so its corresponding content in the container reveals itself.
 
 ### Setting Content to display:none
 
-For this important step we will simply target the `.content` container and set its subsection `divs` set to `display:none`. We will use a combinator to accomplish this.
+As you may have noticed all of this information: 'stuff about furniture', 'stuff about homedecor' and 'stuff about kitchens' is visibile by default, we will need to change that. For this important step we will simply target the `.content` container and set its `divs` to `display:none`. We will use a combinator to accomplish this.
 
 ```
 .content > div {
@@ -300,17 +337,17 @@ For this important step we will simply target the `.content` container and set i
 }
 ```
 
-Lets read through this combinator to better understand it. We will be targeting the `.content` class and then use the `>` symbol to select its direct children of type `div`. For the elements selected we will set their `display` to `none`. 
+Lets read through this combinator to better understand it. We will be targeting the `.content` class and then use the `>` symbol to select its direct children of type `div`. For the elements selected with this combinator we will set their `display` to `none`. 
 
 
-Its important here that we use the `display` property and set its value to `none`. The reason for using `display` is it doesn't take up any space in the document when its value is set to `none`. In contrast, if we were to use a property such as `visibility` and set it to `hidden` the text would still remain hidden; however, the content would be stacked on top of one another because it would still exist in the normal flow of the document.
+Its important here that we use the `display` property here and set its value to `none`. The reason for using `display` is it doesn't take up any space in the document when its value is set to `none`, it removes it from the normal flow. In contrast, if we were to use a property such as `visibility` and set it to `hidden` the text would still remain hidden; however, the content would be stacked on top of one another because it would still exist in the normal flow of the document.
 
 
 ### id:checked Combinator
 
-The next very important concept is how we can use the type selector, in this case `id`, and combine it with a pseduo selector, in this case `:checked'`. Notice ho we are using the `id` selector here, and its pseduo selector `:checked` to see if that particular element with the corresponding `id` has been checked.
+The next very important concept is how we can use the type selector, in this case `id`, and combine it with a pseduo selector, in this case `:checked'`. 
 
-Lets work through our first example. We only want the content for `furniture-content` to show up when its corresponding input element is selected. We can provide this interactivity using the `id:checked` combinator.
+Lets work through our first example. We only want the content for `furniture-content` to show up when its corresponding input element with the `id` of `furniture` is selected. We can provide this interactivity using the `id:checked` combinator.
 
 ```
 #furniture:checked ~ .content #furniture-content {
@@ -319,8 +356,9 @@ Lets work through our first example. We only want the content for `furniture-con
 
 ```
 
-Lets break it down and step through this code. We begin by using the `id` selector to select `#furniture`, while also utilizing the `:checked` pseudo selector to manage the state. Then we use the `~` symbol to select its sibling with the class `.content`. From here there is a space indicating a descendent selector. Therefore, we are selecting all descendents of `.content` with the `id` of `#furniture-content`. When this item is selected we will set the `display` to `block`. Recall its previous value was `display:none`. 
+Lets break it down and step through this code. We begin by using the `id` selector to select `#furniture`, while also utilizing the `:checked` pseudo selector to manage the state. We only want this behavior to occur when it is `:checked`. 
 
+Then we use the `~` symbol to select its sibling with the class `.content`. From here there is a *space* between the elements indicating a descendent selector. Therefore, we are selecting all descendents of `.content` with the `id` of `#furniture-content`. When this item is selected we will set the `display` to `block` from `display: none`. 
 
 Lets finish up the other selectors now. 
 
@@ -353,11 +391,12 @@ There is nothing wrong with the above code, but we can refactor it a bit more so
 ```
 
 Much more pleasant on the eyes. Lets take a look at the finished example below. 
+
 Codepen: http://codepen.io/bluehabit/pen/OpKWyQ
 
 ### Examples Built with this Framework
 
-Now that you understand the basic framework, lets take a look at some finished examples to see what we can accomplish with it. Notice how many different types of components we have. While these examples may appear quite different and have been beautified to be visually pleasing, the underlying foundation remains the same. 
+Now that you understand the basic framework, lets take a look at some finished components to see what we can accomplish with it. Notice how many different types of components we have. While these examples may appear quite different, structurally they are nearly identical. They have been beautified to be visually pleasing, but the underlying foundation remains the same. 
 
 ### Accordion 
 ![accordion-demo](http://i.imgur.com/wIsaQi6.gif)
@@ -376,7 +415,7 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
 ## Using Targeted URI's for Animations
 
-Another method we will utilize for building animations with CSS only revolves around using the `href` attribute of `a` tags. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector along with URI fragment identifiers that we will discuss in much greater detail. 
+Another state method we will utilize for building animations revolves around using the `href` attribute of `a` elements. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occuring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector along with URI fragment identifiers that we will discuss in much greater detail. 
 
 ![target-uri](http://imgur.com/N0BmIKz.gif);
 
