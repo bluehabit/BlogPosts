@@ -91,3 +91,7 @@ nodeList.forEach(function(item){
 ----
 
 ![example3](http://imgur.com/Imo1oTy.png)
+
+### Helpful JSFiddle
+
+https://jsfiddle.net/y1yxe91w/
