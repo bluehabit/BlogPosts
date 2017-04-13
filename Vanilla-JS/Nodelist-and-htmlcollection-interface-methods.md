@@ -1,4 +1,6 @@
-@sebastian_ramirez_br  This sort of confused me too on my own learning, as you pointed out `forEach` is listed as current method for `nodeLists` on MDN.
+# Nodelists vs HTML Collections
+
+This sort of confused me too on my own learning, as you pointed out `forEach` is listed as current method for `nodeLists` on MDN.
 
 To use `forEach` consider the following DOM manipulation snippet:
 
