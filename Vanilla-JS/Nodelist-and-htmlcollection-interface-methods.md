@@ -25,7 +25,7 @@ Oh, another interesting `instanceof` is `element`. For example `console.log(ul i
 
 Note, `typeof` will not work for determining this, as it only works on primitive values. Alternatively, you can also use the `dir` command to check the type as shown below:
 
-<img src="//mdev-assets.s3.amazonaws.com/original/2X/6/6dc2039e6ef5d5c4f0dcf19d968647fa3035ea1f.png" width="184" height="107">
+![example1](http://imgur.com/zxqg2L0.png)
 
 We can convert `ulList`, a `HTMLCollection`, into an array so we can use `forEach` on it. To convert this`HTMLcollection` into an array we can use the built in method `Array.from()` as shown in the following code:
 
@@ -85,7 +85,7 @@ nodeList.forEach(function(item){
 	console.log(item);
 })
 ```
-<img src="//mdev-assets.s3.amazonaws.com/original/2X/c/c5066d084caaf416a89fc3a5cd62f88d1f65209d.png" width="134" height="43">
----
+![example2](http://imgur.com/QygMJ29.png)
+----
 
-<img src="//mdev-assets.s3.amazonaws.com/original/2X/6/6b2543e05c33ef781a7eecca867babf53b34f5c9.png" width="262" height="432">
+![example3](http://imgur.com/Imo1oTy.png)
