@@ -117,6 +117,8 @@ Look one level directly below the current parent element, that is the child.
 
 Combinators are symbols that explain the relationship between selectors. Lets put this into practice and work through a few examples. In addition, I highly suggest reading through the selectors through in your mind or out loud to very clearly identify what a given combinator is targeting. Before we begin, this will be the starting structure of our HTML before any CSS styling is applied. 
 
+If you are unfamiliar with combinators, **please do not skip this section**. Not only is it paramount to the projects covered in this blog post, but these combinators will become an essential tool in your belt to select and manipulate the DOM using Javascript in more advanced projects. 
+
 Codepen: http://codepen.io/bluehabit/pen/RpmWVe
 
 Lets begin by using a **descendant** selector to target all `li`s that are a descendant of a `ul` tag, and then make them have the `background-color` `#4d74f0`. Note the space between the `li` tag and the `ul` tag indicates this is using the descendant selector.
