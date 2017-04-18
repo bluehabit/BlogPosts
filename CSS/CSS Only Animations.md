@@ -245,6 +245,11 @@ Unicode Character Resources:
 * https://unicode-table.com/en/
 * https://www.w3schools.com/charsets/ref_utf_symbols.asp
 
+## :not
+[description forthcoming]
+
+Example Codepen: https://codepen.io/bluehabit/pen/PmPNNB
+
 ## Click Pseudo Class?
 
 As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunately, it does not work for most animation requirements. With `:active` the user must hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
