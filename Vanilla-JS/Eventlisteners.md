@@ -1,3 +1,6 @@
+> And when a man writes, he thinks harder ... or maybe just more specifically
+> -Mike Hanlon, It
+
 placeholder - working on word.docx.
 
 ## SASS
