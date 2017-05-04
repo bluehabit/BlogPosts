@@ -28,3 +28,11 @@ div.tab {
 }
 ```
 
+Event Object as Parameter 
+```
+window.addEventListener('keydown', function(e){
+	console.log(e);
+});
+```
+
+
