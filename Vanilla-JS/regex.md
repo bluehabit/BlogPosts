@@ -16,3 +16,40 @@ console.log(/[0-9]/.test("in 1992"));
 
 ('c'|'d').test('clown');
 ```
+
+```
+var re = /[^a-zA-Z]/
+re.test('005555');
+//→ true
+
+var re = /[0-3a-z]/
+re.test('05 hello');
+//→ true
+//looks for the number 0-3 or any letter lower case a-z
+re.test('55 HELLO');
+//→ false
+// false because the number 5 is not 0-3 and a-z is lower case
+//and HELLO is capitalized
+
+//operators
+// ? preceding character is optional
+var re = /bana?na/
+re.test('banana');
+//→ true
+re.test('banna');
+//→ true
+re.test('banaana');
+//→ false
+
+// + one or more of the previous characters
+var re = /bana+na/;
+
+re.test('banana');
+//→ true
+re.test('banaana');
+//→ true
+re.test('banna');
+//→ false
+re.test('banaaaana');
+//→ true
+```
