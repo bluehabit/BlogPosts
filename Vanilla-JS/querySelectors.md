@@ -1,6 +1,8 @@
 ### .value 
 
-`Value` returns the value of an option for example a radio, checkbox, text area or **input form**. 
+`Value` returns the value of an option for example a radio, checkbox, text area or **input form**. `Value` is a property that belongs to the `html element object` as shown in the image below.
+
+![value-example](http://i.imgur.com/EZtgsXz.png)
 
 ```
 <input type='radio' name='animal' value='giraffe'>
