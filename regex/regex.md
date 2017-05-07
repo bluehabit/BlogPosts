@@ -1,3 +1,5 @@
+![regex-tips](http://i.imgur.com/5vmtCtQ.png)
+
 ## Regex
 
 ```
