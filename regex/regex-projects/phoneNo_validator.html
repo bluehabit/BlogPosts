@@ -1,0 +1,38 @@
+<form>
+  <label>Enter phone number (e.g. (123) 456-7890): <input type="text" name="phone"></label>
+  <input type="submit">
+</form>
+
+<p id="result"></p>
+
+
+<style>
+ * {
+  font-family: sans-serif;
+}
+
+input,
+button {
+  font-size: 100%;
+  padding: 5px;
+}
+</style>
+
+<script>
+	var result = document.querySelector('#result');
+	var form = document.querySelector('form');
+
+	form.addEventListener('submit', function(e) {
+	  e.preventDefault();
+	  checkPhoneNumber(this.phone.value);
+	});
+
+	function checkPhoneNumber(phoneNo) {
+	  var phoneRE = /^\(\d\d\d\) \d\d\d-\d\d\d\d$/;
+	  if (phoneNo.match(phoneRE)) {
+	    result.innerHTML = 'The phone number is <strong>valid!</strong>';
+	  } else {
+	    result.innerHTML = 'The phone number is <strong>invalid!</strong>';
+	  }
+	}
+</script>
