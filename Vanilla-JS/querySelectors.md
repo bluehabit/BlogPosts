@@ -1,4 +1,4 @@
-### .value 
+### `.value` 
 
 `Value` returns the value of an option for example a radio, checkbox, text area or **input form**. `Value` is a property that belongs to the `html element object` as shown in the image below.
 
@@ -27,3 +27,9 @@ var textArea = document.getElementById('myText');
 //-> some stuff in here
 </script>
 ```
+
+### Notice `.value` only works with certain HTML element objects
+
+`.value` only works again with text area, options for check boxes, radios or input forms. Check out the example below where I try to access `.value` on a `p` tag. It does not work, if we perform `console.dir()` on the `p` element we notice `.value` is not listed in the properties
+
+![value-lacking](http://i.imgur.com/pkB8TKr.png)
