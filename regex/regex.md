@@ -179,3 +179,58 @@ function checkPhoneNumber(phoneNo) {
   }
 }
 ```
+
+```
+var re = /^[^c|d]$/
+re.test('c');
+//false
+re.test('d');
+//false
+re.test('x');
+//true
+re.test('g');
+//true
+
+
+var re = /[^abc|xyz]/
+re.test('abc');
+//false
+re.test('xyz');
+//false
+re.test('efg');
+//true
+
+var re = /^[^abc|xyz]+$/
+re.test('reel');
+//true
+re.test('goat');
+//false
+re.test('zebra')
+//false
+re.test('yoyo');
+//false
+re.test('milk');
+//true
+
+var re = /^[^c|d]*$/
+re.test('apple');
+//true
+re.test('boat');
+//true
+re.test('dog');
+//false
+
+var re = /^([^abc|xyz])+$/
+//can also write it like this with ()
+//I guess that means *?+ applies to brackets like paranthesis
+
+
+//! neative lookahead what the fuck does that mean
+var re = /\b(?!girl)\w*friend\b/ig
+re.test('boyfriend')
+//true
+re.test('girlfriend')
+//false
+//http://stackoverflow.com/questions/6308334/regex-find-all-matching-words-that-that-dont-begin-with-a-specific-prefix
+
+```
