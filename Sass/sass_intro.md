@@ -47,7 +47,13 @@ For uses a counter to loop through a given number of times. Each applies to each
 
 ![for](http://imgur.com/aMm0OSr.png)
 
+#### List Example
+
 ![each](http://imgur.com/qwLBEZH.png)
+
+#### Map Example
+
+![map](http://imgur.com/QJagTwP.png)
 
 ### Functions
 
