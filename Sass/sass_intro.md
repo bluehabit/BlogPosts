@@ -1,32 +1,13 @@
-```
-@mixin textColor($color){
-	color: $color;
-}
-
-.box {
-	@include textColor(blue);
-}
+lists = arrays
+maps = objects
 
 
-$name: foo;
-$attr: border;
- 
-p.#{$name} {
-  #{$attr}-color: blue;
-}
+### Declaring Variables
+![declaring-variables](http://imgur.com/AKHOAQQ.png)
 
+### Interpolation aka `placeholders`
+![interpolation](http://imgur.com/ulgbP5z.png)
 
-$type: monster;
-p {
-  @if $type == ocean {
-    color: blue;
-  } @else if $type == matador {
-    color: red;
-  } @else if $type == monster {
-    color: green;
-  } @else {
-    color: black;
-  }
-}
+### Mixins
+![mixin](http://imgur.com/zP9ot5C.png)
 
-```
