@@ -59,6 +59,12 @@ For uses a counter to loop through a given number of times. Each applies to each
 
 ![summary2](http://imgur.com/pB0nNEm.png)
 
+### Using mixins within loops and conditional statements
+
+Must declare the mixin first, then it can be called later as shown below.
+
+![mixin-ex2](http://imgur.com/iM429pi.png)
+
 
 
 
