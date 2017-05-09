@@ -1,5 +1,5 @@
-lists = arrays
-maps = objects
+### lists = arrays
+### maps = objects
 
 
 ### Declaring Variables
