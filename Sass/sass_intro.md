@@ -73,5 +73,13 @@ Must declare the mixin first, then it can be called later as shown below.
 
 
 
+```
+## Sass
+> 1 Explain how traditional CSS and Preprocessed CSS workflows are different.
 
+With traditional CSS, until very recently, it did not support variables. Writing with a preprocessor is not that much different - the syntax is just like regular CSS; however, we are able to use variable declarations, operations, functions, loops etc. 
+
+First we start with our SCSS compatible file, then we export it to a preprocessor such as SASS or LESS which will generate our final CSS file. 
+
+```
 
