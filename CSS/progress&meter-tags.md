@@ -7,6 +7,11 @@
 ![progress-element](http://imgur.com/PgRE0op.png)
 
 
+### Progress Element Demo
+
+https://codepen.io/bluehabit/pen/WjKepq
+
+
 ### Resources 
 
 http://html5doctor.com/the-progress-element/
