@@ -10,3 +10,8 @@
 ### Resources 
 
 http://html5doctor.com/the-progress-element/
+
+https://css-tricks.com/html5-progress-element/
+
+https://css-tricks.com/making-charts-with-css/
+
