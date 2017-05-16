@@ -2,6 +2,10 @@
 
 ![meter_progress](http://imgur.com/kWuajCa.png)
 
+### Progress Element
+
+![progress-element](http://imgur.com/PgRE0op.png)
+
 
 ### Resources 
 
