@@ -2,4 +2,4 @@
 
 https://codepen.io/bluehabit/pen/QvBpEQ
 
-more information here: http://www.corelangs.com/css/box/center-div.html
+more information here, includes above demo vertically centering divs: http://www.corelangs.com/css/box/center-div.html
