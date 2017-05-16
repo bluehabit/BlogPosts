@@ -30,6 +30,6 @@ var textArea = document.getElementById('myText');
 
 ### Notice `.value` only works with certain HTML element objects
 
-`.value` only works again with text area, options for check boxes, radios or input forms. Check out the example below where I try to access `.value` on a `p` tag. It does not work, if we perform `console.dir()` on the `p` element we notice `.value` is not listed in the properties
+**`.value`** only works again with **`text area`**, **`options`** for **`check boxes`**, **`radios`** or **`input forms`**. It also works for the **`progress`** and **`meter`** elements for graphs or loading animations. Check out the example below where I try to access `.value` on a `p` tag. It does not work, if we perform `console.dir()` on the `p` element we notice `.value` is not listed in the properties
 
 ![value-lacking](http://i.imgur.com/pkB8TKr.png)
