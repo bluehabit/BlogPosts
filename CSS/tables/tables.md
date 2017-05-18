@@ -2,6 +2,10 @@
 
 ![table](http://imgur.com/mMPO0lV.png)
 
+### Diagram
+
+![diagram](http://imgur.com/PW7HUPH.png)
+
 ```
     <h4>Table (With styling rules)</h4>
         <table id="table3" border="1">
