@@ -4,7 +4,7 @@
 
 ### Diagram
 
-![diagram](http://imgur.com/PW7HUPH.png)
+![diagram](http://imgur.com/hOSCJYW.png)
 
 ```
     <h4>Table (With styling rules)</h4>
