@@ -4,11 +4,12 @@
 
 ### Diagram
 
-![diagram](http://imgur.com/RZGVLhS.png)
+![diagram](http://imgur.com/Ix5iawq.png)
 
 ```
     <h4>Table (With styling rules)</h4>
         <table id="table3" border="1">
+        <caption>NFL Wins and Losses</caption>
           <thead>
             <tr>
               <th>NFL Franchise</th>
