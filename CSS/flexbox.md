@@ -62,7 +62,7 @@ http://codepen.io/VagrantStory15/pen/GmRyRy
 
 ### `flex-wrap`
 
-`flex-wrap` defines whether the flex items are forced in a single line or can be flowed into multiple lines. The default value for `flex-wrap` is `no-wrap`. *Make certain* that the direct parent is the *flex container* or else it may not work as shown below.
+`flex-wrap` defines whether the flex items are forced in a single line or can be flowed into multiple lines. The default value for `flex-wrap` is `nowrap`. *Make certain* that the direct parent is the *flex container* or else it may not work as shown below.
 
 `nowrap` example: http://codepen.io/VagrantStory15/pen/EmxLXg
 `wrap` example: http://codepen.io/VagrantStory15/pen/ybLjoL
