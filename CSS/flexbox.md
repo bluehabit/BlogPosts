@@ -13,7 +13,7 @@ To get started using Flexbox layout use the CSS property `display: flex` or `dis
 
 ### Important!
 
-The default for flex is row and nowrap so just setting the display to flex will work.
+The default for `flex` is `row` and `nowrap` just by setting the `display` to `flex`.
 
 ```
 .flexbox-container{
