@@ -10,24 +10,15 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 ### Important!
 
-The default for `flex` is `row` and `nowrap` just by setting the `display` to `flex`. Also, only one `display` type per element. For example if you do something like the below markup - you will break your layout. Pick either `display: flex` or `display: inline-block`. 
+The default for `flex` is `row` and `nowrap` just by setting the `display` to `flex`. 
 
-```
-/*display: inline-block or display: flex, having both like below breaks the layout*/
-	.subject {
-		bottom: 25px;
-		display: flex;
-		justify-content: space-around;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		color: #333333;
-		font-size: 1.05em;
-		font-family: 'Lato', sans-serif;
-		display: inline-block;
-	}
-```
+### Also Important!
+
+Also, only one `display` type per element. For example if you do something like the below markup - you will break your layout. Pick either `display: flex` or `display: inline-block`. 
+
+![important](http://imgur.com/9BX5Get.png)
+
+
 
 
 ### Getting Started
