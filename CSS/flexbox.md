@@ -201,6 +201,13 @@ Syntax:
 }
 ```
 
+## Flexbox realworld application
+
+Before:https://codepen.io/bluehabit/pen/ZKVNjq
+After: https://codepen.io/sbchittenden/pen/EmGLMR
+
+**Alternative Solution** Using pseudo elements `:before` instead of a `div` inside of the `li` 
+https://codepen.io/sbchittenden/pen/EmGLMR
 
 # CSS Grid System
 
