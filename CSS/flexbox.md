@@ -209,6 +209,8 @@ After: https://codepen.io/sbchittenden/pen/EmGLMR
 **Alternative Solution** Using pseudo elements `:before` instead of a `div` inside of the `li` 
 https://codepen.io/sbchittenden/pen/EmGLMR
 
+Another approach for bar graphs, melissa's example: https://codepen.io/sbchittenden/pen/rmodPL
+
 # CSS Grid System
 
 The flexbox approach seems like the best approach, but it has poor support among modern web browsers. As a result its geared toward smaller components within a website, like a navigation bar. **To apply its logic to the entire site would cause the constant re-rendering of elements whenever the viewport resolution changed by even a slight margin.** What we really need is a grid structure that can act as a placeholder for elements.
