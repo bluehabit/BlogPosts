@@ -14,7 +14,7 @@ The default for `flex` is `row` and `nowrap` just by setting the `display` to `f
 
 ### Also Important!
 
-Also, only one `display` type per element. For example if you do something like the below markup - you will break your layout. Pick either `display: flex` or `display: inline-block`. 
+Also, only one `display` type per element. For example if you do something like the below markup - you will break your layout. Pick either `display: flex` or `display: inline-block`. One or the other.
 
 ![important](http://imgur.com/9BX5Get.png)
 
