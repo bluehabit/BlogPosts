@@ -11,6 +11,10 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 To get started using Flexbox layout use the CSS property `display: flex` or `display: inline-flex`. Setting this property on the *parent* element will cause all its child elements to inherit the flex property. 
 
+### Important!
+
+The default for flex is row and nowrap so just setting the display to flex will work.
+
 ```
 .flexbox-container{
   display: flex;
