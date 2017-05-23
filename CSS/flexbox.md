@@ -207,9 +207,10 @@ Before:https://codepen.io/bluehabit/pen/ZKVNjq
 After: https://codepen.io/sbchittenden/pen/EmGLMR
 
 **Alternative Solution** Using pseudo elements `:before` instead of a `div` inside of the `li` 
-https://codepen.io/sbchittenden/pen/EmGLMR
+https://codepen.io/sbchittenden/pen/rmodPL
 
-Another approach for bar graphs, melissa's example: https://codepen.io/sbchittenden/pen/rmodPL
+Another approach for bar graphs, melissa's example: 
+https://codepen.io/anon/pen/JWgRaa?editors=0110
 
 # CSS Grid System
 
