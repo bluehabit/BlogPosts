@@ -426,6 +426,29 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
 ![carousel-demo](http://i.imgur.com/hqmMYFN.gif)
 
+Notice in the source code how we are setting the display of the left and right arrows to `display: none` as well as setting the slider image to `display: none`, as you can see below
+
+```
+   .group label {
+    background-color: #69c;
+    border: solid 1px black;
+    display: none;
+    height: 50px;
+    width: 50px;
+  }
+```
+
+```
+  .group input ~ .content {
+    border: solid 1px black;
+    display: none;
+    height: 350px;
+    margin: 0px 60px;
+    position: relative;
+    width: 300px;
+  }
+```
+
 Codepen: https://codepen.io/bluehabit/pen/GErVja
 Stackoverflow thread: https://stackoverflow.com/questions/30295085/how-can-i-make-an-image-carousel-with-only-css
 
