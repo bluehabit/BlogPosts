@@ -422,6 +422,12 @@ Codepen: http://codepen.io/bluehabit/pen/VpoPQM
 
 Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 
+## Framework for CSS Only Image	Carousel
+
+![carousel-demo](http://i.imgur.com/hqmMYFN.gif)
+
+Codepen: https://codepen.io/bluehabit/pen/GErVja
+
 ## Using Targeted URI's for Animations
 
 Another state method we will utilize for building animations revolves around using the `href` attribute of `a` elements. Whenever you visit a link there is a unique fragment identifier. We can use the `id` to create a unique URI to visit that will result in a particular event occurring. In the case of our example, a modal alert that pops up to alert the user. One of the key components of building components using this method is the `:target` pseudo selector along with URI fragment identifiers that we will discuss in much greater detail. 
