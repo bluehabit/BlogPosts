@@ -427,6 +427,15 @@ Codepen: http://codepen.io/bluehabit/pen/WpVRzm
 ![carousel-demo](http://i.imgur.com/hqmMYFN.gif)
 
 Codepen: https://codepen.io/bluehabit/pen/GErVja
+Stackoverflow thread: https://stackoverflow.com/questions/30295085/how-can-i-make-an-image-carousel-with-only-css
+
+Other good resources: 
+
+http://qnimate.com/creating-a-slider-using-html-and-css-only/#prettyPhoto
+
+https://www.smashingmagazine.com/2012/04/pure-css3-cycling-slideshow/
+
+https://stackoverflow.com/questions/21647389/implement-a-css-only-slideshow-carousel-with-next-and-previous-buttons
 
 ## Using Targeted URI's for Animations
 
