@@ -495,6 +495,8 @@ Demo: https://codepen.io/bluehabit/pen/dRvbwp
 
 Other good resources: 
 
+**http://www.cssscript.com/pure-css-image-carousel-with-arrows-bullets-navigation/**
+
 http://qnimate.com/creating-a-slider-using-html-and-css-only/#prettyPhoto
 
 https://www.smashingmagazine.com/2012/04/pure-css3-cycling-slideshow/
