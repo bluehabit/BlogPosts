@@ -479,13 +479,19 @@ Check out a more simple example here: https://codepen.io/bluehabit/pen/NgpKxv
 
 ![key-animated](http://imgur.com/2qWgv2t.gif)
 
-*Notice* how before we begin to style the carousel such that only one panel is visible at a time, the user click is already working correctly. If the user clicks `<` on the second panel it will correctly set the input of `id='1'` (the first panel) to checked. Similarly on the second panel if we click on `>` it will move forward to the next panel, selecting the input of `id='3'` Check out the `gif` image above.
+*Notice* how before we begin to style the carousel such that only one panel is visible at a time, the user click is already working correctly. If the user clicks `<` on the second panel it will correctly set the input of `id='1'` (the first panel) to checked. Similarly on the second panel if we click on `>` it will move forward to the next panel, selecting the input of `id='3'` Check out the `gif` image above. In other words, the `<label for>` acts as a button that changes something when the user clicks
 
 Check out the exapmle here: https://codepen.io/bluehabit/pen/KqWPex
 
 
 Codepen: https://codepen.io/bluehabit/pen/GErVja
 Stackoverflow thread: https://stackoverflow.com/questions/30295085/how-can-i-make-an-image-carousel-with-only-css
+
+**Final Basic Framework**
+![final-skeleton](http://imgur.com/h8nbcFH.gif)
+
+Demo: https://codepen.io/bluehabit/pen/dRvbwp
+
 
 Other good resources: 
 
