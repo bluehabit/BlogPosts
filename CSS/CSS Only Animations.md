@@ -254,7 +254,7 @@ Example Codepen: https://codepen.io/bluehabit/pen/PmPNNB
 
 As you sort through the basic pseudo-classes you may notice there is a lack of a ':click' selector. Something that occurs when the user clicks on an element. The closest thing we have to a `:click` is `:active`. Unfortunately, it does not work for most animation requirements. With `:active` the user must hold the action for the animation to continue. For example clicking your mouse on a button and holding it there. 
 
-The solution to this problem is what we eluded to earlier, managing states of input elements. We will utilize the different states of the `input` radio or checkbox elements based on if they have been checked or not. This is how we will register when a user clicks the element. 
+												The solution to this problem is what we eluded to earlier, managing states of input elements. We will utilize the different states of the `input` radio or checkbox elements based on if they have been checked or not. This is how we will register when a user clicks the element. 
 
 ### :checked 
 Introducing `:checked`. This pseudo selector will play an important role managing states. Like the other pseudo selectors, this helps identify a special state of the element. Lets revisit our gem stone collection example from earlier. 
@@ -448,6 +448,25 @@ Notice in the source code how we are setting the display of the left and right a
     width: 300px;
   }
 ```
+
+The other important point is `<input>` and its corresponding `<label>` do not have to be adjacent to each other in the HTML markup. That is central to making this particular example work. As you can see in the source code:
+
+```
+    <div class="group">
+      <input type="radio" name="test" id="0" value="0" checked='true'>
+      <label for="4" class="previous">&lt;</label>
+      <label for="1" class="next">&gt;</label>
+      <div class="content">
+        <p>panel #0</p>
+        <img src="http://i.stack.imgur.com/R5yzx.jpg" width="200" height="286">
+      </div>
+    </div>
+```
+**Simple Example:**
+![simple-example](http://imgur.com/mqkbJ8U.gif)
+
+Check out a more simple example here: https://codepen.io/bluehabit/pen/NgpKxv
+
 
 Codepen: https://codepen.io/bluehabit/pen/GErVja
 Stackoverflow thread: https://stackoverflow.com/questions/30295085/how-can-i-make-an-image-carousel-with-only-css
