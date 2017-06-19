@@ -449,7 +449,14 @@ Notice in the source code how we are setting the display of the left and right a
   }
 ```
 
-The other important point is `<input>` and its corresponding `<label>` do not have to be adjacent to each other in the HTML markup. That is central to making this particular example work. As you can see in the source code:
+The other important point is `<input>` and its corresponding `<label>` do not have to be adjacent to each other in the HTML markup. As we are accustomed to seeing, for example.
+
+```
+<input type='radio' id='topaz' name='gems'>
+<label for='topaz'>Topaz</label>
+```
+
+Instead, they can be in different containers themselves. That is central to making this particular example work. As you can see in the source code:
 
 ```
     <div class="group">
