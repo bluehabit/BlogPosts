@@ -499,6 +499,8 @@ http://qnimate.com/creating-a-slider-using-html-and-css-only/#prettyPhoto
 
 https://www.smashingmagazine.com/2012/04/pure-css3-cycling-slideshow/
 
+https://kmturley.blogspot.com/2015/02/responsive-css-only-carousel.html
+
 https://stackoverflow.com/questions/21647389/implement-a-css-only-slideshow-carousel-with-next-and-previous-buttons
 
 ## Using Targeted URI's for Animations
