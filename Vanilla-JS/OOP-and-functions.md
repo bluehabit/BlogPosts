@@ -43,8 +43,6 @@ A callback function is a function passed into another function as an argument, w
 
 Example:
 
-
-  
 ### Anonymous inline function callback
   
 ![anonymous-inline-function-callback](http://imgur.com/u0GgT6n.png)
@@ -53,3 +51,8 @@ Example:
 ### Anonymous Callback vs Named Callback 
 
 ![anonymous-inline-vs-named-callback](http://imgur.com/Tci3Ggu.png)
+
+
+### Callback functions can have their own Parameters
+
+![own-parameters](http://imgur.com/3zEydcd.png)
