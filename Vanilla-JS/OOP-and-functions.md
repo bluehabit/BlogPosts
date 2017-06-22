@@ -36,3 +36,7 @@
 
 	//-> "SQQQUAAWWWKKK"
   ```
+  
+  ### Anonymous inline function callback
+  
+  ![anonymous-inline-function-callback](http://imgur.com/u0GgT6n.png)
