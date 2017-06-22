@@ -61,3 +61,6 @@ Example:
 ### Spotting an Inline Anonymous Function Callback in the Wild
 
 ![wild](http://imgur.com/dEnvVlf.png)
+
+
+### Truthy and Falsey
