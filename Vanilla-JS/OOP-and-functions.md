@@ -56,3 +56,8 @@ Example:
 ### Callback functions can have their own Parameters
 
 ![own-parameters](http://imgur.com/3zEydcd.png)
+
+
+### Spotting an Inline Anonymous Function Callback in the Wild
+
+![wild](http://imgur.com/dEnvVlf.png)
