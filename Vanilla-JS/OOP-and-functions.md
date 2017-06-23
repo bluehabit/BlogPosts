@@ -39,7 +39,7 @@
   
 ### Callback functions
   
-A callback function is a function passed into another function as an argument, which is then called inside the outer function to complete some kind of routine or action. The higher order function is always the function that takes another function as a parameter. The callback function always gets called within the higher order function as a parameter. 
+A callback function is a function passed into another function as an argument, which is then called inside the outer function to complete some kind of routine or action. The higher order function is always the function that takes another function as a parameter. The callback function always gets called within the higher order function as a parameter. Callbacks are often used to deal with *asynchronous code*.
 
 ### Named Callback vs Inline Anonymous Callback 
 
