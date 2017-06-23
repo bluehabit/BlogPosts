@@ -84,4 +84,9 @@ Example:
 ![wild](http://imgur.com/dEnvVlf.png)
 
 
+### More Examples
+
+![color-example](http://imgur.com/v58SzKh.png)
+
+
 ### Truthy and Falsey
