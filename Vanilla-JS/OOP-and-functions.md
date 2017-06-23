@@ -13,19 +13,7 @@ A callback function is a function passed into another function as an argument, w
 
 ### Callback Functions as the ONLY parameter within a Higher Order Function
 
-```
-function greeting(name) {
-  alert('Hello ' + name);
-}
-
-function processUserInput(callback) {
-  var name = prompt('Please enter your name.');
-  callback(name);
-}
-
-processUserInput(greeting);
-```
-
+![example](http://imgur.com/U8uFeIZ.png)
 
 Example:
 
