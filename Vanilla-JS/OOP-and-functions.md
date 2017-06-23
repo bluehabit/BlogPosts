@@ -98,5 +98,9 @@ Array Parameter:
 
 ![color-example3](http://imgur.com/DOpfudo.png)
 
+### Callback(item)
+
+![callback-item](http://imgur.com/UFQjhQk.png)
+
 
 ### Truthy and Falsey
