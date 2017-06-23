@@ -87,12 +87,15 @@ Example:
 ### More Examples
 
 Regular Parameter: 
+
 ![color-example](http://imgur.com/v58SzKh.png)
 
 Object Parameter: 
+
 ![color-example2](http://i.imgur.com/DOpfudo.png)
 
 Array Parameter: 
+
 ![color-example3](http://imgur.com/DOpfudo.png)
 
 
