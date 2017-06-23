@@ -88,5 +88,7 @@ Example:
 
 ![color-example](http://imgur.com/v58SzKh.png)
 
+![color-example2](http://i.imgur.com/DOpfudo.png)
+
 
 ### Truthy and Falsey
