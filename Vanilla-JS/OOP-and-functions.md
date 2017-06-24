@@ -55,5 +55,9 @@ Array Parameter:
 
 ![callback-item](http://imgur.com/UFQjhQk.png)
 
+### Equality Operators
+
+![equality-operators](http://imgur.com/rpgIUqB.png)
+
 
 ### Truthy and Falsey
