@@ -100,5 +100,9 @@ isNaN(num);
 ![parameters](http://imgur.com/VAdnpnf.png)
 Check parameters on MDN to see what each does 
 
+### AddEventListener
+
+![example](http://imgur.com/MT0kSLE.png)
+
 
 ### Truthy and Falsey
