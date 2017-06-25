@@ -110,5 +110,7 @@ Check parameters on MDN to see what each does
 
 **Important**: Remember under the hood on `addEventListener` the value of `this` is reassigned to the HTML element object using call, apply or something.
 
+![button](http://imgur.com/9Bbolle.png)
+
 
 ### Truthy and Falsey
