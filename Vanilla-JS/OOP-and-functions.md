@@ -59,5 +59,9 @@ Array Parameter:
 
 ![equality-operators](http://imgur.com/rpgIUqB.png)
 
+### Variant
+
+![variant](http://imgur.com/0df8crS.png)
+
 
 ### Truthy and Falsey
