@@ -74,6 +74,10 @@ This is why **callbacks** work so well with **asynchronous** code. With async co
 
 The higher order function has access to the callback function within its scope. So when the data from the API comes back inside the callback function you can do stuff with it. 
 
+### Callback Function Workflow
+
+![callback-workflow](http://imgur.com/ISoW7bV.png)
+
 ### isNaN()
 
 ```
