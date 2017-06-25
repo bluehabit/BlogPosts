@@ -89,5 +89,9 @@ isNaN(num);
 //--> false;
 ```
 
+### For Each
+
+![for-each-example](http://imgur.com/IyNIHwC.png)
+
 
 ### Truthy and Falsey
