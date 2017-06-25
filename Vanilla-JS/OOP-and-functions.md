@@ -63,7 +63,7 @@ Array Parameter:
 
 ![variant](http://imgur.com/0df8crS.png)
 
-![variant2](http://imgur.com/a/U4qYy.png)
+![variant2](http://imgur.com/VepzS7z.png)
 
 ### isNaN()
 
