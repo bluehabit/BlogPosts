@@ -104,5 +104,11 @@ Check parameters on MDN to see what each does
 
 ![example](http://imgur.com/MT0kSLE.png)
 
+#### Console.dir() to see methods and properties on the HTML element Object
+
+![dir](http://imgur.com/OP50Bim.png)
+
+**Important**: Remember under the hood on `addEventListener` the value of `this` is reassigned to the HTML element object using call, apply or something.
+
 
 ### Truthy and Falsey
