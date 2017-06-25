@@ -65,6 +65,10 @@ Array Parameter:
 
 ![variant2](http://imgur.com/VepzS7z.png)
 
+This is why **callbacks** work so well with **asynchronous** code. With async code you might make a request to an API somewhere, and when it receives your query and sends the data back that could be some amount of time in the future. What did callbacks do for us? They let us get information out of another functions scope. 
+
+The higher order function has access to the callback function within its scope. So when the data from the API comes back inside the callback function you can do stuff with it. 
+
 ### isNaN()
 
 ```
