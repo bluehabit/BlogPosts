@@ -97,5 +97,8 @@ isNaN(num);
 
 ![for-each-example](http://imgur.com/IyNIHwC.png)
 
+![parameters](http://imgur.com/VAdnpnf.png)
+Check parameters on MDN to see what each does 
+
 
 ### Truthy and Falsey
