@@ -63,5 +63,20 @@ Array Parameter:
 
 ![variant](http://imgur.com/0df8crS.png)
 
+### isNaN()
+
+```
+var string = 'dog'
+isNaN(string);
+
+//--> true
+
+
+var num = 1;
+isNaN(num);
+
+//--> false;
+```
+
 
 ### Truthy and Falsey
