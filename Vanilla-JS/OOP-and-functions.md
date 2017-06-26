@@ -126,6 +126,8 @@ Check parameters on MDN to see what each does
 
 ![protip2](http://imgur.com/yDvgb9P.png)
 
+![protip3](http://imgur.com/mpRIlRh.png)
+
 ### Normal vs Arrow Functions
 
 ![example](http://imgur.com/t8iXoNa.png)
