@@ -112,5 +112,9 @@ Check parameters on MDN to see what each does
 
 ![button](http://imgur.com/9Bbolle.png)
 
+### Good Example
+
+![good-example](http://imgur.com/P6Emvgb.png)
+
 
 ### Truthy and Falsey
