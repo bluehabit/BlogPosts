@@ -118,7 +118,9 @@ Check parameters on MDN to see what each does
 
 ### ProTip
 
-![protip](http://imgur.com/vInrEDA.png)
+![protip1](http://imgur.com/vInrEDA.png)
+
+![protip2](http://imgur.com/YB9lPp9.png)
 
 
 ### Truthy and Falsey
