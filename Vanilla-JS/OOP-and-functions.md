@@ -128,6 +128,8 @@ Check parameters on MDN to see what each does
 
 ![protip3](http://imgur.com/mpRIlRh.png)
 
+See more of this example here https://codepen.io/bluehabit/pen/MoOaao
+
 ### Normal vs Arrow Functions
 
 ![example](http://imgur.com/t8iXoNa.png)
