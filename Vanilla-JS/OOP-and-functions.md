@@ -15,6 +15,10 @@ A callback function is a function passed into another function as an argument, w
 
 ![house](http://imgur.com/S6rwsib.png)
 
+### House Named Function Callback
+
+![named-house](http://imgur.com/uOvSljc.png)
+
 
 ### Callback Functions as the ONLY parameter within a Higher Order Function
 
