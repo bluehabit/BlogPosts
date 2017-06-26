@@ -120,7 +120,7 @@ Check parameters on MDN to see what each does
 
 ![protip1](http://imgur.com/vInrEDA.png)
 
-![protip2](http://imgur.com/YB9lPp9.png)
+![protip2](http://imgur.com/yDvgb9P.png)
 
 
 ### Truthy and Falsey
