@@ -126,5 +126,9 @@ Check parameters on MDN to see what each does
 
 ![protip2](http://imgur.com/yDvgb9P.png)
 
+### Normal vs Arrow Functions
+
+![example](http://imgur.com/t8iXoNa.png)
+
 
 ### Truthy and Falsey
