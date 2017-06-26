@@ -116,5 +116,9 @@ Check parameters on MDN to see what each does
 
 ![good-example](http://imgur.com/P6Emvgb.png)
 
+### ProTip
+
+![protip](http://imgur.com/vInrEDA.png)
+
 
 ### Truthy and Falsey
