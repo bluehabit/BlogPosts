@@ -1,0 +1,57 @@
+<ul> 
+	<li class='active'>red</li>
+	<li>green</li>
+	<li>blue</li>
+</ul>
+
+<input type="button" value="click to modify classList in loop" id="forLoopInit"/>
+
+
+<style>
+	.active {
+		color: red;
+	}
+</style>
+
+<script>
+var parentNode = document.getElementsByTagName('UL')[0];
+var nodeList = document.querySelectorAll('ul > li');
+//nodeList - not a live list
+var arrayList = Array.from(nodeList);
+
+console.log('The arrayList just after fetching: ', arrayList);
+
+// We are able to modify classList and it reflects in DOM
+arrayList[0].classList.remove('active');
+arrayList[2].classList.add('active');
+
+// We won't be able to see any changes in the arrayList even if we update the nodeList in the DOM
+var newLi = document.createElement('Li');
+newLi.append(document.createTextNode('test'));
+parentNode.append(newLi);
+console.log('The arrayList after DOM update still has only 3 nodes: ', arrayList);
+
+function toggleClass(nodeList, i) {
+  
+}
+
+document.getElementById('forLoopInit').addEventListener('click', function () {
+  var newNodeList = Array.from(document.querySelectorAll('ul > li'));
+  // Initial setup
+  newNodeList[0].classList.add('active');
+  newNodeList[2].classList.remove('active');
+  console.clear();
+  for (var i = 0; i < newNodeList.length; i++) {
+    console.log('i = ' + i, newNodeList);
+    if (newNodeList[i].classList.contains('active')) {
+      newNodeList[i].classList.toggle('active');
+      newNodeList[i+1].classList.toggle('active');
+    }
+    
+  }
+})
+
+
+
+
+</script>
