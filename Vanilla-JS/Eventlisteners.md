@@ -36,3 +36,5 @@ window.addEventListener('keydown', function(e){
 ```
 
 ## Element.classList
+
+The Element.classList is a read-only property which returns a live DOMTokenList collection of the class attributes of the element.
