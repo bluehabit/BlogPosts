@@ -160,5 +160,11 @@ See more of this example here https://codepen.io/bluehabit/pen/MoOaao
 
 ```
 
+```
+QUnit.test('bind', function(assert) {
+    var context = {name: 'moe'};
+    var func = function(arg) { return 'name: ' + (this.name || arg); };
+    var bound = _.bind(func, context);
+``
 
 ### Truthy and Falsey
