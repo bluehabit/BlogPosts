@@ -134,5 +134,31 @@ See more of this example here https://codepen.io/bluehabit/pen/MoOaao
 
 ![example](http://imgur.com/t8iXoNa.png)
 
+### Real Life Example Callbacks
+
+```
+ var request = require('request');
+
+ function getWeather(lat, lng, callback){
+
+  request({
+    url: 'https://api.darksky.net/forecast/5d1fb3bcf4dc2e2d15f360bfa6488109/'+lat+','+lng,
+    json: true
+  }, function(error, response, body){
+    if(error){
+      callback('unable to connect to weather server');
+    } else if(response.statusCode === 400){
+      callback('unable to fetch weather from this location');
+    } else if(response.statusCode === 200){
+     return callback(undefined, body.currently.temperature)
+    }
+  });
+
+ }
+
+ module.exports.getWeather = getWeather;
+
+```
+
 
 ### Truthy and Falsey
