@@ -142,5 +142,16 @@ See more of this example here https://codepen.io/bluehabit/pen/MoOaao
 
 ### Get Coordinates Example using Event Object
 
-
 ![event-object](http://imgur.com/yzggc9b.png) 
+
+
+### Weather API Example
+
+--find it it and insert here
+
+### nodeLists are not LIVE
+
+The `nodeList` returned by `document.querySelectorAll('.slider-marker > span')` is **not a live list**. This means, chnages to the DOM for these elements will not change the list. Changes to `classList` however will be a live list.
+
+
+
