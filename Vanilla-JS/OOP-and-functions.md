@@ -156,6 +156,20 @@ The `nodeList` returned by `document.querySelectorAll('.slider-marker > span')` 
 ![nodeLists-not-live](http://imgur.com/14JLPon.png)
 
 
+### Adding Nodes to Document
+
+`method1` using `.createElement` and `.createTextNode`
+![method1](http://imgur.com/mUE49vh.png)
+
+`method2` using `.createElement` and `.innerHTML`
+![method2](http://imgur.com/5HxoLZF.png)
+
+`method3` using `.createElement` and `.innerText`
+![method3](http://imgur.com/a9YyZzL.png)
+
+
+
+
 
 
 
