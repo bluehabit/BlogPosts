@@ -190,4 +190,4 @@ button.addEventListener('click', function(event){
 
 ### Get Coordinates Example using Event Object
 
-![event-object](http://imgur.com/N8UlB4I.png)
+![event-object](http://imgur.com/N8UlB4I.png) 
