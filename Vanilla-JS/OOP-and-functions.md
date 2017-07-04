@@ -58,7 +58,7 @@ Object Parameter:
 
 Array Parameter: 
 
-![color-example3](http://imgur.com/DOpfudo.png)
+![color-example3](http://imgur.com/kfYrRhp.png)
 
 ### Callback(item)
 
