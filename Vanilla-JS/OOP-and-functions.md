@@ -136,58 +136,11 @@ See more of this example here https://codepen.io/bluehabit/pen/MoOaao
 
 ### Real Life Example Callbacks
 
-```
- var request = require('request');
-
- function getWeather(lat, lng, callback){
-
-  request({
-    url: 'https://api.darksky.net/forecast/5d1fb3bcf4dc2e2d15f360bfa6488109/'+lat+','+lng,
-    json: true
-  }, function(error, response, body){
-    if(error){
-      callback('unable to connect to weather server');
-    } else if(response.statusCode === 400){
-      callback('unable to fetch weather from this location');
-    } else if(response.statusCode === 200){
-     return callback(undefined, body.currently.temperature)
-    }
-  });
-
- }
-
- module.exports.getWeather = getWeather;
-
-```
-
-```
-QUnit.test('bind', function(assert) {
-    var context = {name: 'moe'};
-    var func = function(arg) { return 'name: ' + (this.name || arg); };
-    var bound = _.bind(func, context);
-``
 
 ### Truthy and Falsey
 
-```
-<button id='button'>hey there</button>
-
-<script>
-var button = document.getElementById('button');
-
-button.addEventListener('click', function(event){
-
-	higherOrder(event.screenX)
-
-	function higherOrder(callback){
-		console.log(callback)
-	}
-})
-
-
-</script>
-```
 
 ### Get Coordinates Example using Event Object
+
 
 ![event-object](http://imgur.com/N8UlB4I.png) 
