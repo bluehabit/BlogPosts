@@ -168,3 +168,22 @@ QUnit.test('bind', function(assert) {
 ``
 
 ### Truthy and Falsey
+
+```
+<button id='button'>hey there</button>
+
+<script>
+var button = document.getElementById('button');
+
+button.addEventListener('click', function(event){
+
+	higherOrder(event.screenX)
+
+	function higherOrder(callback){
+		console.log(callback)
+	}
+})
+
+
+</script>
+```
