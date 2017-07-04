@@ -181,6 +181,10 @@ HTML
 ![querySelect](http://imgur.com/5mVAnKR.png)
 
 
+### Double If Statement vs. Else If
+
+![double-if](http://imgur.com/bMpuPVg.png)
+
 
 
 
