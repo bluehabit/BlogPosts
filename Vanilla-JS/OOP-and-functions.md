@@ -176,6 +176,10 @@ HTML
 ![method3](http://imgur.com/a9YyZzL.png)
 
 
+### QuerySelector Relative to Parent
+
+![querySelect](http://imgur.com/5mVAnKR.png)
+
 
 
 
