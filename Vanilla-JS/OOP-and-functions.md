@@ -162,6 +162,10 @@ See image below to demonstrate this:
 
 ### Adding Nodes to Document
 
+HTML
+
+![html](http://imgur.com/FoC1irT.png)
+
 `method1` using `.createElement` and `.createTextNode`
 ![method1](http://imgur.com/mUE49vh.png)
 
