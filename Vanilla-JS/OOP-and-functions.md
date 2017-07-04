@@ -143,4 +143,4 @@ See more of this example here https://codepen.io/bluehabit/pen/MoOaao
 ### Get Coordinates Example using Event Object
 
 
-![event-object](http://imgur.com/N8UlB4I.png) 
+![event-object](http://imgur.com/xT2XXna.png) 
