@@ -151,7 +151,7 @@ See more of this example here https://codepen.io/bluehabit/pen/MoOaao
 
 ### nodeLists are not LIVE
 
-The `nodeList` returned by `document.querySelectorAll('.slider-marker > span')` is **not a live list**. This means, chnages to the DOM for these elements will not change the list. Changes to `classList` however will be a live list.
+The `nodeList` returned by `document.querySelectorAll('.slider-marker > span')` is **not a live list**. Similarly, the Node returned by querySelector is not live. This means, chnages to the DOM for these elements will not change the list. Changes to `classList` however will be a live list.
 
 
 
