@@ -191,5 +191,8 @@ HTML
 ![nextElementSibling](http://imgur.com/jtn1QMI.png)
 
 
+### Carousel Logic
 
+![logic](http://imgur.com/a/XC4O7.png)
+JSFiddle: https://jsfiddle.net/c1yetpt8/
 
