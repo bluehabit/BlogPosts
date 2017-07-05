@@ -193,6 +193,6 @@ HTML
 
 ### Carousel Logic
 
-![logic](http://imgur.com/a/XC4O7.png)
+![logic](http://imgur.com/a/VooQx.png)
 JSFiddle: https://jsfiddle.net/c1yetpt8/
 
