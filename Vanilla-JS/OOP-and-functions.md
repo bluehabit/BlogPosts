@@ -188,7 +188,7 @@ HTML
 
 ### nextElementSibling ProTips 
 
-![nextElementSibling](http://imgur.com/kAUCGRh.png)
+![nextElementSibling](http://imgur.com/jtn1QMI.png)
 
 
 
