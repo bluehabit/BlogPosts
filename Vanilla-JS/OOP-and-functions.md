@@ -7,6 +7,10 @@ Is there anything on MDN that explains that it does *NOT* have to be `document.q
 ![nested-object](http://imgur.com/JXmv5Ah.png)
   
 ### Callback functions
+
+Key Illustration here: Notice how since the higher order function which takes the function as a parameter, aka the callback, the callback can have its own parameters. 
+
+![key-illustration](http://imgur.com/GQSq2aj.png)
   
 A callback function is a function passed into another function as an argument, which is then called inside the outer function to complete some kind of routine or action. The higher order function is always the function that takes another function as a parameter. The callback function always gets called within the higher order function as a parameter. Callbacks are often used to deal with *asynchronous code*.
 
