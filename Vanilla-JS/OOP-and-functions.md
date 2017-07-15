@@ -32,6 +32,10 @@ A callback function is a function passed into another function as an argument, w
 
 ![example](http://imgur.com/WPfBD2u.png)
 
+Same code, this time using a **anonymous callback function**
+
+![anonymous-example](http://imgur.com/v6FPHJi.png)
+
 Another Example:
 
 ![another-example](http://imgur.com/IttKey3.png)
