@@ -30,7 +30,7 @@ A callback function is a function passed into another function as an argument, w
 
 ### Callback Functions as the ONLY parameter within a Higher Order Function
 
-![example](http://imgur.com/U8uFeIZ.png)
+![example](http://imgur.com/WPfBD2u.png)
 
 Another Example:
 
