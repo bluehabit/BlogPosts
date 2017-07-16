@@ -11,7 +11,8 @@ Is there anything on MDN that explains that it does *NOT* have to be `document.q
 Key Illustration here: Notice how since the higher order function which takes the function as a parameter, aka the callback, the callback can have its own parameters. 
 
 **Designing your callback**:
-![design-callback](http://imgur.com/1qbVdIO.png)
+
+![design-callback]http://imgur.com/cuC2ffd.png)
 
 ![key-illustration](http://imgur.com/4eq6DOT.png)
   
