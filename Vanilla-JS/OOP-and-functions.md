@@ -12,7 +12,7 @@ Key Illustration here: Notice how since the higher order function which takes th
 
 **Designing your callback**:
 
-![design-callback](http://imgur.com/cuC2ffd.png)
+![design-callback](http://imgur.com/HlPqyIx.png)
 
 ![key-illustration](http://imgur.com/4eq6DOT.png)
   
