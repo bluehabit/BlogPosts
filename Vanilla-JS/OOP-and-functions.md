@@ -219,6 +219,8 @@ JSFiddle: https://jsfiddle.net/c1yetpt8/
 demo code
 ```
 
-A simpler example right here:
+A simpler, more stripped down, bare bone example example right here:
 https://jsfiddle.net/njtuuf0p/
 
+And an another alternative way to code it, see highlighted text
+![alternative](http://imgur.com/vynb5tC.png)
