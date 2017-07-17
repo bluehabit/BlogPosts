@@ -53,6 +53,9 @@ Another Example:
 
 ![anonymous-inline-vs-named-callback](http://imgur.com/Tci3Ggu.png)
 
+Named callback function
+![named-callback](http://imgur.com/a3sVfSQ.png)
+
 
 ### Callback functions can have their own Parameters
 
