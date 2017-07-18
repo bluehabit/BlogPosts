@@ -62,3 +62,7 @@ var textArea = document.getElementById('myText');
 array.findIndex()
 array.indexOf()
 
+
+### HTMLElementObject.nodeName 
+
+![nodeName](http://imgur.com/a/MqZv8.png)
