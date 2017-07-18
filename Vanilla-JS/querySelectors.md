@@ -66,3 +66,6 @@ array.indexOf()
 ### HTMLElementObject.nodeName 
 
 ![nodeName](http://imgur.com/E2Bdebt.png)
+
+
+
