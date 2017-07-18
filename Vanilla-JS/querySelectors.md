@@ -65,4 +65,4 @@ array.indexOf()
 
 ### HTMLElementObject.nodeName 
 
-![nodeName](http://imgur.com/a/MqZv8.png)
+![nodeName](http://imgur.com/E2Bdebt.png)
