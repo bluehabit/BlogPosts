@@ -67,5 +67,8 @@ array.indexOf()
 
 ![nodeName](http://imgur.com/E2Bdebt.png)
 
+Can use this to make conditional statements
+
+![nodeName-conditional](http://imgur.com/xe7EQYs.png)
 
 
