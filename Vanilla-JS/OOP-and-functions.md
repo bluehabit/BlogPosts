@@ -1,3 +1,5 @@
+![programming-nutshell](http://imgur.com/RwCgkg6.png)
+
 ## FIND THIS!
 
 Is there anything on MDN that explains that it does *NOT* have to be `document.querySelector` that you can use it on an HTML element object for exapmle `spanContainer.querySelector` to search within a certain container.
