@@ -1,3 +1,8 @@
+# HTMLCollections
+
+Anytime you use `.children` it produces a `HTMLCollection` which *cannot* be used with a `forEach` out of the box.
+![htmlcollection-foreach](http://imgur.com/5iRpW12.png)
+
 # Nodelists vs HTML Collections
 
 This sort of confused me too on my own learning, as you pointed out `forEach` is listed as current method for `nodeLists` on MDN.
