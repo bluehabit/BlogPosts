@@ -95,3 +95,8 @@ nodeList.forEach(function(item){
 ### Helpful JSFiddle
 
 https://jsfiddle.net/y1yxe91w/
+
+### Nodelists, Arrays and HTMLCollections and `.forEach`
+
+`.forEach` Only works with **arrays** and **nodeLists**, it will not work with *htmlCollections*, see the example below
+![nodeList-forEach](http://imgur.com/lsG91K5.png)
