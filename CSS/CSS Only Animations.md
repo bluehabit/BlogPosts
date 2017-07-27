@@ -1037,3 +1037,7 @@ Here is what your final animation should look like:
 * http://animista.net/
 * https://robots.thoughtbot.com/css-animation-for-beginners#building-block-1-keyframes
 
+## Using Transitions for Animation
+
+![transition-animation](http://imgur.com/AbOXMkI.png)
+
