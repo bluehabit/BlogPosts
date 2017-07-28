@@ -1048,6 +1048,13 @@ Using transitions for animation involves putting the `transition` property on th
 
 ![transition-animation](http://imgur.com/AbOXMkI.png)
 
+#### Logic
+
+![logic1](http://imgur.com/b17ftho.png)
+
+![logic2](http://imgur.com/umyDysD.png)
+
+
 
 
 
