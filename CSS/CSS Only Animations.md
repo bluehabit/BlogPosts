@@ -1051,7 +1051,15 @@ Using transitions for animation involves putting the `transition` property on th
 #### Logic
 
 ![logic1](http://imgur.com/b17ftho.png)
+We are using *descendant selectors* to make this work. When the user clicks the hamburger menu parent container, it toggles the class `.change`. Then notice our CSS selectors. 
 
+`.change .bar` 
+`.change .bar2`
+`.change .bar3`
+
+Notice the space inbetween the elements, these are *descendent* selectors. The parent container will have the class of `.change` added, and its descendants `bar1`, `,bar2` and `bar3`. This will allow us to do custom animations.
+
+Below, is a more simple example. No animations yet, just using the logic discussed to target and change the bars to be individaul colors. 
 ![logic2](http://imgur.com/umyDysD.png)
 
 
