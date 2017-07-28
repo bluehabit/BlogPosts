@@ -1037,7 +1037,19 @@ Here is what your final animation should look like:
 * http://animista.net/
 * https://robots.thoughtbot.com/css-animation-for-beginners#building-block-1-keyframes
 
-## Using Transitions for Animation
+### Building Hamburger Menu
+
+![hamburger-menu](http://imgur.com/kTI0P6Y.gif)
+
+Demo of completed hamburger menu here https://codepen.io/bluehabit/pen/ZJbqPg
+
+#### Using Transitions for Animation
+Using transitions for animation involves putting the `transition` property on the default state (*off*), in the *on* state you animate it, for example `opacity: 0` or `transform: scale(1.2)`. 
 
 ![transition-animation](http://imgur.com/AbOXMkI.png)
+
+
+
+
+
 
