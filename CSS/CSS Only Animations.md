@@ -1060,6 +1060,7 @@ We are using *descendant selectors* to make this work. When the user clicks the 
 Notice the space inbetween the elements, these are *descendent* selectors. The parent container will have the class of `.change` added, and its descendants `bar1`, `,bar2` and `bar3`. This will allow us to do custom animations.
 
 Below, is a more simple example. No animations yet, just using the logic discussed to target and change the bars to be individaul colors. 
+
 ![logic2](http://imgur.com/umyDysD.png)
 
 
