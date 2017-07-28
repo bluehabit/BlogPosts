@@ -727,6 +727,10 @@ Codepen: http://codepen.io/bluehabit/pen/GmKMLj
 
 Codepen: http://codepen.io/bluehabit/pen/GmKMLj
 
+An interesting example of the types of effects you can achieve with blur, below it looks like a neon sign. 
+
+![neon](http://imgur.com/hh7MuLI.gif)
+
 -----
 
 
