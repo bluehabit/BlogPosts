@@ -1063,7 +1063,11 @@ Below, is a more simple example. No animations yet, just using the logic discuss
 
 ![logic2](http://imgur.com/umyDysD.png)
 
+Here is a slightly more advanced example, now utilizing the concept of *off* and *on* states to animate. 
 
+![logic3](http://imgur.com/6p2lmOd.gif)
+
+**Demo:** https://codepen.io/bluehabit/pen/qXOQmj.png
 
 
 
