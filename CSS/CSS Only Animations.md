@@ -1073,7 +1073,6 @@ Here is a slightly more advanced example, now utilizing the concept of *off* and
 
 **Demo:** https://codepen.io/bluehabit/pen/qXOQmj.png
 
-
-
+![animation-tip](http://imgur.com/to6DYyT.png)
 
 
