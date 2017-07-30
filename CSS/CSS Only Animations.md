@@ -1076,3 +1076,9 @@ Here is a slightly more advanced example, now utilizing the concept of *off* and
 ![animation-tip](http://imgur.com/to6DYyT.png)
 
 
+### Fancy Chapter Headers
+
+![example-headers](http://imgur.com/eCKZk78.png)
+
+https://codepen.io/bluehabit/pen/KvVbyN
+
