@@ -12,3 +12,4 @@ Codepen (before solution applied): https://codepen.io/bluehabit/pen/ZJQqzx
 
 ![z-index](http://imgur.com/xSqo3JX.png)
 
+Key here is to give all items with overlap a `position: relative` and then use `z-index` to specify the order in which they stack. 
