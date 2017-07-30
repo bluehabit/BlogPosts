@@ -8,3 +8,7 @@ Solution:
 
 Codepen (before solution applied): https://codepen.io/bluehabit/pen/ZJQqzx
 
+### Z-index
+
+![z-index](http://imgur.com/xSqo3JX.png)
+
