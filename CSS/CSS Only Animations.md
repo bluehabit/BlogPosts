@@ -590,6 +590,30 @@ When the `id` *alert1* is the `:target` it will change the background-color to p
 
 Codepen: http://codepen.io/bluehabit/pen/OmLLQb
 
+### Animating Input Labels with Pseudo Selectors
+
+![animated-labels](http://imgur.com/ElGa6CY.gif)
+
+Key components to animating this, using pseudo selectors `:focus` and `:valid`.
+
+```
+input:focus + label {
+//code here
+}
+```
+
+```
+input:valid + label{
+	\\code here
+}
+```
+
+
+demo: https://codepen.io/bluehabit/pen/qXZVyR
+Read more about this technique: https://css-tricks.com/float-labels-css
+
+
+
 ## CSS Animations
 
 CSS animations are made up of two basic building blocks.
