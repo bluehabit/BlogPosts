@@ -225,6 +225,24 @@ This targets the `placeholder` html attribute, often used in things like form te
 
 ![placeholder-pseudo](http://imgur.com/GNjq64c.png)
 
+### Chaining together Pseudo Selectors
+
+Pseudo selectors can be chained together to do things like animate. In the example below, the form `placeholder` text will change in color and opacity once it has `focus`
+
+![pseudo-chain](http://imgur.com/m9v4wy5.png)
+
+Also important for `forms`, to remove the default blue outline when it has focus use this code before you customize
+```
+ input,
+    textarea,
+    select {
+        outline: 0;
+    }
+```
+
+Demo: https://codepen.io/bluehabit/pen/KvVJOr
+
+
 ### :active
 
 With the `:active` pseudo class, the effect only occurs while the user is holding down the mouse. If we go to the text `click & HOLD` and hold our mouse down, it will change the color.
