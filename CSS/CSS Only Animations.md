@@ -1106,3 +1106,11 @@ Here is a slightly more advanced example, now utilizing the concept of *off* and
 
 https://codepen.io/bluehabit/pen/KvVbyN
 
+
+### Animating Borders
+
+Unfortunatley, you cannot apply opacity to just a border - it will apply to the whole element. Instead, if you want to animate border opacity use `rgba(value, value, value, opacityvalue)` as shown in the example below
+
+![animating-borders](http://imgur.com/KfnNIzN.gif)
+
+![animating-border-steps](http://imgur.com/TyKWl60.png)
