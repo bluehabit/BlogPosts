@@ -49,7 +49,7 @@ Keep this in mind as we move to the next section.
 ### Building Radio and Checkbox Inputs
 Lets being by practicing building a few basic input radio elements. We are going to create a collection of gem stones that a user can select from. Each gem stone will be its own input element with an accompanying label. Let's begin with creating our first input element, a topaz. 
 
-```
+```		
 <input type="radio" id='topaz'>
 ```
 
@@ -590,7 +590,8 @@ When the `id` *alert1* is the `:target` it will change the background-color to p
 
 Codepen: http://codepen.io/bluehabit/pen/OmLLQb
 
-### Animating Input Labels with Pseudo Selectors
+### Animating Input Labels with Pseudo Selectors 
+### AND an Example of HYBRID animation (using `transition` and `@keyframes`)
 
 ![animated-labels](http://imgur.com/ElGa6CY.gif)
 
