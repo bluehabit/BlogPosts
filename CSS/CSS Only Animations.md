@@ -219,6 +219,12 @@ ul.ice-animals li:nth-child(3){
 ```
 This makes the third list item 'Walrus' the color white. 
 
+### ::placeholder
+
+This targets the `placeholder` html attribute, often used in things like form text areas.
+
+![placeholder-pseudo](http://imgur.com/GNjq64c.png)
+
 ### :active
 
 With the `:active` pseudo class, the effect only occurs while the user is holding down the mouse. If we go to the text `click & HOLD` and hold our mouse down, it will change the color.
