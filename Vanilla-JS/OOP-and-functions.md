@@ -232,3 +232,5 @@ https://jsfiddle.net/njtuuf0p/
 
 And an another alternative way to code it, see highlighted text
 ![alternative](http://imgur.com/vynb5tC.png)
+
+### `.parentElement`
