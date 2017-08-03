@@ -36,3 +36,7 @@ Before:
 After: 
 
 ![after](http://imgur.com/1zzeQ2F.png)
+
+## Or howabout this one?
+
+![fix](http://imgur.com/q40cRBc.png)
