@@ -11,6 +11,36 @@ Is there anything on MDN that explains that it does *NOT* have to be `document.q
 ### Nested Objects
 
 ![nested-object](http://imgur.com/JXmv5Ah.png)
+
+### Supreme Callback
+
+Good example of a callback function here, identify the higher order function. Identify the callbacks. 
+
+![cb1](http://imgur.com/MfeJwrU.png)
+
+![cb2](http://imgur.com/d4jRljT.gif)
+
+source:
+
+```
+  var start = function () {
+    var loops = 3
+      , total = 0;
+    for (var i = 0; i < loops; i++) {
+      total += next(i);
+    }
+    done(total);
+  }
+
+  var next = function (num) {
+    var myNum = num * num;
+    return myNum;
+  }
+
+  var done = function (num) {
+    console.info('Added up to', num);
+  }
+```
   
 ### Callback functions
 
