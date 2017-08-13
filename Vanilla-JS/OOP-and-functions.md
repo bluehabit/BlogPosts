@@ -79,6 +79,8 @@ A callback function is a function passed into another function as an argument, w
 
 ### Callbackfunctions !== Closure
 
+![callback?](http://imgur.com/c7FhoUU.png)
+
 
 ### Callback Functions as the ONLY parameter within a Higher Order Function
 
