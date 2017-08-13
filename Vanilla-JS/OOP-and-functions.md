@@ -71,6 +71,12 @@ A callback function is a function passed into another function as an argument, w
 
 ![named-house](http://imgur.com/uOvSljc.png)
 
+### Creating a CUSTOM filter function using callbacks
+
+![hadronix](http://imgur.com/fwG7fWH.png)
+
+### Callbackfunctions !== Closure
+
 
 ### Callback Functions as the ONLY parameter within a Higher Order Function
 
