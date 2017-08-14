@@ -1,5 +1,7 @@
 # Callbacks and Closures
 
+`function block scopes are what you call a closure`
+
 ## Example 1
 
 ![example-1](http://imgur.com/exE3hzk.png)
