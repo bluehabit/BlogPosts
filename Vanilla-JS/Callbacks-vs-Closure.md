@@ -6,6 +6,8 @@ Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope
 
 ![key3](http://imgur.com/z7vPUtP.png)
 
+![key4](http://imgur.com/xFpCTXF.png)
+
 # Callbacks and Closures
 
 `function block scopes are what you call a closure`
