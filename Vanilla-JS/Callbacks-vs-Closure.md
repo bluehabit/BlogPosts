@@ -19,3 +19,6 @@ Lets explore how to make the previous example a closure.
 
 The `return` keyword always **exits** the function. In this case, the `return` keyword is within the lexical scope of the parent function, `function1`, as a result it ends the whole function. 
 
+## Closure Variations
+
+![example-4](http://imgur.com/moBWOn1.png)
