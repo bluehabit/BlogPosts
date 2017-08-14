@@ -4,10 +4,6 @@ How do closures work? https://stackoverflow.com/questions/111102/how-do-javascri
 
 Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope 
 
-![key](http://imgur.com/10vV8iK.png)
-
-![key2](http://imgur.com/HQFO3GB.png)
-
 ![key3](http://imgur.com/z7vPUtP.png)
 
 # Callbacks and Closures
