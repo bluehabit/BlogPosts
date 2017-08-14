@@ -67,9 +67,12 @@ Lets walk this through step by step.
 
 Here, we just call the function `test()`. Within that functions lexical scope it has `return function()`, thus thats what we get back out of the function. Look below `console.log(value)`. Because `return` exits the function and gives us something back. The anonymous function has access to its parent function and its variables, in this case `value`.  
 
-![example(http://imgur.com/8kJeAgI.png)
+![example](http://imgur.com/8kJeAgI.png)
 
 ![explanation](http://imgur.com/r9LZZh6.png)
+
+![examples](http://imgur.com/uyUEG9m.png)
+
 
 ------
 
