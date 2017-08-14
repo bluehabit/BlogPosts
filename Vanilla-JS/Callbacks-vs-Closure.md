@@ -77,3 +77,9 @@ Here, we just call the function `test()`. Within that functions lexical scope it
 ------
 
 
+### Tricky Examples
+
+![trick0](http://imgur.com/bA236Pp.png)
+
+![trick1](http://imgur.com/HZzMfvq.png)
+
