@@ -1,4 +1,8 @@
+## Key Resource: https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+
 ![key](http://imgur.com/10vV8iK.png)
+
+![key2](http://imgur.com/HQFO3GB.png)
 
 # Callbacks and Closures
 
