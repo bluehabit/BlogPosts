@@ -8,6 +8,8 @@ Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope
 
 ![key4](http://imgur.com/xFpCTXF.png)
 
+![crit](http://imgur.com/QLP1PGb.png)
+
 # Callbacks and Closures
 
 `function block scopes are what you call a closure`
