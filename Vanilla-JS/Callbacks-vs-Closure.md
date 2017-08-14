@@ -71,6 +71,6 @@ Here, we just call the function `test()`. Within that functions lexical scope it
 
 ![explanation](http://imgur.com/r9LZZh6.png)
 
-====
+------
 
 
