@@ -39,4 +39,4 @@ When we remove the `return function2` line. It throws an error.
 
 Examine the scope, closure section of dev tools. 
 
-!example-dev](http://imgur.com/VTDVEkQ.png)
+![example-dev](http://imgur.com/VTDVEkQ.png)
