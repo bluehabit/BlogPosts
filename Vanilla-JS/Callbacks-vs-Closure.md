@@ -1,7 +1,7 @@
 #### Key Resource
 
-### How do closures work? https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
-### Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope 
+How do closures work? https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope 
 
 ![key](http://imgur.com/10vV8iK.png)
 
