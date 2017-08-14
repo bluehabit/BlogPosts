@@ -1,3 +1,5 @@
+![key](http://imgur.com/10vV8iK.png)
+
 # Callbacks and Closures
 
 `function block scopes are what you call a closure`
