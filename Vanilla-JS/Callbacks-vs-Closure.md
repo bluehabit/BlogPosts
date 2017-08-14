@@ -30,4 +30,4 @@ When we remove the `return function2` line. It throws an error.
 
 ## Closure Variations
 
-![example-4](http://imgur.com/moBWOn1.png)
+![example-4](http://imgur.com/wxUij9y.png)
