@@ -4,6 +4,8 @@
 
 ![key2](http://imgur.com/HQFO3GB.png)
 
+![key3](http://imgur.com/z7vPUtP.png)
+
 # Callbacks and Closures
 
 `function block scopes are what you call a closure`
