@@ -51,8 +51,24 @@ Examine the scope, closure section of dev tools.
 
 ![example-dev](http://imgur.com/VTDVEkQ.png)
 
+Lets walk this through step by step.
+
+1. the function `test()` runs and it `returns` another function, in this case just the function definition. Remember whatever comes directly after the `return` keyword is the output of the function, and the function will also exit. So it is literally returning what is after the keyword return:
+
+```
+  return function() {
+    console.log(value);
+  };
+```
+2. This is why we must do `test()()`. `test()` is just holding the function definition described above. So if its holing a function definition, we must call it with `test()()`. 
+
+3. This is a `closure` because we already exited the function with the `return` keyword using `return function(){console.log(value)}`. But notice how we have access to the parent functions scope variable `value`.  
+
+
 Here, we just call the function `test()`. Within that functions lexical scope it has `return function()`, thus thats what we get back out of the function. Look below `console.log(value)`. Because `return` exits the function and gives us something back. The anonymous function has access to its parent function and its variables, in this case `value`.  
 
 ![example(http://imgur.com/8kJeAgI.png)
 
 ![explanation](http://imgur.com/r9LZZh6.png)
+
+
