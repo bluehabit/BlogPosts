@@ -31,3 +31,12 @@ When we remove the `return function2` line. It throws an error.
 ## Closure Variations
 
 ![example-4](http://imgur.com/wxUij9y.png)
+
+
+## Example 3
+
+![example3](http://imgur.com/7xAjiXM.png)
+
+Examine the scope, closure section of dev tools. 
+
+!example-dev](http://imgur.com/VTDVEkQ.png)
