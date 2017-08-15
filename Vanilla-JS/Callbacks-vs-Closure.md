@@ -131,6 +131,10 @@ Understand how a reference to a function is returned to a variable `(say2)` in t
 
 ## Example 10
 
+The three functions have shared access to the same closure — the local variables of `setupSomeGlobals()` when the three functions were defined.
+
+Note that in the above example, if you call `setupSomeGlobals()` again, then a new closure (stack-frame!) is created. The old `logNumber`, `increaseNumber`, `setNumber` variables are overwritten with new functions that have the new closure. (In JavaScript, whenever you declare a function inside another function, the inside function(s) is/are recreated again each time the outside function is called.)
+
 ![1](http://imgur.com/jKzPeGP.png)
 
 ![2](http://imgur.com/FYOokgA.png)
