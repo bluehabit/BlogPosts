@@ -12,7 +12,9 @@ Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope
 
 # Callbacks and Closures
 
-`function block scopes are what you call a closure`
+A function inside another function always creates a closure around variables in the outer scope. However, that closure only outlives the outer scope if the inner function escapes. 
+
+
 
 ## Example 1
 
