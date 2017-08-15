@@ -132,7 +132,9 @@ This is also an example of closure.
 
 Here `return` exits the function, whatever comes at the end of `return` is what the output of the funciton is. In this case what comes after `return`we have `say` which is just the function definition as we can see below.
 
-Understand how a reference to a function is returned to a variable `(say2)` in the above code.
+![a](https://ibb.co/dmxuhF.png)
+
+Understand how a reference to a function is returned to a variable `(say2)` in the above code. Note `say` is a variable which holds an `anonymous function` e.g. `function(){console.log(text)}` 
 
 
 
