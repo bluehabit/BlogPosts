@@ -102,7 +102,6 @@ Here, we just call the function `test()`. Within that functions lexical scope it
 
 ------
 
-
 ### Tricky Examples
 
 ![trick1](http://imgur.com/HZzMfvq.png)
@@ -110,6 +109,11 @@ Here, we just call the function `test()`. Within that functions lexical scope it
 Can verify using chrome dev tools that a function is actually a closure.
 
 ![trick0](http://imgur.com/bA236Pp.png)
+
+------
+
+
+![img](http://imgur.com/QRZooUH.png)
 
 
 
