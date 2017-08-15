@@ -30,6 +30,10 @@ function myCity(cityName){
 
 This is not a closure. `return printCity(cityName)` is just calling the function like normal, but you are returning it. In the line `return printCity(cityName)` remember `return` just spits out what comes after it, in this case its just a normal functon call `printCity(cityName)`. If you want to turn this into a closure you would need to **return the function itself**. 
 
+Within the `higherOrder` function you are explicitly passing the parameters (like `houseNum`, `street`, etc.) to the `callback function`.
+
+This is similar to invoking regular functions with arguments/parameters. On the other hand, closures are invoked after their host/parent function is completely executed.
+
 
 
 ## Example 1
