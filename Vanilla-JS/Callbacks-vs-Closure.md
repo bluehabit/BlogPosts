@@ -1,14 +1,7 @@
-#### Key Resource
 
-How do closures work? https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+# Welcome to Flavor Town
 
-Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope 
-
-![key3](http://imgur.com/z7vPUtP.png)
-
-![key4](http://imgur.com/xFpCTXF.png)
-
-![crit](http://imgur.com/QLP1PGb.png)
+![flavor-town](http://imgur.com/z6Ia4DD.png)
 
 # Callbacks and Closures
 
@@ -136,6 +129,16 @@ Here `return` exits the function, whatever comes at the end of `return` is what 
 
 Understand how a reference to a function is returned to a variable `(say2)` in the above code. Note `say` is a variable which holds an `anonymous function` e.g. `function(){console.log(text)}` 
 
+#### Key Resource
 
+How do closures work? https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+
+Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope 
+
+![key3](http://imgur.com/z7vPUtP.png)
+
+![key4](http://imgur.com/xFpCTXF.png)
+
+![crit](http://imgur.com/QLP1PGb.png)
 
 
