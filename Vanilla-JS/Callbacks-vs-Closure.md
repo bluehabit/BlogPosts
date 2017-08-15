@@ -141,4 +141,6 @@ Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope
 
 ![crit](http://imgur.com/QLP1PGb.png)
 
+![st-pepsi](http://imgur.com/sRtZLKa.png)
+
 
