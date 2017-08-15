@@ -12,7 +12,23 @@ Lexical Scope https://stackoverflow.com/questions/1047454/what-is-lexical-scope
 
 # Callbacks and Closures
 
-A function inside another function always creates a closure around variables in the outer scope. However, that closure only outlives the outer scope if the inner function escapes. 
+A function inside another function always creates a closure around variables in the outer scope. However, that closure only outlives the outer scope if the inner function escapes. Remember, when you `return` it exits the function and whatever is at the end of `return` is what the function spits back out. You must **return the function itself** for it to be a closure. Lets take a look at an example:
+
+```
+function myCity(cityName){
+	var cityName = cityName;
+	var state = 'texas';
+	return printCity(cityName);
+	//NOT a closure, have to return function itself
+
+	function printCity(city){
+		return 'I live in ' + city + ' within the state of ' + state; 
+	}
+}
+
+```
+
+This is not a closure. `return printCity(cityName)` is just calling the function like normal, but you are returning it. In the line `return printCity(cityName)` remember `return` just spits out what comes after it, in this case its just a normal functon call `printCity(cityName)`. If you want to turn this into a closure you would need to **return the function itself**. 
 
 
 
