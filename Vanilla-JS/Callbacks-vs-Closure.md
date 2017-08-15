@@ -112,8 +112,9 @@ Can verify using chrome dev tools that a function is actually a closure.
 
 ------
 
-
 ![img](http://imgur.com/QRZooUH.png)
 
+------
 
+![img](http://imgur.com/YEhO2qt.png)
 
