@@ -139,6 +139,8 @@ Note that in the above example, if you call `setupSomeGlobals()` again, then a n
 
 ![2](http://imgur.com/FYOokgA.png)
 
+------
+
 #### Key Resource
 
 How do closures work? https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
