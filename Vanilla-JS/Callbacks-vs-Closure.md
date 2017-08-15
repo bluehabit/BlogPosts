@@ -34,6 +34,8 @@ Within the `higherOrder` function you are explicitly passing the parameters (lik
 
 This is similar to invoking regular functions with arguments/parameters. On the other hand, closures are invoked after their host/parent function is completely executed.
 
+![img](http://imgur.com/biaR05g.png)
+
 
 
 ## Example 1
