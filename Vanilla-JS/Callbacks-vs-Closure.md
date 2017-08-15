@@ -127,3 +127,13 @@ Can verify using chrome dev tools that a function is actually a closure.
 This is also an example of closure.
 
 ![img](http://imgur.com/injrehz.png)
+
+![s](http://imgur.com/NyN6aqd.png)
+
+Here `return` exits the function, whatever comes at the end of `return` is what the output of the funciton is. In this case what comes after `return`we have `say` which is just the function definition as we can see below.
+
+Understand how a reference to a function is returned to a variable `(say2)` in the above code.
+
+
+
+
