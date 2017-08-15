@@ -4,17 +4,17 @@ This is why functions in javascript are called `higher order functions` as they 
 
 # Higher order function examples
 
-Higher Order Functions Example 1:
+### `Higher Order Functions Example 1`:
 Passing a function to another function as a parameter, e.g. Callbacks
 
 ![example1](http://imgur.com/Qlnf7aR.png)
 
-Higher Order Functions Example 2:
+### `Higher Order Functions Example 2`:
 Returning a function from within another function
 
 ![example2](http://imgur.com/eacdn88.png)
 
-Higher Order Functions Example 3:
+### `Higher Order Functions Example 3`:
 they can be assigned to a variable using the assignment operator
 
 ![example3](http://imgur.com/w7CdNta.png)
