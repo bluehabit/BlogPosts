@@ -1,3 +1,31 @@
+# Higher order functions
+
+This is why functions in javascript are called `higher order functions` as they can be played around as though they are `variables`. The functions in javascript can be passed to another function as a parameter (`callback`), they can be `returned` by another function, they can be assigned to a `variable` using the assignment operator.
+
+# Higher order function examples
+
+Higher Order Functions Example 1:
+Passing a function to another function as a parameter, e.g. Callbacks
+
+![example1](http://imgur.com/Qlnf7aR.png)
+
+Higher Order Functions Example 2:
+Returning a function from within another function
+
+![example2](http://imgur.com/eacdn88.png)
+
+Higher Order Functions Example 3:
+they can be assigned to a variable using the assignment operator
+
+![example3](http://imgur.com/w7CdNta.png)
+
+The variable `sayHi` holds the `function definition`. 
+
+![func-def](http://imgur.com/ZaZ6Y7C.png)
+
+We can call the function and pass parameters to it just like normal.
+
+![func-def2](http://imgur.com/scaKlea.png)
 
 # Welcome to Flavor Town
 
