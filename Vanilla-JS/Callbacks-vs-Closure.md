@@ -90,8 +90,6 @@ Here, we just call the function `test()`. Within that functions lexical scope it
 
 ![example](http://imgur.com/8kJeAgI.png)
 
-![explanation](http://imgur.com/r9LZZh6.png)
-
 ![examples](http://imgur.com/uyUEG9m.png)
 
 
