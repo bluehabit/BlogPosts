@@ -135,6 +135,9 @@ The three functions have shared access to the same closure — the local variabl
 
 Note that in the above example, if you call `setupSomeGlobals()` again, then a new closure (stack-frame!) is created. The old `logNumber`, `increaseNumber`, `setNumber` variables are overwritten with new functions that have the new closure. (In JavaScript, whenever you declare a function inside another function, the inside function(s) is/are recreated again each time the outside function is called.)
 
+The closure is the function itself wrapping up all the variables available in its scope and taking them with them. Returning a function as you describe is called a high order function.
+this example you give does technically take advantage of a closure
+
 ------
 
 ## Example 11
