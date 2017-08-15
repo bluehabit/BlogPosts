@@ -115,7 +115,7 @@ Can verify using chrome dev tools that a function is actually a closure.
 
 ------
 
-### Example 9
+## Example 9
 
 This is also an example of closure.
 
@@ -128,6 +128,12 @@ Here `return` exits the function, whatever comes at the end of `return` is what 
 ![a](http://imgur.com/bUOaiyS.png)
 
 Understand how a reference to a function is returned to a variable `(say2)` in the above code. Note `say` is a variable which holds an `anonymous function` e.g. `function(){console.log(text)}` 
+
+## Example 10
+
+![1](http://imgur.com/jKzPeGP.png)
+
+![2](http://imgur.com/FYOokgA.png)
 
 #### Key Resource
 
