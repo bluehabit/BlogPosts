@@ -36,7 +36,9 @@ This is similar to invoking regular functions with arguments/parameters. On the 
 
 ![img](http://imgur.com/biaR05g.png)
 
+## Nested Functions
 
+![nested](http://imgur.com/m3cC7NG.png)
 
 ## Example 1
 
