@@ -120,3 +120,10 @@ Can verify using chrome dev tools that a function is actually a closure.
 
 ![img](http://imgur.com/YEhO2qt.png)
 
+------
+
+### Example 9
+
+This is also an example of closure.
+
+![img](http://imgur.com/injrehz.png)
