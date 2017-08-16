@@ -188,6 +188,18 @@ We can continue to use this closure to increment the private variable `count`. B
 
 ![example2](http://imgur.com/XTsUm9j.png)
 
+## Private Variables 2
+
+![example3](http://imgur.com/Pm9Kvzj.png)
+
+If you define variables without var, let, const they are put in the global scope which is important for reasons we will outline below.
+
+`setUpGlobalVariable()` //this runs the function which has the variables `gPet` and `gChangePetName` declared WITHOUT the `var` keyword thus putting them in the `global` context
+
+notice how if we try to access the variable pet without using closure it throws an error
+
+the variable `pet` is scoped and set to `luna` and can only be accessed or modified via `closure`. 
+
 #### Key Resource
 
 How do closures work? https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
