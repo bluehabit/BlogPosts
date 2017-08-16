@@ -176,6 +176,17 @@ this example you give does technically take advantage of a closure
 
 ------
 
+## Private Variables
+
+In other languages there exists support for variables that cannot be modified externally, we call those private variables, but in JavaScript we don't have that built in, so we use closures to replicate this.
+
+Here executing the function `counter` will `return` what comes after it, in this case an `anonymous function` that has the following `function(){return ++count;})`. When you run `counter()` it is just returning another functions definition (`closure`). The parent function has already `exited / returned` but we can still access the local variable of the parents scope which is `count`. 
+
+![example1](http://imgur.com/TMKjRFb.png)
+
+We can continue to use this closure to increment the private variable `count`. By using `counter1()`. 
+
+![example2](http://imgur.com/XTsUm9j.png)
 
 #### Key Resource
 
