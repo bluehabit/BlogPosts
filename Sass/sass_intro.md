@@ -61,6 +61,8 @@ Partials are smaller Sass files included as part of a bigger Sass file. Partial 
 
 Other files include Sass partials by using the `@import` directive.
 
+Please note that, unlike the CSS `@import` directive, the Sass import does not generate another `HTTP request`. The CSS `@import` generates a new HTTP request for each file imported (the browser does a round trip to the server for any CSS file), but the Sass `@import` generates no requests. The Sass preprocessor uses `@import` directives only to combine Sass files into a unique CSS file, which will not include any `@import`.
+
 ### Partials Directory
 
 Set it up like this
