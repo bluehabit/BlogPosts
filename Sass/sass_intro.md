@@ -1,3 +1,7 @@
+### Issue
+
+For some reason using `sass --watch scss:css` is not working for me. It produces `error no such file or directory @ rb_sysopen -scss`. I tried to research this particular error but did not have much luck.
+
 ### Sass to CSS converter: sassmeister
 
 https://www.sassmeister.com/
