@@ -78,15 +78,16 @@ Set it up like this
 ![interpolation](http://imgur.com/ulgbP5z.png)
 
 ### Mixins
-![mixin](http://imgur.com/zP9ot5C.png)
-
-![mixin2](http://imgur.com/X7AvzjA.png)
 
 Mixins let us make groups of CSS declarations that we can reuse throughout our site. Like functions, mixins can receive parameters.
 
 To create a mixin, we use the `@mixin` directive, followed by a name and variables inside parentheses: `@mixin mixin-name($variable1, $variable2, ...).'`
 
 To use a mixin (i.e., to embed its code) the `@include` directive is used, followed by the name of the mixin and its arguments.
+
+![mixin](http://imgur.com/zP9ot5C.png)
+
+![mixin2](http://imgur.com/X7AvzjA.png)
 
 ## Operators `+`, `-`, `*`, `/`, `%` and `( )`
 
