@@ -34,6 +34,10 @@ Sass lets us nest CSS selectors in a manner similar to the way HTML is nested. S
 
 ![nested-sass](http://imgur.com/ssZ6xm3.png)
 
+When nesting, it is possible to reference the corresponding selector using the & symbol. This is useful, for instance, when nesting pseudo-classes:
+
+![nested-example2](http://imgur.com/nE48cf2.png)
+
 ### Interpolation aka `placeholders`
 ![interpolation](http://imgur.com/ulgbP5z.png)
 
