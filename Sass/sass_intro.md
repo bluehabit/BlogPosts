@@ -16,7 +16,7 @@ https://www.sassmeister.com/
 ### maps = objects
 
 
-###Variables
+### Variables
 
 Define variables with `$` for example `$myColor`. Then use the variable in your markup, `.button {background-color:$myColor};`. For best practice do not use a variable if the value will only be used once.
 
@@ -27,6 +27,12 @@ resulting output:
 ![output](http://imgur.com/enn4B1K.png)
 
 In Sass you can always check your ouput.css file to see what your input.scss conditionals are doing.
+
+### Nesting
+
+Sass lets us nest CSS selectors in a manner similar to the way HTML is nested. Selector nesting offers a way for style sheet authors to compute long selectors by nesting shorter selectors within each other. For example:
+
+![nested-sass](http://imgur.com/ssZ6xm3.png)
 
 ### Interpolation aka `placeholders`
 ![interpolation](http://imgur.com/ulgbP5z.png)
