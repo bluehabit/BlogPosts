@@ -61,6 +61,17 @@ Partials are smaller Sass files included as part of a bigger Sass file. Partial 
 
 Other files include Sass partials by using the `@import` directive.
 
+### Partials Directory
+
+Set it up like this
+
+![partial-directory](http://imgur.com/6jp709w.png)
+
+`special note:` The variables live within their own scope, that is restricted to the file. For example if I use `$myColor: red` and only define that in the main css file, but not the partial, it won't be able to read that and will throw an error. As you can see in the example below.
+
+![partial2](http://imgur.com/CoiU0OK.png)
+
+
 ### Interpolation aka `placeholders`
 ![interpolation](http://imgur.com/ulgbP5z.png)
 
