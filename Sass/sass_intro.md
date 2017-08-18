@@ -16,7 +16,10 @@ https://www.sassmeister.com/
 ### maps = objects
 
 
-### Declaring Variables
+###Variables
+
+Define variables with `$` for example `$myColor`. Then use the variable in your markup, `.button {background-color:$myColor};`. For best practice do not use a variable if the value will only be used once.
+
 ![declaring-variables](http://imgur.com/AKHOAQQ.png)
 
 resulting output:
