@@ -1,6 +1,12 @@
 ### Issue
 
-For some reason using `sass --watch scss:css` is not working for me. It produces `error no such file or directory @ rb_sysopen -scss`. I tried to research this particular error but did not have much luck.
+![sass-setup](http://imgur.com/SkhBls5.png)
+
+`sass --watch scss:css`
+
+This command will watch entire `directories` for changes in the `scss` and `css` directory, and update them accordingly. Note the default named output for sass `css` files is `input.css`. 
+
+ If you don't have these directories and use `sass --watch scss:css` it will produce `error no such file or directory @ rb_sysopen -scss`.
 
 ### Sass to CSS converter: sassmeister
 
