@@ -89,6 +89,10 @@ To use a mixin (i.e., to embed its code) the `@include` directive is used, follo
 
 ![mixin2](http://imgur.com/X7AvzjA.png)
 
+When you pass through values to a `mixin` make sure you don't use `" "` marks for example: 
+
+![mixin3](http://imgur.com/2ToFOtk.png)
+
 ## Operators `+`, `-`, `*`, `/`, `%` and `( )`
 
 ## Sass Control Directives: `@if`, `@for`, `@each` and `@while`
