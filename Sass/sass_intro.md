@@ -1,3 +1,20 @@
+### Sass Directory
+
+```
+project
+  |
+  |-js
+  └-scss
+  |  |-main.scss
+  |  |-buttons.scss
+  |  └-forms.scss
+  |-css
+  |  |-main.css
+  |  |-buttons.css
+  |  └-forms.css
+  └-index.html
+```
+
 ### Issue
 
 ![sass-setup](http://imgur.com/SkhBls5.png)
@@ -37,6 +54,12 @@ Sass lets us nest CSS selectors in a manner similar to the way HTML is nested. S
 When nesting, it is possible to reference the corresponding selector using the & symbol. This is useful, for instance, when nesting pseudo-classes:
 
 ![nested-example2](http://imgur.com/nE48cf2.png)
+
+### Partials
+
+Partials are smaller Sass files included as part of a bigger Sass file. Partial filenames begin with an underscore:` _partial.scss`, `_buttons.scss`, `_forms.scss`, etc. The `_` is very important because it is the hint that lets Sass know that the file is only a partial file and that it *should not be generated into a CSS file*.
+
+Other files include Sass partials by using the `@import` directive.
 
 ### Interpolation aka `placeholders`
 ![interpolation](http://imgur.com/ulgbP5z.png)
