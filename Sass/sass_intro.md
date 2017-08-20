@@ -101,6 +101,10 @@ Allows us to extend an elements style to another elemnt.
 
 ## Operators `+`, `-`, `*`, `/`, `%` and `( )`
 
+## Creating a fluid grid using operators 
+
+![fluid-grid](http://imgur.com/MXO4Sm2.png)
+
 ## Sass Control Directives: `@if`, `@for`, `@each` and `@while`
 
 ### `@if`
