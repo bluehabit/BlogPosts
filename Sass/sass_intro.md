@@ -1,3 +1,5 @@
+## When writing Sass, make DRY (short for Don’t Repeat Yourself) a focus and use Mixins, Inheritance, and Functions and Loops as you see feasible to make it as efficient as possible.
+
 ### Sass Directory
 
 ```
