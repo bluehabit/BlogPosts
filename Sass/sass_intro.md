@@ -97,7 +97,7 @@ When you pass through values to a `mixin` make sure you don't use `" "` marks fo
 
 Allows us to extend an elements style to another elemnt.
 
-[inheritance](http://imgur.com/BPI75bv.png)
+[!inheritance](http://imgur.com/BPI75bv.png)
 
 ## Operators `+`, `-`, `*`, `/`, `%` and `( )`
 
