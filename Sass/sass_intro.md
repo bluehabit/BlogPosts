@@ -76,7 +76,7 @@ You cannot go from global to partials with variables, in other words define vari
 
 ![partial2](http://imgur.com/CoiU0OK.png)
 
-## `HOWEVER` 
+## `HOWEVER: ` 
 You CAN define a variable in a partial file, and then use it in the global file.
 
 ![partial3](http://imgur.com/0CwxiKR.png)
