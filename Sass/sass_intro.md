@@ -169,6 +169,14 @@ Must declare the mixin first, then it can be called later as shown below.
 ![mixin-ex2](http://imgur.com/iM429pi.png)
 
 
+### `@media` Directive
+
+![media](http://imgur.com/gSwpXoo.png)
+
+
+### Custom Functions
+
+![cfunction](http://imgur.com/O3f5D4o.png)
 
 ```
 ## Sass
