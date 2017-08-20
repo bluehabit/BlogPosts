@@ -130,6 +130,8 @@ When you pass through values to a `mixin` make sure you don't use `" "` marks fo
 
 ![mixin3](http://imgur.com/2ToFOtk.png)
 
+`Protip:` Good mixins are short mixins, just like functions in programming. If you see that your mixin is getting big, try to divide it into smaller parts (giving fewer responsibilities for each part).
+
 ## Inheritance
 
 Allows us to extend an elements style to another elemnt.
