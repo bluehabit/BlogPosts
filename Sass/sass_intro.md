@@ -138,7 +138,7 @@ Allows us to extend an elements style to another elemnt.
 
 ![inheritance](http://imgur.com/BPI75bv.png)
 
-Here is a good example using inheritance to help keep our code dry
+Here is a good example using inheritance to help keep our code dry using an error message as an example.
 
 ![inheritance-dry](http://imgur.com/vl2Y7UL.png)
 
