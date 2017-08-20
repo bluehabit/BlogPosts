@@ -69,9 +69,13 @@ Set it up like this
 
 ![partial-directory](http://imgur.com/6jp709w.png)
 
-`special note:` The variables live within their own scope, that is restricted to the file. For example if I use `$myColor: red` and only define that in the main css file, but not the partial, it won't be able to read that and will throw an error. As you can see in the example below.
+`special note:` You cannot go from global to partials with variables, in other words define variable in global scss file and use it in subsequent partial files. However, see below. The variables live within their own scope, that is restricted to the file. For example if I use `$myColor: red` and only define that in the main css file, but not the partial, it won't be able to read that and will throw an error. As you can see in the example below.
 
 ![partial2](http://imgur.com/CoiU0OK.png)
+
+**HOWEVER** You CAN define a variable in a partial file, and then use it in the global file.
+
+![partial3](http://imgur.com/0CwxiKR.png)
 
 
 ### Interpolation aka `placeholders`
