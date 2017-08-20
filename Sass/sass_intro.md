@@ -206,3 +206,110 @@ First we start with our SCSS compatible file, then we export it to a preprocesso
 
 ```
 
+## 7-1 Architecture
+
+### The `abstracts/` Folder
+
+The `abstracts/` folder gathers all Sass tools and helpers used across the project. Every global variable, function, mixin, and placeholder should be put in here.
+
+The rule of thumb for this folder is that it should not output a single line of CSS when compiled on its own; these are nothing but Sass helpers.
+
+An example of this folder’s contents could be:
+
+```
+abstracts/
+ |-_variables.scss
+ |-_mixins.scss
+ └-_functions.scss
+ ```
+ 
+ ### The `base/` Folder
+ 
+The `base/` folder holds what we might call the boilerplate code for the project. In there, we might find some typographic rules and probably a style sheet (that I’m accustomed to calling _base.scss) that defines some standard styles for commonly used HTML elements.1
+
+An example of this folder’s contents could be:
+
+```
+base/
+ |-_base.scss
+ |-_fonts.scss
+ |-_helpers.scss
+ └-_typhography.scss
+ ```
+ 
+ ### The `Layout/` folder
+ 
+The `layout/` folder contains everything that takes part in laying out the site or application. This folder could hold style sheets for the main parts of the site (header, footer, navigation, sidebar, etc.), the grid system, or even CSS styles for all the forms.
+
+An example of this folder’s contents could be:
+ 
+```
+layout/
+ |-_header.scss
+ |-_navigation.scss
+ |-_sidebar.scss
+ └-_footer.scss
+```
+
+### The `Components/` folder
+
+For components, we use the `components/` folder. While layout/ works on a macro scale (defining the global wireframe), components/ focuses more on widgets, as seen before. It contains a variety of specific modules, like a slider, a loader, a widget, and anything similar. Usually, components/ has many files because the whole site/application should be mostly composed of tiny modules.
+
+An example of this folder’s contents could be:
+
+```
+components/
+ |-_button.scss
+ |-_form.scss
+ |-_table.scss
+ |-_dropdown.scss
+ |-_carousel.scss
+ └-_loader.scss
+```
+
+### The `Pages/` folder
+
+If we have page-specific styles, it is better to put them in a `pages/` folder in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page; hence, the need for a _home.scss file in pages/.
+
+An example of this folder’s contents could be:
+
+```
+pages/
+ |-_home.scss
+ |-_about.scss
+ |-_contact.scss
+ └-_login.scss
+ ```
+ 
+ ### The `themes/` folder
+ 
+On large sites and applications, having different themes is not unusual. Different ways of dealing with themes certainly exist, but having them all in a `themes/` folder is a good option.
+
+An example of this folder could be:
+
+```
+themes/
+ |-_default.scss
+ |-_light.scss
+ └-_dark.scss
+ ```
+ 
+ ### The `vendor/` Folder
+ 
+ The `vendor/` folder will contain all CSS and SCSS files from third parties. Libraries like:
+
+Normalize
+Bootstrap
+jQueryUI
+…
+An example of this folder could be:
+
+```
+vendor/
+ |-_normalize.scss
+ |-_bootstrap.scss
+ └-_jquery-ui.scss
+ ```
+ 
+ 
+
