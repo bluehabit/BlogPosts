@@ -75,7 +75,26 @@ Set it up like this
 
 
 ### Interpolation aka `placeholders`
-![interpolation](http://imgur.com/ulgbP5z.png)
+
+Sass supports variable interpolation using the `#{}` syntax. Interpolation, in computer programming, is the process of replacing a placeholder `(#{...})` with its corresponding value. *In Sass, this is useful when we want to use the content of a variable in selectors and property names*.
+
+Input.scss:
+
+![interpolation](http://imgur.com/DJpXJRw.png)
+
+Output: 
+
+![output](http://imgur.com/DJpXJRw.png)
+
+Compiled into CSS: 
+
+```
+p.foo {
+ border: 2px solid black;
+ border-color: red;
+}
+```
+
 
 ### Mixins
 
