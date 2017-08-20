@@ -73,6 +73,18 @@ Other files include Sass partials by using the `@import` directive.
 
 Please note that, unlike the CSS `@import` directive, the Sass import does not generate another `HTTP request`. The CSS `@import` generates a new HTTP request for each file imported (the browser does a round trip to the server for any CSS file), but the Sass `@import` generates no requests. The Sass preprocessor uses `@import` directives only to combine Sass files into a unique CSS file, which will not include any `@import`.
 
+#### Protip!, 
+
+the order in which you `@import`, matters. Just like extra javascript files you need to import them in the right order so that subsequent files can use the imported ones.
+
+![import1](http://imgur.com/zrurEFw.png)
+
+![import2](http://imgur.com/TWguczq.png)
+
+### Navigating to Files within your directory
+
+![navigating files](http://imgur.com/xDm2GwJ.png)
+
 ### Partials Directory
 
 Set it up like this
