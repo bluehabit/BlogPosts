@@ -132,6 +132,10 @@ When you pass through values to a `mixin` make sure you don't use `" "` marks fo
 
 `Protip:` Good mixins are short mixins, just like functions in programming. If you see that your mixin is getting big, try to divide it into smaller parts (giving fewer responsibilities for each part).
 
+`Protip:` Can pass `variables` through the parameters. Can have more than one parameter.
+
+![mixin4](http://imgur.com/xN3EhMC.png)
+
 ## Inheritance
 
 Allows us to extend an elements style to another elemnt.
