@@ -17,6 +17,14 @@ project
   └-index.html
 ```
 
+### Watch entire Sass Directory using `sass --watch .`
+
+![current-dir](http://imgur.com/3w3b91t.png)
+
+If you are in its parent directory `sass --watch sassPrac:sassPrac`
+
+
+
 ### Issue
 
 ![sass-setup](http://imgur.com/SkhBls5.png)
