@@ -212,6 +212,27 @@ Must declare the mixin first, then it can be called later as shown below.
 
 ![mixin-ex2](http://imgur.com/iM429pi.png)
 
+### `mixin` or `@extend`? 
+
+By using mixins for instance, you can seriously scale back the amount of code you need to write. But if you don’t know how things compile, you’ll end up with DRY Sass and bloated CSS. Since that’s what gets send to the user agent eventually, you should try to prevent that.
+
+That looks like pretty clean Sass, right? 
+
+![before](http://imgur.com/QhP7Hfq.png)
+
+Until you compile it to CSS... so much for not repeating ourselves.
+
+![after])(http://imgur.com/4zEpJXX.png)
+
+#### The better solution use a `%placeholder`:
+
+In this case using a `%placeholder` and `@extend` would have produced less CSS, with the same number of selectors (so it doesn’t make a difference in hitting the IE selector limit):
+
+![before](http://imgur.com/jnwcUBU.png)
+
+After being compiled 
+
+![after](http://imgur.com/mcL4FWH.png)
 
 ### `@media` Directive
 
