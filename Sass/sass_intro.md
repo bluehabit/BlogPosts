@@ -392,4 +392,8 @@ vendor/
  ```
  
  
+### Resources:
 
+1. https://roy.io/should-you-use-a-sass-mixin-or-extend/
+2. https://hashrocket.com/blog/posts/classical-mixin-inheritance-in-sass
+3. http://vanseodesign.com/css/sass-mixin-or-extend/
