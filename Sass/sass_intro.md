@@ -240,9 +240,36 @@ Use a `mixin` when you want the output of the `mixin` to change depending on how
 
 ![mixin](http://imgur.com/kfvPS61.png)
 
+One of the questions you might have been asking while reading the last few posts in this series is when should you use the `@extend` directive and when you should use the `@mixin` directive?
+
+**Using `@extend` produces DRY CSS.**
+
+Dry CSS:
+
+![dryCSS](http://imgur.com/sscCDMc.png)
+
+Not Dry:
+
+![notDry](http://imgur.com/vEMnqgu.png)
+
+
 ### `@media` Directive
 
 ![media](http://imgur.com/gSwpXoo.png)
+
+### Passing a `@content` block with a `mixin`
+
+You can also pass a block of styles directly. Inside the mixin you add an `@content`; statement, which will be replaced by the content block you pass to the mixin.
+
+![before](http://imgur.com/KpJmcRq.png)
+
+This is similar to the mixin I used last week and it contains some code to style a button. The difference between this code and the mixin from last week is the last line here includes the @content statement.
+
+The mixin is then called inside the .button-green selector. The @include passes a block of content that contains a single line of CSS to style the background color as green. This content will replace the @content statement inside the mixin.
+
+The Sass compiles to:
+
+![after](http://imgur.com/KpJmcRq.png)
 
 
 ### Custom Functions
