@@ -234,6 +234,12 @@ After being compiled
 
 ![after](http://imgur.com/mcL4FWH.png)
 
+### So when should you use a `mixin`?
+
+Use a `mixin` when you want the output of the `mixin` to change depending on how you call it. For example, having a **variable** border radius. Make use of their parameters. 
+
+![mixin](http://imgur.com/kfvPS61.png)
+
 ### `@media` Directive
 
 ![media](http://imgur.com/gSwpXoo.png)
