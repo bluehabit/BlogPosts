@@ -10,7 +10,9 @@ To convert an HTML container into a responsive `grid-based` container, we first 
 
 #### 12-Column Layouts
 
-Why the number 12? Since a standard viewport is `960 px` wide, each column turns out to be `80 px`, or `8.33%` of the total width. To implment we will create 12 column classes, one for each column size. Before we learn how to create this grid layout lets refresh the `*=` attribute selector in CSS.
+Why the number 12? Since a standard viewport is `960 px` wide, each column turns out to be `80 px`, or `8.33%` of the total width. The total width of all the columns in a row must strictly total 100%; in other words, the number of columns must add up to 12.
+
+To implment we will create 12 column classes, one for each column size. Before we learn how to create this grid layout lets refresh the `*=` attribute selector in CSS.
 
 #### CSS3 [attribute*=value] Selector
 
