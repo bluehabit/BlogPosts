@@ -16,6 +16,8 @@ You can also use `code pens` autoprefixer.
 
 To `minify` your code, means to remove any `white space`, thereby making the final file the web page renders smaller, decreasing loasd times. Note, the final output will also have comments removed.
 
+https://cssminifier.com/
+
 Before/After minification
 
 ![minify](http://imgur.com/ZIMQwJU.png)
