@@ -80,6 +80,13 @@ Column 11 - width:91.66%
 <hr>
 Column 12 - width:100%
 
+### Grid Framework, Skeleton
+
+We can also leverage a framework that already has this functionality built in rather than making it ourselves. You can download skeleton here: http://getskeleton.com/
+
+Once you download we only need to keep the `normalize.css` file and `skeleton.css`. Import using `@import url(skeleton.css)` or use `link` in the `header` section. 
+
+An example of how we use this framework: 
 
 
 
