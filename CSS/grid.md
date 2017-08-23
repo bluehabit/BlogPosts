@@ -54,29 +54,29 @@ https://codepen.io/bluehabit/pen/xLzyjO
 
 Notice, again each column is `8.33%` wide. 
 
-Column 1 - ```width: 8.33%```
+Column 1 - width: 8.33%
 <hr>
-Column 2 - ```width: 8.33%```
+Column 2 - width: 16.66%
 <hr>
-Column 3 - `width: 25%`
+Column 3 - width: 25%
 <hr>
-Column 4 - `width: 33.33%`
+Column 4 - width: 33.33%
 <hr>
-Column 5 - `width: 41.66%`
+Column 5 - width: 41.66%
 <hr>
-Column 6 - `width: 50%`
+Column 6 - width: 50%
 <hr>
-Column 7 - `width: 58:33%`
+Column 7 - width: 58:33%
 <hr>
-Column 8 - `width: 66.66%`
+Column 8 - width: 66.66%
 <hr>
-Column 9 - `width: 75%`
+Column 9 - width: 75%
 <hr>
-Column 10 -`width:83.33%`
+Column 10 - width:83.33%
 <hr>
-Column 11 -`width:91.66%`
+Column 11 - width:91.66%
 <hr>
-Column 12 -`width:100%`
+Column 12 - width:100%
 
 
 
