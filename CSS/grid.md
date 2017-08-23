@@ -1,1 +1,75 @@
+#### CSS Grid
+
+To convert an HTML container into a responsive `grid-based` container, we first set the `box-sizing` property for *all* HTML elements on the page to `border-box` to include the paddings and borders in the calculated height and width of the columns. 
+
+```
+* {
+  box-sizing: border-box;
+}
+```
+
+#### 12-Column Layouts
+
+Why the number 12? Since a standard viewport is `960 px` wide, each column turns out to be `80 px`, or `8.33%` of the total width. To implment we will create 12 column classes, one for each column size. Before we learn how to create this grid layout lets refresh the `*=` attribute selector in CSS.
+
+#### CSS3 [attribute*=value] Selector
+
+
+Source: https://www.w3schools.com/cssref/sel_attr_contain.asp
+
+```
+<div class='coffee'>
+  <p>Yummy Coffee</p>
+</div>
+
+div[class*="coffee"] {
+    background: #5e4423;
+    color: white;
+}
+```
+
+Now lets apply this to our grid.
+
+```
+[class*="col"] {
+  float: left;
+  padding: 10px;
+  background-color: tomato;
+  border: 2px solid black;
+  opacity: 0.7;
+}
+```
+
+The attribute selector picks all the classes with a value having common text `col`, and it assigns it the `float:left`. Each row must wrap within the container, ensuring the toal number of columns equals 12 and there are no gaps in the layout. To do this we createa CSS class rule named `container` as shown.
+
+```
+.container {
+  display: block;
+}
+```
+
+### Our Working Grid
+
+https://codepen.io/bluehabit/pen/xLzyjO
+
+Notice, again each column is `8.33%` wide. 
+
+Column 1 - `width: 8.33%`
+Column 2 - `width: 16.66%`
+Column 3 - `width: 25%`
+Column 4 - `width: 33.33%`
+Column 5 - `width: 41.66%`
+Column 6 - `width: 50%`
+Column 7 - `width: 58:33%`
+Column 8 - `width: 66.66%`
+Column 9 - `width: 75%`
+Column 10 -`width:83.33%`
+Column 11 -`width:91.66%`
+Column 12 -`width:100%`
+
+
+
+
+
+
 
