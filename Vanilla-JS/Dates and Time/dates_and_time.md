@@ -1,4 +1,4 @@
-### `new Date()`
+## `new Date()`
 
 Creates a `date object`
 
@@ -19,7 +19,16 @@ a.getMilliseconds(); --> 80
 a.getHours(); --> 12
 ```
 
-### `Date.now`
+### `Date.parse()`
+
+Takes a date object, and converts it to milliseconds. 
+
+```
+Date.parse(a);
+//1503855476000
+```
+
+## `Date.now`
 
 Creates a number in milliseconds
 
