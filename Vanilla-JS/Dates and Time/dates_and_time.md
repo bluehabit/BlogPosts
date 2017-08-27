@@ -58,3 +58,13 @@ var stopTime = Date.now();
 var difference = stopTime - StartTime;
 //6977 or 6.977 seconds
 ```
+
+### `%` Modulus 
+
+Reminder, `%` is the `remainder`. 
+
+```
+6%2 = 0; //2 evenly divides into 6, no remainder
+12%5 = 2; //5 goes into 12 twice, with 2 remainder
+11%3 = 2; //3 goes into 11 three times, with 2 remainder
+```
