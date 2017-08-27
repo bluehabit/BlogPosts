@@ -39,7 +39,9 @@ a.getTime();
 
 ## `Date.now`
 
-Creates a number in milliseconds, does *NOT* give you a `date object`!
+Creates a number in milliseconds, does *NOT* give you a `date object`! You can even verify this on the MDN page.
+
+![date-now](http://imgur.com/uSlC1uG.png)
 
 ```
 var aDateNow= Date.now();
