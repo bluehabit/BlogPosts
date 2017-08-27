@@ -28,6 +28,15 @@ Date.parse(a);
 //1503855476000
 ```
 
+Can also use...
+
+### `Date.getTime();`
+
+```
+a.getTime();
+////1503855476000
+```
+
 ## `Date.now`
 
 Creates a number in milliseconds
