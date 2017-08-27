@@ -11,7 +11,7 @@ var aNewDate = new Date();
 
 ### `Date.now`
 
-Creates a number. 
+Creates a number in milliseconds
 
 ```
 var aDateNow= Date.now();
