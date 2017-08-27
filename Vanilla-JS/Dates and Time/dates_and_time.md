@@ -9,6 +9,16 @@ var aNewDate = new Date();
 //__proto__: Object (date object)
 ```
 
+### Date Object `methods`
+
+```
+var aDate = new Date();
+a.getSeconds(); --> 56
+a.getMinutes(); --> 37
+a.getMilliseconds(); --> 80
+a.getHours(); --> 12
+```
+
 ### `Date.now`
 
 Creates a number in milliseconds
