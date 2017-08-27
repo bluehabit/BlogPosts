@@ -16,7 +16,7 @@ Creates a number in milliseconds
 ```
 var aDateNow= Date.now();
 //1503853960824
-//typeof aDatenow  -->
+//typeof aDatenow  --> number
 ```
 
 ```
