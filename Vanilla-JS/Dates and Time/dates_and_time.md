@@ -18,3 +18,13 @@ var aDateNow= Date.now();
 //1503853960824
 //typeof aDatenow  -->
 ```
+
+```
+var startTime = Date.now();
+// 1503855242925
+var stopTime = Date.now();
+// 1503855249902
+
+var difference = stopTime - StartTime;
+//6977 or 6.977 seconds
+```
