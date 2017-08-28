@@ -69,6 +69,8 @@ Reminder, `%` is the `remainder`.
 11%3 = 2; //3 goes into 11 three times, with 2 remainder
 ```
 
+### `unit factors` and `setting up a proportion`
+
 
 ### Time Conversion Math
 
@@ -77,3 +79,11 @@ Reminder, `%` is the `remainder`.
 Notice we are moving from a larger unit (days) to a smaller unit (seconds) so our numbers will be in the `numerator`. 
 
 ![s](http://imgur.com/vXXadFt.png)
+
+
+#### How many `days` are in `62,000,000ms`?
+
+![s](http://imgur.com/fU4eo32.png)
+
+
+
