@@ -95,6 +95,8 @@ Solution 1:
 
 Solution 2:
 
+![s](http://imgur.com/8nnXDI0.png)
+
 ### How many `ms` are in `2.4 minutes`?
 
 We can set up a `proportion`. 1 is to 60,000 `as` 2.4 is to ? or `x`. A fraction, equality sign, and fraction means we will `cross multiply`. 
