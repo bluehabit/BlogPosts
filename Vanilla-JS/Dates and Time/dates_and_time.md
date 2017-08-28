@@ -68,3 +68,10 @@ Reminder, `%` is the `remainder`.
 12%5 = 2; //5 goes into 12 twice, with 2 remainder
 11%3 = 2; //3 goes into 11 three times, with 2 remainder
 ```
+
+
+### Time Conversion Math
+
+#### How many `seconds` are in `2.5 days`? 
+
+![s](http://imgur.com/DFK4UNQ.png)
