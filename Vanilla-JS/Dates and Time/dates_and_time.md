@@ -89,7 +89,11 @@ Notice we are moving from a larger unit (days) to a smaller unit (seconds) so ou
 
 ### How many `seconds` are in `5,200ms`?
 
+Solution 1:
+
 ![s](http://imgur.com/As1eeSD.png)
+
+Solution 2:
 
 ### How many `ms` are in `2.4 minutes`?
 
