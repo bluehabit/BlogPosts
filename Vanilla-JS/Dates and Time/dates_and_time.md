@@ -103,3 +103,6 @@ We can set up a `proportion`. 1 is to 60,000 `as` 2.4 is to ? or `x`. A fraction
 
 ![s](http://imgur.com/fB6E97Y.png)
 
+### Creating a Function to Convert `ms` to time
+
+![t](http://imgur.com/nlM3v7l.png)
