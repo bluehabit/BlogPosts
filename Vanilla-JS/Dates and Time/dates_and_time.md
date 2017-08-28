@@ -71,6 +71,9 @@ Reminder, `%` is the `remainder`.
 
 ## Time Conversion Math
 
+`milli` - has a latin root stands for `thousandths`
+`1ms` = `1/1,000` second
+
 ### `unit factors` and `setting up a proportion`
 
 ### How many `seconds` are in `2.5 days`? 
@@ -88,6 +91,8 @@ Notice we are moving from a larger unit (days) to a smaller unit (seconds) so ou
 
 ![s](http://imgur.com/As1eeSD.png)
 
-### Example Header
+### How many `ms` are in `2.4 minutes`?
+
+We can set up a `proportion`. 1 is to 60,000 `as` 2.4 is to ? or `x`. A fraction, equality sign, and fraction means we will `cross multiply`. 
 
 
