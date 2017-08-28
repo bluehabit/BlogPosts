@@ -95,4 +95,5 @@ Notice we are moving from a larger unit (days) to a smaller unit (seconds) so ou
 
 We can set up a `proportion`. 1 is to 60,000 `as` 2.4 is to ? or `x`. A fraction, equality sign, and fraction means we will `cross multiply`. 
 
+![s](http://imgur.com/fB6E97Y.png)
 
