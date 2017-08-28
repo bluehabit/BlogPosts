@@ -84,5 +84,7 @@ Notice we are moving from a larger unit (days) to a smaller unit (seconds) so ou
 
 ![s](http://imgur.com/qUuQRxx.png)
 
+### How many `seconds` are in `5,200ms`?
 
+![s](http://imgur.com/As1eeSD.png)
 
