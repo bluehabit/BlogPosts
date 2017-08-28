@@ -74,4 +74,4 @@ Reminder, `%` is the `remainder`.
 
 #### How many `seconds` are in `2.5 days`? 
 
-![s](http://imgur.com/DFK4UNQ.png)
+![s](http://imgur.com/vXXadFt.png)
