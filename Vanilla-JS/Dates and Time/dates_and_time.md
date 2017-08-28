@@ -83,7 +83,7 @@ Notice we are moving from a larger unit (days) to a smaller unit (seconds) so ou
 
 #### How many `days` are in `62,000,000ms`?
 
-![s](http://imgur.com/i3FRlWe.png)
+![s](http://imgur.com/qUuQRxx.png)
 
 
 
