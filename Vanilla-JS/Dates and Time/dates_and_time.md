@@ -106,3 +106,12 @@ We can set up a `proportion`. 1 is to 60,000 `as` 2.4 is to ? or `x`. A fraction
 ### Creating a Function to Convert `ms` to time
 
 ![t](http://imgur.com/nlM3v7l.png)
+
+
+```
+function timeDifference(startTime, endTime){
+	var difference = endTime - startTime;
+	convertTime(difference);
+	return difference; 
+}
+```
