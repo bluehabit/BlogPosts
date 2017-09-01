@@ -115,3 +115,7 @@ function timeDifference(startTime, endTime){
 	return difference; 
 }
 ```
+
+### Recursive Methods
+
+![x](http://imgur.com/lP3Zn09.png)
