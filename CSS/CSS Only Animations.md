@@ -1139,3 +1139,22 @@ Unfortunatley, you cannot apply opacity to just a border - it will apply to the 
 ![animating-borders](http://imgur.com/KfnNIzN.gif)
 
 ![animating-border-steps](http://imgur.com/TyKWl60.png)
+
+### Importing any font with `@fontface`
+
+We can import any font we want to the web using `@fontface`. For example this uses a digital clock font from 1001fonts.com 
+
+![a](http://imgur.com/RLq7rdh.png)
+
+![b](http://imgur.com/TL1Rypa.png)
+
+```
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('digital-7.ttf');
+}
+```
+
+
+
+
