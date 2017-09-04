@@ -39,7 +39,7 @@ a.getTime();
 
 ## `Date.now`
 
-Creates a number in milliseconds, does *NOT* give you a `date object`! You can even verify this on the MDN page.
+Creates a number in milliseconds, does *NOT* give you a `date object`! You can even verify this on the MDN page. This number is continously growing, because it is recording time in MS that have elapsed since 1 January 1970 00:00:00 UTC. This creates an interesting problem in the year 2038 where 32 bit systems will run out of storage to hold this number.
 
 ![date-now](http://imgur.com/uSlC1uG.png)
 
