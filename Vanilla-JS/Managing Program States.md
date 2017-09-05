@@ -23,7 +23,7 @@ Next lets inline our `checkSwitchStatus` function
 
 These next two options use closure. We can employ closure to make `changeState` local to the event handler:
 
-[3](https://imgur.com/IsAiqQb.png)
+![3](https://imgur.com/IsAiqQb.png)
 
 ### And another Option
 
