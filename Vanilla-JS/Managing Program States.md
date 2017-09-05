@@ -25,6 +25,11 @@ These next two options use closure. We can employ closure to make `changeState` 
 
 ![3](https://imgur.com/IsAiqQb.png)
 
+This portion of the code is an anonymous self executing function
+
+![3.5](https://imgur.com/VC3d1Oy.png)
+
 ### And another Option
 
 ![4](https://imgur.com/ETzGoWY.png)
+
