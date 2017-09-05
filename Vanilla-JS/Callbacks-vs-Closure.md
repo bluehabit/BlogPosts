@@ -4,7 +4,7 @@
 
 Notice here, how calling `function1()` just `returns function2` in this case, its just the function definition. Remember whatever comes after the word `return` is what the output is. 
 
-2[key](https://imgur.com/WL3Bmap.png)
+![2key](https://imgur.com/WL3Bmap.png)
 
 # Higher order functions
 
