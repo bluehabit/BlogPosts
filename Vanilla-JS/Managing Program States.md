@@ -33,3 +33,8 @@ This portion of the code is an anonymous self executing function
 
 ![4](https://imgur.com/ETzGoWY.png)
 
+
+### Before / After Refactor
+
+![5](https://imgur.com/jmJC7EP.png)
+
