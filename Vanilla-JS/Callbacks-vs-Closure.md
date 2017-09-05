@@ -1,3 +1,11 @@
+# Keys to Understanding Closure
+
+![1key](https://imgur.com/FTIDlr1.png)
+
+Notice here, how calling `function1()` just `returns function2` in this case, its just the function definition. Remember whatever comes after the word `return` is what the output is. 
+
+2[key](https://imgur.com/WL3Bmap.png)
+
 # Higher order functions
 
 This is why functions in javascript are called `higher order functions` as they can be played around as though they are `variables`. The functions in javascript can be passed to another function as a parameter (`callback`), they can be `returned` by another function, they can be assigned to a `variable` using the assignment operator.
