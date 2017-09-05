@@ -10,3 +10,4 @@ This however can be written more succinctly as
 
 ![2](https://imgur.com/ACbCTuN.png)
 
+`changeColor = !changeColor` all this does is continously flip it to its inverse value. From `false` to `true` from `true` to `false` so on so forth infinitly. 
