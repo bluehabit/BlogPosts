@@ -44,7 +44,7 @@ var difference;
 var baseTime = Date.now();
 ```
 
-![example2](https://imgur.com/a/5BRmC.gif)
+![example2](https://imgur.com/1xCgJko.gif)
 
 
 
