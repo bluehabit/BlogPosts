@@ -15,7 +15,7 @@ Its only running the function `makeRed` and passing through the variable `if(cha
 
 ### Trouble Shooting Stopwatch
 
-#### Debug Solution 1:
+### Debug Solution 1:
 
 Project Source: https://codepen.io/bluehabit/pen/jLoBxz
 
@@ -32,9 +32,20 @@ debugger;
 
 The `debugger` KW works just like a break point in dev tools. So everytime it hits this line, we can check the console to see what the values of baseTime and endTime are.
 
-![example](https://imgur.com/Qn6OaU8.png)
+![example1](https://imgur.com/Qn6OaU8.png)
 
-#### Debug Solution 2, making `baseTime` a local variable inside the function: 
+### Debug Solution 2, making `baseTime` a local variable inside the function: 
+
+Here we make `baseTime` a local variable, so it shows up inside the function along with `endTime` here we can clearly see the two values are always equal to each other.
+
+```
+var endTime = Date.now();
+var difference;
+var baseTime = Date.now();
+```
+
+![example2](https://imgur.com/a/5BRmC.gif)
+
 
 
 ### Question: Is it possible to have devTools print the value of a `GLOBAL` variable along with a `LOCAL` variable inside a function? 
