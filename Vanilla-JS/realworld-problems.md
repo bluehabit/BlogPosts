@@ -1,3 +1,7 @@
+### `debugger` keyword
+
+![debugger-kw](https://imgur.com/R4hP0oK.png)
+
 ### Real World Trouble Shooting
 
 ![1](https://imgur.com/iasYhPa.png)
