@@ -36,3 +36,5 @@ The `debugger` KW works just like a break point in dev tools. So everytime it hi
 
 #### Debug Solution 2, making `baseTime` a local variable inside the function: 
 
+
+### Question: Is it possible to have devTools print the value of a `GLOBAL` variable along with a `LOCAL` variable inside a function? 
