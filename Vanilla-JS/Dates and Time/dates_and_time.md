@@ -119,3 +119,67 @@ function timeDifference(startTime, endTime){
 ### Recursive Methods
 
 ![x](http://imgur.com/lP3Zn09.png)
+
+
+### Modify
+
+// var time = new Date();
+// var time = time.getTime();
+
+
+// var a = Date.now();
+// var a = JSON.stringify(a);
+
+
+// Date.parse('Aug 9, 1995');
+// //807937200000 
+
+// Date.parse('Wed, 09 Aug 1995 00:00:00 GMT');
+// //807926400000
+
+// Date.parse('Thu, 01 Jan 1970 00:00:00');
+// //14400000 
+
+// ---------------------------------------------
+
+// new Date(1324339200000).toUTCString()
+
+// var a = Date.now();
+// var b = new Date(a).toUTCString();
+// "Thu, 07 Sep 2017 21:37:02 GMT"
+
+// ----------------------------------------------
+
+// var a = Date.now();
+// //1504820475119
+// var b = new Date(a).toString()
+// //"Thu, 07 Sep 2017 21:41:15 GMT"
+// var c = Date.parse(b);
+// //1504820475000
+
+
+// ----------------------------------------------
+
+// var x = new Date();
+
+// myVar = x.toString();
+// "Thu Sep 07 2017 16:45:26 GMT-0500 (Central Daylight Time)"
+
+
+//https://www.timeanddate.com/time/map/
+
+//https://stackoverflow.com/questions/6525538/convert-utc-date-time-to-local-date-time
+
+//https://stackoverflow.com/questions/4673527/converting-milliseconds-to-a-date-jquery-js
+
+//https://stackoverflow.com/questions/8579861/how-to-convert-milliseconds-into-a-readable-date
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDate
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toString
