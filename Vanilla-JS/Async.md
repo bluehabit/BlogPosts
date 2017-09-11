@@ -1,1 +1,1 @@
-`callbacks` were the original async, but huge nested callbacks become a nightmare. A solution to this was `promises`. From this we have improvements on promises with es2017 with `async` and `await`
+`callbacks` were the original async, but huge nested callbacks become a nightmare. A solution to this was `promises`. From this we have improvements on promises with es2017 with `async` and `await`. Async/await's main aim tho is to make async functions be like sync functions format-wise
