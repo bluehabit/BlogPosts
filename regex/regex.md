@@ -370,7 +370,9 @@ console.log(pattern.test(testString)); // false
 
 #### Quantifiers
 
-`*` matches the character or set it follows zero or more times.
+### `*` 
+
+matches the character or set it follows zero or more times.
 
 
 ```
@@ -396,9 +398,7 @@ var testString = 'I am a modern developer',
  
 console.log(pattern.test(testString)); // false
 ```
-
-
-
+----- 
 
 `+` matches the character or set it folls one or more times
 `?` matches the caracter or set it follows zero or more times
@@ -406,11 +406,21 @@ console.log(pattern.test(testString)); // false
 `{n,}` matches the character or set it follows at least `n` times
 `{n,m}` matches the character or set it follows at least `n` times and at most `m` times
 
+```
+var testString = 'I am a modern developer',
+    pattern = /e+/;
+ 
+console.log(pattern.test(testString)); // true
+```
 
+This fails, becuase there are no occurrences of the character `e` followed by one or more `x` characters.
 
-
-
-
+```
+var testString = 'I am a modern developer',
+    pattern = /ex+/;
+ 
+console.log(pattern.test(testString)); // fails
+```
 
 
 
