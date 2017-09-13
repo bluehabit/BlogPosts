@@ -234,3 +234,196 @@ re.test('girlfriend')
 //http://stackoverflow.com/questions/6308334/regex-find-all-matching-words-that-that-dont-begin-with-a-specific-prefix
 
 ```
+
+### Exact Match Patterns
+
+We can create a literal regex like this 
+
+`var pattern = /modern developer/`
+
+In this case, the pattern would only match if the target string contains the exact words “modern developer” in that order with a single space character between them. It would match `'I am a modern developer'`. 
+
+
+### The `test` Method
+
+We can use this to verify whether a string contains a pattern. It takes a single parameter, which is the string to test. Its useful because it returns a boolean, which we can use in a conditional statement.
+
+
+```
+var testString = 'I am a modern developer',
+    pattern = /modern developer/;
+ 
+console.log(pattern.test(testString)); // true
+```
+
+
+### Regular Expression Properties
+
+`global` - `g` flag, makes the pattern match *all* occurrences rather than stopping at the first match.
+
+```
+var string = 'I am a modern developer, a modern developer I am';
+var pattern = /modern developer/g;
+
+console.log(pattern.test(string));
+```
+
+`ignoreCase` - `i` flag, makes pattern ignore casing of the match, will be `true` or `false` depending on whether the flag is used.
+
+```
+var string = 'I am a Modern developer';
+var pattern = /modern developer/i;
+
+console.log(pattern.test(string));
+```
+
+We can also pass flags to the regex constructor
+`var pattern = new RegExp('modern developer', 'i')`
+
+
+
+
+`lastIndex` - when the `g` flag is used, multiple matches may be found on a string; this property is used to keep track of the index at which to start matchinf from in succussive searches. Initially this property is set to `0`.
+
+`multiline` - `m` flag, makes the pattern match accross multiple lines instead of just the first line. 
+
+`source` - contains regular expression text
+
+`sticky` - `y` flag, When testing for patterns within the same string multiple times, when the sticky flag is used, the regular expression will remember the last matching pattern within the string, and a second search will start from the last matched instance of the pattern within the string.
+
+`unicode` - `u` flag
+
+Flags always exist on the regex object and will be set to `true` or `false` dpeending on whether the flag was set. For example if we dont use the `g` flag the property will be set to false.
+
+```
+var testString = 'I am a modern developer',
+    pattern = /modern developer/;
+ 
+console.log(pattern.global); // false
+```
+
+## Special Characters
+
+### Character Sets
+
+Characters sets allow us to match any characters within a particular **set**. A set can be a *specific group of characters* like `abc` or a range of characters like `A to Z`. 
+
+### Standard Character Sets
+
+We specify a characer set using square brackets. Note you just have to match one letter in the set, thats it, it does *NOT* have to be inclusive.
+
+```
+var string = 'abc 123 xyz';
+var pattern = /[xyz]/;
+
+console.log(pattern.test(string));
+//true
+
+var string2 = 'z123';
+console.log(pattern.test(string));
+//true
+```
+
+### Ranges
+
+We can also supply a range of characters as the character set. 
+
+```
+var string = '123 ***';
+var pattern = /[a-z][A-Z]/;
+
+console.log(pattern.test(string));
+//true
+```
+
+We can also *combine* ranges. To test for any lowercase or uppercase letter, we could use the expression `/[a-zA-Z]/`.
+
+This example only matches numbers or hyphens
+```
+var testString = 'ab-cd',
+    pattern = /[0-9-]/;
+ 
+console.log(pattern.test(testString)); // true
+```
+
+#### Negated Character Sets
+
+A negated character set means that we want to match any character that is not in the set.
+
+```
+var testString = '12345',
+    pattern = /[^a-z]/;
+ 
+console.log(pattern.test(testString)); // true
+```
+
+#### Alternation
+
+We can use the special pipe character `|` to specify an OR statement in a regular expression. For example, to match either the word “modern” or the word “developer,” we could use the pipe symbol:
+
+```
+var testString = 'I am not a designer',
+    pattern = /modern|developer/;
+ 
+console.log(pattern.test(testString)); // false
+```
+
+#### Quantifiers
+
+`*` matches the character or set it follows zero or more times.
+
+
+```
+var testString = 'I am a modern developer',
+    pattern = /a*/;
+ 
+console.log(pattern.test(testString)); // true
+```
+
+Here `a` appears at least once, and `x` appears zero times.
+```
+var testString = 'I am a modern developer',
+    pattern = /ax*/;
+ 
+console.log(pattern.test(testString)); // true
+```
+
+However this will not match, the regular expression `/axe*/` is saying to match the letter a followed by the letter x, and followed by one or more e characters. 
+
+```
+var testString = 'I am a modern developer',
+    pattern = /axe*/;
+ 
+console.log(pattern.test(testString)); // false
+```
+
+
+
+
+`+` matches the character or set it folls one or more times
+`?` matches the caracter or set it follows zero or more times
+`{n}` matches the character or set it follows `n` times exactly
+`{n,}` matches the character or set it follows at least `n` times
+`{n,m}` matches the character or set it follows at least `n` times and at most `m` times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
