@@ -1,3 +1,7 @@
+### Resources
+
+https://medium.com/@odemeulder/i-never-understood-javascript-closures-9663703368e8
+
 # Keys to Understanding Closure
 
 ![1key](https://imgur.com/FTIDlr1.png)
