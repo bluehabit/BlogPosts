@@ -8,6 +8,8 @@ https://regex101.com/
 
 http://www.rexegg.com/
 
+http://www.regular-expressions.info/brackets.html
+
 ### Greedy Capture vs Lazy 
 
 https://stackoverflow.com/questions/2301285/what-do-lazy-and-greedy-mean-in-the-context-of-regular-expressions
