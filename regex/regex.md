@@ -1,6 +1,18 @@
+### Resources
+
+https://regexr.com/
+
+https://regexone.com/
+
+https://regex101.com/
+
+### Greedy Capture vs Lazy 
+
+https://stackoverflow.com/questions/2301285/what-do-lazy-and-greedy-mean-in-the-context-of-regular-expressions
+
 ![regex-tips](http://i.imgur.com/5vmtCtQ.png)
 
-## Regex
+### Regex
 
 ```
 //Matching a set of characters
