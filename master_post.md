@@ -35,41 +35,21 @@ Function as you may recall are tools that we have so we do not have to keep writ
 
 For a simple example, here is a function that will add two numbers together
 
-```
-function add(number1, number2){
-	return number1 + number2;
-}
-
-add(1, 3);
-//1 + 3 = 4, output is 4
-```
+![functions](https://imgur.com/wsX86yJ.png)
 
 And we can **reuse** that same function again, and again and again and pass new numbers through as parameters, by simply calling the function and passing in new values as shown below.
 
-```
-add(2, 3)
-//2+3 = 5, output is 5
-```
+![func1](https://imgur.com/vOqFmtk.png)
 
 We can even save the result inside of a variable. 
 
-```
-var addNumbers = add(2, 3);
-```
+![func2](https://imgur.com/KcNlM0S.png)
 
 
 ----------------
 Here is another example using strings. This is a simple function that will log something to the console. In this case our function `printString` will console.log to the console. 
 
-```
-var myString = 'Hello there';
-
-function printString(string){
-   console.log(string);
-}
-
-printString(myString);
-```
+![func3](https://imgur.com/oolZxdk.png)
 
 We have a function called `printString` here that has a parameter named `string`. It will hold the value of myString. 
 
@@ -79,43 +59,261 @@ ______________________________________
 
 You can also add properties to parameters. For example if we modified the above code just a little bit we can find the length of a string. 
 
-```
-var myString = 'Hello there';
-
-function stringLength(string){
-   console.log(string.length);
-}
-
-stringLength(myString);
-```
+![func4](https://imgur.com/5ibJf6X.png)
 
 In this case the parameter `string` is once again holding the value of `myString`. When it gets passed through the function it is checking the parameter `string.length`, so it gives us the length of `Hello There` which is 11. 
 
 Parameter names are also arbitrary just like variables, they can be named whatever you would like. See the below example where I replaced the parameter name with something ridiculous, in this case `pinkDinosaur`. 
 
-```
-var myString = 'Hello there';
+![func5](https://imgur.com/QNeNMTJ.png)
 
-function stringLength(pinkDinosaur){
-   console.log(pinkDinosaur.length);
-}
-
-stringLength(myString);
-```
 _____
 
 Lastly, here is an example of a a function that does not have a parameter. It will simply keep logging > Hello! to the console each time it is called. 
 
-```
-function hello(){
-	console.log('Hello!');
-}
+![func6](https://imgur.com/bIUkRwS.png)
 
-hello();
-```
 ----
 
 
 Hopefully that helps, let me know if it wasn't clear enough. For me sometimes reading the material or someone else's answer here on QA sometimes isn't enough. I like to do a lot of small scale projects where I do very small bits of code to help understand what is going on. Perhaps consider reading through the answers here and plugging in some of the code examples to deepen your understanding.
 
 That is one concern I do have about the intro to JS chapter so far, is that it goes through the fundamentals quite quickly and if you do not already have a solid foundation (either through your own learning, tutorial websites etc.) then it could be a bit confusing.
+
+## Functions Advanced 
+
+Hey John, just going to expand on what has already been said a bit and provide some more examples. I am going to attempt to provide a thorough explanation that will both help you now, and later if you choose to revisit this text after learning some additional concepts. 
+
+###Think of Functions as Factories
+I like to think of functions as a factory. After all the processes within the factory complete, there will be some form of final output.
+
+ Lets take for an example an ice cream factory. The ultimate job of the factory is to output ice cream, but before the ice cream can be made you must complete a few steps within the ice cream factory.  Within the factory you must first blend the ice cream mixture, pasteurize the mix, add liquid flavors and colors, freeze, add fruits, nuts and other toppings. And finally you package it up and have your final output, icecream ready for distribution. 
+
+![icecream](http://imgur.com/Iue6zw4.png)
+
+In the case of Javascript the function will `return` something that you can use for later. Just like factories in real life, it is recommended that your functions specialize to perform a particular action.
+
+In Javascript functions can be played around with as if they were variables in several different ways.
+
+Lets look at this example, with the function `numFactory`. This simple function just takes a users `num` and increments it by one using `num ++`. But before it does that, it checks the `typeof` user input to verify that it is indeed a number. The end output is the users number incremented by one, that is what is `returned` as the output of the function. Just like the ice cream from the factory example. 
+
+Whenever javascript sees the `return` function within a function it will automatically exit the function so keep that in mind. Because of this we can use `return` to route and determine the output paths of our function. In the example below *if the users number is `typeof` number* then we will `return num++`. Otherwise, if the user input is not a number we will `return` 'please enter a number'. 
+
+Note, whatever comes *after* the keyword `return` is returned. This could be a number, a variable, a function call with a parameter etc. *Everything* after the keyword `return` will be the output of that function.
+
+
+```
+function numFactory(num){
+	if(typeof num !== 'number'){
+		return 'please enter a number';
+	} else {
+		num++;
+		return num;
+	}
+
+}
+
+//numFactory(5) --> 6
+//numFacotry('Crocodile') --> please enter a number
+```
+
+###Nested Functions
+Functions can also be nested within one another, as shown below. This example uses `closure`, don't stress over it too much if its confusing at this point in time, you will learn more about it later in the chapters. 
+
+```
+function getScore() {
+  var num1 = 2;
+  var num2 = 3;
+  
+  function add() {
+    return name + ' scored ' + (num1 + num2);
+  }
+  
+  return add();
+}
+```
+
+
+###Functions are first class objects in Javascript
+First class in simple terms means  “*being able to do what everyone else can do*.” Function  can be assigned to variables, they can be passed around as arguments (`callback`). They can even be assigned as the return values of other functions (`closure`). 
+
+1) The functions in javascript can be passed to another function as a parameter (`callback`) to other functions. The function that accepts another function as a parameter is known as the `higher order function`. 
+
+```
+function higherOrder(myName, callback){
+	var city = 'Dallas';
+	console.log('My name is ' + myName);
+	callback(city);
+}
+
+
+higherOrder('Chris', function(city){
+	console.log('I live in ' + city);
+});
+
+//my name is Chris
+//I live in Dallas
+```
+
+2) They can be `returned` by another function. This is an example of `closure`, I don't believe it has been discussed at this point in the chapters yet so I wouldn't worry too much about this example if you find it confusing at this point in time.
+
+```
+function outerFunc(){
+	console.log('Hey there');
+
+	function innerFunc(){
+		console.log('this is from within the innner function');
+	}
+
+	return innerFunc();
+}
+
+//Hey there
+//This is from within the inner function
+```
+
+3) And they can also be assigned a `variable` using the assignment operator. 
+
+```
+var sayHi = function(name){
+	console.log('Hi ' + name);
+}
+
+//sayHi('John')
+//'Hi John'
+```
+
+###Callbacks in Detail
+With that behind and our understanding how `callbacks` are an example of how functions are first class in javascript,  lets go more in depth on how `callbacks` work and work through additional examples. 
+
+##Callbacks can be Named, or Anonymous
+
+### Named vs Anonymous Callback Functions
+
+With callbacks we can design them to be named, or anonymous. Both of these function examples will have he same output.
+
+**Named Callback Function**
+
+```
+//1. Define Callback
+function greeting(name){
+	return 'Hello ' + name;
+}
+
+//2. Define Higher Order Function
+function higherOrder(callback){
+	var name = prompt('Please enter your name');
+	return callback(name);
+}
+
+// higherOrder(greeting);
+```
+
+**Anonymous Inline Callback Function**
+
+```
+//1. Define higher order function
+function higherOrder(callback){
+	var name = prompt('Please enter your name');
+	return callback(name);
+}
+
+//2. Call function
+higherOrder(function(name){
+	return console.log('Hello ' + name);
+});
+```
+
+### Function Names are Arbitrary
+
+Just like with variables, naming is arbitrary. You can name them whatever you like, but it should be descriptive so you understand what the variable contains. 
+
+Parameter names in functions are arbitrary as well, you can name them whatever you want. Look how we take the existing named callback function example from earlier and notice how we change the names of variables and parameters to be nonsensical. It doesn't matter what the parameter name is *it will holds the same information*. 
+
+```
+//1. Define Callback
+function greeting(pinkDinosaur){
+	return 'Hello ' + pinkDinosaur;
+}
+
+//2. Define Higher Order Function
+function higherOrder(callback){
+	var yellowSwordFish = prompt('Please enter your name');
+	return callback(yellowSwordFish);
+}
+
+// higherOrder(greeting);
+```
+
+###Anonymous Inline Functions should Clue you In that a Callback Function is being used
+
+Anytime you see an `anonymous` function inline that is a clue to you that a `callback` is being used. See the portion of the images outlined in red. The part highlighted is an `anonymous inline function` a big clue that a callback function is being utilized.
+
+Lets take a look at a few examples of `anonymous inline functions`
+
+![example-1](http://imgur.com/trkBk6E.png)
+
+In our first example above, this should look familiar its our own callback function we built in an earlier example. 
+
+![example-2](http://imgur.com/t98z1AT.png)
+
+These last two examples using `setTimeout` and `addEventListener` are using built in functions. We can see both functions use inline anonymous functions as callbacks. 
+
+if we visit the MDN page of `setTimeout` we can see more details on the various parameters included with each built in function. 
+
+![mdn](http://imgur.com/atPIg9q.png)
+
+
+Notice how the `setTimeout` function has built in parameters to use. You can see the parameters and what they do on the MDN page under `parameters`. 
+
+Notice the first parameter, `function` (highlighted in red) accepts a function that will execute after a certain amount of time expires. In the case of our example, it will `console.log("inside the callback")`.
+
+The second parameter, `delay` (highlighted in blue) uses time in milliseconds that will add a delay until the function is called. 
+
+Using built in functions like `addEventListener` and `setTimeOut` are common examples of `callbacks` you will encounter *"in the wild"*.  
+
+----
+
+![example-3](http://imgur.com/c1DpFN4.png)
+
+
+Another example of an inline anonymous callback function. Notice the pattern? See how the parameter is holding the anonymous function `function(){console.log('you clicked my button!');}` More of these examples will make sense once you complete the `Document Object Model` chapters where you will get regular practice using these.
+
+
+### Asynchronous Code
+
+A common application for `callbacks` is asynchronous code. This will come a bit later in the chapters, so don't stress over it for now. But when interacting with other databases or APIs there is often a small amount of delay before we get our information back from the server. An example of this could be retrieving the current temperature from a weather API. 
+
+A common callback structure you might see utilizing callbacks might look like the below code. For simplicity's sake this code is done synchronously. 
+
+```
+function higherOrderFunction(houseNum, street, error, callback){
+	if(error){
+		callback('there was an error', undefined);
+	} else {
+		callback(undefined, {
+			houseNum: houseNum,
+			street: street,
+			error: error
+		});
+	}
+}
+
+higherOrderFunction('123', 'Rolling Green', false, function(errMessage, result){
+	if(errMessage){
+		console.log(errMessage);
+	} else {
+		console.log(result);
+		//return our result object
+		console.log('I live on ' + result.houseNum + ' ' + result.street);
+	}
+})
+
+//higherOrderFunction
+//I live on 123 rolling green
+```
+
+Notice here how the callback function ` function(errMessage, result)` holds *two* parameters `errMessage` and `result`. Just like a normal function, a callback function can have as many parameters as you would like.
+ **Edit**: Note to self,1  add more examples of this later, a callback with multiple parameters. 2 the 'basics' of functions "blog post" you wrote before. 3. closure and the keyword this. 4. Javascript "classes" using ice cream example
+
+At least that is how I see it, I am not as experienced as the others who have already replied to you. So if anyone more experienced sees errors in my post, please notify me and I will update my post.
