@@ -12,14 +12,6 @@ In javascript, mostly everything is an object from arrays to strings. Because of
 
 ![obj-literal](https://imgur.com/1LiEz3j.png)
 
-
-## Creating Classes with Object Constructor Functions
-
-Will create an instance of the object. 
-
-![obj-classes](https://imgur.com/lvvhZZp.png)
-
-
 ### Array
 
 #### Constructor Function
@@ -46,7 +38,7 @@ var myDog = new String('Spot')
 
 ## Classes using Object Constructors
 
-Using the object constructor we can create what are known as classes.
+Using the object constructor we can create what are known as classes. Constructor functions will create instances of the object.
 
 ![constructor1](https://imgur.com/UzhJIr8.png)
 
