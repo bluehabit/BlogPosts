@@ -1,4 +1,33 @@
-##Functions
+## Object, Array, String Literals vs Constructor Function
+
+In javascript, since most things are an object from arrays to strings, we can use a object constructor function or a create a literal to make them. 
+
+### Object
+
+#### Constructor Function
+
+![obj-constructor](https://imgur.com/fUG2gaR.png)
+
+#### Literal
+
+![obj-literal](https://imgur.com/1LiEz3j.png)
+
+
+## Creating Classes with Object Constructor Functions
+
+Will create an instance of the object. 
+
+![obj-classes](https://imgur.com/lvvhZZp.png)
+
+
+### Array
+
+
+## Classes using Object Constructors
+
+Using the object constructor we can create what are known as classes.
+
+## Functions
 
 @hannah_herbst Hey Hannah, the way I like to think of parameters is just like regular variables in JS. Just like variables,  a parameter acts as a placeholder for a value. You can also have functions that have no parameters as well.
 
