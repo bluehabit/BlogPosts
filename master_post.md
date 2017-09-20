@@ -35,28 +35,11 @@ A constructor function is a single object that we can use as a base to create mo
 
 Here is an example in Javascript:
 
-```
-var Bullet = function (x, y, color) {
-    this.x = x;
-    this.y = y;
-    this.color = color;
-    this.location = function () {
-        console.log("x: " + x + " " + "y: " + y);
-    };
-};
-
-var bullet1 = new Bullet(5, 10, "Green");
-var bullet2 = new Bullet(20, 40, "Blue"); 
-
-bullet1.location(); //Console Logs: x: 5 y: 10
-```
+![constructor2](https://imgur.com/AxlLuAg.png)
 
 In the example above we create a constructor function and give it four properties, by using the this keyword we are binding or assigning those properties to the instance of Bullet.
 
 **Note**: By convention and best practice in Javascript, you should start all constructor functions with a capital letter.
-
-
-![constructor2](https://imgur.com/AxlLuAg.png)
 
 As we can see we are even able to assign functions as properties on our constructor. We then create two new instances of the Bullet Class, bullet1 and bullet2. In Javascript we can use the “new” keyword to create new instances of the class object. You also might notice that we are able to pass in arguments on the fly, this makes it so not all of our instances have to be exactly the same.
 
