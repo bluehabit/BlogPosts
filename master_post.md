@@ -147,7 +147,7 @@ First class in simple terms means  “*being able to do what everyone else can d
 
 2) They can be `returned` by another function. This is an example of `closure`, I don't believe it has been discussed at this point in the chapters yet so I wouldn't worry too much about this example if you find it confusing at this point in time.
 
-![f3](https://imgur.com/wXpuE6F.ong)
+![f3](https://imgur.com/wXpuE6F.png)
 
 3) And they can also be assigned a `variable` using the assignment operator. 
 
