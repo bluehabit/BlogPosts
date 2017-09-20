@@ -120,68 +120,22 @@ function numFactory(num){
 ###Nested Functions
 Functions can also be nested within one another, as shown below. This example uses `closure`, don't stress over it too much if its confusing at this point in time, you will learn more about it later in the chapters. 
 
-```
-function getScore() {
-  var num1 = 2;
-  var num2 = 3;
-  
-  function add() {
-    return name + ' scored ' + (num1 + num2);
-  }
-  
-  return add();
-}
-```
-
+![f1](https://imgur.com/eJ5nqUM.png)
 
 ###Functions are first class objects in Javascript
 First class in simple terms means  “*being able to do what everyone else can do*.” Function  can be assigned to variables, they can be passed around as arguments (`callback`). They can even be assigned as the return values of other functions (`closure`). 
 
 1) The functions in javascript can be passed to another function as a parameter (`callback`) to other functions. The function that accepts another function as a parameter is known as the `higher order function`. 
 
-```
-function higherOrder(myName, callback){
-	var city = 'Dallas';
-	console.log('My name is ' + myName);
-	callback(city);
-}
-
-
-higherOrder('Chris', function(city){
-	console.log('I live in ' + city);
-});
-
-//my name is Chris
-//I live in Dallas
-```
+![f2](https://imgur.com/n0H0R8N.png)
 
 2) They can be `returned` by another function. This is an example of `closure`, I don't believe it has been discussed at this point in the chapters yet so I wouldn't worry too much about this example if you find it confusing at this point in time.
 
-```
-function outerFunc(){
-	console.log('Hey there');
-
-	function innerFunc(){
-		console.log('this is from within the innner function');
-	}
-
-	return innerFunc();
-}
-
-//Hey there
-//This is from within the inner function
-```
+![f3](https://imgur.com/wXpuE6F.ong)
 
 3) And they can also be assigned a `variable` using the assignment operator. 
 
-```
-var sayHi = function(name){
-	console.log('Hi ' + name);
-}
-
-//sayHi('John')
-//'Hi John'
-```
+![f4](https://imgur.com/vFxGhBk.png)
 
 ###Callbacks in Detail
 With that behind and our understanding how `callbacks` are an example of how functions are first class in javascript,  lets go more in depth on how `callbacks` work and work through additional examples. 
@@ -194,35 +148,12 @@ With callbacks we can design them to be named, or anonymous. Both of these funct
 
 **Named Callback Function**
 
-```
-//1. Define Callback
-function greeting(name){
-	return 'Hello ' + name;
-}
-
-//2. Define Higher Order Function
-function higherOrder(callback){
-	var name = prompt('Please enter your name');
-	return callback(name);
-}
-
-// higherOrder(greeting);
-```
+![callback1](https://imgur.com/3dqZ8bO.png)
 
 **Anonymous Inline Callback Function**
 
-```
-//1. Define higher order function
-function higherOrder(callback){
-	var name = prompt('Please enter your name');
-	return callback(name);
-}
+![callback2](https://imgur.com/NM8JlRw.png)
 
-//2. Call function
-higherOrder(function(name){
-	return console.log('Hello ' + name);
-});
-```
 
 ### Function Names are Arbitrary
 
@@ -230,20 +161,7 @@ Just like with variables, naming is arbitrary. You can name them whatever you li
 
 Parameter names in functions are arbitrary as well, you can name them whatever you want. Look how we take the existing named callback function example from earlier and notice how we change the names of variables and parameters to be nonsensical. It doesn't matter what the parameter name is *it will holds the same information*. 
 
-```
-//1. Define Callback
-function greeting(pinkDinosaur){
-	return 'Hello ' + pinkDinosaur;
-}
-
-//2. Define Higher Order Function
-function higherOrder(callback){
-	var yellowSwordFish = prompt('Please enter your name');
-	return callback(yellowSwordFish);
-}
-
-// higherOrder(greeting);
-```
+![arbitrary](https://imgur.com/i2feylT.png)
 
 ###Anonymous Inline Functions should Clue you In that a Callback Function is being used
 
@@ -282,36 +200,15 @@ Another example of an inline anonymous callback function. Notice the pattern? Se
 
 ### Asynchronous Code
 
+#### Async Code a Quick History
+
+A quick history of asynchronous code. Originally it started with nested callback functions (like the house function below); however, this lead to a situtaion known as callback hell where the functions were nested so deep they would become unruly. As a fix for this `promises` were introduced. Further improvements were made in `ES2017` with `async/await`. 
+
 A common application for `callbacks` is asynchronous code. This will come a bit later in the chapters, so don't stress over it for now. But when interacting with other databases or APIs there is often a small amount of delay before we get our information back from the server. An example of this could be retrieving the current temperature from a weather API. 
 
 A common callback structure you might see utilizing callbacks might look like the below code. For simplicity's sake this code is done synchronously. 
 
-```
-function higherOrderFunction(houseNum, street, error, callback){
-	if(error){
-		callback('there was an error', undefined);
-	} else {
-		callback(undefined, {
-			houseNum: houseNum,
-			street: street,
-			error: error
-		});
-	}
-}
-
-higherOrderFunction('123', 'Rolling Green', false, function(errMessage, result){
-	if(errMessage){
-		console.log(errMessage);
-	} else {
-		console.log(result);
-		//return our result object
-		console.log('I live on ' + result.houseNum + ' ' + result.street);
-	}
-})
-
-//higherOrderFunction
-//I live on 123 rolling green
-```
+![houseF](https://imgur.com/a/qEo9u.png)
 
 Notice here how the callback function ` function(errMessage, result)` holds *two* parameters `errMessage` and `result`. Just like a normal function, a callback function can have as many parameters as you would like.
  **Edit**: Note to self,1  add more examples of this later, a callback with multiple parameters. 2 the 'basics' of functions "blog post" you wrote before. 3. closure and the keyword this. 4. Javascript "classes" using ice cream example
