@@ -224,7 +224,7 @@ A common application for `callbacks` is asynchronous code. This will come a bit 
 
 A common callback structure you might see utilizing callbacks might look like the below code. For simplicity's sake this code is done synchronously. 
 
-![houseF](https://imgur.com/a/qEo9u.png)
+![houseF](https://imgur.com/9RQEXLi.png)
 
 Notice here how the callback function ` function(errMessage, result)` holds *two* parameters `errMessage` and `result`. Just like a normal function, a callback function can have as many parameters as you would like.
  **Edit**: Note to self,1  add more examples of this later, a callback with multiple parameters. 2 the 'basics' of functions "blog post" you wrote before. 3. closure and the keyword this. 4. Javascript "classes" using ice cream example
