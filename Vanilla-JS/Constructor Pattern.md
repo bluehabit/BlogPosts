@@ -32,8 +32,10 @@ We can use the prototype, this will create only 1 function, no matter how many i
 
 An example of how the prototype can help us optimize our previous code:
 
+```
 Bullet.prototype.location = function () {
     console.log("x: " + this.x + " " + "y: " + this.y);
 }
+```
 
 Its pretty easy to use the prototype in Javascript but is still considered on of the more complicated parts of the language that most people don’t know much about. Using the prototype can be a good way to show off your Javascript knowledge, but also improves the performance of your code by a handful.
