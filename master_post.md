@@ -25,16 +25,16 @@ In javascript, mostly everything is an object from arrays to strings. Because of
 
 ### String
 
+#### Literal
+
+`var myDog = 'Spot'` 
+
 #### Constructor Function
 
 ```
 var myDog = new String('Spot')
 //String {0: "S", 1: "p", 2: "o", 3: "t", length: 4, [[PrimitiveValue]]: "Spot"}
 ```
-
-#### Literal
-
-`var myDog = 'Spot'` 
 
 ## Classes using Object Constructors
 
