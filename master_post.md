@@ -1,6 +1,6 @@
 ## Object, Array, String Literals vs Constructor Function
 
-In javascript, since most things are an object from arrays to strings, we can use a object constructor function or a create a literal to make them. 
+In javascript, mostly everything is an object from arrays to strings. Because of this we can use either a constructor function or a literal to make them. 
 
 ### Object
 
@@ -22,6 +22,27 @@ Will create an instance of the object.
 
 ### Array
 
+#### Constructor Function
+
+`var myArr = new Array; //-> []`
+
+#### Literal
+
+`var myArray = [0,1,2,3]`
+
+
+### String
+
+#### Constructor Function
+
+```
+var myDog = new String('Spot')
+//String {0: "S", 1: "p", 2: "o", 3: "t", length: 4, [[PrimitiveValue]]: "Spot"}
+```
+
+#### Literal
+
+`var myDog = 'Spot'` 
 
 ## Classes using Object Constructors
 
