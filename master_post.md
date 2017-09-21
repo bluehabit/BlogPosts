@@ -1,86 +1,25 @@
-## Object, Array, String Literals vs Constructor Function
+### Functions Introduction 
 
-In javascript, mostly everything is an object from arrays to strings. Because of this we can use either a constructor function or a literal to make them. 
+Function as you may recall are tools that we have so we do not have to keep writing the same code over and over again. Sort of like the many moving parts that make up a factory. 
 
-### Object
+### Think of Functions as Factories
+I like to think of functions as a factory. After all the processes within the factory complete, there will be some form of final output.
 
-#### Constructor Function
+ Lets take for an example an ice cream factory. The ultimate job of the factory is to output ice cream, but before the ice cream can be made you must complete a few steps within the ice cream factory. First you must blend the ice cream mixture, pasteurize the mix, add liquid flavors and colors, freeze, add finish with the addition of fruit nuts and other toppings. And finally you package it up and have your final output, ice cream ready for distribution. 
 
-![obj-constructor](https://imgur.com/fUG2gaR.png)
+![icecream](http://imgur.com/Iue6zw4.png)
 
-#### Literal
+In the case of Javascript the function will `return` something that you can use for later. Just like factories in real life, it is recommended that your functions specialize to perform a particular action.
 
-![obj-literal](https://imgur.com/1LiEz3j.png)
+## Parameters In Functions
 
-### Array
+Functions can also accept input, they can do this through parameters. I like to think of parameters is just like regular variables in JS. Just like variables,  a parameter acts as a placeholder for a value. You can also have functions that have no parameters as well, as we saw in our previous ice cream function. 
 
-#### Constructor Function
-
-`var myArr = new Array; //-> []`
-
-#### Literal
-
-`var myArray = [0,1,2,3]`
-
-
-### String
-
-#### Literal
-
-`var myDog = 'Spot'` 
-
-#### Constructor Function
-
-```
-var myDog = new String('Spot')
-//String {0: "S", 1: "p", 2: "o", 3: "t", length: 4, [[PrimitiveValue]]: "Spot"}
-```
-
-## Classes using Object Constructors
-
-Using the object constructor we can create what are known as classes. Constructor functions will create instances of the object.
-
-![constructor1](https://imgur.com/UzhJIr8.png)
-
-## Constructor Pattern Continued
-
-A constructor function is a single object that we can use as a base to create more objects that are similar. Think of it like a stamp head in a way, once we have the head created we can stamp out as many items as we want all from a single head. We essentially are able to clone the object or constructor function that was originally created.
-
-Here is an example in Javascript:
-
-![constructor2](https://imgur.com/AxlLuAg.png)
-
-In the example above we create a constructor function and give it four properties, by using the this keyword we are binding or assigning those properties to the instance of Bullet.
-
-**Note**: By convention and best practice in Javascript, you should start all constructor functions with a capital letter.
-
-As we can see we are even able to assign functions as properties on our constructor. We then create two new instances of the Bullet Class, bullet1 and bullet2. In Javascript we can use the “new” keyword to create new instances of the class object. You also might notice that we are able to pass in arguments on the fly, this makes it so not all of our instances have to be exactly the same.
-
-Once we create the instance of our class we can then call any of the methods that are on the object. In the example above we call the location method on our object and get back a console log of our coordinates.
-
-There is just one problem with our constructor function above, when you place a function inside of a constructor it recreates that function over and over every instance that gets created. As you can imagine, if you had thousands of instances, this could become a pretty big problem (speed and optimization). Thankfully Javascript has a solution for this problem.
-
-We can use the prototype, this will create only 1 function, no matter how many instances you create. The function is set aside in a little box (figuratively speaking) and can be used by all of the instances when needed.
-
-An example of how the prototype can help us optimize our previous code:
-
-![constructor3](https://imgur.com/xG7cfV1.png)
-
-Its pretty easy to use the prototype in Javascript but is still considered on of the more complicated parts of the language that most people don’t know much about. Using the prototype can be a good way to show off your Javascript knowledge, but also improves the performance of your code by a handful.
-
-
-
-## Functions
-
-@hannah_herbst Hey Hannah, the way I like to think of parameters is just like regular variables in JS. Just like variables,  a parameter acts as a placeholder for a value. You can also have functions that have no parameters as well.
-
-Function as you may recall are tools that we have so we do not have to keep writing the same code over and over again. 
-
-For a simple example, here is a function that will add two numbers together
+For a simple example, here is a function named `add` that will add two numbers together. It accepts two parameters `number1` and `number2`. When we call the function using `add(1,3)` we are passing the value `1` to the parameter `number1`, and passing the value `3` to `number2`. The function stores these values for us, like a variable. 
 
 ![functions](https://imgur.com/wsX86yJ.png)
 
-And we can **reuse** that same function again, and again and again and pass new numbers through as parameters, by simply calling the function and passing in new values as shown below.
+And we can **reuse** that same function again, and again and again and pass new numbers through as parameters, by simply calling the function and passing in new values as shown below. Just like an ice cream factory that continues to produce ice cream.
 
 ![func1](https://imgur.com/vOqFmtk.png)
 
@@ -100,7 +39,7 @@ On the last line we have `printString(myString)` here we are calling the functio
 
 ______________________________________
 
-You can also add properties to parameters. For example if we modified the above code just a little bit we can find the length of a string. 
+The parameter `string` is holding the value of a string itself, therefore we have access to different string properties and methods such as `length` and `trim()`.
 
 ![func4](https://imgur.com/5ibJf6X.png)
 
@@ -112,64 +51,76 @@ Parameter names are also arbitrary just like variables, they can be named whatev
 
 _____
 
-Lastly, here is an example of a a function that does not have a parameter. It will simply keep logging > Hello! to the console each time it is called. 
+Lastly, here is an example of a a function that does not have a parameter. It will simply keep logging `Hello!` to the console each time it is called. 
 
 ![func6](https://imgur.com/bIUkRwS.png)
 
-----
+## Another Example 
 
+Lets look at another example, with the function `numFactory`. This simple function just takes a users `num` as a parameter and increments it by one using `num ++`. But before it does that, it checks the `typeof` user input to verify that it is indeed a number. The end output is the users number incremented by one, that is what is `returned` as the output of the function. Just like the ice cream from the factory example. 
 
-Hopefully that helps, let me know if it wasn't clear enough. For me sometimes reading the material or someone else's answer here on QA sometimes isn't enough. I like to do a lot of small scale projects where I do very small bits of code to help understand what is going on. Perhaps consider reading through the answers here and plugging in some of the code examples to deepen your understanding.
+Whenever javascript sees the `return` function within a function it will automatically exit the function so keep that in mind. Because of this we can use `return` to route and determine the output paths of our function. In the example below *if the users number is `typeof` number* then we will exit the function and `return num++`. Otherwise, if the user input is not a number we will exit the function and `return` 'please enter a number'. 
 
-That is one concern I do have about the intro to JS chapter so far, is that it goes through the fundamentals quite quickly and if you do not already have a solid foundation (either through your own learning, tutorial websites etc.) then it could be a bit confusing.
-
-## Functions Advanced 
-
-Hey John, just going to expand on what has already been said a bit and provide some more examples. I am going to attempt to provide a thorough explanation that will both help you now, and later if you choose to revisit this text after learning some additional concepts. 
-
-### Think of Functions as Factories
-I like to think of functions as a factory. After all the processes within the factory complete, there will be some form of final output.
-
- Lets take for an example an ice cream factory. The ultimate job of the factory is to output ice cream, but before the ice cream can be made you must complete a few steps within the ice cream factory.  Within the factory you must first blend the ice cream mixture, pasteurize the mix, add liquid flavors and colors, freeze, add fruits, nuts and other toppings. And finally you package it up and have your final output, icecream ready for distribution. 
-
-![icecream](http://imgur.com/Iue6zw4.png)
-
-In the case of Javascript the function will `return` something that you can use for later. Just like factories in real life, it is recommended that your functions specialize to perform a particular action.
-
-In Javascript functions can be played around with as if they were variables in several different ways.
-
-Lets look at this example, with the function `numFactory`. This simple function just takes a users `num` and increments it by one using `num ++`. But before it does that, it checks the `typeof` user input to verify that it is indeed a number. The end output is the users number incremented by one, that is what is `returned` as the output of the function. Just like the ice cream from the factory example. 
-
-Whenever javascript sees the `return` function within a function it will automatically exit the function so keep that in mind. Because of this we can use `return` to route and determine the output paths of our function. In the example below *if the users number is `typeof` number* then we will `return num++`. Otherwise, if the user input is not a number we will `return` 'please enter a number'. 
-
-Note, whatever comes *after* the keyword `return` is returned. This could be a number, a variable, a function call with a parameter etc. *Everything* after the keyword `return` will be the output of that function.
+Note, whatever comes *after* the keyword `return` is returned. This could be a number, a variable, a function call with a parameter etc. *Everything* you see after the keyword `return` will be the output of that function.
 
 ![numFactory](https://imgur.com/2YweOOn.png)
+
+## Anonymous Self Invoking Functions
+
+We can also have `anonymous functions` that do not have a name declared. In the example below, we have a self invoking self invoking function.
+
+![f](https://imgur.com/ybb3Wrg.png)
+
+## In Javascript Functions are First Class *Objects*
+
+In Javascript functions can be played around with as if they were variables in several different ways. 
+
+First class in simple terms means  *“being able to do what everyone else can do.”* **Functions can be assigned to variables, they can be passed around as arguments (`callback functions`). They can even be assigned as the return values of other functions (`closure`)**. Below we will quickly overview how functions are first class objects, and we will discuss each one in further detail later.
+
+### Callbacks
+
+1) Functions in Javascript can be passed to another function as a parameter (`callback`) to other functions. The function that accepts another function as a parameter is known as the `higher order function`. 
+
+![f2](https://imgur.com/n0H0R8N.png)
+
+![f3](https://imgur.com/Vz4BeyI.png)
+
+### Closure
+
+2) They can be `returned` by another function. This is an example of `closure`.
+
+![f3](https://imgur.com/wXpuE6F.png)
+
+### Functions Assigned to Variables
+
+3) And they can also be assigned to a `variable` using the assignment operator. 
+
+![f4](https://imgur.com/vFxGhBk.png)
+
+We can call the function and pass parameters to it just like normal.
+
+![f](https://imgur.com/mLf0rP5.png)
+
+Notice the variable `sayHi` holds the value of a `function definition`. 
+
+![f](https://imgur.com/WXl2xeM.png)
+
+
+
+
+## Functions Advanced 
 
 ### Nested Functions
 Functions can also be nested within one another, as shown below. This example uses `closure`, don't stress over it too much if its confusing at this point in time, you will learn more about it later in the chapters. 
 
 ![f1](https://imgur.com/eJ5nqUM.png)
 
-### Functions are first class objects in Javascript
-First class in simple terms means  “*being able to do what everyone else can do*.” Function  can be assigned to variables, they can be passed around as arguments (`callback`). They can even be assigned as the return values of other functions (`closure`). 
 
-1) The functions in javascript can be passed to another function as a parameter (`callback`) to other functions. The function that accepts another function as a parameter is known as the `higher order function`. 
+## Callbacks in Detail
 
-![f2](https://imgur.com/n0H0R8N.png)
-
-2) They can be `returned` by another function. This is an example of `closure`, I don't believe it has been discussed at this point in the chapters yet so I wouldn't worry too much about this example if you find it confusing at this point in time.
-
-![f3](https://imgur.com/wXpuE6F.png)
-
-3) And they can also be assigned a `variable` using the assignment operator. 
-
-![f4](https://imgur.com/vFxGhBk.png)
-
-### Callbacks in Detail
 With that behind and our understanding how `callbacks` are an example of how functions are first class in javascript,  lets go more in depth on how `callbacks` work and work through additional examples. 
 
-## Callbacks can be Named, or Anonymous
+## Callbacks can be `Named`, or `Anonymous`
 
 ### Named vs Anonymous Callback Functions
 
@@ -183,12 +134,16 @@ With callbacks we can design them to be named, or anonymous. Both of these funct
 
 ![callback2](https://imgur.com/NM8JlRw.png)
 
+Notice how the function is *'called back'* within the higher order function. 
+
 
 ### Function Names are Arbitrary
 
 Just like with variables, naming is arbitrary. You can name them whatever you like, but it should be descriptive so you understand what the variable contains. 
 
 Parameter names in functions are arbitrary as well, you can name them whatever you want. Look how we take the existing named callback function example from earlier and notice how we change the names of variables and parameters to be nonsensical. It doesn't matter what the parameter name is *it will holds the same information*. 
+
+
 
 ![arbitrary](https://imgur.com/i2feylT.png)
 
@@ -243,3 +198,118 @@ Notice here how the callback function ` function(errMessage, result)` holds *two
  **Edit**: Note to self,1  add more examples of this later, a callback with multiple parameters. 2 the 'basics' of functions "blog post" you wrote before. 3. closure and the keyword this. 4. Javascript "classes" using ice cream example
 
 At least that is how I see it, I am not as experienced as the others who have already replied to you. So if anyone more experienced sees errors in my post, please notify me and I will update my post.
+
+
+## Object, Array, String Literals vs Constructor Function
+
+In javascript, mostly everything is an object from arrays to strings. Because of this we can use either a constructor function or a literal to create them.
+
+In most situations, it is most beneficial to create an item using the literal notation. But in some situations it is highly beneficial to use the a constructor function. One such example is [creating object classes with constructor functions](#Classes-using-Object-Constructors). 
+
+To get started creating with a constructor function we use the `new` keyword. For example `new Object`, `new Array` or `new String`. 
+
+### Object
+
+#### Constructor Function
+
+![obj-constructor](https://imgur.com/fUG2gaR.png)
+
+#### Literal
+
+![obj-literal](https://imgur.com/1LiEz3j.png)
+
+### Array
+
+#### Constructor Function
+
+`var myArr = new Array; //-> []`
+
+#### Literal
+
+`var myArray = [0,1,2,3]`
+
+
+### String
+
+#### Literal
+
+`var myDog = 'Spot'` 
+
+#### Constructor Function
+
+```
+var myDog = new String('Spot')
+//String {0: "S", 1: "p", 2: "o", 3: "t", length: 4, [[PrimitiveValue]]: "Spot"}
+```
+
+## Classes using Object Constructors
+
+Using the object constructor we can create what are known as classes. Constructor functions will create instances of the object. It is customary to capitalize the first letter of the variable name to indicate it is a class. Note, in the example below the object constructor function is embedded within another object, `Parrot`. Notice that `Parrot` has the first letter capitalized to indicate it is a constructor function. 
+
+![constructor1](https://imgur.com/i6DT4ki.png)
+
+## Constructor Pattern Continued
+
+A constructor function is a single object that we can use as a base to create more objects that are similar. Think of it like a cloning machine. We can replicate as many copies as we would like of a given object, and each copy is its own separate instance. 
+
+Here is an example in Javascript:
+
+![constructor2](https://imgur.com/AxlLuAg.png)
+
+In the example above we create a constructor function and give it four properties, by using the `this` keyword we are binding or assigning those properties to the instance of `Bullet`.
+
+**Note**: By convention and best practice in Javascript, you should start all constructor functions with a capital letter.
+
+As we can see we are even able to assign functions as properties on our constructor. We then create two new instances of the Bullet Class, bullet1 and bullet2. In Javascript we can use the “new” keyword to create new instances of the class object. You also might notice that we are able to pass in arguments on the fly, this makes it so not all of our instances have to be exactly the same.
+
+Once we create the instance of our class we can then call any of the methods that are on the object. In the example above we call the location method on our object and get back a console log of our coordinates.
+
+There is just one problem with our constructor function above, when you place a function inside of a constructor it recreates that function over and over every instance that gets created. As you can imagine, if you had thousands of instances, this could become a pretty big problem (speed and optimization). Thankfully Javascript has a solution for this problem.
+
+We can use the prototype, this will create only 1 function, no matter how many instances you create. The function is set aside in a little box (figuratively speaking) and can be used by all of the instances when needed.
+
+An example of how the prototype can help us optimize our previous code:
+
+![constructor3](https://imgur.com/xG7cfV1.png)
+
+Its pretty easy to use the prototype in Javascript but is still considered on of the more complicated parts of the language that most people don’t know much about. Using the prototype can be a good way to show off your Javascript knowledge, but also improves the performance of your code by a handful.
+
+## Nested Objects
+
+Object properties can hold many different values, from arrays to function to other objects as you can see below. 
+
+![f](https://imgur.com/72Hey7D.png)
+
+## Key Callback Example
+
+Key illustration here, notice how the callback function itself can have its own parameters since it is a function itself.
+
+![f](https://imgur.com/V2Oc6xM.png)
+
+
+## More Callback Examples
+
+Callback Filtering out Odd Numbers
+
+![f](https://imgur.com/LcvEr3x.png)
+
+
+Callback Example
+
+![f](https://imgur.com/IHBiAox.png)
+
+## Template Literals
+
+![f](https://imgur.com/htzqPfO.png)
+
+## Parameters All Sorts of Values
+
+
+Callback function holding an object as the parameter
+
+![f](https://imgur.com/Ye4iApj.png)
+
+
+Callback function holding an array as the parameter
+
+![f](https://imgur.com/AnaoaGT.png)
