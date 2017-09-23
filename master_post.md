@@ -1,45 +1,46 @@
-### Functions Introduction 
-
-Function as you may recall are tools that we have so we do not have to keep writing the same code over and over again. Sort of like the many moving parts that make up a factory. 
-
 ### Think of Functions as Factories
+
+Function help keep our code DRY, instead of having to write the same code over and over again. 
+
 I like to think of functions as a factory. After all the processes within the factory complete, there will be some form of final output.
 
  Lets take for an example an ice cream factory. The ultimate job of the factory is to output ice cream, but before the ice cream can be made you must complete a few steps within the ice cream factory. First you must blend the ice cream mixture, pasteurize the mix, add liquid flavors and colors, freeze, add finish with the addition of fruit nuts and other toppings. And finally you package it up and have your final output, ice cream ready for distribution. 
 
 ![icecream](http://imgur.com/Iue6zw4.png)
 
-In the case of Javascript the function will `return` something that you can use for later. Just like factories in real life, it is recommended that your functions specialize to perform a particular action.
+In the case of Javascript the function will `return` something that you can use for later. Just like factories in real life, it is recommended that your functions specialize in performing a particular action.
 
 ## Parameters In Functions
 
-Functions can also accept input, they can do this through parameters. I like to think of parameters is just like regular variables in JS. Just like variables,  a parameter acts as a placeholder for a value. You can also have functions that have no parameters as well, as we saw in our previous ice cream function. 
+Functions can also accept one or more inputs, they can do this through parameters. I like to think of parameters just like regular variables in JS. Just like variables,  a parameter acts as a placeholder for a value. You can also have functions that have no parameters as well, as shown in our example below.
 
-For a simple example, here is a function named `add` that will add two numbers together. It accepts two parameters `number1` and `number2`. When we call the function using `add(1,3)` we are passing the value `1` to the parameter `number1`, and passing the value `3` to `number2`. The function stores these values for us, like a variable. 
+![f](https://imgur.com/LkL5tVh.png)
+
+For a simple example of a function with a parameter, here is a function named `add` that will add two numbers together. It accepts two parameters `number1` and `number2`. When we call the function using `add(1,3)` we are passing the value `1` to the parameter `number1`, and passing the value `3` to `number2`. The function stores these values for us, just like a variable. 
 
 ![functions](https://imgur.com/wsX86yJ.png)
 
-And we can **reuse** that same function again, and again and again and pass new numbers through as parameters, by simply calling the function and passing in new values as shown below. Just like an ice cream factory that continues to produce ice cream.
+And we can **reuse** that same function again, and again and again and pass new numbers through as parameters, by simply calling the function and passing in new values as shown below. Just like an ice cream factory that continues to produce ice cream. This prevents us from having to repeat our code over and over.
 
 ![func1](https://imgur.com/vOqFmtk.png)
 
 We can even save the result inside of a variable. 
 
-![func2](https://imgur.com/KcNlM0S.png)
+![func2](https://imgur.com/3uaFCBV.png)
 
 
 ----------------
-Here is another example using strings. This is a simple function that will log something to the console. In this case our function `printString` will console.log to the console. 
+Here is another example of a function with parameters using strings. This is a simple function that will log something to the console. In this case our function `printString` will console.log to the console. 
 
 ![func3](https://imgur.com/oolZxdk.png)
 
-We have a function called `printString` here that has a parameter named `string`. It will hold the value of myString. 
+We have a function called `printString` here that has a parameter named `string`. It will hold the value of the variable `myString`. 
 
-On the last line we have `printString(myString)` here we are calling the function and passing through the value of `(myString)` as the parameter. In other words the parameter of `string` is holding the value `myString` so it will console.log `Hello there` to the console. 
+`printString(myString)` calls the function and passes through the value of `(myString)` as the parameter. As a result it will `console.log` `Hello there` to the console. 
 
 ______________________________________
 
-The parameter `string` is holding the value of a string itself, therefore we have access to different string properties and methods such as `length` and `trim()`.
+The parameter `string` is holding the value of a string itself, therefore we have access to different string properties and methods such as `length`.
 
 ![func4](https://imgur.com/5ibJf6X.png)
 
@@ -49,13 +50,8 @@ Parameter names are also arbitrary just like variables, they can be named whatev
 
 ![func5](https://imgur.com/QNeNMTJ.png)
 
-_____
 
-Lastly, here is an example of a a function that does not have a parameter. It will simply keep logging `Hello!` to the console each time it is called. 
-
-![func6](https://imgur.com/bIUkRwS.png)
-
-## Another Example 
+## The `return` keyword
 
 Lets look at another example, with the function `numFactory`. This simple function just takes a users `num` as a parameter and increments it by one using `num ++`. But before it does that, it checks the `typeof` user input to verify that it is indeed a number. The end output is the users number incremented by one, that is what is `returned` as the output of the function. Just like the ice cream from the factory example. 
 
@@ -67,7 +63,7 @@ Note, whatever comes *after* the keyword `return` is returned. This could be a n
 
 ## Anonymous Self Invoking Functions
 
-We can also have `anonymous functions` that do not have a name declared. In the example below, we have a self invoking self invoking function.
+We can also have `anonymous functions` that do not have a name declared. In the example below, we have a self invoking self invoking anonymous function.
 
 ![f](https://imgur.com/ybb3Wrg.png)
 
@@ -79,21 +75,20 @@ First class in simple terms means  *“being able to do what everyone else can d
 
 ### Callbacks
 
-1) Functions in Javascript can be passed to another function as a parameter (`callback`) to other functions. The function that accepts another function as a parameter is known as the `higher order function`. 
+1) Functions in Javascript can be passed to another function as a parameter, known as a `callback`, to other functions. The function that accepts another function as a parameter is known as the `higher order function`. The `callback` is then "called back" within the higher order function itself. 
 
 ![f2](https://imgur.com/n0H0R8N.png)
 
-![f3](https://imgur.com/Vz4BeyI.png)
 
 ### Closure
 
-2) They can be `returned` by another function. This is an example of `closure`.
+2) Functions can be `returned` by another function. This is known as `closure`. This also lets us create `private variables` in JS, a concept we will explore in more detail later.
 
 ![f3](https://imgur.com/wXpuE6F.png)
 
 ### Functions Assigned to Variables
 
-3) And they can also be assigned to a `variable` using the assignment operator. 
+3) Functions can also be assigned to a `variable` using the assignment operator. 
 
 ![f4](https://imgur.com/vFxGhBk.png)
 
@@ -105,9 +100,6 @@ Notice the variable `sayHi` holds the value of a `function definition`.
 
 ![f](https://imgur.com/WXl2xeM.png)
 
-
-
-
 ## Functions Advanced 
 
 ### Nested Functions
@@ -118,7 +110,11 @@ Functions can also be nested within one another, as shown below. This example us
 
 ## Callbacks in Detail
 
-With that behind and our understanding how `callbacks` are an example of how functions are first class in javascript,  lets go more in depth on how `callbacks` work and work through additional examples. 
+With that behind and our understanding how `callbacks` are an example of how functions are first class in javascript,  lets go more in depth on how `callbacks` work and work through additional examples. The function that accepts another function as a parameter is known as the higher order function. 
+
+## Callbacks, a Visual Representation 
+
+![f](https://imgur.com/RNcXVOv.png)
 
 ## Callbacks can be `Named`, or `Anonymous`
 
@@ -135,17 +131,6 @@ With callbacks we can design them to be named, or anonymous. Both of these funct
 ![callback2](https://imgur.com/NM8JlRw.png)
 
 Notice how the function is *'called back'* within the higher order function. 
-
-
-### Function Names are Arbitrary
-
-Just like with variables, naming is arbitrary. You can name them whatever you like, but it should be descriptive so you understand what the variable contains. 
-
-Parameter names in functions are arbitrary as well, you can name them whatever you want. Look how we take the existing named callback function example from earlier and notice how we change the names of variables and parameters to be nonsensical. It doesn't matter what the parameter name is *it will holds the same information*. 
-
-
-
-![arbitrary](https://imgur.com/i2feylT.png)
 
 ### Anonymous Inline Functions should Clue you In that a Callback Function is being used
 
@@ -180,6 +165,73 @@ Using built in functions like `addEventListener` and `setTimeOut` are common exa
 
 
 Another example of an inline anonymous callback function. Notice the pattern? See how the parameter is holding the anonymous function `function(){console.log('you clicked my button!');}` More of these examples will make sense once you complete the `Document Object Model` chapters where you will get regular practice using these.
+
+## Key Callback Example
+
+Key illustration here, notice how the callback function itself can have its own parameters since it is a function itself.The callback itself is also a function, and it has its own parameters `errMessage` and `resultObj` 
+
+![f](https://imgur.com/AdufGNw.png)
+
+## Designing Callback Functions
+
+### Custom forEach Function
+
+When designing callback functions, they typically do one thing. For example below we create our own version of a `forEach` using a callback. All it does is iterate through an array and implement a callback on it. 
+
+Inside the callback, that's where we define what happens next. In this case for each array item, we are getting `string.length`. 
+
+![f](https://imgur.com/1v17OBi.png)
+
+As we loop through the array, the callback parameter `arrayItem` will hold the value `array[i]`, when looped through using `stringArr`, it will hold the value of `array[0]`, `array[1]` and `array[2]`
+
+![f](https://imgur.com/YTAztTL.png)
+
+----
+
+### Custom Filter Function
+
+
+![f](https://imgur.com/8q7tapD.png)
+
+
+We can refactor the `if` statement to be a bit shorter and just write it like this.
+
+![f](https://imgur.com/LYbo0ao.png)
+----
+
+### Custom Filter Function (more advanced)
+
+This variant is slightly more advanced, it uses the `Array.isArray()` method to verify the input is indeed an array. 
+
+![f](https://imgur.com/jeO68wS.png)
+
+## More Callback Examples
+
+Callback Filtering out Odd Numbers
+
+![f](https://imgur.com/LcvEr3x.png)
+
+
+Callback Example
+
+![f](https://imgur.com/IHBiAox.png)
+
+## Template Literals
+
+![f](https://imgur.com/htzqPfO.png)
+
+## Parameters All Sorts of Values
+
+
+Callback function holding an object as the parameter
+
+![f](https://imgur.com/Ye4iApj.png)
+
+
+Callback function holding an array as the parameter
+
+![f](https://imgur.com/AnaoaGT.png)
+
 
 
 ### Asynchronous Code
@@ -280,36 +332,47 @@ Object properties can hold many different values, from arrays to function to oth
 
 ![f](https://imgur.com/72Hey7D.png)
 
-## Key Callback Example
 
-Key illustration here, notice how the callback function itself can have its own parameters since it is a function itself.
+## Closure in Detail
 
-![f](https://imgur.com/V2Oc6xM.png)
+Keep this in mind, for it to be considered a closure, you must return the function itself. You might here the term `local scope`, `lexical environment` but don't let that confuse you it just means the `functions scope`. A scope is everything the function has access to. Closures have access to not only their own variables, but variables and functions that are defined within the parent function. 
 
+Any nested function has the *potential* to be a closure, if the function itself is returned. 
 
-## More Callback Examples
+## Whats NOT a Closure
 
-Callback Filtering out Odd Numbers
+First lets go over whats not a closure. 
 
-![f](https://imgur.com/LcvEr3x.png)
+![f](https://imgur.com/nCUYHXb.png)
 
-
-Callback Example
-
-![f](https://imgur.com/IHBiAox.png)
-
-## Template Literals
-
-![f](https://imgur.com/htzqPfO.png)
-
-## Parameters All Sorts of Values
+Again, `testAB` has the potential but it is not a closure, as you are not returning it. Closures are functions which exist outside of their parent scope by means of returning them and making them available even after the outer function is completely executed.This is because, you aren't returning the `testAB` function itself, but you are returning the value returned by `testAB` function.
 
 
-Callback function holding an object as the parameter
 
-![f](https://imgur.com/Ye4iApj.png)
+### Example 1
 
+I found a really ugly example of a code snippet on stack overflow that nonsensically creates global variables inside of a functions local scope
 
-Callback function holding an array as the parameter
+![f](https://imgur.com/OjYNN75.png)
 
-![f](https://imgur.com/AnaoaGT.png)
+If you define variables without var, let, const they are put in the global scope which is important for reasons we will outline below.
+
+`setUpGlobalVariable()` this runs the function which has the variables `gPet` and `gChangePetName` declared WITHOUT the var keyword thus putting them in the global context.
+
+notice how if we try to access the variable pet without using closure it throws an error. the variable pet is scoped and set to luna and can only be accessed or modified via closure
+
+ ![f](https://imgur.com/iujSns0.png)
+
+### Example 2
+
+Here executing the function counter will return what comes after it, in this case an anonymous function that has the following `function(){return ++count;})`. When you run `counter()` it is just returning another functions definition (closure). The parent function has already exited / returned but we can still access the local variable of the parents scope which is count.
+
+![f](https://imgur.com/71ysAxe.png)
+
+We can continue to use this closure to increment the private variable count. By using `counter1()`.
+
+![f](https://imgur.com/oYu4jf2.png)
+
+----
+All examples above represent only first-order functions. You can even go higher and you may find yourself with some clever code where a callback is "returned" in a from the executing function in a way that it becomes a "closure" and is executed after the executing function is completed.
+
