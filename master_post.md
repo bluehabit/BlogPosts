@@ -258,7 +258,14 @@ In javascript, mostly everything is an object from arrays to strings. Because of
 
 In most situations, it is most beneficial to create an item using the literal notation. But in some situations it is highly beneficial to use the a constructor function. One such example is [creating object classes with constructor functions](#Classes-using-Object-Constructors). 
 
-To get started creating with a constructor function we use the `new` keyword. For example `new Object`, `new Array` or `new String`. 
+To get started creating with a constructor function we use the `new` keyword. For example `new Object`, `new Array` or `new String`. The value of `this` changes when we use the `new` keyword to represent the object that was just created.
+
+
+## The `new` keyword
+
+When the `new` keyword is used, a new object is created out of thin air. And inside the function definition the keyword `this` refers to the new object that was just created.
+
+![f](https://imgur.com/kpSNs5N.png)
 
 ### Object
 
@@ -326,6 +333,76 @@ An example of how the prototype can help us optimize our previous code:
 
 Its pretty easy to use the prototype in Javascript but is still considered on of the more complicated parts of the language that most people don’t know much about. Using the prototype can be a good way to show off your Javascript knowledge, but also improves the performance of your code by a handful.
 
+## Why the Constructor Pattern?
+
+Imagine we wanted to make a few house objects, each house will have a bedroom, bathroom, and a sqFt. 
+
+![f](https://imgur.com/bpivtAq.png)
+
+What if we had to create, 50, 100 or more of these house objects! That would be crazy.
+
+Instead we can use a constructor function to create instances of that object. The constructor function serves as a blue print to stamp out as many instances as required. 
+
+![f](https://imgur.com/JJ20xXU.png)
+
+## the `new` keyword
+
+* creates a new object out of thin air
+* sets value of the keyword `this` inside the constructor function to be the object created
+* adds the line `return this` to the end of the function
+* adds a property on to the object called `__proto__` which links the prototype property on the constructor function to the empty object
+
+![f](https://imgur.com/1M5aYl7.png)
+
+
+## Constructor Function Refactors
+
+Here we have two constructor functions, notice they share many similar properties. Only one property will be different `numWheels`. 
+
+![f](https://imgur.com/ok3vZrT.png)
+
+We can refactor this to DRY up our code. 
+
+![f](https://imgur.com/Ieu8D5P.png)
+
+We can even refactor this further using apply. 
+
+![f](https://imgur.com/oZ2qvuQ.png)
+
+Quick overview of the `arguments` keyword if you are not familiar with it
+
+![f](https://imgur.com/nNltvw7.png)
+
+## __Prototype__ & The Prototype Chain
+
+`Object prototype property`- is an object that can have methods and properties placed on it, these properties and methods are shared among all objects when the new keyword is used to create an object from the constructor function.
+
+![f](https://imgur.com/CgaokOG.png)
+
+Here we see, for `lucas` and `el` under `__proto__` both instances came from the `constructor: Person`
+
+![f](https://imgur.com/rrAk9ze.png)
+
+These objects created from the constructor function have a *dynamic* link between them and the original constructor function. Any properties or methods that are added to the original constructor function are automatically shared with objects it creates! A dynamic link. This is called the `prototype chain`. Check out an example below, we add a new property to the `Person` constructor function and it is automatically added to instances of that object.
+
+![f](https://imgur.com/IDopzoc.png)
+
+This happens with everything in javascript, behind the scenes new objects are being created as instances using the `new` keyword. Check it out.
+
+![f](https://imgur.com/UXdWILE.png)
+
+
+![f](https://imgur.com/GQ3HJK4.png)
+
+Lets look at a useful way to use the `prototype chain` to make our programming more efficient. 
+
+![f](https://imgur.com/LXuuZir.png)
+
+Another Example
+
+![f](https://imgur.com/YF1DcLM.png)
+
+
 ## Nested Objects
 
 Object properties can hold many different values, from arrays to function to other objects as you can see below. 
@@ -335,37 +412,28 @@ Object properties can hold many different values, from arrays to function to oth
 
 ## Closure in Detail
 
-Keep this in mind, for it to be considered a closure, you must return the function itself. You might here the term `local scope`, `lexical environment` but don't let that confuse you it just means the `functions scope`. A scope is everything the function has access to. Closures have access to not only their own variables, but variables and functions that are defined within the parent function. 
+For a function to be considered a closure, you must return the function *itself*.
 
-Any nested function has the *potential* to be a closure, if the function itself is returned. 
+In other words you must exit the parent function by using the return keyword. Even though the function has already returned another function, we still have access to the parent functions variables and parameters.  Remember whatever comes after the `return` keyword is returned, along with exiting the function. In this case the `return` keyword is returning a *whole* **function definition**. 
 
-## Whats NOT a Closure
+### Closure Example
 
-First lets go over whats not a closure. 
+Here we have a function `counter` with a local variable `count`. 
 
-![f](https://imgur.com/nCUYHXb.png)
+When we call the function `counter()` it will `return` and exit the function. Remember, whatever comes after the keyword `return` is returned. In this case it is the entire function definition:
 
-Again, `testAB` has the potential but it is not a closure, as you are not returning it. Closures are functions which exist outside of their parent scope by means of returning them and making them available even after the outer function is completely executed.This is because, you aren't returning the `testAB` function itself, but you are returning the value returned by `testAB` function.
+```
+return function(){
+	return ++count;
+}
+```
 
+`count` is an example of a `private variable`, because we can only access it through its closure. IT does not exist in the global scope. You might say the variable `count` is scoped to the function `counter`. 
 
+![f](https://imgur.com/R68ZaKP.png)
 
-### Example 1
+We will save the function call `counter()` to a variable `counter1`. That way when we call `counter1` it executes the function that increases the count with `return ++count`. Recall, `count` does not exist in this functions scope, rather it exists within its parents functions scope even though it as already exited, this is known as `closure`.
 
-I found a really ugly example of a code snippet on stack overflow that nonsensically creates global variables inside of a functions local scope
-
-![f](https://imgur.com/OjYNN75.png)
-
-If you define variables without var, let, const they are put in the global scope which is important for reasons we will outline below.
-
-`setUpGlobalVariable()` this runs the function which has the variables `gPet` and `gChangePetName` declared WITHOUT the var keyword thus putting them in the global context.
-
-notice how if we try to access the variable pet without using closure it throws an error. the variable pet is scoped and set to luna and can only be accessed or modified via closure
-
- ![f](https://imgur.com/iujSns0.png)
-
-### Example 2
-
-Here executing the function counter will return what comes after it, in this case an anonymous function that has the following `function(){return ++count;})`. When you run `counter()` it is just returning another functions definition (closure). The parent function has already exited / returned but we can still access the local variable of the parents scope which is count.
 
 ![f](https://imgur.com/71ysAxe.png)
 
@@ -373,6 +441,128 @@ We can continue to use this closure to increment the private variable count. By 
 
 ![f](https://imgur.com/oYu4jf2.png)
 
+
+ You might hear the term `local scope`, `lexical environment` but don't let that confuse you it just refers the `functions scope`. A scope is everything the function has access to. Closures have access to not only their own variables, but variables and parameters (remember parameters can contain anything from objects, arrays, strings to other functions) that are defined within the parent function. 
+
+
+Any nested function has the *potential* to be a closure, if the function itself is returned. 
+
+## Whats NOT a Closure
+
+At first this example may appear to look like a closure, but it's not, lets explore why. 
+
+![f](https://imgur.com/nCUYHXb.png)
+
+`testAB` has the potential but it is not a closure, since it is not being returned. Closures are functions which exist outside of their parent scope by means of returning them and making them available even after the outer function is completely executed. This is not an example of a closure, because you aren't returning the `testAB` function itself, but you are returning the value returned by `testAB` function. 
+
+
+### Example 1
+
+I found a really ugly example of a code snippet on stack overflow that nonsensically creates global variables inside of a functions local scope, nonetheless I think it is a good example for further learning.
+
+![f](https://imgur.com/OjYNN75.png)
+
+If you define variables without var, let, const they are put in the global scope which is important for reasons we will outline below.
+
+`setUpGlobalVariable()` this runs the function which has the variables `gPet` and `gChangePetName` declared WITHOUT the `var` keyword thus putting them in the global context.
+
+notice how if we try to access the variable pet without using closure it throws an error. the variable pet is scoped and set to luna and can only be accessed or modified via closure
+
+ ![f](https://imgur.com/iujSns0.png)
+
 ----
 All examples above represent only first-order functions. You can even go higher and you may find yourself with some clever code where a callback is "returned" in a from the executing function in a way that it becomes a "closure" and is executed after the executing function is completed.
+
+
+## Why Private Variables
+
+Private variable is used when you don't want it be exposed and accessible outside of its own relevant functions. i.e. protected. IOTW, private variable is not supposed to be accessed from outside context. If you want to be able to modify it, you'll have to provide the required function from the proper context. Just like you did in the returned function in your example code.
+
+
+###Accessing Private Variables
+
+![f](https://imgur.com/UmG0ZUn.png)
+
+Another Example
+
+![f](https://imgur.com/FeBQOmi.png)
+
+## The Keyword `this` 
+
+The keyword this is determined by the *context* in which it was called. There are a few rules to keep in mind when determining the value of the keyword `this`.
+
+1. global
+2. object / implicit
+3. explicit
+4. new keyword
+
+## Global Rule
+
+When we see the keyword `this` in the global context, its value refers to the global object, which in the browser environment refers to the window object.
+
+When the value of `this` is just floating around within the global scope its in the wild. In comparison to declaring the keyword `this` inside an object
+
+![f](https://imgur.com/6L9o7Ao.png)
+
+![f](https://imgur.com/eVsQHuu.png)
+
+## Object Rule (implicit)
+
+When the keyword `this` is found inside a declared object, the value of the keyword `this` will always be the closest parent object
+
+![f](https://imgur.com/LMqlQ54.png)
+
+Nested Object Example:
+
+![f](https://imgur.com/BuVNBw4.png)
+
+#### Another Example
+
+![f](https://imgur.com/gyTvOkZ.png)
+
+Within `person.dog.sayHello` the value of `this` is looking to the *closest parent object* which in this case is dog. What if we wanted our `sayHello` method to return `'hello chris'` instead of `'hello undefined'` we would need some way of explicitly changing the value of the keyword this. And that is where we will introduce binding the keyword `this` using `call, apply` and `bind`
+
+## Call
+
+Arguments are passed as **comma separated values**.
+
+![f](https://imgur.com/awpurKh.png)
+
+Lets take a look at another example, we will refactor the code to make it more DRY using `call`. 
+
+Here we have two functions that do the same thing on both objects. `sayHi`. Lets refactor a bit.
+
+![f](https://imgur.com/9ExJgT1.png)
+
+Now, lets refactor. We will use `call` to change the value of the object the keyword `this` refers to.
+
+![f](https://imgur.com/zigFXf2.png)
+
+
+## Apply
+
+Arguments are passed as an **array**
+
+Almost identical to `call`. We only start to see a difference when we start to add arguments. 
+
+`apply` works like `call`, only we can pass through an array as an argument. In the case of apply we pass all the arguments as values in an array. So instead of comma separated arguments, we just put them in an array. 
+
+![f](https://imgur.com/R4V9ARP.png)
+
+
+## Bind
+
+
+`bind` works just like `call`, but instead of calling the function right away it returns a function definition. With the keyword this set to the value of the `thisArg`.
+
+A common use case is when you do not know how many arguments are going to be passed to a function. 
+
+When you dont know all the arguments that will be passed to a function its common to use bind. We dont call it right away, instead we bind it with some of the parameters set we call this partial application. Again whats neat about bind, is we dont need to know all the parameters to the function when we bind it, only need to know the `thisArg` the value of what we want the keyword this to be
+
+![f](https://imgur.com/LR4Pznu.png)
+
+
+
+
+
 
