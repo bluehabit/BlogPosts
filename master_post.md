@@ -50,6 +50,12 @@ Parameter names are also arbitrary just like variables, they can be named whatev
 
 ![func5](https://imgur.com/QNeNMTJ.png)
 
+------ 
+
+Another Example
+
+![f](https://imgur.com/b5nGhaX.png)
+
 
 ## The `return` keyword
 
@@ -402,6 +408,10 @@ Another Example
 
 ![f](https://imgur.com/YF1DcLM.png)
 
+Another Example
+
+![f](https://imgur.com/hNuUgJq.png)
+
 
 ## Nested Objects
 
@@ -479,9 +489,37 @@ All examples above represent only first-order functions. You can even go higher 
 Private variable is used when you don't want it be exposed and accessible outside of its own relevant functions. i.e. protected. IOTW, private variable is not supposed to be accessed from outside context. If you want to be able to modify it, you'll have to provide the required function from the proper context. Just like you did in the returned function in your example code.
 
 
-###Accessing Private Variables
+### Accessing Private Variables
 
 ![f](https://imgur.com/UmG0ZUn.png)
+
+Initially, this may not appear to be a closure because we are not returning a function. No matter, anytime you `return` and exit the parent function, and are able to access the parent functions scope still - it is closure. We can verify with Chrom Dev Tools.
+
+![f](https://imgur.com/FbUpJKk.png)
+
+### Parameter Closure
+
+For closure to occur it does not have to be a function definition that is returned. In addition to functions, it can also be a functions parameter, or even another function if we save it to a variable. 
+
+![f](https://imgur.com/sK4UKXn.png)
+
+![f](https://imgur.com/48x4h73.png)
+
+Verifying we have closure in Chrome Dev Tools. 
+
+![f](https://imgur.com/H7G2jbo.png)
+
+### Function Closure
+
+![f](https://imgur.com/c2HMiNg.png)
+
+![f](https://imgur.com/FDgkmmp.png)
+
+Verifying we have closure in Chrome Dev Tools
+
+![f](https://imgur.com/J2cz13l.png)
+
+------
 
 Another Example
 
@@ -561,8 +599,19 @@ When you dont know all the arguments that will be passed to a function its commo
 
 ![f](https://imgur.com/LR4Pznu.png)
 
+## Advanced Arrays
 
 
+### Map
 
 
+### Filter
 
+
+### Reduce
+
+
+## Currying
+
+
+## Array of Objects
