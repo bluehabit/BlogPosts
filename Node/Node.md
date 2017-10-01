@@ -71,6 +71,8 @@ All installed packages will go into the `node_modules` folder
 
 When you take your node project and put it on gitHub or sending it to a folder, the node modules folder shouldn't be taken with you. We have defined the modules, and their versions in the `package.json dependencies` object. This means we could delete the `node_modules` folder completely. When we want to get the content of the `node_modules` folder back all we have to do is run `npm install`. Without any names or flags this is going to run your `package.json` file grab all of your `dependencies` and install them. With `gitHub` instead of deleting the `node_modules` folder you are just going to ignore it from being added to your repository. 
 
+The way the `node_modules` folder is generated can also be different depending on which version of `npm` you install. 
+
 ### Dependencies 
 
 After installing our latest package, `lodash` if we revisit our `package.json` file we can see it created a new object called `dependencies` and it added `lodash` and the current version we installed to it.
