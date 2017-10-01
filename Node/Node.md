@@ -59,7 +59,7 @@ When choosing a new package to consider, I like to see how many downloads a proj
 
 ![f](https://imgur.com/aJ4HngP.png)
 
-### Install and `--save` flag
+### Install , `--save` flag and `node_modules` folder.
 
 `--save` flag will update the contents of the `package.json` folder.
 
@@ -68,6 +68,8 @@ When choosing a new package to consider, I like to see how many downloads a proj
 All installed packages will go into the `node_modules` folder 
 
 ![f](https://imgur.com/lsVMsVf.png)
+
+When you take your node project and put it on gitHub or sending it to a folder, the node modules folder shouldn't be taken with you. We have defined the modules, and their versions in the `package.json dependencies` object. This means we could delete the `node_modules` folder completely. When we want to get the content of the `node_modules` folder back all we have to do is run `npm install`. Without any names or flags this is going to run your `package.json` file grab all of your `dependencies` and install them. With `gitHub` instead of deleting the `node_modules` folder you are just going to ignore it from being added to your repository. 
 
 ### Dependencies 
 
