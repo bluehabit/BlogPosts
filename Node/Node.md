@@ -30,6 +30,32 @@ We can view a complete set of all the built in modules by visiting https://nodej
 
 ![f](https://imgur.com/cGSrPGq.png)
 
+`./` indicates a `relative path` meaning the same directory we are already in. 
+
+## `module.exports` 
+
+![f](https://imgur.com/6rpfuQg.png)
+
+After we use `require` we can use `module.exports` to export variables or functions so we can access them from our main file.
+
+
+## Getting started with `npm`
+
+When you install `node` it also comes with `npm`. It stands for `node package manager`, but that has since turned into a joke. Many front end frameworks like jquery and react now live on npm as well. 
+
+### `npm init`
+
+Will prompt you with some questions to fill out about your project.
+
+![f](https://imgur.com/xplDlDa.png)
+
+
+
+
+
+
+
+
 
 
 
