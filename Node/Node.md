@@ -4,7 +4,7 @@ Takes code written in JS and converts it to machine level code, that makes it qu
 
 ## Why Node?
 
-`non-blocking I/O` - I/0 reading or writing to database, that is I/0 or input output.This could be database read write request, or making http request to another web server such as google map API for user current location. But I/O takes time. 
+`non-blocking I/O` - I/0 reading or writing to database, that is I/0 or input output.This could be database read write request, or making http request to another web server such as google map API for user current location. But I/O takes time. Non blocking makes it *great* for I/O applications. 
 
 `NPM` - On `npmjs.com` is the largest ecosystem of open source libraries in the world. This is what makes Node fantastic, the cherry on top the community. People working everyday creating solutions to common problems like validating objects, or serving up content live using sockets. If you are trying to solve a problem that seems pretty broad, chances are its already solved on npm. For example if I want to validate some objects 
 
@@ -19,3 +19,18 @@ Down below we have a dotted box. This is simulated time for our event to get res
 Now imagine a webserver that is blocking, every user that made a request would be blocking, so it would have to spin off another thread to accompany more queries. However, node is single threaded, but since its non blocking i/o its not a problem. In a blocking pattern we could handle 2 requests on 2 separate threads but that doesn't scale well. Because for each request we would have to beef up CPU and RAM resources for the application. 
 
 ![f](https://imgur.com/nZLWstN.png)
+
+## `require`
+
+Allows us to load in functions that come bundled in with Node, for example the http module that lets us make a web server or fs module to access file system for our machine. We can also import 3rd party libraries such as express so we can write less code. And lastly we are going to use `require` to require our own files. This is going to allow us to break up our application to smaller files which is essential for real world apps. If you have all your code in one file it will be hard to test, maintain and update.
+
+We can view a complete set of all the built in modules by visiting https://nodejs.org/api/
+
+![f](https://imgur.com/GWZBSpe.png)
+
+![f](https://imgur.com/cGSrPGq.png)
+
+
+
+
+
