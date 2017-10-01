@@ -43,20 +43,43 @@ After we use `require` we can use `module.exports` to export variables or functi
 
 When you install `node` it also comes with `npm`. It stands for `node package manager`, but that has since turned into a joke. Many front end frameworks like jquery and react now live on npm as well. 
 
-### `npm init`
+### `npm init`, creating `package.json`
 
 Will prompt you with some questions to fill out about your project.
 
 ![f](https://imgur.com/xplDlDa.png)
 
+This creates a `pacakage.json` 
 
+![f](https://imgur.com/a/7vqV6.png)
 
+## Finding 3rd Party Packages / Libraries
 
+When choosing a new package to consider, I like to see how many downloads a project has and when it was last updated.
 
+![f](https://imgur.com/aJ4HngP.png)
 
+### Install and `--save` flag
 
+`--save` flag will update the contents of the `package.json` folder.
 
+![f](https://imgur.com/cQoKDFl.png
 
+All installed packages will go into the `node_modules` folder 
 
+![f](https://imgur.com/lsVMsVf.png)
 
+### Dependencies 
+
+After installing our latest package, `lodash` if we revisit our `package.json` file we can see it created a new object called `dependencies` and it added `lodash` and the current version we installed to it.
+
+![f](https://imgur.com/7BK8PiK.png)
+
+next we can `require` our package. `_` is a common name for the `lodash` library. 
+
+![f](https://imgur.com/FqtxLIB.png)
+
+Sometimes the `documentation` will be easily accessible on the packages NPM page. In the case of `lodash`, it is not but it has a link to the website that will provide us with the docs.
+
+![f](https://imgur.com/xujezlK.png)
 
