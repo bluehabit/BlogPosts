@@ -94,7 +94,7 @@ First class in simple terms means  *“being able to do what everyone else can d
 
 ### Functions Assigned to Variables
 
-3) Functions can also be assigned to a `variable` using the assignment operator. 
+3) Functions can also be assigned to a `variable` using the assignment operator. This is known as a `function expression`. 
 
 ![f4](https://imgur.com/vFxGhBk.png)
 
@@ -244,7 +244,7 @@ Callback function holding an array as the parameter
 
 #### Async Code a Quick History
 
-A quick history of asynchronous code. Originally it started with nested callback functions (like the house function below); however, this lead to a situtaion known as callback hell where the functions were nested so deep they would become unruly. As a fix for this `promises` were introduced. Further improvements were made in `ES2017` with `async/await`. 
+A quick history of asynchronous code. Originally it started with nested callback functions (like the house function below); however, this lead to a situtaion known as callback hell where the functions were nested so deep they would become unruly. As a fix for this `promises` were introduced. Further improvements were made in `ES2017` with `async/await`. In addition that, we also have the `fetch` API.
 
 A common application for `callbacks` is asynchronous code. This will come a bit later in the chapters, so don't stress over it for now. But when interacting with other databases or APIs there is often a small amount of delay before we get our information back from the server. An example of this could be retrieving the current temperature from a weather API. 
 
@@ -615,3 +615,85 @@ When you dont know all the arguments that will be passed to a function its commo
 
 
 ## Array of Objects
+
+![f](https://imgur.com/8f40um2.png)
+
+
+## Nested Callbacks
+
+
+
+
+resources on currying
+
+https://medium.com/@kevincennis/currying-in-javascript-c66080543528
+
+https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe
+
+https://www.sitepoint.com/currying-in-functional-javascript/
+
+https://www.sitepoint.com/currying-in-functional-javascript/
+
+http://www.crockford.com/javascript/www_svendtofte_com/code/curried_javascript/index.html
+
+resources on closure
+
+https://medium.com/@odemeulder/i-never-understood-javascript-closures-9663703368e8
+
+games for regex
+
+https://regexcrossword.com/
+
+https://alf.nu/RegexGolf
+
+https://regexone.com/
+
+-----
+
+## Advanced Closure
+
+The reason we have to rely on closure for these examples is because the the function is instantiated for every key, so `id` never changes.  In other words the variable is within the scope of the function and will remain the same every time.
+
+Same situation with the `forEach` loop we will use closure to solve this as well. Same story, function is instantiated every time through, so the value of `id` will never change.
+
+The standard fix for that is to use a closure, like we will in this example, or simply stick the used var in a higher scope. For example the global scope. 
+
+
+![f](https://imgur.com/xIPHP1k.png)
+
+This is the named function example, we will look at this with an anonymous function in a moment. First Lets break this down, the `var addIncreasingIdFromZero` holds the function call `makeAddIncreasingIdFn(0)` passing the value `0` for the `id` parameter. 
+
+Because this function immediately returns, the value of `addIncreasingIdFromZero` is the function definition itself that was returned. As shown below:
+
+![f](https://imgur.com/Fq8Kxct.png)
+
+Because of `return` we are exiting the parent function scope. But this has created a `closure` We still have access to the parameter `id` even though the function has already returned.
+
+----
+
+This example behaves the same way, only we are now using an anonymous function for the callback. 
+
+![f](https://imgur.com/b6XQ9LH.png)
+
+It may look a bit confusing, but its not too bad lets step through. Here we have an anonymous callback function `function(id)` which we immediately return with another function just like our previous example.
+
+At the end of the function we have several parenthesis. What we are doing is immediately calling our function and passing through the value `0`. Lets look at a more basic example.
+
+![f](https://imgur.com/hCehmmX.png)
+
+
+No we can compare that to our more advanced example. Same thing. 
+
+![f](https://imgur.com/zKdky1l.png)
+
+-----
+
+Same logic for using a closure to create a private variable only using `forEach` as an example.
+
+![f](https://imgur.com/hRviEXW.png)
+
+
+
+
+
+
