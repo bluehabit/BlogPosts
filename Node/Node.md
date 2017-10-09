@@ -87,3 +87,27 @@ Sometimes the `documentation` will be easily accessible on the packages NPM page
 
 ![f](https://imgur.com/xujezlK.png)
 
+### nodemon (node mon)
+
+`nodemon` is a NPM program that constantly listens for changes on our app. When we save, and it detects changes, it will automatically rerun the app. You can start it with `nodemon (your_app.js here)`
+
+![f](https://imgur.com/1BdOrJO.png)
+
+### Passing Arguments through the CLI
+
+Another built in module that comes with node is `process`. We are going to be working with `process.argv` specifically. 
+
+![f](https://imgur.com/gnnWwfJ.png)
+
+The arguments are a vector, but basically work like a JS array. 
+
+![f](https://imgur.com/bSMVw12.png)
+
+
+
+
+
+
+
+
+
