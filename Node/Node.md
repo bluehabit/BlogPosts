@@ -95,13 +95,20 @@ Sometimes the `documentation` will be easily accessible on the packages NPM page
 
 ### Passing Arguments through the CLI
 
-Another built in module that comes with node is `process`. We are going to be working with `process.argv` specifically. 
+Another built in `module` that comes with node is `process`. We are going to be working with `process.argv` specifically. 
 
 ![f](https://imgur.com/gnnWwfJ.png)
 
-The arguments are a vector, but basically work like a JS array. 
+The arguments are a vector, but basically work like a JS array.  We can see *all* arguments by using `process.argv` and logging it to the console. 
 
 ![f](https://imgur.com/bSMVw12.png)
+
+Notice how we can pass through arguments, `--title="secrets 2"` is an argument. The problem is that its not very easy to use, here we have to parse out the key which is `title` and value which is `secrets 2`. Plus when you factor in the different styles you can use to pass through valid arguments things can get messy for developers, for example `--title "secrets 2"` with no equal sign is valid. You would have to parse and account for these changes. To fix this we will use a 3rd party module called `YARGS` to make parsing these arguments effortless, istead of getting back a string, we will get back an object that will hold title and its contents. 
+
+![f](https://imgur.com/lz767Sd.png)
+
+### Yargs
+
 
 
 
