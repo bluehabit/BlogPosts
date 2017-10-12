@@ -113,7 +113,18 @@ Notice how we can pass through arguments, `--title="secrets 2"` is an argument. 
 
 ![f](https://imgur.com/MIdBaGs.png)
 
+### Using your own 3rd Party Modules
 
+First me must create a new `variable` that will hold the location of where are other `js` file is stored. We will use the `require` keyword to do this that comes with node. `var notes = require('./notes.js')`. Since we are storing the value of `require('./notes.js')` inside of the variable `notes` in our global scope, that is how we will use it.
+
+For example: 
+```
+if (command === 'add'){
+	notes.addNote(argv.title, argv.body);
+} 
+```
+
+![f](https://imgur.com/7LwLzdd.png)
 
 
 
