@@ -109,6 +109,10 @@ Notice how we can pass through arguments, `--title="secrets 2"` is an argument. 
 
 ### Yargs
 
+![f](https://imgur.com/Jjo9JHk.png)
+
+![f](https://imgur.com/MIdBaGs.png)
+
 
 
 
