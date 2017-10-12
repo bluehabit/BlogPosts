@@ -127,6 +127,18 @@ if (command === 'add'){
 ![f](https://imgur.com/7LwLzdd.png)
 
 
+### JSON (Javascript Object Notation)
+
+Notice the use of `"` double quoation marks. This is a requirement. 
+
+Stringifying the object
+
+![f](https://imgur.com/icQkmOF.png)
+
+Serializing the text back to an Object
+
+![f](https://imgur.com/OMEny18.png)
+
 
 
 
