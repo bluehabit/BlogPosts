@@ -38,6 +38,10 @@ We can view a complete set of all the built in modules by visiting https://nodej
 
 After we use `require` we can use `module.exports` to export variables or functions so we can access them from our main file.
 
+Shorthand
+
+![f](https://imgur.com/9hkMlf0.png)
+
 
 ## Getting started with `npm`
 
