@@ -144,7 +144,9 @@ Serializing the text back to an Object
 ![f](https://imgur.com/OMEny18.png)
 
 
+### Read Write and parse JSON from a File Exercise
 
+![f](https://imgur.com/fA40jMA.png)
 
 
 
