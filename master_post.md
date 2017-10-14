@@ -83,7 +83,13 @@ First class in simple terms means  *“being able to do what everyone else can d
 
 1) Functions in Javascript can be passed to another function as a parameter, known as a `callback`, to other functions. The function that accepts another function as a parameter is known as the `higher order function`. The `callback` is then "called back" within the higher order function itself. 
 
+Anonymous inline function
+
 ![f2](https://imgur.com/n0H0R8N.png)
+
+Named callback function
+
+![f](https://imgur.com/Tmw9Yty.png)
 
 
 ### Closure
@@ -440,7 +446,7 @@ return function(){
 
 `count` is an example of a `private variable`, because we can only access it through its closure. IT does not exist in the global scope. You might say the variable `count` is scoped to the function `counter`. 
 
-![f](https://imgur.com/R68ZaKP.png)
+![f](https://imgur.com/AEovlqB.png)
 
 We will save the function call `counter()` to a variable `counter1`. That way when we call `counter1` it executes the function that increases the count with `return ++count`. Recall, `count` does not exist in this functions scope, rather it exists within its parents functions scope even though it as already exited, this is known as `closure`.
 
@@ -692,8 +698,20 @@ Same logic for using a closure to create a private variable only using `forEach`
 
 ![f](https://imgur.com/hRviEXW.png)
 
+## Nested For Loops
+
+![f](https://imgur.com/BKX8xSx.png)
 
 
+## Ternary Operator
+
+Can help shorten our code. Before using an `if` `else` block.
+
+![f](https://imgur.com/2gYVFpa.png)
+
+Shortened using a `ternary` operator. 
+
+![f](https://imgur.com/5G5kYkK.png)
 
 
 
