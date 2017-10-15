@@ -705,13 +705,40 @@ Same logic for using a closure to create a private variable only using `forEach`
 
 ## Ternary Operator
 
-Can help shorten our code. Before using an `if` `else` block.
+Can help make our code more concise and possibly eliminate the need for an `if` `else` block.
 
-![f](https://imgur.com/2gYVFpa.png)
+Before:
 
-Shortened using a `ternary` operator. 
+![f](https://imgur.com/zyOAYMx.png)
 
-![f](https://imgur.com/5G5kYkK.png)
+After: 
 
+![f](https://imgur.com/iWUjmaY.png)
 
+Output:
 
+![f](https://imgur.com/2epLRvX.png)
+
+More examples:
+
+![f](https://imgur.com/yEmhCfP.png)
+
+![f](https://imgur.com/E7SRIjM.png)
+
+![f](https://imgur.com/WJPYX2P.png)
+
+![f](https://imgur.com/Tit56Ne.png)
+
+## Concise Coding
+
+Can just use the return statement if its a boolean value, instead of doing the whole `if` `else` block
+
+![f](https://imgur.com/7aGtvCJ.png)
+
+Here using a specific condition to just return and exit the function
+
+![f](https://imgur.com/G9r5HFk.png)
+
+### string.slice
+
+![f](https://imgur.com/ViWl0sm.png)
