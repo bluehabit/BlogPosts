@@ -739,6 +739,62 @@ Here using a specific condition to just return and exit the function
 
 ![f](https://imgur.com/G9r5HFk.png)
 
+## Functional Programming Array: `Map`, `Reduce`, `Filter` and more
+
+Relying on loops can become a problem because loops are synchronous. This means that they can only manipulate data that already exists. You run into problems when you have to deal with asynchronous data, like events that have not happened yet.
+
+Asynchronous programming is much easier than it sounds. You can build a lot of asynchronous programs by using the Map, Reduce and Filter methods.
+
+We are using the following dataset for these exercises
+
+![f](https://imgur.com/mhAhFjz.png)
+
+### `Reduce`
+
+**Use it when:** You want a total based on values in an array.
+
+ The default name for the first parameter is `accumulator` according to the documentation. However, I prefer using something that is more descriptive so I know how its being used. For example, if I am reducing to an array, I will use `array` as the parameter name, `object` if object and so forth as shown below. 
+
+Please note, when using these array methods, they are callbacks so you must `return` something or the function will not work correctly. 
+
+Short hand:
+
+![f](https://imgur.com/nBVmif4.png)
+
+Long Hand:
+
+
+----
+
+Reduce returning an object, special note. We can do the syntax a few different ways.
+
+Longer method:
+
+![f](https://imgur.com/5zXIXCR.png)
+
+Shorter method: 
+
+![f](https://imgur.com/BGpMRhu.png) 
+
+Why does this work? Pay special attention to the line `(obj[currentValue] || 0)`
+
+![f](https://imgur.com/2J3ny1t.png)
+
+Explanation:
+
+![f](https://imgur.com/hBXV9sb.png)
+
+![f](https://imgur.com/l3AcQGG.png)
+
+![f](https://imgur.com/nPw25ah.png)
+
+![f](https://imgur.com/zIY8gFV.png)
+
+![f](https://imgur.com/99ixexZ.png)
+
+`read more here:` http://www.nfriedly.com/techblog/2009/07/advanced-javascript-operators-and-truthy-falsy/
+
+
 ### string.slice
 
 ![f](https://imgur.com/ViWl0sm.png)
