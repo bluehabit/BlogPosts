@@ -741,6 +741,10 @@ Here using a specific condition to just return and exit the function
 
 ## Functional Programming Array: `Map`, `Reduce`, `Filter` and more
 
+Remember these are all ARRAY methods, therefore you want an array to use these. The input could strictly be an array, or it could be an array that's part of an object etc.
+
+Please note, when using these array methods, they are callbacks so you must `return` something or the function will not work correctly. 
+
 Relying on loops can become a problem because loops are synchronous. This means that they can only manipulate data that already exists. You run into problems when you have to deal with asynchronous data, like events that have not happened yet.
 
 Asynchronous programming is much easier than it sounds. You can build a lot of asynchronous programs by using the Map, Reduce and Filter methods.
@@ -752,10 +756,39 @@ We are using the following dataset for these exercises
 ### `Reduce`
 
 **Use it when:** You want a total based on values in an array.
-
  The default name for the first parameter is `accumulator` according to the documentation. However, I prefer using something that is more descriptive so I know how its being used. For example, if I am reducing to an array, I will use `array` as the parameter name, `object` if object and so forth as shown below. 
 
-Please note, when using these array methods, they are callbacks so you must `return` something or the function will not work correctly. 
+#### How `reduce` works
+
+The `accumulator` parameter, named `total` below, does not accumulate on its own. You must add the `currentValue` to track correctly.
+
+A simple `reduce` to get the sum total of numbers in an array.
+
+![f](https://imgur.com/wSdC6AH.png)
+
+Lets log it to the console to make it more obvious
+
+![f](https://imgur.com/Gqj3zPX.png)
+
+Now, lets try to `reduce` without adding `currentValue` progressively to `total`. 
+
+![f](https://imgur.com/bpqB4RE.png)
+
+#### Reduce for finding Average
+
+First lets look at this example that just returns the last item in an array.
+
+![f](https://imgur.com/t2xvur0.png)
+
+Next lets expand on the code a code a bit so it returns the average.
+
+![f](https://imgur.com/dnRZqRJ.png)
+
+We can refactor this code by using the `index` parameter.
+
+----
+
+![f](https://imgur.com/Ve2N9uH.png)
 
 Short hand:
 
@@ -792,7 +825,36 @@ Explanation:
 
 ![f](https://imgur.com/99ixexZ.png)
 
+In traditional programming, operators such as && and || returned a boolean value (true or false). This is not the case in javascript. Here it returns the actual object, not a true / false. To really explain this, I first have to explain what is truthy and what is falsy.
+
+The logical OR operator, `||`, is very simple after you understand what it is doing. If the first object is truthy, that gets returned. Otherwise, the second object gets returned.
+
+#### Finding Average Using `reduce()`
+
+![f](https://imgur.com/i93gbcO.png)
+
+### Logical AND, &&
+
+The logical AND operator, &&, works similarly. If the first object is falsy, it returns that object. If it is truthy, it returns the second object.
+
+![f](https://imgur.com/qjdqhDL.png)
+
+### Logical NOT, !
+
+Unlike && and ||, the ! operator DOES turn the value it receives into a boolean. If it receives a truthy value, it returns false, and if it receives a falsy value, it returns true.
+
 `read more here:` http://www.nfriedly.com/techblog/2009/07/advanced-javascript-operators-and-truthy-falsy/
+
+`more` https://medium.com/@joshpitzalis/the-trouble-with-loops-f639e3cc52d9
+
+`more` https://medium.freecodecamp.org/reduce-f47a7da511a9
+
+
+### map()
+
+**Use it when**: You want to modify all values in an array to another set of values.
+
+![f](https://imgur.com/UPUFDEM.png)
 
 
 ### string.slice
