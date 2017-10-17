@@ -786,9 +786,15 @@ Next lets expand on the code a code a bit so it returns the average.
 
 We can refactor this code by using the `index` parameter.
 
+![f](https://imgur.com/Ve2N9uH.png)
+
 ----
 
-![f](https://imgur.com/Ve2N9uH.png)
+### Doubling Array Values
+
+https://imgur.com/AI6bmMB
+
+----
 
 Short hand:
 
@@ -849,6 +855,41 @@ Unlike && and ||, the ! operator DOES turn the value it receives into a boolean.
 
 `more` https://medium.freecodecamp.org/reduce-f47a7da511a9
 
+
+### filter()
+
+**Use it when**: You want to remove unwanted values from an array.
+
+![f](https://imgur.com/XcOc688.png)
+
+### Combining Filter and Reduce
+
+For the more *simple* examples, it would make more sense to use map or filter because they are simpler to use. The benefit of using reduce comes into play when you want to map and filter together and you have a lot of data to go over.
+
+If you chain map and filter together you are doing the work twice. You filter every single value and then you map the remaining values. With reduce you can filter and then map in a single pass.
+
+![f](https://imgur.com/jjcayxO.png)
+
+
+### More examples combining Filter and Reduce
+
+Before we go into this next set of examples, lets look at the behavior of `forEach` and how we use it on objects that contain arrays as properties.
+
+![f](https://imgur.com/UuPEj01.png)
+
+and
+
+![f](https://imgur.com/M6KfrWi.png)
+
+We can build on this logic to make it a bit more advanced, this will return an array that contains all the colors. 
+
+![f](https://imgur.com/KLFDGi5.png)
+
+Here is another example of using `reduce` with our own filter method inside. Again, we can use `filter` and `reduce` separately, and that works fine for small data sets. But once we start working with large amounts of data its more performance efficient to combine them.
+
+![f](https://imgur.com/O5gy8Xs.png)
+
+  
 
 ### map()
 
