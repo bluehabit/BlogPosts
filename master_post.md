@@ -739,7 +739,9 @@ Here using a specific condition to just return and exit the function
 
 ![f](https://imgur.com/G9r5HFk.png)
 
-## Functional Programming Array: `Map`, `Reduce`, `Filter` and more
+## Functional Programming Array: `forEach`, `Map`, `Reduce`, `Filter`
+
+### Protip! All of these array methods, iterate through EVERY SINGLE ARRAY ITEM
 
 Remember these are all ARRAY methods, therefore you want an array to use these. The input could strictly be an array, or it could be an array that's part of an object etc.
 
@@ -889,13 +891,47 @@ Here is another example of using `reduce` with our own filter method inside. Aga
 
 ![f](https://imgur.com/O5gy8Xs.png)
 
+### Even more Examples Combining Filter and Reduce
+
+![f](https://imgur.com/l8YxT1e.png)
+
+And another example
+
+![f](https://imgur.com/I5cbeX0.png)
+
   
+### Keep this in mind with Reduce
+
+![f](https://imgur.com/bwQ2Wa4.png)
+
+and some more reduce pro tips
+
+![f](https://imgur.com/gdWESs0.png)
+
 
 ### map()
 
 **Use it when**: You want to modify all values in an array to another set of values.
 
 ![f](https://imgur.com/UPUFDEM.png)
+
+
+### Secondary Functional Programming Methods `Sort`, `Some`, `Every`, `Find`, `FindIndex`
+
+These secondary functional programming methods are not used as much as the primary ones (`reduce`, `map` etc.) but they are still worth learning about.
+
+
+### Nice refactor
+
+![f](https://imgur.com/sVcPe53.png)
+
+Nice
+
+![f](https://imgur.com/C6ZwEM3.png)
+
+Nice
+
+![f](https://imgur.com/ly80zaa.png)
 
 
 ### string.slice
