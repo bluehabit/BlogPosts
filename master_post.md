@@ -228,6 +228,10 @@ Callback Example
 
 ![f](https://imgur.com/IHBiAox.png)
 
+## More Callback goodness
+
+![f](https://imgur.com/CWi8V1X.png)
+
 ## Template Literals
 
 ![f](https://imgur.com/htzqPfO.png)
@@ -530,6 +534,10 @@ Verifying we have closure in Chrome Dev Tools
 Another Example
 
 ![f](https://imgur.com/FeBQOmi.png)
+
+## Callbacks are Closure?
+
+![f](https://imgur.com/6POlvXl.png)
 
 ## The Keyword `this` 
 
@@ -857,6 +865,10 @@ Unlike && and ||, the ! operator DOES turn the value it receives into a boolean.
 
 `more` https://medium.freecodecamp.org/reduce-f47a7da511a9
 
+Here is an explanation of what is going on.
+
+![f](https://imgur.com/3ZsoSZ7.png)
+
 
 ### filter()
 
@@ -899,6 +911,10 @@ And another example
 
 ![f](https://imgur.com/I5cbeX0.png)
 
+another
+
+![f](https://imgur.com/ke5wFbg.png)
+
   
 ### Keep this in mind with Reduce
 
@@ -934,6 +950,11 @@ Nice
 ![f](https://imgur.com/ly80zaa.png)
 
 
+
 ### string.slice
 
 ![f](https://imgur.com/ViWl0sm.png)
+
+### Accessing Arguments from a Parameter
+
+![f](https://imgur.com/rNZbK9X.png)
