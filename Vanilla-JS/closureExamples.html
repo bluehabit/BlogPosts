@@ -1,0 +1,57 @@
+<button>Click Me</button>
+
+<script>
+var button = document.querySelector('button');
+
+//***version 1 - named function
+button.addEventListener('click', clickedEventFunction());
+
+function clickedEventFunction(){
+	var count = 0;
+	 return function(){
+	 	count++;
+	 	console.log(count);
+	 };
+}
+
+
+//***version 2 - named function inline function definition and call
+button.addEventListener('click', function clickedEventFunction(){
+ var count = 0;
+  return function(){
+      count++;
+      console.log(count);
+  }; 
+}());
+
+//***version 3 - anonymous function call inline (hard to read dont do this)
+button.addEventListener('click', (function(){
+	var count = 0;
+	 return function(){
+	 	count++;
+	 	console.log(count)
+	 };
+}()))
+
+
+//***version 4 - named function expression
+
+var clickedEventFunction  = function(){
+ let count = 0;
+  return function(){
+      count++;
+      console.log(count);
+  }; 
+}
+
+button.addEventListener('click', clickedEventFunction());
+
+//***version 5 - named function call
+function count(){
+    let count = 0;
+
+    return function(){
+        count++;
+        console.log(count)
+    };
+}
