@@ -77,6 +77,12 @@ When you take your node project and put it on gitHub or sending it to a folder, 
 
 The way the `node_modules` folder is generated can also be different depending on which version of `npm` you install. 
 
+### Installing Module Globally with `-g` flag
+
+We can install modules globally so that any node project can have access to them. 
+
+![f](https://imgur.com/xmYHfcT.png)
+
 ### Dependencies 
 
 After installing our latest package, `lodash` if we revisit our `package.json` file we can see it created a new object called `dependencies` and it added `lodash` and the current version we installed to it.
