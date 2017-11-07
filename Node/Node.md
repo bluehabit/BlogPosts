@@ -154,6 +154,14 @@ Serializing the text back to an Object
 
 ![f](https://imgur.com/fA40jMA.png)
 
+### Starting a simple web server with `npm install -g http-server`
+
+resources:
+
+http://jasonwatmore.com/post/2016/06/22/nodejs-setup-simple-http-server-local-web-server
+
+https://www.youtube.com/watch?v=oa9m8321_nw
+
 
 
 
