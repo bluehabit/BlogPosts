@@ -156,6 +156,19 @@ Serializing the text back to an Object
 
 ### Starting a simple web server with `npm install -g http-server`
 
+1) Install the `http-server` `module` from `npm` if you haven't already. `npm install -g http-server`
+2) Start the server with the command `http-server`
+3) Navigate to this URL in your browser `http://localhost:8080/`
+
+If your local server is setup correctly you should see something like this in the command line 
+
+![f](https://imgur.com/ClfuLz5.png)
+
+And the content of your files at `http://localhost:8080/`
+
+![f](https://imgur.com/UK5Csxq.png)
+
+
 resources:
 
 http://jasonwatmore.com/post/2016/06/22/nodejs-setup-simple-http-server-local-web-server
