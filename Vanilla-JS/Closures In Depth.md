@@ -1,6 +1,6 @@
 ## Closures In Depth
 
-A closure is an inner function that has access to its parent functions scope after the parent function has already returned. Whenever we have a function that returns another function we have the possiblity of creating a closure. If the returned function has access to the parent function / outerscope variables or arugments then that is considered an example of closure. The closure 'scopes' the outer functions variables and arguments. This allows us to create `private variables` which we will discuss in detail in a moment. Quick note, the terms outerfunction and parent function are synonymous.
+A closure is when a parent function returns another function; however, the returned inner function still has access to its parent functions scope including variables and arguments. Whenever we have a function that returns another function we have the possiblity of creating a closure. If the returned function has access to the parent function / outerscope variables or arugments then that is considered an example of closure. The closure 'scopes' the outer functions variables and arguments. This allows us to create `private variables` which we will discuss in detail in a moment. Quick note, the terms outerfunction and parent function are synonymous.
 
 Lets take a look at a brief example of closure.
 
@@ -12,8 +12,10 @@ Let's go ahead and call `count` and see what happens:
 
 ![f](https://imgur.com/tgbxSpz.png)
 
-As expected calling the outer function returns another function. 
+The parent function runs, it gets to the `return` statement and the parent function then exits and returns the inner function as expected.
 
-This has the potential to create closure, all that is left is for the inner function to make use of a variable and or argument from the parent function. Lets do that now. 
+This has the potential to create closure, all that is left is for the inner function to make use of a variable and or argument from the parent functions scope and this will meed the requirements of a closure. And we can see here that it does, the inner function is accessing the outer functions variable `count`. 
 
-creates our instances. Each instance will scope the variable count. We created these scoped variables and instances through closure. In order to do this we must return a function. 
+## Scopes and Instances
+
+Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function creates an `instance` of that closure. Each instance will scope the variable count. We created these scoped variables and instances through closure. In order to do this we must return a function. 
