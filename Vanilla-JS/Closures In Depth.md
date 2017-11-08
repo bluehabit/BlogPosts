@@ -111,8 +111,13 @@ Inside `fakeEventListener` we have `setIterval` which also takes a callback func
 
 ![f](https://imgur.com/s5hMN3k.png)
 
+## `addEventListener`
 
+Time for the big guns, lets look at closures and callbacks used together in `addEventListener`. 
 
+![f](https://imgur.com/0emR8CM.png)
+
+Just like in our previous exmaple using `setInterval` here we are passing around a scope instance. `button` stores the inner function that was created when you call `clickedEventFUnction()`. That function has a scoped `count` variable. Here instead of storing it inside of a global variable, we are instead storing it inside of an object (e.g. `button`). 
 
 
 
