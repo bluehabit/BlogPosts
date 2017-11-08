@@ -43,7 +43,7 @@ To increment our scoped variable `count` we simply need a way to repeatedly use 
 
 ![f](https://imgur.com/IxE1pIz.png)
 
-The value of the `test` variable holds a function definition. Just like earlier, when `count()` is called, it goes through line by line, the program sees the 'return' keyword and the inner function is returned. Only difference is now we are saving this to variable. This means `test` is now a function expression, one of the features that makes functions in JS first class objects.
+The value of the `test` variable holds a function definition. Just like earlier, when `count()` is called, it goes through line by line, the program sees the 'return' keyword and the inner function is returned. Only difference is now we are saving this to variable. This means `test` is now a function expression, one of the features that makes functions in JS first class objects. Because `test` is now a variable holding a function definition (aka a function expression) we can now call it with `test()`.
 
 ![f](https://imgur.com/bUDEB0H.png)
 
@@ -59,7 +59,7 @@ return function(){
 
 All that really matters, is that calling `count()` is in a scope with access to the actual `count` function, and for the result of `count()` to be stored so you can reuse it. 
 
-If you were to not store it, you can still do stuff like this: `count()()` and it will return `1`, but you can only do that once.  ONce this has run, you will have lost your instance of the scope since it is not being saved anywhere. Every time you call the function `count()` you re-initialize your scope. 
+If you were to not store it, you can still do stuff like this: `count()()` and it will return `1`.  Once this has run, you will have lost your instance of the scope since it is not being saved anywhere. Every time you call the function `count()` you re-initialize your scope. 
 
 ![f](https://imgur.com/5jZKqc4.png)
 
@@ -69,13 +69,13 @@ We could even do something like this if we wanted, but it's not advisable.
 
 ## Named Inner Functions
 
-You could also see our `count` function written a different way, but the same concepts apply.
+You could also see our `count` function written a different way, but the same concepts apply. This example uses named functions instead of anonymous functions.
 
 ![f](https://imgur.com/4iNb9M3.png)
 
 ## Scoping Arguments
 
-Whenever a function receives an argument, **just consider it to be an automatically declared variable**. Using this logic, closures will not only scope variables from the parent scope, but arguments as alluded to earlier and shown in the example below.
+Whenever a function receives an argument, **just consider it to be an automatically declared variable**. Using this logic, closures will not only scope variables from the parent scope, but arguments as well. As alluded to earlier.
 
 ![f](https://imgur.com/ynchAF2.png)
 
