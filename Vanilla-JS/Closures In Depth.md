@@ -86,7 +86,9 @@ Just like before we have a `closure function` named `increaseCount()`. Running `
 
 `increaseCount()` gets called within `higherOrder` as a `callback function`.
 
-This example is pretty simple, and contrived, but it is helpful to understand before we move on. The most important thing to remember here is again, the variable `myInstance` contains an **instance of the scope**.
+This example is pretty simple, and contrived, but it is helpful to understand before we move on. The most important thing to remember here is again, the variable `myInstance` contains an **instance of the scope**. 
+
+>We are merely passing the scope to `higherOrder`, which calls it for you.
 
 
 
