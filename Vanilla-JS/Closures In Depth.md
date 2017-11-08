@@ -45,7 +45,7 @@ Whenever we create a closure it scopes the parent functions variables and or arg
 
 > Whenever we call the closure function, it creates a new instance of that scope. AKA scoping the variable.
 
-To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()`'s scope as we would like. Each variable is a separate instance of the private variable `count`. 
+To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()`'s scope inside variables. Every time we call `count()` it creates a new instance. We can create as many instances of `count()`'s scope as we would like. Each variable is a separate instance of the private variable `count`. 
 
 ![f](https://imgur.com/IxE1pIz.png)
 
