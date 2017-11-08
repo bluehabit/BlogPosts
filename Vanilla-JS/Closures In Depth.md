@@ -59,7 +59,9 @@ You could also see our `count` function written a different way, but the same co
 ![f](https://imgur.com/4iNb9M3.png)
 
 
-
+```
+Whenever we call the closure function, it creates a new instance of the scope. AKA scoping the variable for short.
+```
 
 
 
