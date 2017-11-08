@@ -7,13 +7,13 @@
 
 A closure is when a parent function returns another function; however, the returned inner function still has access to the parent functions scope, including variables and arguments. 
 
-Whenever we have a function that returns another function we have the *possiblity* of creating a closure. If the returned function accesses the outer functions variables or arugments then that is considered a closure. Closures will 'scope' the outer functions variables and arguments. The inner function will be able to acccess these variables or parameters even after the parent function has already returned. Sometimes this is referred to as creating `private variables` which we will discuss in further detail later. Quick note, the terms outerfunction and parent function are synonymous in this post.
+Whenever we have a function that returns another function we have the *possibility* of creating a closure. If the returned function accesses the outer functions variables or arguments then that is considered a closure. Closures will 'scope' the outer functions variables and arguments. The inner function will be able to access these variables or parameters even after the parent function has already returned. Sometimes this is referred to as creating `private variables` which we will discuss in further detail later. Quick note, the terms outer function and parent function are synonymous in this post.
 
 Lets take a look at a brief example of closure.
 
 ![f](https://imgur.com/7W3uikq.png)
 
-The function `count` returns another function, in this case an anonymous function. Please note, whatever comes after the `return` keyword is returned by the function. In our example, `function(){return ++count;};}` comes immediatley after the `return` keyword. When the `return` `keyword` is used it will exit the function.
+The function `count` returns another function, in this case an anonymous function. Please note, whatever comes after the `return` keyword is returned by the function. In our example, `function(){return ++count;};}` comes immediately after the `return` keyword. When the `return` `keyword` is used it will exit the function.
 
 Let's go ahead and call `count` and see what happens: 
 
@@ -23,7 +23,7 @@ The parent function runs, it gets to the `return` statement and the parent funct
 
 This now has the potential to create closure, all that is left is for the inner function to make use of a variable and or argument from the parent functions scope and this will meet the requirements for a closure. And we can see here that it does, the inner function is accessing the outer functions variable `count` by incrementing it with `++count`. 
 
-When we run the function `count()` it scopes`var count` from the parent function. The function then immediately returns another function, an anonymous one. Remember, whatever comes after the `return` keyword is returned by the function. This could be a boolean value, number, string, object etc. or another function as is the case with closures.
+When we run the function `count()`  it scopes `var count` from the parent function. The function then immediately returns another function, an anonymous one. Remember, whatever comes after the `return` keyword is returned by the function. This could be a boolean value, number, string, object etc. or another function as is the case with closures.
 
 What we are returning here in this example is a `function definition`, to be more precise: 
 
@@ -35,11 +35,11 @@ function(){
 
 ## Scopes and Instances
 
-Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function, `count()`, creates an `instance` of that scope. In otherwords, calling `count()`  will scope the variable `count` and create a new instance of that scope. But to access these instances we need to save them to a variable.
+Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function, `count()`, creates an `instance` of that scope. In other words, calling `count()`  will scope the variable `count` and create a new instance of that scope. But to access these instances we need to save them to a variable.
 
 > Whenever we call the closure function, it creates a new instance of that scope. AKA scoping the variable.
 
-To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()`'s scope as we would like. Each variable is a seperate instance of the private variable `count`. 
+To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()`'s scope as we would like. Each variable is a separate instance of the private variable `count`. 
 
 ![f](https://imgur.com/IxE1pIz.png)
 
@@ -59,11 +59,11 @@ return function(){
 
 All that really matters, is that calling `count()` is in a scope with access to the actual `count` function, and for the result of `count()` to be stored so you can reuse it. 
 
-If you were to not store it, you can still do stuff like this: `count()()` and it will return `1`, but you can only do that once.  ONce this has run, you will have lost your instance of the scope since it is not being saved anywhere. Everytime you call the function `count()` you re-initialize your scope. 
+If you were to not store it, you can still do stuff like this: `count()()` and it will return `1`, but you can only do that once.  ONce this has run, you will have lost your instance of the scope since it is not being saved anywhere. Every time you call the function `count()` you re-initialize your scope. 
 
 ![f](https://imgur.com/5jZKqc4.png)
 
-We could even do something like this if we wanted, but its not adviseable.
+We could even do something like this if we wanted, but it's not advisable.
 
 ![f](https://imgur.com/PW7iYrr.png)
 
@@ -79,7 +79,7 @@ Whenever a function receives an argument, **just consider it to be an automatica
 
 ![f](https://imgur.com/ynchAF2.png)
 
-Here we slighlty modified the code to accept an additional argument. Even though the parent function has already returned, we still have access to the `string` argument, as well as the variable `count`. 
+Here we slightly modified the code to accept an additional argument. Even though the parent function has already returned, we still have access to the `string` argument, as well as the variable `count`. 
 
 ## Callbacks that Utilize Closures
 
@@ -99,7 +99,7 @@ This example is pretty simple, and contrived, but it is helpful to understand be
 
 ## `addEventListener` and Closure
 
-Continuing with our example of callbacks and closures working together, lets take a look at `addEventListener`. Afterall, one of the parameters for `addEventListener` is a `callback function`. But before we do that, lets look at a 'fake' event listener that uses `setInterval`. **The main point of this example is how we can store and re-use instances of scope**.
+Continuing with our example of callbacks and closures working together, lets take a look at `addEventListener`. After all, one of the parameters for `addEventListener` is a `callback function`. But before we do that, lets look at a 'fake' event listener that uses `setInterval`. **The main point of this example is how we can store and re-use instances of scope**.
 
 ![f](https://imgur.com/NbhMAVY.png)
 
@@ -107,7 +107,7 @@ Just like before we have a `closure function` `increaseCount` which returns anot
 
 Inside `fakeEventListener` we have `setIterval` which also takes a callback function as an argument. Inside the callback we are going to pass through the `counter` variable **which itself is just a reference to a scope instance**.
 
-**Special Note:** We cannot use the `return` keyword within the inner function becuase `setInterval` is an asynchronous operation.
+**Special Note:** We cannot use the `return` keyword within the inner function because `setInterval` is an asynchronous operation.
 
 ![f](https://imgur.com/s5hMN3k.png)
 
@@ -117,11 +117,11 @@ Time for the big guns, lets look at closures and callbacks used together in `add
 
 ![f](https://imgur.com/0emR8CM.png)
 
-Just like in our previous exmaple using `setInterval` here we are passing around a scope instance. `button` stores the inner function that was created when you call `clickedEventFUnction()`. That function has a scoped `count` variable. **Here instead of storing it inside of a global variable, we are instead storing it inside of an object (e.g. `button`)**. 
+Just like in our previous example using `setInterval` here we are passing around a scope instance. `button` stores the inner function that was created when you call `clickedEventFunction()`. That function has a scoped `count` variable. **Here instead of storing it inside of a global variable, we are instead storing it inside of an object (e.g. `button`)**. 
 
 ## Cool Applications of Closures
 
-In this example we use closure to scope the argument `id`, this allows us to increment it and give a unique id to each item within the array of objects. Normally for each item `id` would be  re-initialized everytime through. Instead, we use closure to return the inner function and scope the `id` argument. This allows us to increment it. If we did not do this, `id` would be equal to `0` for each item in the array of objects. Remember, we can essentially think of an argument passed to any function as a declared variable and treat it as such.
+In this example we use closure to scope the argument `id`, this allows us to increment it and give a unique id to each item within the array of objects. Normally for each item `id` would be  re-initialized every time through. Instead, we use closure to return the inner function and scope the `id` argument. This allows us to increment it. If we did not do this, `id` would be equal to `0` for each item in the array of objects. Remember, we can essentially think of an argument passed to any function as a declared variable and treat it as such.
 
 ![f](https://imgur.com/sYA9PjA.png)
 
