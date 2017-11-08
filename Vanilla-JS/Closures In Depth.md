@@ -80,5 +80,13 @@ Here we slighlty modified the code to accept an additional argument. Even though
 
 Now things get a little bit more complicated. Callbacks can also utilize closures. 
 
+![f](https://imgur.com/evQivdg.png)
+
+Just like before we have a `closure function` named `increaseCount()`. Running `increaseCount()` will scope our variable `count`. Also like before we will store scope instances within a variable, in this case `myInstance`. The main difference here is the addition of `higherOrder` which is a `higher order function`, meaning it accepts another function as an argument. 
+
+`increaseCount()` gets called within `higherOrder` as a `callback function`.
+
+This example is pretty simple, and contrived, but it is helpful to understand before we move on. The most important thing to remember here is again, the variable `myInstance` contains an **instance of the scope**.
+
 
 
