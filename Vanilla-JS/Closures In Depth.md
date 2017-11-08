@@ -8,7 +8,7 @@ Lets take a look at a brief example of closure.
 
 ![f](https://imgur.com/7W3uikq.png)
 
-The function `count` returns another function, in this case an anonymous function. Please note, whatever comes after the `return` keyword is returned by the function. In our example, `function(){return ++count;};}` comes immediatley after the `return` keyword. Using the `return` `keyword` in Javascript will exit the function.
+The function `count` returns another function, in this case an anonymous function. Please note, whatever comes after the `return` keyword is returned by the function. In our example, `function(){return ++count;};}` comes immediatley after the `return` keyword. When the `return` `keyword` is used it will exit the function.
 
 Let's go ahead and call `count` and see what happens: 
 
