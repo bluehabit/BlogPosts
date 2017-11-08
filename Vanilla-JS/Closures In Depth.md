@@ -88,7 +88,9 @@ Just like before we have a `closure function` named `increaseCount()`. Running `
 
 This example is pretty simple, and contrived, but it is helpful to understand before we move on. The most important thing to remember here is again, the variable `myInstance` contains an **instance of the scope**. 
 
->We are merely passing the scope to `higherOrder`, which calls it for you.
+### Very Important
+
+`myInstance` contains the scope. We are merely passing the scope, contained within the variable `myInstance` to `higherOrder`, which calls it for you.
 
 
 
