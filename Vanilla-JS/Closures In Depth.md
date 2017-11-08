@@ -1,8 +1,8 @@
 ## Closures In Depth
 
-A closure is when a parent function returns another function; however, the returned inner function still has access to its parent functions scope including variables and arguments. 
+A closure is when a parent function returns another function; however, the returned inner function still has access to the parent functions scope, including variables and arguments. 
 
-Whenever we have a function that returns another function we have the possiblity of creating a closure. If the returned function accesses the outer functions variables or arugments then that is considered closure. Closure 'scopes' the outer functions variables and arguments. This allows us to create `private variables` which we will discuss in further detail later. Quick note, the terms outerfunction and parent function are synonymous.
+Whenever we have a function that returns another function we have the *possiblity* of creating a closure. If the returned function accesses the outer functions variables or arugments then that is considered a closure. Closures will 'scope' the outer functions variables and arguments. The inner function will be able to acccess these variables or parameters even after the parent function has already returned. Sometimes this is referred to as creating `private variables` which we will discuss in further detail later. Quick note, the terms outerfunction and parent function are synonymous in this post.
 
 Lets take a look at a brief example of closure.
 
@@ -16,9 +16,11 @@ Let's go ahead and call `count` and see what happens:
 
 The parent function runs, it gets to the `return` statement and the parent function then exits and returns the inner function as expected.
 
-This has the potential to create closure, all that is left is for the inner function to make use of a variable and or argument from the parent functions scope and this will meed the requirements of a closure. And we can see here that it does, the inner function is accessing the outer functions variable `count`. 
+This now has the potential to create closure, all that is left is for the inner function to make use of a variable and or argument from the parent functions scope and this will meet the requirements for a closure. And we can see here that it does, the inner function is accessing the outer functions variable `count` by incrementing it with `++count`. 
 
-When we run the function `count()` it scopes the `var count` from the parent function. The function then immediately returns another function, an anonymous one. Remember, whatever comes after the `return` keyword is returned by the function. WHat we are returning here is a `function definition`, to be more precise: 
+When we run the function `count()` it scopes`var count` from the parent function. The function then immediately returns another function, an anonymous one. Remember, whatever comes after the `return` keyword is returned by the function. This could be a boolean value, number, string, object etc. or another function as is the case with closures.
+
+What we are returning here in this example is a `function definition`, to be more precise: 
 
 ```
 function(){
@@ -28,19 +30,19 @@ function(){
 
 ## Scopes and Instances
 
-Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function, `count()`, creates an `instance` of that scope. Calling `count()`  will scope the variable `count` and create a new instance. But to access these instances we need to save them to a variable.
+Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function, `count()`, creates an `instance` of that scope. In otherwords, calling `count()`  will scope the variable `count` and create a new instance of that scope. But to access these instances we need to save them to a variable.
 
-> Whenever we call the closure function, it creates a new instance of the scope. AKA scoping the variable for short.
+> Whenever we call the closure function, it creates a new instance of that scope. AKA scoping the variable.
 
-To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()` as we would like. Each variable is a seperate instance of the private variable `count`. 
+To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()`'s scope as we would like. Each variable is a seperate instance of the private variable `count`. 
 
 ![f](https://imgur.com/IxE1pIz.png)
 
-The value of the `test` variable holds a function definition. This means `test` is now a function expression, one of the features that makes functions in JS first class objects.
+The value of the `test` variable holds a function definition. Just like earlier, when `count()` is called, it goes through line by line, the program sees the 'return' keyword and the inner function is returned. Only difference is now we are saving this to variable. This means `test` is now a function expression, one of the features that makes functions in JS first class objects.
 
 ![f](https://imgur.com/bUDEB0H.png)
 
-The variable `test` holds the `anonymous function` that was returned by `call()`. We can execute, or call, this `anonymous function` stored within the `test` variable by calling it, just like a regular function by using `test()`. The value of the `test` variable holds a function definition. This means `test` is now a function expression, one of the features that makes functions in JS first class objects.
+The variable `test` holds the `anonymous function` that was returned by `call()`. We can execute, or call, this `function definition` stored within the `test` variable by calling it, just like a regular function by using `test()`. The value of the `test` variable holds a function definition. This means `test` is now a function expression, one of the features that makes functions in JS first class objects.
 
 ![f](https://imgur.com/IxE1pIz.png)
 
@@ -59,6 +61,8 @@ If you were to not store it, you can still do stuff like this: `count()()` and i
 We could even do something like this if we wanted, but its not adviseable.
 
 ![f](https://imgur.com/PW7iYrr.png)
+
+## Named Inner Functions
 
 You could also see our `count` function written a different way, but the same concepts apply.
 
