@@ -70,7 +70,7 @@ You could also see our `count` function written a different way, but the same co
 
 ## Scoping Arguments
 
-Whenever a function receives an argument, just consider it to be an automatically declared variable. Using this logic, closures will not only scope variables from the parent scope, but arguments as alluded to earlier and shown in the example below.
+Whenever a function receives an argument, **just consider it to be an automatically declared variable**. Using this logic, closures will not only scope variables from the parent scope, but arguments as alluded to earlier and shown in the example below.
 
 ![f](https://imgur.com/ynchAF2.png)
 
