@@ -16,6 +16,17 @@ The parent function runs, it gets to the `return` statement and the parent funct
 
 This has the potential to create closure, all that is left is for the inner function to make use of a variable and or argument from the parent functions scope and this will meed the requirements of a closure. And we can see here that it does, the inner function is accessing the outer functions variable `count`. 
 
+When we run the function `count()` it scopes the `var count` from the parent function. The function immediately returns another function, an anonymous one. Remember, whatever comes after the `return` keyword is returned by the function. WHat we are returning here is a `function definition`, to be more precise: 
+
+```
+function(){
+  return ++count;
+};
+```
+
 ## Scopes and Instances
 
-Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function creates an `instance` of that closure. Each instance will scope the variable count. We created these scoped variables and instances through closure. In order to do this we must return a function. 
+Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function creates an `instance` of that scope. In our case calling the function `count()`  will scope the variable count and create a new instance. But to access these instances we need to save them to a variable.
+
+To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances.
+
