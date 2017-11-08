@@ -119,5 +119,11 @@ Time for the big guns, lets look at closures and callbacks used together in `add
 
 Just like in our previous exmaple using `setInterval` here we are passing around a scope instance. `button` stores the inner function that was created when you call `clickedEventFUnction()`. That function has a scoped `count` variable. **Here instead of storing it inside of a global variable, we are instead storing it inside of an object (e.g. `button`)**. 
 
+## Cool Applications of Closures
+
+Normally for each item, the function gets reinstatied. Instead, we use closure to return the inner function and scope the `id` argument. This allows us to increment it. If we did not do this, `id` would be equal to `0` for each itm in the array of objects. Remember, we can essentially think of an argument passed to any function as a declared variable and treat it as such.
+
+![f](https://imgur.com/sYA9PjA.png)
+
 
 
