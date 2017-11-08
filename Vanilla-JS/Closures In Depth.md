@@ -18,7 +18,7 @@ The parent function runs, it gets to the `return` statement and the parent funct
 
 This has the potential to create closure, all that is left is for the inner function to make use of a variable and or argument from the parent functions scope and this will meed the requirements of a closure. And we can see here that it does, the inner function is accessing the outer functions variable `count`. 
 
-When we run the function `count()` it scopes the `var count` from the parent function. The function immediately returns another function, an anonymous one. Remember, whatever comes after the `return` keyword is returned by the function. WHat we are returning here is a `function definition`, to be more precise: 
+When we run the function `count()` it scopes the `var count` from the parent function. The function then immediately returns another function, an anonymous one. Remember, whatever comes after the `return` keyword is returned by the function. WHat we are returning here is a `function definition`, to be more precise: 
 
 ```
 function(){
@@ -28,29 +28,33 @@ function(){
 
 ## Scopes and Instances
 
-Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function creates an `instance` of that scope. In our case calling the function `count()`  will scope the variable count and create a new instance. But to access these instances we need to save them to a variable.
+Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function, `count()`, creates an `instance` of that scope. Calling `count()`  will scope the variable `count` and create a new instance. But to access these instances we need to save them to a variable.
 
-To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()` as we would like, we just need to save it to a variable. Each variable is a seperate instance of the private variable `count`. 
+> Whenever we call the closure function, it creates a new instance of the scope. AKA scoping the variable for short.
+
+To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()` as we would like. Each variable is a seperate instance of the private variable `count`. 
 
 ![f](https://imgur.com/IxE1pIz.png)
-
-All that really matters, is that calling `count()` is in a scope with access to the actual `count` function, and for the result of `count()` to be stored so you can reuse it. 
-
-If you were to not store it, you can still do stuff like this: `count()()` and it will return 1, but you can only do that once.  ONce this has run, you will have lost your instance of the scope since it is not being saved anywhere. Everytime you call the function `count()` you re-initialize your scope. 
-
-![f](https://imgur.com/5jZKqc4.png)
 
 The value of the `test` variable holds a function definition. This means `test` is now a function expression, one of the features that makes functions in JS first class objects.
 
 ![f](https://imgur.com/bUDEB0H.png)
 
-`test` holds the `anonymous function` that was returned by `call()`. We can execute, or call, this `anonymous function` by running `test()`:
+The variable `test` holds the `anonymous function` that was returned by `call()`. We can execute, or call, this `anonymous function` stored within the `test` variable by calling it, just like a regular function by using `test()`. The value of the `test` variable holds a function definition. This means `test` is now a function expression, one of the features that makes functions in JS first class objects.
+
+![f](https://imgur.com/IxE1pIz.png)
 
 ```
 return function(){
   return ++count;
 };
 ```
+
+All that really matters, is that calling `count()` is in a scope with access to the actual `count` function, and for the result of `count()` to be stored so you can reuse it. 
+
+If you were to not store it, you can still do stuff like this: `count()()` and it will return `1`, but you can only do that once.  ONce this has run, you will have lost your instance of the scope since it is not being saved anywhere. Everytime you call the function `count()` you re-initialize your scope. 
+
+![f](https://imgur.com/5jZKqc4.png)
 
 We could even do something like this if we wanted, but its not adviseable.
 
@@ -59,11 +63,6 @@ We could even do something like this if we wanted, but its not adviseable.
 You could also see our `count` function written a different way, but the same concepts apply.
 
 ![f](https://imgur.com/4iNb9M3.png)
-
-
-
-> Whenever we call the closure function, it creates a new instance of the scope. AKA scoping the variable for short.
-
 
 
 
