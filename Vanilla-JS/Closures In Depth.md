@@ -2,7 +2,7 @@
 
 A closure is when a parent function returns another function; however, the returned inner function still has access to its parent functions scope including variables and arguments. 
 
-Whenever we have a function that returns another function we have the possiblity of creating a closure. If the returned function has access to the parent function / outerscope variables or arugments then that is considered an example of closure. The closure 'scopes' the outer functions variables and arguments. This allows us to create `private variables` which we will discuss in detail in a moment. Quick note, the terms outerfunction and parent function are synonymous.
+Whenever we have a function that returns another function we have the possiblity of creating a closure. If the returned function accesses the outer functions variables or arugments then that is considered closure. Closure 'scopes' the outer functions variables and arguments. This allows us to create `private variables` which we will discuss in further detail later. Quick note, the terms outerfunction and parent function are synonymous.
 
 Lets take a look at a brief example of closure.
 
