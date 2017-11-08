@@ -90,7 +90,7 @@ This example is pretty simple, and contrived, but it is helpful to understand be
 
 ### Very Important
 
-`myInstance` contains the scope. We are merely passing the scope, contained within the variable `myInstance` to `higherOrder`, which calls it for you.
+`myInstance` contains the scope (`whatever calls the closure function creates an instance of the scope!`). We are merely passing the scope, contained within the variable `myInstance` to `higherOrder`, which calls it for you.
 
 
 
