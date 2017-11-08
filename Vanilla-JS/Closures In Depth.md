@@ -68,5 +68,11 @@ You could also see our `count` function written a different way, but the same co
 
 ![f](https://imgur.com/4iNb9M3.png)
 
+## Scoping Arguments
 
+Whenever a function receives an argument, just consider it to be an automatically declared variable. Using this logic, closures willn ot only scope variables from the parent scope, but arguments as well as shown in this example.
+
+![f](https://imgur.com/qwz0C8s.png)
+
+Here we slighlty modified the code to accept an additional argument. Even though the parent function has already returned, we still have access to the `string` argument, as well as the variable `count`. 
 
