@@ -28,7 +28,7 @@ function(){
 
 Whenever we create a closure it scopes the parent functions variables and or arguments. Calling our closure function creates an `instance` of that scope. In our case calling the function `count()`  will scope the variable count and create a new instance. But to access these instances we need to save them to a variable.
 
-To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()` as we would like, we just need to save it to a variable.
+To increment our scoped variable `count` we simply need a way to repeatedly use the scope that was created. We will store instances of the function `count()` inside variables, that is what creates our instances. We can create as many instances of `count()` as we would like, we just need to save it to a variable. Each variable is a seperate instance of the private variable `count`. 
 
 ![f](https://imgur.com/IxE1pIz.png)
 
@@ -54,6 +54,9 @@ We could even do something like this if we wanted, but its not adviseable.
 
 ![f](https://imgur.com/PW7iYrr.png)
 
+You could also see our `count` function written a different way, but the same concepts apply.
+
+![f](https://imgur.com/4iNb9M3.png)
 
 
 
