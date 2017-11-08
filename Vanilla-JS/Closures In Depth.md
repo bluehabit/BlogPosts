@@ -1,5 +1,10 @@
 ## Closures In Depth
 
+* What is a closure?
+* Private Variables
+* Instances of Scopes
+* Using closures and callback functions together
+
 A closure is when a parent function returns another function; however, the returned inner function still has access to the parent functions scope, including variables and arguments. 
 
 Whenever we have a function that returns another function we have the *possiblity* of creating a closure. If the returned function accesses the outer functions variables or arugments then that is considered a closure. Closures will 'scope' the outer functions variables and arguments. The inner function will be able to acccess these variables or parameters even after the parent function has already returned. Sometimes this is referred to as creating `private variables` which we will discuss in further detail later. Quick note, the terms outerfunction and parent function are synonymous in this post.
@@ -91,6 +96,23 @@ This example is pretty simple, and contrived, but it is helpful to understand be
 ### Very Important
 
 `myInstance` contains the scope (`whatever calls the closure function creates an instance of the scope!`). We are merely passing the scope, contained within the variable `myInstance` to `higherOrder`, which calls it for you.
+
+## `addEventListener` and Closure
+
+Continuing with our example of callbacks and closures working together, lets take a look at `addEventListener`. Afterall, one of the parameters for `addEventListener` is a `callback function`. But before we do that, lets look at a 'fake' event listener that uses `setInterval`. **The main point of this example is how we can store and re-use instances of scope**.
+
+![f](https://imgur.com/NbhMAVY.png)
+
+Just like before we have a `closure function` `increaseCount` which returns another function that has access to its parent functions scope. We will store an instance of this scope in the variable `counter` by calling `increaseCount()`. We can then pass this instance of the scope to the higher order function `fakeEventListener`. 
+
+Inside `fakeEventListener` we have `setIterval` which also takes a callback function as an argument. Inside the callback we are going to pass through the `counter` variable **which itself is just a reference to a scope instance**.
+
+**Special Note:** We cannot use the `return` keyword within the inner function becuase `setInterval` is an asynchronous operation.
+
+![f](https://imgur.com/s5hMN3k.png)
+
+
+
 
 
 
