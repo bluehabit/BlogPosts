@@ -1,3 +1,9 @@
+One thing that was confusing me in my studies was how closures and callback functions can be used together. Particularly with `addEventListener` since we are not easily able to peer under the hood. As a result I started writing some notes to myself about closures in general and closures used with callback functions. It ended up being pretty long, so I figured I would turn this into a 'blog post' to help cement my knowledge. Thought I would share it here as well, maybe it will help a student or two. 
+
+Anyways for those of you who are much more experienced than me please let me know if there are any errors in my logic, or suggestions, or more examples to add. Guide below.
+
+---------------------
+
 ## Closures In Depth
 
 * What is a closure?
@@ -5,7 +11,7 @@
 * Instances of Scopes
 * Using closures and callback functions together
 
-A closure is when a parent function returns another function; however, the returned inner function still has access to the parent functions scope, including variables and arguments. 
+A closure is when a *parent function returns another function*; however, the returned inner function still has access to the parent functions scope, including variables and arguments and uses them. 
 
 Whenever we have a function that returns another function we have the *possibility* of creating a closure. If the returned function accesses the outer functions variables or arguments then that is considered a closure. Closures will 'scope' the outer functions variables and arguments. The inner function will be able to access these variables or parameters even after the parent function has already returned. Sometimes this is referred to as creating `private variables` which we will discuss in further detail later. Quick note, the terms outer function and parent function are synonymous in this post.
 
@@ -73,6 +79,8 @@ You could also see our `count` function written a different way, but the same co
 
 ![f](https://imgur.com/4iNb9M3.png)
 
+Just be careful you return the inner functions `function definition`, do not attempt to call it here.
+
 ## Scoping Arguments
 
 Whenever a function receives an argument, **just consider it to be an automatically declared variable**. Using this logic, closures will not only scope variables from the parent scope, but arguments as well. As alluded to earlier.
@@ -101,7 +109,7 @@ This example is pretty simple, and contrived, but it is helpful to understand be
 
 Continuing with our example of callbacks and closures working together, lets take a look at `addEventListener`. After all, one of the parameters for `addEventListener` is a `callback function`. But before we do that, lets look at a 'fake' event listener that uses `setInterval`. **The main point of this example is how we can store and re-use instances of scope**.
 
-![f](https://imgur.com/NbhMAVY.png)
+![f](https://imgur.com/1V0q2dF.png)
 
 Just like before we have a `closure function` `increaseCount` which returns another function that has access to its parent functions scope. We will store an instance of this scope in the variable `counter` by calling `increaseCount()`. We can then pass this instance of the scope to the higher order function `fakeEventListener`. 
 
@@ -110,6 +118,12 @@ Inside `fakeEventListener` we have `setIterval` which also takes a callback func
 **Special Note:** We cannot use the `return` keyword within the inner function because `setInterval` is an asynchronous operation.
 
 ![f](https://imgur.com/s5hMN3k.png)
+
+## Another way to write our `fakeEventListener`
+
+Just to be thorough lets again revisit an alternative way of writing this function using a named function, instead of an anonymous one. 
+
+![f](https://imgur.com/6JOz3IF.png)
 
 ## `addEventListener`
 
@@ -121,9 +135,6 @@ Just like in our previous example using `setInterval` here we are passing around
 
 ## Cool Applications of Closures
 
-In this example we use closure to scope the argument `id`, this allows us to increment it and give a unique id to each item within the array of objects. Normally for each item `id` would be  re-initialized every time through. Instead, we use closure to return the inner function and scope the `id` argument. This allows us to increment it. If we did not do this, `id` would be equal to `0` for each item in the array of objects. Remember, we can essentially think of an argument passed to any function as a declared variable and treat it as such.
+In this example we use closure to scope the argument `id` (returning an anonymous function), this allows us to increment it and give a unique id to each item within the array of objects. Normally for each item `id` would be  re-initialized every time through. Instead, we use closure to return the inner function and scope the `id` argument from its parent. This allows us to increment it, just like we did with the `counter()` examples. If we did not do this, `id` would be equal to `0` for each item in the array of objects. Remember, we can essentially think of an argument passed to any function as a declared variable and treat it as such.
 
 ![f](https://imgur.com/sYA9PjA.png)
-
-
-
