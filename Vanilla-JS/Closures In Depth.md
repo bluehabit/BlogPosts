@@ -1,9 +1,3 @@
-One thing that was confusing me in my studies was how closures and callback functions can be used together. Particularly with `addEventListener` since we are not easily able to peer under the hood. As a result I started writing some notes to myself about closures in general and closures used with callback functions. It ended up being pretty long, so I figured I would turn this into a 'blog post' to help cement my knowledge. Thought I would share it here as well, maybe it will help a student or two. 
-
-Anyways for those of you who are much more experienced than me please let me know if there are any errors in my logic, or suggestions, or more examples to add. Guide below.
-
----------------------
-
 ## Closures In Depth
 
 * What is a closure?
@@ -132,6 +126,10 @@ Time for the big guns, lets look at closures and callbacks used together in `add
 ![f](https://imgur.com/0emR8CM.png)
 
 Just like in our previous example using `setInterval` here we are passing around a scope instance. `button` stores the inner function that was created when you call `clickedEventFunction()`. That function has a scoped `count` variable. **Here instead of storing it inside of a global variable, we are instead storing it inside of an object (e.g. `button`)**. 
+
+In addition, we can also access the `event object` just like usual. Only this time we will pass it as an argument to the returned inner function.
+
+![f](https://imgur.com/wsQDk0T.png)
 
 ## Cool Applications of Closures
 
