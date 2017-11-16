@@ -2089,9 +2089,9 @@ In this example we use closure to scope the argument `id` (returning an anonymou
 
 ## More Examples
 
-Notice in this example we are returning an object. 
-
 ![f](https://imgur.com/AgEkhY4.png)
+
+Notice in this example we are returning an object. 
 
 ![f](https://imgur.com/IIpIA13.png)
 
