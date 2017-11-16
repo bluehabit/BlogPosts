@@ -83,6 +83,12 @@ Whenever a function receives an argument, **just consider it to be an automatica
 
 Here we slightly modified the code to accept an additional argument. Even though the parent function has already returned, we still have access to the `string` argument, as well as the variable `count`. 
 
+### Another Example
+
+Lets look at another example where we scope a functions arguments.
+
+![f](https://imgur.com/itw2ggi.png)
+
 ## Callbacks that Utilize Closures
 
 Now things get a little bit more complicated. Callbacks can also utilize closures. 
