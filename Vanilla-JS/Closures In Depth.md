@@ -136,3 +136,9 @@ In addition, we can also access the `event object` just like usual. Only this ti
 In this example we use closure to scope the argument `id` (returning an anonymous function), this allows us to increment it and give a unique id to each item within the array of objects. Normally for each item `id` would be  re-initialized every time through. Instead, we use closure to return the inner function and scope the `id` argument from its parent. This allows us to increment it, just like we did with the `counter()` examples. If we did not do this, `id` would be equal to `0` for each item in the array of objects. Remember, we can essentially think of an argument passed to any function as a declared variable and treat it as such.
 
 ![f](https://imgur.com/sYA9PjA.png)
+
+## More Examples
+
+Notice in this example we are returning an object. 
+
+![f](https://imgur.com/2ghje3O.png)
