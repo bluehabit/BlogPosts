@@ -1,3 +1,14 @@
+## Unary Operator
+
+Can convert string values to numbers by using the `+` unary operator.
+
+![f](https://imgur.com/PHCbRZF.png)
+
+And a practical application using a regex expression to parse a string representation of date into a number in milliseconds in epoch time. We can convert the epoch time into a `new Date`. 
+
+![f](https://imgur.com/sWUA51r.png)
+
+
 ### Think of Functions as Factories
 
 Function help keep our code DRY, instead of having to write the same code over and over again. 
@@ -2081,3 +2092,8 @@ In this example we use closure to scope the argument `id` (returning an anonymou
 Notice in this example we are returning an object. 
 
 ![f](https://imgur.com/AgEkhY4.png)
+
+![f](https://imgur.com/IIpIA13.png)
+
+![f](https://imgur.com/Jjoj4VE.png)
+
