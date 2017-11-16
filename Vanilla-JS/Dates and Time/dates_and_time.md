@@ -1,5 +1,9 @@
 ## Protip
 
+My Epoch
+
+![f](https://imgur.com/DLSFR4M.png)
+
 ![f](https://imgur.com/ymFVVsE.png)
 
 ![f](https://imgur.com/GdBQx1g.png)
