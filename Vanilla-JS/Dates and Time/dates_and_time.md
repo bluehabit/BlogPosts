@@ -1,3 +1,7 @@
+## Protip
+
+![f](https://imgur.com/ymFVVsE.png)
+
 ## `new Date()`
 
 Creates a `date object`
