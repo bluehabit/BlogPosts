@@ -218,6 +218,10 @@ Parsing a string, and then using `match` array to convert it to a number value i
 
 ![f](https://imgur.com/ehgkUdl.png)
 
+And another example
+
+![f](https://imgur.com/pAEtcOF.png)
+
 ## Replace
 
 ![f](https://imgur.com/45ScJdO.png)
