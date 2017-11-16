@@ -2,7 +2,7 @@
 
 My Epoch
 
-![f](https://imgur.com/DLSFR4M.png)
+![f](https://imgur.com/EB6UbZm.png)
 
 ![f](https://imgur.com/ymFVVsE.png)
 
