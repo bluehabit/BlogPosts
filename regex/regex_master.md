@@ -179,11 +179,33 @@ console.log(pattern.test(testString)); // true
 
 ![f](https://imgur.com/wiBOjNQ.png)
 
+### More examples and validators
+
+![f](https://imgur.com/nlwnfNi.png)
+
+![f](https://imgur.com/lXG4car.png)
+
+![f](https://imgur.com/CNUdufv.png)
+
+![f](https://imgur.com/nfKv67X.png)
+
+![f](https://imgur.com/Wb2qoUP.png)
+
+![f](https://imgur.com/NyNAhx2.png)
+
+
+
 ### Simple JSON Validator
 
 ![f](https://imgur.com/28Xme8h.png)
 
 ### Greedy vs Lazy
+
+![f](https://imgur.com/ViwOeyN.png)
+
+### `exec` for multiple matches
+
+![f](https://imgur.com/NzRHu5v.png)
 
 
 ### To Do
