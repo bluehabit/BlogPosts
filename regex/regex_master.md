@@ -208,7 +208,17 @@ console.log(pattern.test(testString)); // true
 ![f](https://imgur.com/NzRHu5v.png)
 
 
-### To Do
+## Match
 
--get examples straight from this chapter as well especially
-some of the more confusing ones like `{n,}`
+![f](https://imgur.com/pMMaJKQ.png)
+
+## Epoch `match` Example
+
+Parsing a string, and then using `match` array to convert it to a number value in milliseconds to use for epoch time and `new Date`. 
+
+![f](https://imgur.com/ehgkUdl.png)
+
+## Replace
+
+![f](https://imgur.com/45ScJdO.png)
+
