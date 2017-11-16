@@ -141,4 +141,4 @@ In this example we use closure to scope the argument `id` (returning an anonymou
 
 Notice in this example we are returning an object. 
 
-![f](https://imgur.com/2ghje3O.png)
+![f](https://imgur.com/AgEkhY4.png)
