@@ -2,6 +2,10 @@
 
 ![f](https://imgur.com/ymFVVsE.png)
 
+![f](https://imgur.com/GdBQx1g.png)
+
+![f](https://imgur.com/WcsjcKz.png)
+
 ## `new Date()`
 
 Creates a `date object`
