@@ -62,6 +62,14 @@ How many times a character, or sequence of characters, should be matched.
 
 `\B` - Matches a non-word boundary. 
 
+### Boundary Examples
+
+Very common to confuse `\b` and `\B`. Please remember, `\b` searches for words based on word boundaries. Characters such as the space, `.` and `/` act as word boundaries. 
+
+While `\B` searches WITHIN a word. 
+
+![f](https://imgur.com/FCh69v3.png)
+
 ### Anchors 
 
 `/^search phrase here$/` Using `^` and `$` together creates an anchor. 
