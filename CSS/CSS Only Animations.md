@@ -1084,6 +1084,12 @@ Here is what your final animation should look like:
 
 ![final-animation](http://imgur.com/XwmTj1T.gif)
 
+## Positioning / Moving around Paths in a SVG
+
+Here we are setting the initial placement of the rain droplets so it doesn't collide with the clouds once they animate. We don't use `position:relative` or anything like that, rather we use `translateX` and `translateY` to positition these on the screen.
+
+![svg-path](https://imgur.com/MEADDjV.png)
+
 
 ## Additional Resources
 
