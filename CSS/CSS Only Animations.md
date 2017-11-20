@@ -1168,3 +1168,7 @@ Just like images, SVGs too are by default `inline`. Change them to `block` to ce
 ![f](https://imgur.com/YdkUfqR.png)
 
 
+### Animation Protip
+
+![f](https://imgur.com/Fcl8lO6.png)
+
