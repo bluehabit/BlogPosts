@@ -1,5 +1,7 @@
 ## Protip
 
+![f](https://imgur.com/3NFgUJZ.png)
+
 ![f](https://imgur.com/pXm2rE0.png)
 
 More Pro Epoch
