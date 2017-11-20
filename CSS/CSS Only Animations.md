@@ -1161,6 +1161,10 @@ We can import any font we want to the web using `@fontface`. For example this us
 }
 ```
 
+### Centering SVGs
 
+Just like images, SVGs too are by default `inline`. Change them to `block` to center them using `maring: 0 auto`.
+
+![f](https://imgur.com/YdkUfqR.png)
 
 
