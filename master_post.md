@@ -1,3 +1,17 @@
+## Template Literal multi line strings
+
+![f](https://imgur.com/xxzxkCD.png)
+
+## Reading MDN
+
+![f](https://imgur.com/LvmW1p5.png)
+
+## Window Object - Where Global Variables are Saved
+
+Special note here if you DO NOT want to expose your variables to other 3rd party modules you can wrap them in a IIFE. On the other hand if you intentionally want to expose your variables, then disregard.
+
+![f](https://imgur.com/BhSVXv9.png)
+
 ## Unary Operator
 
 Can convert string values to numbers by using the `+` unary operator.
@@ -2097,3 +2111,22 @@ Notice in this example we are returning an object.
 
 ![f](https://imgur.com/Jjoj4VE.png)
 
+## New Callback
+
+A callback is simply a function that  gets passed to another function (called the higher order function)as a parameter. When the callback is passed to the higher order function it is stored as a function definition, and is not executed until the callback function is called. When building a callback function it is customary to put the callback in as the last parameter.
+
+Anonymous Callback Function
+
+![f](https://imgur.com/9JIV1gw.png)
+
+Named callback function
+
+![f](https://imgur.com/mlzISu4.png)
+
+### Stepping through a Callback
+
+![f](https://imgur.com/JRTFkyD.png)
+
+![f](https://imgur.com/zdHWp2p.png)
+
+![f](https://imgur.com/52TjY3x.png)
