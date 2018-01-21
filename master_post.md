@@ -1,6 +1,7 @@
-#Table of Contents
-* [Functions](#functions) 
-* 
+# Table of Contents
+1. [Functions](#functions) 
+  * [Parameters](#parameters)
+2. 
 
 
 ## Template Literal multi-line strings
@@ -45,7 +46,7 @@ I like to think of functions as a factory. After all the processes within the fa
 In the case of Javascript the function will `return` something that you can use for later. Just like factories in real life, it is recommended that your functions specialize in performing a particular action.
 
 
-## Parameters In Functions
+## Parameters
 
 Functions can also accept one or more inputs, they can do this through parameters. I like to think of parameters just like regular variables in JS. Just like variables,  a parameter acts as a placeholder for a value. You can also have functions that have no parameters as well, as shown in our example below.
 
