@@ -69,7 +69,6 @@ Functions can also be assigned to a variable using the assignment operator. This
 ![f](https://imgur.com/ZYRlASz.png)
 
 
-----------------
 Here is another example of a function with parameters using strings. This is a simple function that will log something to the console. In this case our function `printString` will console.log to the console. 
 
 ![func3](https://imgur.com/oolZxdk.png)
@@ -77,8 +76,6 @@ Here is another example of a function with parameters using strings. This is a s
 We have a function called `printString` here that has a parameter named `string`. It will hold the value of the variable `myString`. 
 
 `printString(myString)` calls the function and passes through the value of `(myString)` as the parameter. As a result it will `console.log` `Hello there` to the console. 
-
-______________________________________
 
 The parameter `string` is holding the value of a string itself, therefore we have access to different string properties and methods such as `length`.
 
@@ -89,8 +86,6 @@ In this case the parameter `string` is once again holding the value of `myString
 Parameter names are also arbitrary just like variables, they can be named whatever you would like. See the below example where I replaced the parameter name with something ridiculous, in this case `pinkDinosaur`. 
 
 ![func5](https://imgur.com/QNeNMTJ.png)
-
------- 
 
 Another Example
 
@@ -211,8 +206,6 @@ The second parameter, `delay` (highlighted in blue) uses time in milliseconds th
 
 Using built in functions like `addEventListener` and `setTimeOut` are common examples of `callbacks` you will encounter *"in the wild"*.  
 
-----
-
 ![example-3](http://imgur.com/c1DpFN4.png)
 
 
@@ -238,8 +231,6 @@ As we loop through the array, the callback parameter `arrayItem` will hold the v
 
 ![f](https://imgur.com/YTAztTL.png)
 
-----
-
 ### Custom Filter Function
 
 
@@ -249,7 +240,6 @@ As we loop through the array, the callback parameter `arrayItem` will hold the v
 We can refactor the `if` statement to be a bit shorter and just write it like this.
 
 ![f](https://imgur.com/LYbo0ao.png)
-----
 
 ### Custom Filter Function (more advanced)
 
@@ -534,7 +524,7 @@ notice how if we try to access the variable pet without using closure it throws 
 
  ![f](https://imgur.com/iujSns0.png)
 
-----
+
 All examples above represent only first-order functions. You can even go higher and you may find yourself with some clever code where a callback is "returned" in a from the executing function in a way that it becomes a "closure" and is executed after the executing function is completed.
 
 
@@ -572,8 +562,6 @@ Verifying we have closure in Chrome Dev Tools.
 Verifying we have closure in Chrome Dev Tools
 
 ![f](https://imgur.com/J2cz13l.png)
-
-------
 
 Another Example
 
@@ -706,8 +694,6 @@ https://alf.nu/RegexGolf
 
 https://regexone.com/
 
------
-
 ## Advanced Closure
 
 The reason we have to rely on closure for these examples is because the the function is instantiated for every key, so `id` never changes.  In other words the variable is within the scope of the function and will remain the same every time.
@@ -727,7 +713,7 @@ Because this function immediately returns, the value of `addIncreasingIdFromZero
 
 Because of `return` we are exiting the parent function scope. But this has created a `closure` We still have access to the parameter `id` even though the function has already returned.
 
-----
+
 
 This example behaves the same way, only we are now using an anonymous function for the callback. 
 
@@ -744,7 +730,6 @@ No we can compare that to our more advanced example. Same thing.
 
 ![f](https://imgur.com/zKdky1l.png)
 
------
 
 Same logic for using a closure to create a private variable only using `forEach` as an example.
 
@@ -842,7 +827,6 @@ We can refactor this code by using the `index` parameter.
 
 ![f](https://imgur.com/Ve2N9uH.png)
 
-----
 
 ### Doubling Array Values
 
@@ -856,8 +840,6 @@ Short hand:
 
 Long Hand:
 
-
-----
 
 Reduce returning an object, special note. We can do the syntax a few different ways.
 
@@ -1040,8 +1022,6 @@ We can even save the result inside of a variable.
 
 ![func2](https://imgur.com/3uaFCBV.png)
 
-
-----------------
 Here is another example of a function with parameters using strings. This is a simple function that will log something to the console. In this case our function `printString` will console.log to the console. 
 
 ![func3](https://imgur.com/oolZxdk.png)
@@ -1049,8 +1029,6 @@ Here is another example of a function with parameters using strings. This is a s
 We have a function called `printString` here that has a parameter named `string`. It will hold the value of the variable `myString`. 
 
 `printString(myString)` calls the function and passes through the value of `(myString)` as the parameter. As a result it will `console.log` `Hello there` to the console. 
-
-______________________________________
 
 The parameter `string` is holding the value of a string itself, therefore we have access to different string properties and methods such as `length`.
 
@@ -1061,8 +1039,6 @@ In this case the parameter `string` is once again holding the value of `myString
 Parameter names are also arbitrary just like variables, they can be named whatever you would like. See the below example where I replaced the parameter name with something ridiculous, in this case `pinkDinosaur`. 
 
 ![func5](https://imgur.com/QNeNMTJ.png)
-
------- 
 
 Another Example
 
@@ -1183,8 +1159,6 @@ The second parameter, `delay` (highlighted in blue) uses time in milliseconds th
 
 Using built in functions like `addEventListener` and `setTimeOut` are common examples of `callbacks` you will encounter *"in the wild"*.  
 
-----
-
 ![example-3](http://imgur.com/c1DpFN4.png)
 
 
@@ -1210,7 +1184,6 @@ As we loop through the array, the callback parameter `arrayItem` will hold the v
 
 ![f](https://imgur.com/YTAztTL.png)
 
-----
 
 ### Custom Filter Function
 
@@ -1221,7 +1194,6 @@ As we loop through the array, the callback parameter `arrayItem` will hold the v
 We can refactor the `if` statement to be a bit shorter and just write it like this.
 
 ![f](https://imgur.com/LYbo0ao.png)
-----
 
 ### Custom Filter Function (more advanced)
 
@@ -1541,8 +1513,6 @@ Verifying we have closure in Chrome Dev Tools
 
 ![f](https://imgur.com/J2cz13l.png)
 
-------
-
 Another Example
 
 ![f](https://imgur.com/FeBQOmi.png)
@@ -1652,6 +1622,8 @@ When you dont know all the arguments that will be passed to a function its commo
 
 resources on currying
 
+Meth Meth Method has a video https://www.youtube.com/watch?v=SJj5p4Et61A&t
+
 https://medium.com/@kevincennis/currying-in-javascript-c66080543528
 
 https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe
@@ -1674,8 +1646,6 @@ https://alf.nu/RegexGolf
 
 https://regexone.com/
 
------
-
 ## Advanced Closure
 
 The reason we have to rely on closure for these examples is because the the function is instantiated for every key, so `id` never changes.  In other words the variable is within the scope of the function and will remain the same every time.
@@ -1695,8 +1665,6 @@ Because this function immediately returns, the value of `addIncreasingIdFromZero
 
 Because of `return` we are exiting the parent function scope. But this has created a `closure` We still have access to the parameter `id` even though the function has already returned.
 
-----
-
 This example behaves the same way, only we are now using an anonymous function for the callback. 
 
 ![f](https://imgur.com/b6XQ9LH.png)
@@ -1711,8 +1679,6 @@ At the end of the function we have several parenthesis. What we are doing is imm
 No we can compare that to our more advanced example. Same thing. 
 
 ![f](https://imgur.com/zKdky1l.png)
-
------
 
 Same logic for using a closure to create a private variable only using `forEach` as an example.
 
@@ -1810,22 +1776,15 @@ We can refactor this code by using the `index` parameter.
 
 ![f](https://imgur.com/Ve2N9uH.png)
 
-----
-
 ### Doubling Array Values
 
 https://imgur.com/AI6bmMB
-
-----
 
 Short hand:
 
 ![f](https://imgur.com/nBVmif4.png)
 
 Long Hand:
-
-
-----
 
 Reduce returning an object, special note. We can do the syntax a few different ways.
 
