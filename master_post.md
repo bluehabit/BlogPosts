@@ -18,6 +18,10 @@ Can convert string values to numbers by using the `+` unary operator.
 
 ![f](https://imgur.com/PHCbRZF.png)
 
+Can also use the `Number` function
+
+![f](https://imgur.com/XsL2PMW.png)
+
 And a practical application using a regex expression to parse a string representation of date into a number in milliseconds in epoch time. We can convert the epoch time into a `new Date`. 
 
 ![f](https://imgur.com/sWUA51r.png)
