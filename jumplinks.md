@@ -1,6 +1,6 @@
 ##### Table of Contents  
-[Header1](#header1)  
-[Header2](#header2)  
+[Header1](##header1)  
+[Header2](##header2)  
 [ReadingMDN](#readingMDN)
 
 
