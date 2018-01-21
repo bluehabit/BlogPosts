@@ -61,9 +61,12 @@ And we can **reuse** that same function again, and again and again and pass new 
 
 ![func1](https://imgur.com/vOqFmtk.png)
 
-We can even save the result returned from our function inside of a variable. 
+### Function Expressions
+Functions can also be assigned to a variable using the assignment operator. This is known as a function expression, something that makes functions in JS a first class object (we will discuss this in more detail later).
 
 ![func2](https://imgur.com/3uaFCBV.png)
+
+![f](https://imgur.com/ZYRlASz.png)
 
 
 ----------------
