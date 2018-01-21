@@ -1,4 +1,9 @@
-## Template Literal multi line strings
+#Table of Contents
+* [Functions](#functions) 
+* 
+
+
+## Template Literal multi-line strings
 
 ![f](https://imgur.com/xxzxkCD.png)
 
@@ -27,7 +32,7 @@ And a practical application using a regex expression to parse a string represent
 ![f](https://imgur.com/sWUA51r.png)
 
 
-### Think of Functions as Factories
+## Functions
 
 Function help keep our code DRY, instead of having to write the same code over and over again. 
 
@@ -38,6 +43,7 @@ I like to think of functions as a factory. After all the processes within the fa
 ![icecream](http://imgur.com/Iue6zw4.png)
 
 In the case of Javascript the function will `return` something that you can use for later. Just like factories in real life, it is recommended that your functions specialize in performing a particular action.
+
 
 ## Parameters In Functions
 
