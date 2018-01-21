@@ -55,6 +55,8 @@ For a simple example of a function with a parameter, here is a function named `a
 
 Whenever a function receives an argument, just consider it to be an automatically declared variable.
 
+### Functions are Reuseable 
+
 And we can **reuse** that same function again, and again and again and pass new numbers through as parameters, by simply calling the function and passing in new values as shown below. Just like an ice cream factory that continues to produce ice cream. This prevents us from having to repeat our code over and over.
 
 ![func1](https://imgur.com/vOqFmtk.png)
