@@ -61,7 +61,7 @@ And we can **reuse** that same function again, and again and again and pass new 
 
 ![func1](https://imgur.com/vOqFmtk.png)
 
-We can even save the result inside of a variable. 
+We can even save the result returned from our function inside of a variable. 
 
 ![func2](https://imgur.com/3uaFCBV.png)
 
