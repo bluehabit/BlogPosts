@@ -1,8 +1,8 @@
 ##### Table of Contents  
-[Header1](#header1)  
-[Header2](#header2)  
-[read](#read)
-[Anchors in markdown](#anchors-in-markdown)
+* [Header1](#header1)  
+* [Header2](#header2)  
+* [read](#read)
+* [Anchors in markdown](#anchors-in-markdown)
 
 
 
