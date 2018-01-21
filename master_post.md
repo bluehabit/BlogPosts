@@ -1,7 +1,11 @@
 # Table of Contents
 1. [Functions](#functions) 
    * [Parameters](#parameters)
+   * [Function Expressions](#function-expressions)
 2. 
+
+# External Blog Posts
+(for example async blog post that you wrote)
 
 
 ## Template Literal multi-line strings
@@ -56,19 +60,19 @@ For a simple example of a function with a parameter, here is a function named `a
 
 ![functions](https://imgur.com/wsX86yJ.png)
 
-### Consider Function Arguments as Automatically Declared Variables
+### Arguments as Automatically Declared Variables
 
 ![f](https://imgur.com/tyaI5Bt.png)
 
 Whenever a function receives an argument, just consider it to be an automatically declared variable.
 
-### Functions are Reuseable 
+### Functions are Reusable 
 
 And we can **reuse** that same function again, and again and again and pass new numbers through as parameters, by simply calling the function and passing in new values as shown below. Just like an ice cream factory that continues to produce ice cream. This prevents us from having to repeat our code over and over.
 
 ![func1](https://imgur.com/vOqFmtk.png)
 
-### Function Expressions
+## Function Expressions
 Functions can also be assigned to a variable using the assignment operator. This is known as a function expression, something that makes functions in JS a first class object (we will discuss this in more detail later).
 
 ![func2](https://imgur.com/3uaFCBV.png)
