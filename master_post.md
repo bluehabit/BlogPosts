@@ -427,7 +427,7 @@ Object properties can hold many different values, from arrays to function to oth
 ![f](https://imgur.com/72Hey7D.png)
 
 
-## Closure in Detail
+# Closure in Detail
 
 For a function to be considered a closure, you must return the function *itself*.
 
@@ -534,6 +534,48 @@ Another Example
 
 ![f](https://imgur.com/6POlvXl.png)
 
+## Advanced Closure
+
+The reason we have to rely on closure for these examples is because the the function is instantiated for every key, so `id` never changes.  In other words the variable is within the scope of the function and will remain the same every time.
+
+Same situation with the `forEach` loop we will use closure to solve this as well. Same story, function is instantiated every time through, so the value of `id` will never change.
+
+The standard fix for that is to use a closure, like we will in this example, or simply stick the used var in a higher scope. For example the global scope. 
+
+
+![f](https://imgur.com/xIPHP1k.png)
+
+This is the named function example, we will look at this with an anonymous function in a moment. First Lets break this down, the `var addIncreasingIdFromZero` holds the function call `makeAddIncreasingIdFn(0)` passing the value `0` for the `id` parameter. 
+
+Because this function immediately returns, the value of `addIncreasingIdFromZero` is the function definition itself that was returned. As shown below:
+
+![f](https://imgur.com/Fq8Kxct.png)
+
+Because of `return` we are exiting the parent function scope. But this has created a `closure` We still have access to the parameter `id` even though the function has already returned.
+
+
+
+This example behaves the same way, only we are now using an anonymous function for the callback. 
+
+![f](https://imgur.com/b6XQ9LH.png)
+
+It may look a bit confusing, but its not too bad lets step through. Here we have an anonymous callback function `function(id)` which we immediately return with another function just like our previous example.
+
+At the end of the function we have several parenthesis. What we are doing is immediately calling our function and passing through the value `0`. Lets look at a more basic example.
+
+![f](https://imgur.com/hCehmmX.png)
+
+
+No we can compare that to our more advanced example. Same thing. 
+
+![f](https://imgur.com/zKdky1l.png)
+
+
+Same logic for using a closure to create a private variable only using `forEach` as an example.
+
+![f](https://imgur.com/hRviEXW.png)
+
+
 ## The Keyword `this` 
 
 The keyword this is determined by the *context* in which it was called. There are a few rules to keep in mind when determining the value of the keyword `this`.
@@ -637,48 +679,7 @@ https://regexcrossword.com/
 https://alf.nu/RegexGolf
 
 https://regexone.com/
-
-## Advanced Closure
-
-The reason we have to rely on closure for these examples is because the the function is instantiated for every key, so `id` never changes.  In other words the variable is within the scope of the function and will remain the same every time.
-
-Same situation with the `forEach` loop we will use closure to solve this as well. Same story, function is instantiated every time through, so the value of `id` will never change.
-
-The standard fix for that is to use a closure, like we will in this example, or simply stick the used var in a higher scope. For example the global scope. 
-
-
-![f](https://imgur.com/xIPHP1k.png)
-
-This is the named function example, we will look at this with an anonymous function in a moment. First Lets break this down, the `var addIncreasingIdFromZero` holds the function call `makeAddIncreasingIdFn(0)` passing the value `0` for the `id` parameter. 
-
-Because this function immediately returns, the value of `addIncreasingIdFromZero` is the function definition itself that was returned. As shown below:
-
-![f](https://imgur.com/Fq8Kxct.png)
-
-Because of `return` we are exiting the parent function scope. But this has created a `closure` We still have access to the parameter `id` even though the function has already returned.
-
-
-
-This example behaves the same way, only we are now using an anonymous function for the callback. 
-
-![f](https://imgur.com/b6XQ9LH.png)
-
-It may look a bit confusing, but its not too bad lets step through. Here we have an anonymous callback function `function(id)` which we immediately return with another function just like our previous example.
-
-At the end of the function we have several parenthesis. What we are doing is immediately calling our function and passing through the value `0`. Lets look at a more basic example.
-
-![f](https://imgur.com/hCehmmX.png)
-
-
-No we can compare that to our more advanced example. Same thing. 
-
-![f](https://imgur.com/zKdky1l.png)
-
-
-Same logic for using a closure to create a private variable only using `forEach` as an example.
-
-![f](https://imgur.com/hRviEXW.png)
-
+ 
 ## Nested For Loops
 
 ![f](https://imgur.com/BKX8xSx.png)
