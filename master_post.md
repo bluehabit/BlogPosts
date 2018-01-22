@@ -14,6 +14,14 @@
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
+# Arrays
+
+### Array of Objects
+
+![f](https://imgur.com/8f40um2.png)
+
+![divider-bar](https://imgur.com/wbdDPMR.png)
+
 # Operators
 
 ### Logical
@@ -725,11 +733,6 @@ A common use case is when you do not know how many arguments are going to be pas
 When you dont know all the arguments that will be passed to a function its common to use bind. We dont call it right away, instead we bind it with some of the parameters set we call this partial application. Again whats neat about bind, is we dont need to know all the parameters to the function when we bind it, only need to know the `thisArg` the value of what we want the keyword this to be
 
 ![f](https://imgur.com/LR4Pznu.png)
-
-
-## Array of Objects
-
-![f](https://imgur.com/8f40um2.png)
 
 
 resources on currying
