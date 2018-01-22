@@ -20,6 +20,165 @@
 
 ![f](https://imgur.com/8f40um2.png)
 
+## Functional Programming Array: `forEach`, `Map`, `Reduce`, `Filter`
+
+### Protip! All of these array methods, iterate through EVERY SINGLE ARRAY ITEM
+
+Remember these are all ARRAY methods, therefore you want an array to use these. The input could strictly be an array, or it could be an array that's part of an object etc.
+
+Please note, when using these array methods, they are callbacks so you must `return` something or the function will not work correctly. 
+
+Relying on loops can become a problem because loops are synchronous. This means that they can only manipulate data that already exists. You run into problems when you have to deal with asynchronous data, like events that have not happened yet.
+
+Asynchronous programming is much easier than it sounds. You can build a lot of asynchronous programs by using the Map, Reduce and Filter methods.
+
+We are using the following dataset for these exercises
+
+![f](https://imgur.com/mhAhFjz.png)
+
+### `Reduce`
+
+**Use it when:** You want a total based on values in an array.
+ The default name for the first parameter is `accumulator` according to the documentation. However, I prefer using something that is more descriptive so I know how its being used. For example, if I am reducing to an array, I will use `array` as the parameter name, `object` if object and so forth as shown below. 
+
+#### How `reduce` works
+
+The `accumulator` parameter, named `total` below, does not accumulate on its own. You must add the `currentValue` to track correctly.
+
+A simple `reduce` to get the sum total of numbers in an array.
+
+![f](https://imgur.com/wSdC6AH.png)
+
+Lets log it to the console to make it more obvious
+
+![f](https://imgur.com/Gqj3zPX.png)
+
+Now, lets try to `reduce` without adding `currentValue` progressively to `total`. 
+
+![f](https://imgur.com/bpqB4RE.png)
+
+
+#### Reduce for finding Average
+
+First lets look at this example that just returns the last item in an array.
+
+![f](https://imgur.com/t2xvur0.png)
+
+Next lets expand on the code a code a bit so it returns the average.
+
+![f](https://imgur.com/dnRZqRJ.png)
+
+We can refactor this code by using the `index` parameter.
+
+![f](https://imgur.com/Ve2N9uH.png)
+
+#### Another Example Average Using `reduce()`
+
+![f](https://imgur.com/i93gbcO.png)
+
+
+### Doubling Array Values
+
+https://imgur.com/AI6bmMB
+
+----
+
+Short hand:
+
+![f](https://imgur.com/nBVmif4.png)
+
+Long Hand:
+
+
+Reduce returning an object, special note. We can do the syntax a few different ways.
+
+Longer method:
+
+![f](https://imgur.com/5zXIXCR.png)
+
+Shorter method: 
+
+![f](https://imgur.com/BGpMRhu.png) 
+
+### filter()
+
+**Use it when**: You want to remove unwanted values from an array.
+
+![f](https://imgur.com/XcOc688.png)
+
+### Combining Filter and Reduce
+
+For the more *simple* examples, it would make more sense to use map or filter because they are simpler to use. The benefit of using reduce comes into play when you want to map and filter together and you have a lot of data to go over.
+
+If you chain map and filter together you are doing the work twice. You filter every single value and then you map the remaining values. With reduce you can filter and then map in a single pass.
+
+![f](https://imgur.com/jjcayxO.png)
+
+
+### More examples combining Filter and Reduce
+
+Before we go into this next set of examples, lets look at the behavior of `forEach` and how we use it on objects that contain arrays as properties.
+
+![f](https://imgur.com/UuPEj01.png)
+
+and
+
+![f](https://imgur.com/M6KfrWi.png)
+
+We can build on this logic to make it a bit more advanced, this will return an array that contains all the colors. 
+
+![f](https://imgur.com/KLFDGi5.png)
+
+Here is another example of using `reduce` with our own filter method inside. Again, we can use `filter` and `reduce` separately, and that works fine for small data sets. But once we start working with large amounts of data its more performance efficient to combine them.
+
+![f](https://imgur.com/O5gy8Xs.png)
+
+### Even more Examples Combining Filter and Reduce
+
+![f](https://imgur.com/l8YxT1e.png)
+
+And another example
+
+![f](https://imgur.com/I5cbeX0.png)
+
+another
+
+![f](https://imgur.com/ke5wFbg.png)
+
+  
+### Keep this in mind with Reduce
+
+![f](https://imgur.com/bwQ2Wa4.png)
+
+and some more reduce pro tips
+
+![f](https://imgur.com/gdWESs0.png)
+
+
+### map()
+
+**Use it when**: You want to modify all values in an array to another set of values.
+
+![f](https://imgur.com/UPUFDEM.png)
+
+
+### Secondary Functional Programming Methods `Sort`, `Some`, `Every`, `Find`, `FindIndex`
+
+These secondary functional programming methods are not used as much as the primary ones (`reduce`, `map` etc.) but they are still worth learning about.
+
+
+### Nice refactor
+
+![f](https://imgur.com/sVcPe53.png)
+
+Nice
+
+![f](https://imgur.com/C6ZwEM3.png)
+
+Nice
+
+![f](https://imgur.com/ly80zaa.png)
+
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
 # Objects
@@ -364,13 +523,19 @@ For a simple example of a function with a parameter, here is a function named `a
 
 Whenever a function receives an argument, just consider it to be an automatically declared variable.
 
+
+
 ### Functions are Reusable 
 
 And we can **reuse** that same function again, and again and again and pass new numbers through as parameters, by simply calling the function and passing in new values as shown below. Just like an ice cream factory that continues to produce ice cream. This prevents us from having to repeat our code over and over.
 
 ![func1](https://imgur.com/vOqFmtk.png)
 
-## Function Expressions
+### Accessing Arguments from a Parameter
+
+![f](https://imgur.com/rNZbK9X.png)
+
+### Function Expressions
 Functions can also be assigned to a variable using the assignment operator. This is known as a function expression, something that makes functions in JS a first class object (we will discuss this in more detail later).
 
 ![func2](https://imgur.com/3uaFCBV.png)
@@ -422,6 +587,10 @@ We can also have `anonymous functions` that do not have a name declared. In the 
 In Javascript functions can be played around with as if they were variables in several different ways. 
 
 First class in simple terms means  *“being able to do what everyone else can do.”* **Functions can be assigned to variables, they can be passed around as arguments (`callback functions`). They can even be assigned as the return values of other functions (`closure`)**. Below we will quickly overview how functions are first class objects, and we will discuss each one in further detail later.
+
+### Function calls inside `if` statements
+
+![f](https://imgur.com/UH7hA6C.png)
 
 ### Callbacks
 
@@ -778,180 +947,9 @@ Here using a specific condition to just return and exit the function
 
 ![f](https://imgur.com/G9r5HFk.png)
 
-## Functional Programming Array: `forEach`, `Map`, `Reduce`, `Filter`
-
-### Protip! All of these array methods, iterate through EVERY SINGLE ARRAY ITEM
-
-Remember these are all ARRAY methods, therefore you want an array to use these. The input could strictly be an array, or it could be an array that's part of an object etc.
-
-Please note, when using these array methods, they are callbacks so you must `return` something or the function will not work correctly. 
-
-Relying on loops can become a problem because loops are synchronous. This means that they can only manipulate data that already exists. You run into problems when you have to deal with asynchronous data, like events that have not happened yet.
-
-Asynchronous programming is much easier than it sounds. You can build a lot of asynchronous programs by using the Map, Reduce and Filter methods.
-
-We are using the following dataset for these exercises
-
-![f](https://imgur.com/mhAhFjz.png)
-
-### `Reduce`
-
-**Use it when:** You want a total based on values in an array.
- The default name for the first parameter is `accumulator` according to the documentation. However, I prefer using something that is more descriptive so I know how its being used. For example, if I am reducing to an array, I will use `array` as the parameter name, `object` if object and so forth as shown below. 
-
-#### How `reduce` works
-
-The `accumulator` parameter, named `total` below, does not accumulate on its own. You must add the `currentValue` to track correctly.
-
-A simple `reduce` to get the sum total of numbers in an array.
-
-![f](https://imgur.com/wSdC6AH.png)
-
-Lets log it to the console to make it more obvious
-
-![f](https://imgur.com/Gqj3zPX.png)
-
-Now, lets try to `reduce` without adding `currentValue` progressively to `total`. 
-
-![f](https://imgur.com/bpqB4RE.png)
-
-
-#### Reduce for finding Average
-
-First lets look at this example that just returns the last item in an array.
-
-![f](https://imgur.com/t2xvur0.png)
-
-Next lets expand on the code a code a bit so it returns the average.
-
-![f](https://imgur.com/dnRZqRJ.png)
-
-We can refactor this code by using the `index` parameter.
-
-![f](https://imgur.com/Ve2N9uH.png)
-
-#### Another Example Average Using `reduce()`
-
-![f](https://imgur.com/i93gbcO.png)
-
-
-### Doubling Array Values
-
-https://imgur.com/AI6bmMB
-
-----
-
-Short hand:
-
-![f](https://imgur.com/nBVmif4.png)
-
-Long Hand:
-
-
-Reduce returning an object, special note. We can do the syntax a few different ways.
-
-Longer method:
-
-![f](https://imgur.com/5zXIXCR.png)
-
-Shorter method: 
-
-![f](https://imgur.com/BGpMRhu.png) 
-
-### filter()
-
-**Use it when**: You want to remove unwanted values from an array.
-
-![f](https://imgur.com/XcOc688.png)
-
-### Combining Filter and Reduce
-
-For the more *simple* examples, it would make more sense to use map or filter because they are simpler to use. The benefit of using reduce comes into play when you want to map and filter together and you have a lot of data to go over.
-
-If you chain map and filter together you are doing the work twice. You filter every single value and then you map the remaining values. With reduce you can filter and then map in a single pass.
-
-![f](https://imgur.com/jjcayxO.png)
-
-
-### More examples combining Filter and Reduce
-
-Before we go into this next set of examples, lets look at the behavior of `forEach` and how we use it on objects that contain arrays as properties.
-
-![f](https://imgur.com/UuPEj01.png)
-
-and
-
-![f](https://imgur.com/M6KfrWi.png)
-
-We can build on this logic to make it a bit more advanced, this will return an array that contains all the colors. 
-
-![f](https://imgur.com/KLFDGi5.png)
-
-Here is another example of using `reduce` with our own filter method inside. Again, we can use `filter` and `reduce` separately, and that works fine for small data sets. But once we start working with large amounts of data its more performance efficient to combine them.
-
-![f](https://imgur.com/O5gy8Xs.png)
-
-### Even more Examples Combining Filter and Reduce
-
-![f](https://imgur.com/l8YxT1e.png)
-
-And another example
-
-![f](https://imgur.com/I5cbeX0.png)
-
-another
-
-![f](https://imgur.com/ke5wFbg.png)
-
-  
-### Keep this in mind with Reduce
-
-![f](https://imgur.com/bwQ2Wa4.png)
-
-and some more reduce pro tips
-
-![f](https://imgur.com/gdWESs0.png)
-
-
-### map()
-
-**Use it when**: You want to modify all values in an array to another set of values.
-
-![f](https://imgur.com/UPUFDEM.png)
-
-
-### Secondary Functional Programming Methods `Sort`, `Some`, `Every`, `Find`, `FindIndex`
-
-These secondary functional programming methods are not used as much as the primary ones (`reduce`, `map` etc.) but they are still worth learning about.
-
-
-### Nice refactor
-
-![f](https://imgur.com/sVcPe53.png)
-
-Nice
-
-![f](https://imgur.com/C6ZwEM3.png)
-
-Nice
-
-![f](https://imgur.com/ly80zaa.png)
-
-
-
 ### string.slice
 
 ![f](https://imgur.com/ViWl0sm.png)
-
-### Accessing Arguments from a Parameter
-
-![f](https://imgur.com/rNZbK9X.png)
-
-### Function calls inside `if` statements
-
-![f](https://imgur.com/UH7hA6C.png)
-
-
 
 ## Template Literal multi-line strings
 
