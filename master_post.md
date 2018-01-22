@@ -627,29 +627,10 @@ When you dont know all the arguments that will be passed to a function its commo
 
 ![f](https://imgur.com/LR4Pznu.png)
 
-## Advanced Arrays
-
-
-### Map
-
-
-### Filter
-
-
-### Reduce
-
-
-## Currying
-
 
 ## Array of Objects
 
 ![f](https://imgur.com/8f40um2.png)
-
-
-## Nested Callbacks
-
-
 
 
 resources on currying
