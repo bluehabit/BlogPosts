@@ -1,7 +1,7 @@
 # Table of Contents
-1. Operators
-2. Arrays
-3. Objects
+1. [Operators](#operators)
+2. [Arrays](#arrays)
+3. [Objects](#object)
 4. [Function Basics](#functions) 
    * [Parameters](#parameters)
    * [Function Expressions](#function-expressions)
@@ -11,6 +11,94 @@
 
 # External Blog Posts
 (for example async blog post that you wrote)
+
+# Operators
+
+### Unary Operator
+
+Can convert string values to numbers by using the `+` unary operator.
+
+![f](https://imgur.com/PHCbRZF.png)
+
+Can also use the `Number` function
+
+![f](https://imgur.com/XsL2PMW.png)
+
+And a practical application using a regex expression to parse a string representation of date into a number in milliseconds in epoch time. We can convert the epoch time into a `new Date`. 
+
+![f](https://imgur.com/sWUA51r.png)
+
+### Logical
+Why does this work? Pay special attention to the line `(obj[currentValue] || 0)`
+
+![f](https://imgur.com/2J3ny1t.png)
+
+Explanation:
+
+![f](https://imgur.com/hBXV9sb.png)
+
+![f](https://imgur.com/l3AcQGG.png)
+
+![f](https://imgur.com/nPw25ah.png)
+
+![f](https://imgur.com/zIY8gFV.png)
+
+![f](https://imgur.com/99ixexZ.png)
+
+In traditional programming, operators such as && and || returned a boolean value (true or false). This is not the case in javascript. Here it returns the actual object, not a true / false. To really explain this, I first have to explain what is truthy and what is falsy.
+
+The logical OR operator, `||`, is very simple after you understand what it is doing. If the first object is truthy, that gets returned. Otherwise, the second object gets returned.
+
+### Logical AND, &&
+
+The logical AND operator, &&, works similarly. If the first object is falsy, it returns that object. If it is truthy, it returns the second object.
+
+![f](https://imgur.com/qjdqhDL.png)
+
+### Logical NOT, !
+
+Unlike && and ||, the ! operator DOES turn the value it receives into a boolean. If it receives a truthy value, it returns false, and if it receives a falsy value, it returns true.
+
+`read more here:` http://www.nfriedly.com/techblog/2009/07/advanced-javascript-operators-and-truthy-falsy/
+
+`more` https://medium.com/@joshpitzalis/the-trouble-with-loops-f639e3cc52d9
+
+`more` https://medium.freecodecamp.org/reduce-f47a7da511a9
+
+Here is an explanation of what is going on.
+
+![f](https://imgur.com/3ZsoSZ7.png)
+
+
+
+### Ternary Operator
+
+Can help make our code more concise and possibly eliminate the need for an `if` `else` block.
+
+Before:
+
+![f](https://imgur.com/zyOAYMx.png)
+
+After: 
+
+![f](https://imgur.com/iWUjmaY.png)
+
+Output:
+
+![f](https://imgur.com/2epLRvX.png)
+
+More examples:
+
+![f](https://imgur.com/yEmhCfP.png)
+
+![f](https://imgur.com/E7SRIjM.png)
+
+![f](https://imgur.com/WJPYX2P.png)
+
+![f](https://imgur.com/Tit56Ne.png)
+
+
+![divider-bar](https://imgur.com/wbdDPMR.png)
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
@@ -417,94 +505,6 @@ A common use case is when you do not know how many arguments are going to be pas
 When you dont know all the arguments that will be passed to a function its common to use bind. We dont call it right away, instead we bind it with some of the parameters set we call this partial application. Again whats neat about bind, is we dont need to know all the parameters to the function when we bind it, only need to know the `thisArg` the value of what we want the keyword this to be
 
 ![f](https://imgur.com/LR4Pznu.png)
-
-![divider-bar](https://imgur.com/wbdDPMR.png)
-
-# Operators
-
-### Unary Operator
-
-Can convert string values to numbers by using the `+` unary operator.
-
-![f](https://imgur.com/PHCbRZF.png)
-
-Can also use the `Number` function
-
-![f](https://imgur.com/XsL2PMW.png)
-
-And a practical application using a regex expression to parse a string representation of date into a number in milliseconds in epoch time. We can convert the epoch time into a `new Date`. 
-
-![f](https://imgur.com/sWUA51r.png)
-
-### Logical
-Why does this work? Pay special attention to the line `(obj[currentValue] || 0)`
-
-![f](https://imgur.com/2J3ny1t.png)
-
-Explanation:
-
-![f](https://imgur.com/hBXV9sb.png)
-
-![f](https://imgur.com/l3AcQGG.png)
-
-![f](https://imgur.com/nPw25ah.png)
-
-![f](https://imgur.com/zIY8gFV.png)
-
-![f](https://imgur.com/99ixexZ.png)
-
-In traditional programming, operators such as && and || returned a boolean value (true or false). This is not the case in javascript. Here it returns the actual object, not a true / false. To really explain this, I first have to explain what is truthy and what is falsy.
-
-The logical OR operator, `||`, is very simple after you understand what it is doing. If the first object is truthy, that gets returned. Otherwise, the second object gets returned.
-
-### Logical AND, &&
-
-The logical AND operator, &&, works similarly. If the first object is falsy, it returns that object. If it is truthy, it returns the second object.
-
-![f](https://imgur.com/qjdqhDL.png)
-
-### Logical NOT, !
-
-Unlike && and ||, the ! operator DOES turn the value it receives into a boolean. If it receives a truthy value, it returns false, and if it receives a falsy value, it returns true.
-
-`read more here:` http://www.nfriedly.com/techblog/2009/07/advanced-javascript-operators-and-truthy-falsy/
-
-`more` https://medium.com/@joshpitzalis/the-trouble-with-loops-f639e3cc52d9
-
-`more` https://medium.freecodecamp.org/reduce-f47a7da511a9
-
-Here is an explanation of what is going on.
-
-![f](https://imgur.com/3ZsoSZ7.png)
-
-
-
-### Ternary Operator
-
-Can help make our code more concise and possibly eliminate the need for an `if` `else` block.
-
-Before:
-
-![f](https://imgur.com/zyOAYMx.png)
-
-After: 
-
-![f](https://imgur.com/iWUjmaY.png)
-
-Output:
-
-![f](https://imgur.com/2epLRvX.png)
-
-More examples:
-
-![f](https://imgur.com/yEmhCfP.png)
-
-![f](https://imgur.com/E7SRIjM.png)
-
-![f](https://imgur.com/WJPYX2P.png)
-
-![f](https://imgur.com/Tit56Ne.png)
-
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
