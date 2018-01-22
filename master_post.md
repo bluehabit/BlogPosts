@@ -7,7 +7,7 @@
    * [Function Expressions](#function-expressions)
    * [Return KW and Routing](#the-return-keyword-and-routing-functions)
 5. [Callbacks](#callbacks)
-5. [Closures](#closure-in-Detail)
+5. [Closures](#closure-in-detail)
 
 # External Blog Posts
 (for example async blog post that you wrote)
