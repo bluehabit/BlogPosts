@@ -13,7 +13,7 @@
    * [Classes using Object Constructors](#classes-using-object-constructors)
    * [Prototype and the Prototype Chain](#prototype-and-the-prototype-chain)
    * [Nested Objects](#nested-objects)
-   * ['This'](#the-keyword-`this`)
+   * ['This'](#the-keyword-this)
    * [Call](#call)
    * [Apply](#apply)
    * [Bind](#bind)
