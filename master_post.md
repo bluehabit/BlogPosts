@@ -265,25 +265,6 @@ Callback function holding an array as the parameter
 ![f](https://imgur.com/AnaoaGT.png)
 
 
-
-### Asynchronous Code
-
-#### Async Code a Quick History
-
-A quick history of asynchronous code. Originally it started with nested callback functions (like the house function below); however, this lead to a situtaion known as callback hell where the functions were nested so deep they would become unruly. As a fix for this `promises` were introduced. Further improvements were made in `ES2017` with `async/await`. In addition that, we also have the `fetch` API.
-
-A common application for `callbacks` is asynchronous code. This will come a bit later in the chapters, so don't stress over it for now. But when interacting with other databases or APIs there is often a small amount of delay before we get our information back from the server. An example of this could be retrieving the current temperature from a weather API. 
-
-A common callback structure you might see utilizing callbacks might look like the below code. For simplicity's sake this code is done synchronously. 
-
-![houseF](https://imgur.com/9RQEXLi.png)
-
-Notice here how the callback function ` function(errMessage, result)` holds *two* parameters `errMessage` and `result`. Just like a normal function, a callback function can have as many parameters as you would like.
- **Edit**: Note to self,1  add more examples of this later, a callback with multiple parameters. 2 the 'basics' of functions "blog post" you wrote before. 3. closure and the keyword this. 4. Javascript "classes" using ice cream example
-
-At least that is how I see it, I am not as experienced as the others who have already replied to you. So if anyone more experienced sees errors in my post, please notify me and I will update my post.
-
-
 ## Object, Array, String Literals vs Constructor Function
 
 In javascript, mostly everything is an object from arrays to strings. Because of this we can use either a constructor function or a literal to create them.
@@ -1156,3 +1137,21 @@ Named callback function
 ![f](https://imgur.com/zdHWp2p.png)
 
 ![f](https://imgur.com/52TjY3x.png)
+
+### Asynchronous Code
+
+#### Async Code a Quick History
+
+A quick history of asynchronous code. Originally it started with nested callback functions (like the house function below); however, this lead to a situtaion known as callback hell where the functions were nested so deep they would become unruly. As a fix for this `promises` were introduced. Further improvements were made in `ES2017` with `async/await`. In addition that, we also have the `fetch` API.
+
+A common application for `callbacks` is asynchronous code. This will come a bit later in the chapters, so don't stress over it for now. But when interacting with other databases or APIs there is often a small amount of delay before we get our information back from the server. An example of this could be retrieving the current temperature from a weather API. 
+
+A common callback structure you might see utilizing callbacks might look like the below code. For simplicity's sake this code is done synchronously. 
+
+![houseF](https://imgur.com/9RQEXLi.png)
+
+Notice here how the callback function ` function(errMessage, result)` holds *two* parameters `errMessage` and `result`. Just like a normal function, a callback function can have as many parameters as you would like.
+ **Edit**: Note to self,1  add more examples of this later, a callback with multiple parameters. 2 the 'basics' of functions "blog post" you wrote before. 3. closure and the keyword this. 4. Javascript "classes" using ice cream example
+
+At least that is how I see it, I am not as experienced as the others who have already replied to you. So if anyone more experienced sees errors in my post, please notify me and I will update my post.
+
