@@ -5,6 +5,8 @@
 2. [Arrays](#arrays)
    * [Array of Objects](#array-of-objects)
    * [Reduce](#reduce)
+   * [Filter](#filter)
+   * [Map](#map)
 3. [Objects](#object)
 4. [Function Basics](#functions) 
    * [Parameters](#parameters)
@@ -191,7 +193,7 @@ Shorter method:
 
 ![f](https://imgur.com/BGpMRhu.png) 
 
-### filter()
+## `Filter`
 
 **Use it when**: You want to remove unwanted values from an array.
 
@@ -246,7 +248,7 @@ and some more reduce pro tips
 ![f](https://imgur.com/gdWESs0.png)
 
 
-### map()
+## `Map`
 
 **Use it when**: You want to modify all values in an array to another set of values.
 
