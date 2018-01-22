@@ -185,6 +185,80 @@ Object properties can hold many different values, from arrays to function to oth
 
 ![f](https://imgur.com/72Hey7D.png)
 
+## The Keyword `this` 
+
+The keyword this is determined by the *context* in which it was called. There are a few rules to keep in mind when determining the value of the keyword `this`.
+
+1. global
+2. object / implicit
+3. explicit
+4. new keyword
+
+## Global Rule
+
+When we see the keyword `this` in the global context, its value refers to the global object, which in the browser environment refers to the window object.
+
+When the value of `this` is just floating around within the global scope its in the wild. In comparison to declaring the keyword `this` inside an object
+
+![f](https://imgur.com/6L9o7Ao.png)
+
+![f](https://imgur.com/eVsQHuu.png)
+
+## Object Rule (implicit)
+
+When the keyword `this` is found inside a declared object, the value of the keyword `this` will always be the closest parent object
+
+![f](https://imgur.com/LMqlQ54.png)
+
+Nested Object Example:
+
+![f](https://imgur.com/BuVNBw4.png)
+
+#### Another Example
+
+![f](https://imgur.com/gyTvOkZ.png)
+
+Within `person.dog.sayHello` the value of `this` is looking to the *closest parent object* which in this case is dog. What if we wanted our `sayHello` method to return `'hello chris'` instead of `'hello undefined'` we would need some way of explicitly changing the value of the keyword this. And that is where we will introduce binding the keyword `this` using `call, apply` and `bind`
+
+## Call
+
+Arguments are passed as **comma separated values**.
+
+![f](https://imgur.com/awpurKh.png)
+
+Lets take a look at another example, we will refactor the code to make it more DRY using `call`. 
+
+Here we have two functions that do the same thing on both objects. `sayHi`. Lets refactor a bit.
+
+![f](https://imgur.com/9ExJgT1.png)
+
+Now, lets refactor. We will use `call` to change the value of the object the keyword `this` refers to.
+
+![f](https://imgur.com/zigFXf2.png)
+
+
+## Apply
+
+Arguments are passed as an **array**
+
+Almost identical to `call`. We only start to see a difference when we start to add arguments. 
+
+`apply` works like `call`, only we can pass through an array as an argument. In the case of apply we pass all the arguments as values in an array. So instead of comma separated arguments, we just put them in an array. 
+
+![f](https://imgur.com/R4V9ARP.png)
+
+
+## Bind
+
+
+`bind` works just like `call`, but instead of calling the function right away it returns a function definition. With the keyword this set to the value of the `thisArg`.
+
+A common use case is when you do not know how many arguments are going to be passed to a function. 
+
+When you dont know all the arguments that will be passed to a function its common to use bind. We dont call it right away, instead we bind it with some of the parameters set we call this partial application. Again whats neat about bind, is we dont need to know all the parameters to the function when we bind it, only need to know the `thisArg` the value of what we want the keyword this to be
+
+![f](https://imgur.com/LR4Pznu.png)
+
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
 # Operators
@@ -389,6 +463,7 @@ Functions can also be nested within one another, as shown below. This example us
 
 ![f1](https://imgur.com/eJ5nqUM.png)
 
+![divider-bar](https://imgur.com/wbdDPMR.png)
 
 ## Callbacks in Detail
 
@@ -512,6 +587,7 @@ Callback function holding an array as the parameter
 
 ![f](https://imgur.com/AnaoaGT.png)
 
+![divider-bar](https://imgur.com/wbdDPMR.png)
 
 # Closure in Detail
 
@@ -661,80 +737,7 @@ Same logic for using a closure to create a private variable only using `forEach`
 
 ![f](https://imgur.com/hRviEXW.png)
 
-
-## The Keyword `this` 
-
-The keyword this is determined by the *context* in which it was called. There are a few rules to keep in mind when determining the value of the keyword `this`.
-
-1. global
-2. object / implicit
-3. explicit
-4. new keyword
-
-## Global Rule
-
-When we see the keyword `this` in the global context, its value refers to the global object, which in the browser environment refers to the window object.
-
-When the value of `this` is just floating around within the global scope its in the wild. In comparison to declaring the keyword `this` inside an object
-
-![f](https://imgur.com/6L9o7Ao.png)
-
-![f](https://imgur.com/eVsQHuu.png)
-
-## Object Rule (implicit)
-
-When the keyword `this` is found inside a declared object, the value of the keyword `this` will always be the closest parent object
-
-![f](https://imgur.com/LMqlQ54.png)
-
-Nested Object Example:
-
-![f](https://imgur.com/BuVNBw4.png)
-
-#### Another Example
-
-![f](https://imgur.com/gyTvOkZ.png)
-
-Within `person.dog.sayHello` the value of `this` is looking to the *closest parent object* which in this case is dog. What if we wanted our `sayHello` method to return `'hello chris'` instead of `'hello undefined'` we would need some way of explicitly changing the value of the keyword this. And that is where we will introduce binding the keyword `this` using `call, apply` and `bind`
-
-## Call
-
-Arguments are passed as **comma separated values**.
-
-![f](https://imgur.com/awpurKh.png)
-
-Lets take a look at another example, we will refactor the code to make it more DRY using `call`. 
-
-Here we have two functions that do the same thing on both objects. `sayHi`. Lets refactor a bit.
-
-![f](https://imgur.com/9ExJgT1.png)
-
-Now, lets refactor. We will use `call` to change the value of the object the keyword `this` refers to.
-
-![f](https://imgur.com/zigFXf2.png)
-
-
-## Apply
-
-Arguments are passed as an **array**
-
-Almost identical to `call`. We only start to see a difference when we start to add arguments. 
-
-`apply` works like `call`, only we can pass through an array as an argument. In the case of apply we pass all the arguments as values in an array. So instead of comma separated arguments, we just put them in an array. 
-
-![f](https://imgur.com/R4V9ARP.png)
-
-
-## Bind
-
-
-`bind` works just like `call`, but instead of calling the function right away it returns a function definition. With the keyword this set to the value of the `thisArg`.
-
-A common use case is when you do not know how many arguments are going to be passed to a function. 
-
-When you dont know all the arguments that will be passed to a function its common to use bind. We dont call it right away, instead we bind it with some of the parameters set we call this partial application. Again whats neat about bind, is we dont need to know all the parameters to the function when we bind it, only need to know the `thisArg` the value of what we want the keyword this to be
-
-![f](https://imgur.com/LR4Pznu.png)
+![divider-bar](https://imgur.com/wbdDPMR.png)
 
 
 resources on currying
