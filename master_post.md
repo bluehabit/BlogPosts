@@ -11,7 +11,7 @@
    * [New Keyword](#the-`new`-keyword)
    * Object Literal
    * [Classes using Object Constructors](#classes-using-object-constructors)
-   * [Prototype and the Prototype Chain](#__prototype__-and-the-prototype-chain)
+   * [Prototype and the Prototype Chain](#prototype-and-the-prototype-chain)
 4. [Function Basics](#functions) 
    * [Parameters](#parameters)
    * [Function Expressions](#function-expressions)
@@ -399,7 +399,7 @@ Quick overview of the `arguments` keyword if you are not familiar with it
 
 ![f](https://imgur.com/nNltvw7.png)
 
-## __Prototype__ and The Prototype Chain
+## Prototype and The Prototype Chain
 
 `Object prototype property`- is an object that can have methods and properties placed on it, these properties and methods are shared among all objects when the new keyword is used to create an object from the constructor function.
 
