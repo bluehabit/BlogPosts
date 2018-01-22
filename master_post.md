@@ -1,10 +1,18 @@
 # Table of Contents
-1. [Function Basics](#functions) 
+1. Operators
+2. Arrays
+3. Objects
+4. [Function Basics](#functions) 
    * [Parameters](#parameters)
    * [Function Expressions](#function-expressions)
    * [Return KW and Routing](#the-return-keyword-and-routing-functions)
-2. [Callbacks](#callbacks)
+5. [Callbacks](#callbacks)
+5. [Closures](#)
 
+* Bullet list
+	* another bullet
+		* yet another bullet
+	
 # External Blog Posts
 (for example async blog post that you wrote)
 
