@@ -1,5 +1,7 @@
 # Table of Contents
 1. [Operators](#operators)
+   * [Unary](#unary-operator)
+   * [Logical](#logical)
 2. [Arrays](#arrays)
 3. [Objects](#object)
 4. [Function Basics](#functions) 
