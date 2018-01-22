@@ -291,6 +291,14 @@ When the `new` keyword is used, a new object is created out of thin air. And ins
 
 ![f](https://imgur.com/kpSNs5N.png)
 
+* creates a new object out of thin air
+* sets value of the keyword `this` inside the constructor function to be the object created
+* adds the line `return this` to the end of the function
+* adds a property on to the object called `__proto__` which links the prototype property on the constructor function to the empty object
+
+![f](https://imgur.com/1M5aYl7.png)
+
+
 ### Object
 
 #### Constructor Function
@@ -368,16 +376,6 @@ What if we had to create, 50, 100 or more of these house objects! That would be 
 Instead we can use a constructor function to create instances of that object. The constructor function serves as a blue print to stamp out as many instances as required. 
 
 ![f](https://imgur.com/JJ20xXU.png)
-
-## the `new` keyword
-
-* creates a new object out of thin air
-* sets value of the keyword `this` inside the constructor function to be the object created
-* adds the line `return this` to the end of the function
-* adds a property on to the object called `__proto__` which links the prototype property on the constructor function to the empty object
-
-![f](https://imgur.com/1M5aYl7.png)
-
 
 ## Constructor Function Refactors
 
