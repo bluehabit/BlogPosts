@@ -8,7 +8,7 @@
 # External Blog Posts
 (for example async blog post that you wrote)
 
-## Functions
+# Functions
 
 Function help keep our code DRY, instead of having to write the same code over and over again. 
 
