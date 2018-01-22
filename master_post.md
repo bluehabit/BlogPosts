@@ -12,6 +12,8 @@
 # External Blog Posts
 (for example async blog post that you wrote)
 
+![divider-bar](https://imgur.com/wbdDPMR.png)
+
 ## Operators
 
 ### Logical
