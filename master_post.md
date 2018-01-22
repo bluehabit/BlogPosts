@@ -24,6 +24,7 @@
 5. [Callbacks](#callbacks-in-detail)
    * [Named vs Anonymous](#callbacks-can-be-named-or-anonymous)
 5. [Closures](#closure-in-detail)
+   *  [Private](#why-private-variables)
 
 # External Blog Posts2
 (for example async blog post that you wrote)
