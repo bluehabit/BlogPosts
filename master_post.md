@@ -22,6 +22,7 @@
    * [Function Expressions](#function-expressions)
    * [Return KW and Routing](#the-return-keyword-and-routing-functions)
 5. [Callbacks](#callbacks-in-detail)
+   * [Named vs Anonymous](#callbacks-can-be-named-or-anonymous)
 5. [Closures](#closure-in-detail)
 
 # External Blog Posts2
@@ -668,9 +669,7 @@ With that behind and our understanding how `callbacks` are an example of how fun
 
 ![f](https://imgur.com/RNcXVOv.png)
 
-## Callbacks can be `Named`, or `Anonymous`
-
-### Named vs Anonymous Callback Functions
+## Callbacks can be `Named` or `Anonymous`
 
 With callbacks we can design them to be named, or anonymous. Both of these function examples will have he same output.
 
