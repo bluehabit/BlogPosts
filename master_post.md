@@ -84,6 +84,8 @@ More examples:
 ![f](https://imgur.com/Tit56Ne.png)
 
 
+![divider-bar](https://imgur.com/wbdDPMR.png)
+
 # Functions
 
 Function help keep our code DRY, instead of having to write the same code over and over again. 
