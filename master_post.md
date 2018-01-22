@@ -1,3 +1,6 @@
+# H1
+## H2
+
 # Table of Contents
 1. Operators
 2. Arrays
@@ -14,7 +17,7 @@
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
-## Operators
+# Operators
 
 ### Logical
 Why does this work? Pay special attention to the line `(obj[currentValue] || 0)`
