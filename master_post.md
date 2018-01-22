@@ -8,35 +8,6 @@
 # External Blog Posts
 (for example async blog post that you wrote)
 
-## Template Literal multi-line strings
-
-![f](https://imgur.com/xxzxkCD.png)
-
-## Reading MDN
-
-![f](https://imgur.com/LvmW1p5.png)
-
-## Window Object - Where Global Variables are Saved
-
-Special note here if you DO NOT want to expose your variables to other 3rd party modules you can wrap them in a IIFE. On the other hand if you intentionally want to expose your variables, then disregard.
-
-![f](https://imgur.com/BhSVXv9.png)
-
-## Unary Operator
-
-Can convert string values to numbers by using the `+` unary operator.
-
-![f](https://imgur.com/PHCbRZF.png)
-
-Can also use the `Number` function
-
-![f](https://imgur.com/XsL2PMW.png)
-
-And a practical application using a regex expression to parse a string representation of date into a number in milliseconds in epoch time. We can convert the epoch time into a `new Date`. 
-
-![f](https://imgur.com/sWUA51r.png)
-
-
 ## Functions
 
 Function help keep our code DRY, instead of having to write the same code over and over again. 
@@ -1002,4 +973,30 @@ Nice
 
 
 
+## Template Literal multi-line strings
 
+![f](https://imgur.com/xxzxkCD.png)
+
+## Reading MDN
+
+![f](https://imgur.com/LvmW1p5.png)
+
+## Window Object - Where Global Variables are Saved
+
+Special note here if you DO NOT want to expose your variables to other 3rd party modules you can wrap them in a IIFE. On the other hand if you intentionally want to expose your variables, then disregard.
+
+![f](https://imgur.com/BhSVXv9.png)
+
+## Unary Operator
+
+Can convert string values to numbers by using the `+` unary operator.
+
+![f](https://imgur.com/PHCbRZF.png)
+
+Can also use the `Number` function
+
+![f](https://imgur.com/XsL2PMW.png)
+
+And a practical application using a regex expression to parse a string representation of date into a number in milliseconds in epoch time. We can convert the epoch time into a `new Date`. 
+
+![f](https://imgur.com/sWUA51r.png)
