@@ -12,6 +12,39 @@
 # External Blog Posts
 (for example async blog post that you wrote)
 
+# Operators
+
+### Logical
+
+
+
+### Ternary Operator
+
+Can help make our code more concise and possibly eliminate the need for an `if` `else` block.
+
+Before:
+
+![f](https://imgur.com/zyOAYMx.png)
+
+After: 
+
+![f](https://imgur.com/iWUjmaY.png)
+
+Output:
+
+![f](https://imgur.com/2epLRvX.png)
+
+More examples:
+
+![f](https://imgur.com/yEmhCfP.png)
+
+![f](https://imgur.com/E7SRIjM.png)
+
+![f](https://imgur.com/WJPYX2P.png)
+
+![f](https://imgur.com/Tit56Ne.png)
+
+
 # Functions
 
 Function help keep our code DRY, instead of having to write the same code over and over again. 
@@ -683,33 +716,6 @@ https://regexone.com/
 ## Nested For Loops
 
 ![f](https://imgur.com/BKX8xSx.png)
-
-
-## Ternary Operator
-
-Can help make our code more concise and possibly eliminate the need for an `if` `else` block.
-
-Before:
-
-![f](https://imgur.com/zyOAYMx.png)
-
-After: 
-
-![f](https://imgur.com/iWUjmaY.png)
-
-Output:
-
-![f](https://imgur.com/2epLRvX.png)
-
-More examples:
-
-![f](https://imgur.com/yEmhCfP.png)
-
-![f](https://imgur.com/E7SRIjM.png)
-
-![f](https://imgur.com/WJPYX2P.png)
-
-![f](https://imgur.com/Tit56Ne.png)
 
 ## Concise Coding
 
