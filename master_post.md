@@ -2,7 +2,7 @@
 1. [Function Basics](#functions) 
    * [Parameters](#parameters)
    * [Function Expressions](#function-expressions)
-   * [Return and Routing](#the-return-keyword-&-routing-functions)
+   * [Return and Routing](#the-return-keyword-and-routing-functions)
 2. [Callbacks](#callbacks)
 
 # External Blog Posts2
@@ -104,7 +104,7 @@ Another Example
 ![f](https://imgur.com/b5nGhaX.png)
 
 
-## The Return Keyword & Routing Functions
+## The Return Keyword and Routing Functions
 
 Lets look at another example, with the function `numFactory`. This simple function just takes a users `num` as a parameter and increments it by one using `num ++`. But before it does that, it checks the `typeof` user input to verify that it is indeed a number. The end output is the users number incremented by one, that is what is `returned` as the output of the function. Just like the ice cream from the factory example. 
 
