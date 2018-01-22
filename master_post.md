@@ -248,10 +248,6 @@ Lets translate this. The higher order function receives another function as an a
 
 Normally `printCity` does not have access to such a variable.
 
-## Template Literals
-
-![f](https://imgur.com/htzqPfO.png)
-
 ## Parameters All Sorts of Values
 
 
@@ -938,6 +934,10 @@ Nice
 ## Template Literal multi-line strings
 
 ![f](https://imgur.com/xxzxkCD.png)
+
+## Template Literals
+
+![f](https://imgur.com/htzqPfO.png)
 
 ## Reading MDN
 
