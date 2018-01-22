@@ -422,6 +422,20 @@ When you dont know all the arguments that will be passed to a function its commo
 
 # Operators
 
+### Unary Operator
+
+Can convert string values to numbers by using the `+` unary operator.
+
+![f](https://imgur.com/PHCbRZF.png)
+
+Can also use the `Number` function
+
+![f](https://imgur.com/XsL2PMW.png)
+
+And a practical application using a regex expression to parse a string representation of date into a number in milliseconds in epoch time. We can convert the epoch time into a `new Date`. 
+
+![f](https://imgur.com/sWUA51r.png)
+
 ### Logical
 Why does this work? Pay special attention to the line `(obj[currentValue] || 0)`
 
@@ -756,6 +770,26 @@ Callback function holding an array as the parameter
 
 ![f](https://imgur.com/AnaoaGT.png)
 
+## New Callback
+
+A callback is simply a function that  gets passed to another function (called the higher order function)as a parameter. When the callback is passed to the higher order function it is stored as a function definition, and is not executed until the callback function is called. When building a callback function it is customary to put the callback in as the last parameter.
+
+Anonymous Callback Function
+
+![f](https://imgur.com/9JIV1gw.png)
+
+Named callback function
+
+![f](https://imgur.com/mlzISu4.png)
+
+### Stepping through a Callback
+
+![f](https://imgur.com/JRTFkyD.png)
+
+![f](https://imgur.com/zdHWp2p.png)
+
+![f](https://imgur.com/52TjY3x.png)
+
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
 # Closure in Detail
@@ -905,83 +939,6 @@ No we can compare that to our more advanced example. Same thing.
 Same logic for using a closure to create a private variable only using `forEach` as an example.
 
 ![f](https://imgur.com/hRviEXW.png)
-
-![divider-bar](https://imgur.com/wbdDPMR.png)
-
-
-resources on currying
-
-https://medium.com/@kevincennis/currying-in-javascript-c66080543528
-
-https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe
-
-https://www.sitepoint.com/currying-in-functional-javascript/
-
-https://www.sitepoint.com/currying-in-functional-javascript/
-
-http://www.crockford.com/javascript/www_svendtofte_com/code/curried_javascript/index.html
-
-resources on closure
-
-https://medium.com/@odemeulder/i-never-understood-javascript-closures-9663703368e8
-
-games for regex
-
-https://regexcrossword.com/
-
-https://alf.nu/RegexGolf
-
-https://regexone.com/
- 
-## Nested For Loops
-
-![f](https://imgur.com/BKX8xSx.png)
-
-## Concise Coding
-
-Can just use the return statement if its a boolean value, instead of doing the whole `if` `else` block
-
-![f](https://imgur.com/7aGtvCJ.png)
-
-Here using a specific condition to just return and exit the function
-
-![f](https://imgur.com/G9r5HFk.png)
-
-### string.slice
-
-![f](https://imgur.com/ViWl0sm.png)
-
-## Template Literal multi-line strings
-
-![f](https://imgur.com/xxzxkCD.png)
-
-## Template Literals
-
-![f](https://imgur.com/htzqPfO.png)
-
-## Reading MDN
-
-![f](https://imgur.com/LvmW1p5.png)
-
-## Window Object - Where Global Variables are Saved
-
-Special note here if you DO NOT want to expose your variables to other 3rd party modules you can wrap them in a IIFE. On the other hand if you intentionally want to expose your variables, then disregard.
-
-![f](https://imgur.com/BhSVXv9.png)
-
-## Unary Operator
-
-Can convert string values to numbers by using the `+` unary operator.
-
-![f](https://imgur.com/PHCbRZF.png)
-
-Can also use the `Number` function
-
-![f](https://imgur.com/XsL2PMW.png)
-
-And a practical application using a regex expression to parse a string representation of date into a number in milliseconds in epoch time. We can convert the epoch time into a `new Date`. 
-
-![f](https://imgur.com/sWUA51r.png)
 
 ## Closures In Depth
 
@@ -1138,25 +1095,68 @@ Notice in this example we are returning an object.
 
 ![f](https://imgur.com/Jjoj4VE.png)
 
-## New Callback
+![divider-bar](https://imgur.com/wbdDPMR.png)
 
-A callback is simply a function that  gets passed to another function (called the higher order function)as a parameter. When the callback is passed to the higher order function it is stored as a function definition, and is not executed until the callback function is called. When building a callback function it is customary to put the callback in as the last parameter.
 
-Anonymous Callback Function
+resources on currying
 
-![f](https://imgur.com/9JIV1gw.png)
+https://medium.com/@kevincennis/currying-in-javascript-c66080543528
 
-Named callback function
+https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe
 
-![f](https://imgur.com/mlzISu4.png)
+https://www.sitepoint.com/currying-in-functional-javascript/
 
-### Stepping through a Callback
+https://www.sitepoint.com/currying-in-functional-javascript/
 
-![f](https://imgur.com/JRTFkyD.png)
+http://www.crockford.com/javascript/www_svendtofte_com/code/curried_javascript/index.html
 
-![f](https://imgur.com/zdHWp2p.png)
+resources on closure
 
-![f](https://imgur.com/52TjY3x.png)
+https://medium.com/@odemeulder/i-never-understood-javascript-closures-9663703368e8
+
+games for regex
+
+https://regexcrossword.com/
+
+https://alf.nu/RegexGolf
+
+https://regexone.com/
+ 
+## Nested For Loops
+
+![f](https://imgur.com/BKX8xSx.png)
+
+## Concise Coding
+
+Can just use the return statement if its a boolean value, instead of doing the whole `if` `else` block
+
+![f](https://imgur.com/7aGtvCJ.png)
+
+Here using a specific condition to just return and exit the function
+
+![f](https://imgur.com/G9r5HFk.png)
+
+### string.slice
+
+![f](https://imgur.com/ViWl0sm.png)
+
+## Template Literal multi-line strings
+
+![f](https://imgur.com/xxzxkCD.png)
+
+## Template Literals
+
+![f](https://imgur.com/htzqPfO.png)
+
+## Reading MDN
+
+![f](https://imgur.com/LvmW1p5.png)
+
+## Window Object - Where Global Variables are Saved
+
+Special note here if you DO NOT want to expose your variables to other 3rd party modules you can wrap them in a IIFE. On the other hand if you intentionally want to expose your variables, then disregard.
+
+![f](https://imgur.com/BhSVXv9.png)
 
 ### Asynchronous Code
 
