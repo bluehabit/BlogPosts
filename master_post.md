@@ -753,6 +753,7 @@ Now, lets try to `reduce` without adding `currentValue` progressively to `total`
 
 ![f](https://imgur.com/bpqB4RE.png)
 
+
 #### Reduce for finding Average
 
 First lets look at this example that just returns the last item in an array.
@@ -766,6 +767,10 @@ Next lets expand on the code a code a bit so it returns the average.
 We can refactor this code by using the `index` parameter.
 
 ![f](https://imgur.com/Ve2N9uH.png)
+
+#### Another Example Average Using `reduce()`
+
+![f](https://imgur.com/i93gbcO.png)
 
 
 ### Doubling Array Values
@@ -810,10 +815,6 @@ Explanation:
 In traditional programming, operators such as && and || returned a boolean value (true or false). This is not the case in javascript. Here it returns the actual object, not a true / false. To really explain this, I first have to explain what is truthy and what is falsy.
 
 The logical OR operator, `||`, is very simple after you understand what it is doing. If the first object is truthy, that gets returned. Otherwise, the second object gets returned.
-
-#### Finding Average Using `reduce()`
-
-![f](https://imgur.com/i93gbcO.png)
 
 ### Logical AND, &&
 
