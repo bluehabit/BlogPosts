@@ -1,6 +1,3 @@
-# H1
-## H2
-
 # Table of Contents
 1. Operators
 2. Arrays
