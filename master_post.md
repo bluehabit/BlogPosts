@@ -1,8 +1,9 @@
 # Table of Contents
-1. [Functions](#functions) 
+1. [Function Basics](#functions) 
    * [Parameters](#parameters)
    * [Function Expressions](#function-expressions)
-2. 
+   * [Return and Routing](#the-return-keyword-&-routing-functions)
+2. [Callbacks](#callbacks)
 
 # External Blog Posts
 (for example async blog post that you wrote)
