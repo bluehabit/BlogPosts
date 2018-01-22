@@ -805,6 +805,26 @@ Named callback function
 
 ![f](https://imgur.com/52TjY3x.png)
 
+## Alternative Callback Explanation
+
+![f](https://imgur.com/Uw9F3wM.png)
+
+Here we have a higher order function `filter` which accepts a callback as an argument.
+
+Remember whenever a function receives an argument, just consider it to be an automatically declared variable within that functions context. In our case, the parameter `callback` is a automatically declared variable. We pass through the value of a `function definition`. 
+
+![f](https://imgur.com/LJokZgA.png)
+
+The parameter `callback` is holding the value of a `function definition`. Just like a normal function we must call it with `()` to activate it.
+
+![f](https://imgur.com/cZBZVfU.png)
+
+When we call `callback` with (), inbetween the paranthesis we pass through our arguments array[i], i, array.
+
+Another example:
+
+![f](https://imgur.com/BAwXGmF.png)
+
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
 # Closure in Detail
