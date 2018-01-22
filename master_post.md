@@ -12,9 +12,48 @@
 # External Blog Posts
 (for example async blog post that you wrote)
 
-# Operators
+## Operators
 
 ### Logical
+Why does this work? Pay special attention to the line `(obj[currentValue] || 0)`
+
+![f](https://imgur.com/2J3ny1t.png)
+
+Explanation:
+
+![f](https://imgur.com/hBXV9sb.png)
+
+![f](https://imgur.com/l3AcQGG.png)
+
+![f](https://imgur.com/nPw25ah.png)
+
+![f](https://imgur.com/zIY8gFV.png)
+
+![f](https://imgur.com/99ixexZ.png)
+
+In traditional programming, operators such as && and || returned a boolean value (true or false). This is not the case in javascript. Here it returns the actual object, not a true / false. To really explain this, I first have to explain what is truthy and what is falsy.
+
+The logical OR operator, `||`, is very simple after you understand what it is doing. If the first object is truthy, that gets returned. Otherwise, the second object gets returned.
+
+### Logical AND, &&
+
+The logical AND operator, &&, works similarly. If the first object is falsy, it returns that object. If it is truthy, it returns the second object.
+
+![f](https://imgur.com/qjdqhDL.png)
+
+### Logical NOT, !
+
+Unlike && and ||, the ! operator DOES turn the value it receives into a boolean. If it receives a truthy value, it returns false, and if it receives a falsy value, it returns true.
+
+`read more here:` http://www.nfriedly.com/techblog/2009/07/advanced-javascript-operators-and-truthy-falsy/
+
+`more` https://medium.com/@joshpitzalis/the-trouble-with-loops-f639e3cc52d9
+
+`more` https://medium.freecodecamp.org/reduce-f47a7da511a9
+
+Here is an explanation of what is going on.
+
+![f](https://imgur.com/3ZsoSZ7.png)
 
 
 
@@ -806,47 +845,6 @@ Longer method:
 Shorter method: 
 
 ![f](https://imgur.com/BGpMRhu.png) 
-
-Why does this work? Pay special attention to the line `(obj[currentValue] || 0)`
-
-![f](https://imgur.com/2J3ny1t.png)
-
-Explanation:
-
-![f](https://imgur.com/hBXV9sb.png)
-
-![f](https://imgur.com/l3AcQGG.png)
-
-![f](https://imgur.com/nPw25ah.png)
-
-![f](https://imgur.com/zIY8gFV.png)
-
-![f](https://imgur.com/99ixexZ.png)
-
-In traditional programming, operators such as && and || returned a boolean value (true or false). This is not the case in javascript. Here it returns the actual object, not a true / false. To really explain this, I first have to explain what is truthy and what is falsy.
-
-The logical OR operator, `||`, is very simple after you understand what it is doing. If the first object is truthy, that gets returned. Otherwise, the second object gets returned.
-
-### Logical AND, &&
-
-The logical AND operator, &&, works similarly. If the first object is falsy, it returns that object. If it is truthy, it returns the second object.
-
-![f](https://imgur.com/qjdqhDL.png)
-
-### Logical NOT, !
-
-Unlike && and ||, the ! operator DOES turn the value it receives into a boolean. If it receives a truthy value, it returns false, and if it receives a falsy value, it returns true.
-
-`read more here:` http://www.nfriedly.com/techblog/2009/07/advanced-javascript-operators-and-truthy-falsy/
-
-`more` https://medium.com/@joshpitzalis/the-trouble-with-loops-f639e3cc52d9
-
-`more` https://medium.freecodecamp.org/reduce-f47a7da511a9
-
-Here is an explanation of what is going on.
-
-![f](https://imgur.com/3ZsoSZ7.png)
-
 
 ### filter()
 
