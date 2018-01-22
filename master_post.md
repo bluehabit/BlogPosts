@@ -6,7 +6,7 @@
    * [Parameters](#parameters)
    * [Function Expressions](#function-expressions)
    * [Return KW and Routing](#the-return-keyword-and-routing-functions)
-5. [Callbacks](#callbacks)
+5. [Callbacks](#Callbacks-in-detail)
 5. [Closures](#closure-in-detail)
 
 # External Blog Posts
