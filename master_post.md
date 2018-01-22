@@ -3,6 +3,8 @@
    * [Unary](#unary-operator)
    * [Logical](#logical)
 2. [Arrays](#arrays)
+   * [Array of Objects](#array-of-objects)
+   * [Reduce](#reduce)
 3. [Objects](#object)
 4. [Function Basics](#functions) 
    * [Parameters](#parameters)
