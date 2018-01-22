@@ -14,6 +14,8 @@
 # External Blog Posts
 (for example async blog post that you wrote)
 
+![divider-bar](https://imgur.com/wbdDPMR.png)
+
 # Operators
 
 ### Unary Operator
@@ -98,9 +100,6 @@ More examples:
 ![f](https://imgur.com/WJPYX2P.png)
 
 ![f](https://imgur.com/Tit56Ne.png)
-
-
-![divider-bar](https://imgur.com/wbdDPMR.png)
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
