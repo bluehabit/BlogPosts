@@ -9,10 +9,6 @@
 5. [Callbacks](#callbacks)
 5. [Closures](#)
 
-* Bullet list
-	* another bullet
-		* yet another bullet
-	
 # External Blog Posts
 (for example async blog post that you wrote)
 
