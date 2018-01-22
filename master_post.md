@@ -19,7 +19,7 @@
 5. [Callbacks](#callbacks-in-detail)
 5. [Closures](#closure-in-detail)
 
-# External Blog Posts
+# External Blog Posts2
 (for example async blog post that you wrote)
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
