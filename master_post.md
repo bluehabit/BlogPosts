@@ -1,11 +1,12 @@
 # Table of Contents
-1. [Operators](#operators)
+1. [Operators & Truthy Falsy Values](#operators)
    * [Unary](#unary-operator)
    * [Logical](#logical)
 2. [Arrays](#arrays)
    * [Array of Objects](#array-of-objects)
    * [Reduce](#reduce)
    * [Filter](#filter)
+   * [Combining Filter & Reduce](#combining-filter-and-reduce)
    * [Map](#map)
 3. [Objects](#object)
    * [New Keyword](#the-`new`-keyword)
@@ -36,6 +37,10 @@
 
 # Operators
 
+### Falsy Values
+
+`false`, `null`, `undefined`, `0`, `NaN`, `''`, `""`
+
 ### Unary Operator
 
 Can convert string values to numbers by using the `+` unary operator.
@@ -58,6 +63,8 @@ Why does this work? Pay special attention to the line `(obj[currentValue] || 0)`
 Explanation:
 
 ![f](https://imgur.com/hBXV9sb.png)
+
+With the `||` operator the first *truthy* value.  If both values are falsy, it will return the last item. 
 
 ![f](https://imgur.com/l3AcQGG.png)
 
@@ -148,6 +155,8 @@ We are using the following dataset for these exercises
 **Use it when:** You want a total based on values in an array.
  The default name for the first parameter is `accumulator` according to the documentation. However, I prefer using something that is more descriptive so I know how its being used. For example, if I am reducing to an array, I will use `array` as the parameter name, `object` if object and so forth as shown below. 
 
+When using reduce, you must always `return` the `total` parameter. 
+
 #### How `reduce` works
 
 The `accumulator` parameter, named `total` below, does not accumulate on its own. You must add the `currentValue` to track correctly.
@@ -155,6 +164,10 @@ The `accumulator` parameter, named `total` below, does not accumulate on its own
 A simple `reduce` to get the sum total of numbers in an array.
 
 ![f](https://imgur.com/wSdC6AH.png)
+
+I prefer to write the above code like this instead.
+
+![f](https://imgur.com/OWY6xH8.png)
 
 Lets log it to the console to make it more obvious
 
@@ -232,6 +245,10 @@ and
 
 ![f](https://imgur.com/M6KfrWi.png)
 
+An easier way to write the above `forEach` loop would be written like this in my opinion, compared to what the original blog post author wrote.]
+
+![f](https://imgur.com/QFFORgR.png)
+
 We can build on this logic to make it a bit more advanced, this will return an array that contains all the colors. 
 
 ![f](https://imgur.com/KLFDGi5.png)
@@ -239,6 +256,10 @@ We can build on this logic to make it a bit more advanced, this will return an a
 Here is another example of using `reduce` with our own filter method inside. Again, we can use `filter` and `reduce` separately, and that works fine for small data sets. But once we start working with large amounts of data its more performance efficient to combine them.
 
 ![f](https://imgur.com/O5gy8Xs.png)
+
+Here is the explanation simplified, 
+
+![f](https://imgur.com/dAx6kF5.png)
 
 ### Even more Examples Combining Filter and Reduce
 
@@ -252,6 +273,9 @@ another
 
 ![f](https://imgur.com/ke5wFbg.png)
 
+Here is a more elegant solution for the above code snippet. Keeping our code more dry by creating a variable `doubleNumber` which stores the results of `currentNumber *2`.
+
+![f](https://imgur.com/A9gcv01.png)
   
 ### Keep this in mind with Reduce
 
