@@ -274,6 +274,12 @@ another
 ![f](https://imgur.com/ke5wFbg.png)
 
 Here is a more elegant solution for the above code snippet. Keeping our code more dry by creating a variable `doubleNumber` which stores the results of `currentNumber *2`.
+--
+
+Notice, when using `reduce` or `filter` we `return` something for each item in the array. We can do this with `forEach` loops as well
+
+![f](https://imgur.com/4gff8IP.png)
+
 
 ![f](https://imgur.com/A9gcv01.png)
   
@@ -284,7 +290,6 @@ Here is a more elegant solution for the above code snippet. Keeping our code mor
 and some more reduce pro tips
 
 ![f](https://imgur.com/gdWESs0.png)
-
 
 ## `Map`
 
