@@ -598,6 +598,10 @@ And we can **reuse** that same function again, and again and again and pass new 
 ### Function Expressions
 Functions can also be assigned to a variable using the assignment operator. This is known as a function expression, something that makes functions in JS a first class object (we will discuss this in more detail later).
 
+Also note, if you use a function expression, the variable containing the function must be declared before you attempt to call the function as the below example shows.
+
+![f](https://imgur.com/Wh8jUeV.png)
+
 ![func2](https://imgur.com/3uaFCBV.png)
 
 ![f](https://imgur.com/ZYRlASz.png)
