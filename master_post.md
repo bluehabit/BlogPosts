@@ -672,6 +672,7 @@ Named callback function
 ![f3](https://imgur.com/wXpuE6F.png)
 
 ### Functions Assigned to Variables
+### AKA Function Expressions
 
 3) Functions can also be assigned to a `variable` using the assignment operator. This is known as a `function expression`. 
 
@@ -684,6 +685,10 @@ We can call the function and pass parameters to it just like normal.
 Notice the variable `sayHi` holds the value of a `function definition`. 
 
 ![f](https://imgur.com/WXl2xeM.png)
+
+Also note, if you use a function expression, the variable containing the function must be declared before you attempt to call the function as the below example shows.
+
+![f](https://imgur.com/Wh8jUeV.png)
 
 ## Functions Advanced 
 
