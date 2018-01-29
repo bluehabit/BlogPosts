@@ -128,7 +128,18 @@ More examples:
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
+### Increment Values
+
+In addition to using `++` or `--` to increment. You can also use another `variable` to increment by. 
+
+![f](https://imgur.com/JXNGUns.png)
+
 # Arrays
+
+
+### Removing Items from an Array
+
+![f](https://imgur.com/avU9nKy.png)
 
 ### Array of Objects
 
