@@ -136,10 +136,15 @@ In addition to using `++` or `--` to increment. You can also use another `variab
 
 # Arrays
 
-
 ### Removing Items from an Array
 
 ![f](https://imgur.com/avU9nKy.png)
+
+### Using splice()
+
+![f](https://imgur.com/pXe7d7u.png)
+
+![f](https://imgur.com/yvStkgs.png)
 
 ### Array of Objects
 
