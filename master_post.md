@@ -454,6 +454,14 @@ Quick overview of the `arguments` keyword if you are not familiar with it
 
 ![f](https://imgur.com/nNltvw7.png)
 
+## Classes and more Constructor Function Examples
+
+![f](https://imgur.com/zD1O24m.png)
+
+![f](https://imgur.com/qjV0m5u.png)
+
+![f](https://imgur.com/9JI863V.png)
+
 ## Prototype and The Prototype Chain
 
 `Object prototype property`- is an object that can have methods and properties placed on it, these properties and methods are shared among all objects when the new keyword is used to create an object from the constructor function.
