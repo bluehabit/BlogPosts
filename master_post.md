@@ -351,7 +351,11 @@ When the `new` keyword is used, a new object is created out of thin air. And ins
 ![f](https://imgur.com/kpSNs5N.png)
 
 * creates a new object out of thin air
-* sets value of the keyword `this` inside the constructor function to be the object created
+* sets value of the keyword `this` inside the 
+* 
+* 
+* 
+*  function to be the object created
 * adds the line `return this` to the end of the function
 * adds a property on to the object called `__proto__` which links the prototype property on the constructor function to the empty object
 
@@ -393,6 +397,10 @@ var myDog = new String('Spot')
 ```
 
 ## Classes using Object Constructors
+
+To utilize classes/constructor functions we must do two things. 1) create a constructor function 2) push new items created from the constructor function to an array of objects.
+
+![f](https://imgur.com/9GgSS6L.png)
 
 Using the object constructor we can create what are known as classes. Constructor functions will create instances of the object. It is customary to capitalize the first letter of the variable name to indicate it is a class. Note, in the example below the object constructor function is embedded within another object, `Parrot`. Notice that `Parrot` has the first letter capitalized to indicate it is a constructor function. 
 
