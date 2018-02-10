@@ -351,8 +351,7 @@ When the `new` keyword is used, a new object is created out of thin air. And ins
 ![f](https://imgur.com/kpSNs5N.png)
 
 * creates a new object out of thin air
-* sets value of the keyword `this` inside the 
-*  function to be the object created
+* sets value of the keyword `this` inside the function to be the object created
 * adds the line `return this` to the end of the function
 * adds a property on to the object called `__proto__` which links the prototype property on the constructor function to the empty object
 
