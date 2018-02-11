@@ -353,9 +353,30 @@ When the `new` keyword is used, a new object is created out of thin air. And ins
 * creates a new object out of thin air
 * sets value of the keyword `this` inside the function to be the object created
 * adds the line `return this` to the end of the function
-* adds a property on to the object called `__proto__` which links the prototype property on the constructor function to the empty object
+* adds a property on to the object called `__proto__` which links the 
+*  property on the constructor function to the empty object
+
+In this modified example we push the `new` objects to an array. This is an array of objects. Using an array of objects is very powerful, because it allows us to use array properties and methods to move through our list of objects. For example having an array of objects of green pipes for a Mario game or Flappy Bird
+
+In this example we use a the `forEach` method to loop over every item within the array.
+
+Also note, each object created using a `class` (discussed later) or using the constructor function has the `__proto___` property added which links that object to the constructor function that created it.
+
+![f](https://imgur.com/tUUe66a.png)
+
+![f](https://imgur.com/qWDNuJl.png)
 
 ![f](https://imgur.com/1M5aYl7.png)
+
+![f](https://imgur.com/0DtUNo7.png)
+
+![f](https://imgur.com/edbnyIS.png)
+
+### Very Important
+
+![f](https://imgur.com/EsMLNGE.png)
+
+![f](https://imgur.com/cONHiez.png)
 
 
 ### Object
