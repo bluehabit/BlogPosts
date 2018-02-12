@@ -378,6 +378,9 @@ Also note, each object created using a `class` (discussed later) or using the co
 
 ![f](https://imgur.com/cONHiez.png)
 
+![f](https://imgur.com/xk38wTW.png)
+
+![f](https://imgur.com/Lozj1cS.png)
 
 ### Object
 
@@ -1298,3 +1301,8 @@ Notice here how the callback function ` function(errMessage, result)` holds *two
 At least that is how I see it, I am not as experienced as the others who have already replied to you. So if anyone more experienced sees errors in my post, please notify me and I will update my post.
 
 ## This is & test
+
+
+## API's
+
+![f](https://imgur.com/iDw6r4s.png)
