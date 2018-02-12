@@ -58,7 +58,7 @@ How many times a character, or sequence of characters, should be matched.
 
 `$` - Matches to the end of the input, or the end of the line if the `m` flag is used.
 
-`\b` - Matches a *word boundary*. 
+`\b` - Matches a *word boundary*. The following are considered a word boundary`.` `/` a space character or `.` at the end of a word
 
 `\B` - Matches a non-word boundary. 
 
