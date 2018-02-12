@@ -2,7 +2,7 @@
 
 https://regex101.com/
 
-Just like strings, arrys, or objects regular expressions can be created with the literal or constructor variant.
+Just like strings, arrays, or objects regular expressions can be created with the literal or constructor variant.
 
 **Literal**
 
