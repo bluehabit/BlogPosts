@@ -142,7 +142,7 @@ console.log(pattern.test(testString)); // true
 
 `\D` - Negated digit class, matches any character that is NOT a numeric digit.
 
-`\s` - single space character
+`\s` - single space character (white space)
 
 `\S` - negated space character, matches anything not a single space.
 
