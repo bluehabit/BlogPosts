@@ -35,6 +35,10 @@ Each one has unique properties.
 
 `m` - multi-lline, pattern matches across multiple lines instead of just the first line
 
+### Remember that Global Flag
+
+![f](https://imgur.com/To4uXaD.png)
+
 ### Quantifiers
 
 How many times a character, or sequence of characters, should be matched.
