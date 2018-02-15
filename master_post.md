@@ -757,6 +757,8 @@ Functions can also be nested within one another, as shown below. This example us
 
 ## Callbacks in Detail
 
+![f](https://imgur.com/eZ9HX1s.png)
+
 With that behind and our understanding how `callbacks` are an example of how functions are first class in javascript,  lets go more in depth on how `callbacks` work and work through additional examples. The function that accepts another function as a parameter is known as the higher order function. 
 
 ## Callbacks, a Visual Representation 
