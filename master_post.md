@@ -720,6 +720,8 @@ First class in simple terms means  *“being able to do what everyone else can d
 
 ![f](https://imgur.com/b8zUDxZ.png)
 
+![f](https://imgur.com/fseNSQy.png)
+
 1) Functions in Javascript can be passed to another function as a parameter, known as a `callback`, to other functions. The function that accepts another function as a parameter is known as the `higher order function`. The `callback` is then "called back" within the higher order function itself. 
 
 Anonymous inline function
