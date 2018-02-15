@@ -35,6 +35,7 @@
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
+
 # Operators
 
 ### Falsy Values
@@ -134,7 +135,14 @@ In addition to using `++` or `--` to increment. You can also use another `variab
 
 ![f](https://imgur.com/JXNGUns.png)
 
+# For Loops
+
+![f](https://imgur.com/JNFrDMq.png)
+
+
 # Arrays
+
+Individual items within an array are known as `elements` or array elements.
 
 ### Removing Items from an Array
 
