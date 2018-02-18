@@ -402,8 +402,6 @@ Also note, each object created using a `class` (discussed later) or using the co
 
 ![obj-constructor](https://imgur.com/fUG2gaR.png)
 
-![f](https://imgur.com/EUSmXy5.png)
-
 #### Literal
 
 ![obj-literal](https://imgur.com/1LiEz3j.png)
