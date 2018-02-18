@@ -343,10 +343,6 @@ Nice
 
 # Objects
 
-## Object Methods
-
-![f](https://imgur.com/mGJ8vhu.png)
-
 ## Object, Array, String Literals vs Constructor Function
 
 In javascript, mostly everything is an object from arrays to strings. Because of this we can use either a constructor function or a literal to create them.
@@ -355,11 +351,11 @@ In most situations, it is most beneficial to create an item using the literal no
 
 To get started creating with a constructor function we use the `new` keyword. For example `new Object`, `new Array` or `new String`. The value of `this` changes when we use the `new` keyword to represent the object that was just created.
 
-## Object Functions
+## Object Functions / methods
 
 Notice the color changes to green for object **methods** as opposed to properties. A method is a function of the object, some sort of action. Notice in the below example `parrot.yell` is a method on the parrot object that executes a function.
 
-![f](https://imgur.com/ShqcwRO.png)
+![f](https://imgur.com/mGJ8vhu.png)
 
 
 ## The `new` keyword
