@@ -343,6 +343,10 @@ Nice
 
 # Objects
 
+## Object Methods
+
+![f](https://imgur.com/mGJ8vhu.png)
+
 ## Object, Array, String Literals vs Constructor Function
 
 In javascript, mostly everything is an object from arrays to strings. Because of this we can use either a constructor function or a literal to create them.
@@ -350,6 +354,12 @@ In javascript, mostly everything is an object from arrays to strings. Because of
 In most situations, it is most beneficial to create an item using the literal notation. But in some situations it is highly beneficial to use the a constructor function. One such example is [creating object classes with constructor functions](#Classes-using-Object-Constructors). 
 
 To get started creating with a constructor function we use the `new` keyword. For example `new Object`, `new Array` or `new String`. The value of `this` changes when we use the `new` keyword to represent the object that was just created.
+
+## Object Functions
+
+Notice the color changes to green for object **methods** as opposed to properties. A method is a function of the object, some sort of action. Notice in the below example `parrot.yell` is a method on the parrot object that executes a function.
+
+![f](https://imgur.com/ShqcwRO.png)
 
 
 ## The `new` keyword
@@ -395,6 +405,17 @@ Also note, each object created using a `class` (discussed later) or using the co
 #### Constructor Function
 
 ![obj-constructor](https://imgur.com/fUG2gaR.png)
+
+![f](https://imgur.com/EUSmXy5.png)
+
+#### ES2015 Classes
+
+![f](https://imgur.com/EUSmXy5.png)
+
+![f](https://imgur.com/yKepDkw.png)
+
+![f](https://imgur.com/vJ80nYC.png)
+
 
 #### Literal
 
@@ -1322,3 +1343,8 @@ At least that is how I see it, I am not as experienced as the others who have al
 ![f](https://imgur.com/iDw6r4s.png)
 
 ![f](https://imgur.com/jgc6vlK.png)
+
+## Arrow Functions
+
+![f](https://imgur.com/xaLyXeM.png)
+
