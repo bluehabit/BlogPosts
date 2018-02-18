@@ -404,15 +404,6 @@ Also note, each object created using a `class` (discussed later) or using the co
 
 ![f](https://imgur.com/EUSmXy5.png)
 
-#### ES2015 Classes
-
-![f](https://imgur.com/EUSmXy5.png)
-
-![f](https://imgur.com/yKepDkw.png)
-
-![f](https://imgur.com/vJ80nYC.png)
-
-
 #### Literal
 
 ![obj-literal](https://imgur.com/1LiEz3j.png)
@@ -450,6 +441,15 @@ To utilize classes/constructor functions we must do two things. 1) create a cons
 Using the object constructor we can create what are known as classes. Constructor functions will create instances of the object. It is customary to capitalize the first letter of the variable name to indicate it is a class. Note, in the example below the object constructor function is embedded within another object, `Parrot`. Notice that `Parrot` has the first letter capitalized to indicate it is a constructor function. 
 
 ![constructor1](https://imgur.com/i6DT4ki.png)
+
+## ES2015 Classes
+
+![f](https://imgur.com/EUSmXy5.png)
+
+![f](https://imgur.com/yKepDkw.png)
+
+![f](https://imgur.com/vJ80nYC.png)
+
 
 ## Constructor Pattern Continued
 
