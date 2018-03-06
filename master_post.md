@@ -35,6 +35,47 @@
 
 ![divider-bar](https://imgur.com/wbdDPMR.png)
 
+# Misc.
+
+![f](https://imgur.com/tVgcNQY.png)
+
+![f](https://imgur.com/HSS9eC3.png)
+
+![f](https://imgur.com/R6HJIXw.png)
+
+![f](https://imgur.com/BqySYdV.png)
+
+![f](https://imgur.com/Xk3Nvsr.png)
+
+![f](https://imgur.com/rlufztz.png)
+
+![f](https://imgur.com/KwKNQKn.png)
+
+
+# Why do functions return undefined? 
+
+With JS, why does calling a function and not explicitly setting something for it to return result in undefined being logged to the console when you call the function?
+
+Must the function always return something? And if nothing is specified by the user with the return keyword, then it just returns undefined as a result?
+
+For example:
+```
+function sayHi(name){
+    console.log('hello', name)
+}
+
+sayHi('Sammy');
+//-> hello sammy
+//-> undefined
+```
+
+Answer: Correct. If nothing is returned, undefined is returned. And the console will show the last thing "returned" in a command (or the last available value). I believe most consoles have a little visual indicator to help differentiate these values from logged values, like a little arrow to the left of the value.
+
+```
+> console.log('hello')
+  hello
+<- undefined
+```
 
 # Operators
 
