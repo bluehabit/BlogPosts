@@ -6,6 +6,12 @@ Something that is part of Javascript only at runtime that is under the hood that
 
 A callback function is a function that is passed to another function (the higher order function) as a parameter and then invoked by that function.
 
+In other words, all callback functions do is say hey, higher order function, one of your parameters is going to hold a function definition instead of something you are more used to seeing such as a variable, string, boolean or object. And within that higher order we are going to call *back* that callback function and execute it within the body of the higher order function.
+
+![f](https://imgur.com/5y3VdXS.png)
+
+![f](https://imgur.com/hdPU2na.png)
+
 The higherOrder function receives the callback function as an argument and it is called within the body of the higher order function.
 
 Callbacks are NON BLOCKING. This is what makes it asynchronous. The program can move on while it waits for a callback function to return. 
