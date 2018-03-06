@@ -132,10 +132,8 @@ Resource: https://schier.co/blog/2013/11/14/method-chaining-in-javascript.html
 
 1.	We call `makeApiCall` which returns a new simple promise, this happens immediately. The callback function inside will run 2,000 ms later.
 2.	While we are waiting on the response, we go ahead and start building our promise chain. Because makeApiCall() `returns` a promise object, we can chain .then on it. All the `.then` function does is take a callback function definition, and push it to the promiseChain. `.catch` is also part of this chain just in case the response fails. Just like `.then`, `.catch` pushes a callback function as well that will be called back later if needed. Remember, anytime we are dealing with a method chain we have to return `this`. As a result if you check the class `.then` and `.catch` return `this`.
-3.	Next we invoke a callback function depending on the apiRequest status code. If it was successful then we go through the whole promise chain with a `forEach` and execute the callback functions. 
+3.	Next we invoke a callback function depending on the apiRequest status code. If it was successful then we go through `this.onResolve` and the whole promise chain with a `forEach` and execute the callback functions. 
 4.	In the event the response fails, `.catch` which was already run, sets the value of `this.handleError` to the callback function passed through it. We use that with `this.onReject` to call that function
-
-
 
 
 Resource: https://levelup.gitconnected.com/understand-javascript-promises-by-building-a-promise-from-scratch-84c0fd855720
