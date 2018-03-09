@@ -53,6 +53,23 @@
 
 ![f](https://imgur.com/KwKNQKn.png)
 
+![f](https://imgur.com/XkJkbDB.png)
+
+![f](https://imgur.com/Ik0Wx3w.png)
+
+![f](https://imgur.com/XJi91gY.png)
+
+![f](https://imgur.com/lZIR0pY.png)
+
+![f](https://imgur.com/HsFESyU.png)
+
+![f](https://imgur.com/IjYvFto.png)
+
+![f](https://imgur.com/Tnm4zbE.png)
+
+![f](https://imgur.com/VCT53oe.png)
+
+![f](https://imgur.com/ZICmUsn.png)
 
 # Why do functions return undefined? 
 
