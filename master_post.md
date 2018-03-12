@@ -411,6 +411,10 @@ In most situations, it is most beneficial to create an item using the literal no
 
 To get started creating with a constructor function we use the `new` keyword. For example `new Object`, `new Array` or `new String`. The value of `this` changes when we use the `new` keyword to represent the object that was just created.
 
+## For in Loop
+
+![f](https://imgur.com/xlqxzKd.png)
+
 ## Object Functions / methods
 
 Notice the color changes to green for object **methods** as opposed to properties. A method is a function of the object, some sort of action. Notice in the below example `parrot.yell` is a method on the parrot object that executes a function.
