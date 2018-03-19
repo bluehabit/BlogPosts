@@ -413,7 +413,7 @@ To get started creating with a constructor function we use the `new` keyword. Fo
 
 ## For in Loop
 
-![f](https://imgur.com/xlqxzKd.png)
+![f](https://imgur.com/LSyXVt2.png)
 
 ## Object Functions / methods
 
@@ -1414,3 +1414,6 @@ At least that is how I see it, I am not as experienced as the others who have al
 
 ![f](https://imgur.com/xaLyXeM.png)
 
+## Destructuring Assignment AKA Binding Pattern
+
+![f](https://imgur.com/6CvdYnz.png)
