@@ -188,7 +188,7 @@ This means code in JS is executed in a linear manner. Code that is running canno
 
 ## Promises
 
-![f](https://imgur.com/CHjqXfH.png)
+![f](https://imgur.com/pyvQrqS.png)
 
 A promise is an object that represents a task that will be completed in the future.
 
