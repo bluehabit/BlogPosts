@@ -198,7 +198,7 @@ Lets reiterate, a `promise` is nothing special its just a plain old javascript o
 
 ## Creating a Promise
 
-![f](https://imgur.com/IBUqKBc.png)
+![f](https://imgur.com/ZAptiXm.png)
 
 We create a promise using the promise constructor. Promises are functions that have one parameter, a callback function with two arguments (`resolve` and `reject`).
 
@@ -227,4 +227,4 @@ Again `.then` callback function gets invoked whenever `resolve` is invoked.
 
 ## Async WorkFlow
 
-![f](https://imgur.com/pyvQrqS.png)
+![f](https://imgur.com/ZAptiXm.png)
