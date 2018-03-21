@@ -224,3 +224,7 @@ Again `.then` callback function gets invoked whenever `resolve` is invoked.
 ## Asynchronous Promises 
 
 ![f](https://imgur.com/liPENqX.png)
+
+## Async WorkFlow
+
+![f](https://imgur.com/pyvQrqS.png)
