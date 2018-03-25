@@ -1417,3 +1417,30 @@ At least that is how I see it, I am not as experienced as the others who have al
 ## Destructuring Assignment AKA Binding Pattern
 
 ![f](https://imgur.com/6CvdYnz.png)
+
+
+## Bind
+
+![f](https://imgur.com/dJkvMSb.png)
+
+## Method Chaining
+
+![f](https://imgur.com/Urvb6oe.png)
+
+![f](https://imgur.com/W6gnPV6.png)
+
+## Binding Events
+
+![f](https://imgur.com/iFVb7Zv.png)
+
+## Event Handlers
+
+![f](https://imgur.com/avXV5yX.png)
+
+## How to Read MDN part II
+
+![f](https://imgur.com/PEKaT76.png)
+
+## Formatting Pro Tip
+
+![f](https://imgur.com/uM9bApi.png)
