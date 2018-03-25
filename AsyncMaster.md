@@ -38,6 +38,10 @@ function higherOrder(fn){
 higherOrder(callback);
 ```
 
+## Nature of Callbacks
+
+![f](https://imgur.com/BcMK7a8.png)
+
 ## What are callbacks used for?
 
 * Advanced Array Methods
@@ -232,3 +236,23 @@ Again `.then` callback function gets invoked whenever `resolve` is invoked.
 ## Basic Cookie Creation
 
 ![f](https://imgur.com/wwams8o.png)
+
+
+## Fetch
+
+## Accessing Data from API's
+
+Just a reminder, typically `.` notation is used to access object properties. Sometimes the way the API is constructed you will have to use `bracket notation` to access the data.
+
+In the below example, we have a snippet from the last.fm API. How do you suppose we might access the `image` album art work when `#text` is preceded by a `#` sign. 
+
+If you try to access this property with `.` notation it will produce an error, instead we will have to rely on bracket notation. 
+
+![f](https://imgur.com/mSak1l9.png)
+
+We can access `#text` to get the album artwork with `tracks[i].image[1]['#text']`
+
+For a quick reminder, lets look at a more simple example and access one of the properties using `bracket notation`.
+
+![f](https://imgur.com/e1I2aVq.png)
+
