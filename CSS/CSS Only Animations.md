@@ -327,6 +327,12 @@ All we have to do is add the following attribute, `checked='checked'`. As we can
 
 Codepen: http://codepen.io/bluehabit/pen/ZegLYN
 
+### Clickable CheckBox Values
+
+Three different approaches to do this.
+
+![f](https://imgur.com/AIANyWS.png)
+
 
 ## Skeleton Frameworks
 
