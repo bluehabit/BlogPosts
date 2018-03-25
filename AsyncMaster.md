@@ -42,6 +42,14 @@ higherOrder(callback);
 
 ![f](https://imgur.com/BcMK7a8.png)
 
+All async code must be placed in the queue, and are loaded once the stack clears by the event manager - even async code with `0ms` delay.
+
+```
+	setTimeout(function(){
+		console.log('hello')
+	}, 0)
+```
+
 ## What are callbacks used for?
 
 * Advanced Array Methods
