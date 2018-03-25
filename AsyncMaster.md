@@ -228,3 +228,7 @@ Again `.then` callback function gets invoked whenever `resolve` is invoked.
 ## Async WorkFlow
 
 ![f](https://imgur.com/ZAptiXm.png)
+
+## Basic Cookie Creation
+
+![f](https://imgur.com/wwams8o.png)
