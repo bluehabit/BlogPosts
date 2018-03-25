@@ -129,6 +129,10 @@ Resource: https://schier.co/blog/2013/11/14/method-chaining-in-javascript.html
 
 ![f](https://imgur.com/VM2IFyA.png)
 
+## Async Roadmap
+
+![f](https://imgur.com/vaxS9gM.png)
+
 ## Build a Promise from Scratch
 
 •	The onResolve function has a try/catch block if there is an error once the user is able to retrieve information from the server. In our code snippet example the `catch` portion of the block will never execute. To confirm, just place some dummy code like a `console.log` within.
