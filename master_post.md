@@ -71,6 +71,13 @@
 
 ![f](https://imgur.com/ZICmUsn.png)
 
+# Very important
+
+In JS functions are just values, in JS functions are just values, in JS functions are just values, in JS functions are just values, in JS functions are just values.
+
+That is why functions are called 'first class'.
+
+
 # Why do functions return undefined? 
 
 With JS, why does calling a function and not explicitly setting something for it to return result in undefined being logged to the console when you call the function?
@@ -877,6 +884,11 @@ With callbacks we can design them to be named, or anonymous. Both of these funct
 ![callback2](https://imgur.com/NM8JlRw.png)
 
 Notice how the function is *'called back'* within the higher order function. 
+
+
+### Callbacks Can Have Their Own Parameters
+
+![f](https://imgur.com/P8QZIqe.png)
 
 ### Anonymous Inline Functions should Clue you In that a Callback Function is being used
 
