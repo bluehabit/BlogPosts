@@ -77,6 +77,7 @@ In JS functions are just values, in JS functions are just values, in JS function
 
 That is why functions are called 'first class'.
 
+![f](https://imgur.com/SKoBJPk.png)
 
 # Why do functions return undefined? 
 
