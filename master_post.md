@@ -728,6 +728,11 @@ Functions can also accept one or more inputs, they can do this through parameter
 
 ![f](https://imgur.com/LkL5tVh.png)
 
+Here is an example of a function that uses its parameter like a locally saved variable.
+
+![f](https://imgur.com/JGVJtY2.png)
+
+
 For a simple example of a function with a parameter, here is a function named `add` that will add two numbers together. It accepts two parameters `number1` and `number2`. When we call the function using `add(1,3)` we are passing the value `1` to the parameter `number1`, and passing the value `3` to `number2`. The function stores these values for us, just like a variable. 
 
 ![functions](https://imgur.com/wsX86yJ.png)
@@ -1457,5 +1462,3 @@ At least that is how I see it, I am not as experienced as the others who have al
 ## Formatting Pro Tip
 
 ![f](https://imgur.com/uM9bApi.png)
-
-1
