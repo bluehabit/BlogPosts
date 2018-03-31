@@ -90,6 +90,11 @@ The `bind` function returns a new `bound function`, it is a copy of the function
 
 Use `bind` when you want the function to later be called within a specific context. Use `call` or `apply` when you want to invoke the function immediately and modify the context.
 
+**Very important example**:
+
+![f](https://imgur.com/lWkJ9Sh.png)
+
+
 ## This
 
 What does `this` mean in JavaScript? Same thing it does in the English language. It doesn't mean anything without *context*. If you say to a friend "I don't like *this*" we have no context and no way of knowing what exactly `this` refers to. You have to infer from the context to get the value.
@@ -124,14 +129,6 @@ The typical way to enable method chaining is to return the current object at the
 
 
 Resource: https://schier.co/blog/2013/11/14/method-chaining-in-javascript.html
-
-## How Bind Works
-
-![f](https://imgur.com/VM2IFyA.png)
-
-## Async Roadmap
-
-![f](https://imgur.com/vaxS9gM.png)
 
 ## Build a Promise from Scratch
 
