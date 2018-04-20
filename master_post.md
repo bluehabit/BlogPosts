@@ -212,6 +212,111 @@ In addition to using `++` or `--` to increment. You can also use another `variab
 
 Individual items within an array are known as `elements` or array elements.
 
+## Array.Split
+
+### Syntax
+
+`str.split([separator[, limit]])`
+
+### Parameters
+
+
+`separator` - Designates the points at which the split should occur. The `separator` can be a *string* or a a *regular expression*. Recall, items within an array are known as array elements. 
+
+*If the `seperator` argument is omitted, the array returned contains *one element* consisting of the entire string. As shown in the following examples:
+
+Example 1: 
+
+`var snakePokemon = 'Ekans'`
+`snakePokemon.split() //-> ["Ekans"]`
+`//returns a single array element` 
+
+Example 2:
+`var myString = 'Ekans is a snake pokemon'` 
+`myString.split() //-> ["Ekans is a snake pokemon"]`
+`//returns a single array element` 
+
+### Examples
+
+In the following examples we are providing a string. Remember the `separator` argument can also be a regular expression. 
+
+`var myString = 'Ekans is a snake pokemon'` 
+`myString.split('') //->(24) ["E", "k", "a", "n", "s", " ", "i", "s", " ", "a", " ", "s", "n", "a", "k", "e", " ", "p", "o", "k", "e", "m", "o", "n"]`
+
+
+`var snakePokemon = 'Ekans'`
+`snakePokemon.split('') //-> (5)['E', 'k', 'a', 'n', 's']`
+
+
+
+## Join()
+
+The join method joins all elements of an array into a string.
+
+`myString = myString.split(/snake/);`
+`//-> (2) ["Ekans is a ", " pokemon"]`
+`myString.join('');`
+`//-> Ekans is a  pokemon"`
+
+
+`var elements = ['Fire', 'Wind', 'Rain'];`
+`elements.join() //-> Fire,Wind,Rain`
+`elements.join('') //->elements.join('')`
+`elements.join('-') //-> Fire-Wind-Rain`
+
+
+## Reverse()
+
+Reverses an **array**. The first element becomes the last and so on. Pay attention this is an array method, it will not work on strings.
+
+`var snakePokemon = 'Ekans'`
+`snakePokemon.reverse() //->`
+
+
+Remember to `chain` your object methods, its easier to write and read. For example instead of doing this:
+
+
+Do this:
+
+`snakePokemon = snakePokemon.split('').reverse().join('').toLowerCase(); //-> snake`
+
+*Not* This
+
+`snakePokemon = snakePokemon.split('')`
+`snakePokemon = snakePokemon.reverse();`
+`snakePokemon = snakePokemon.join('');`
+`snakePokemon = snakePokemon.toLowerCase();`
+
+## Slice()
+
+Slice is useful for **removing** items from an array. For example, if you use a knife to slice a fruit you are removing pieces from it. In a similar manner, array.slice() will **remove array elements* from an array.
+
+![f](https://imgur.com/1PFxrkh.png)
+
+
+### Syntax
+
+`arr.slice([begin[, end]])`
+
+If no end is provided, from the begin point until the very end of the array will be returned. 
+
+
+ `var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];`
+
+`console.log(animals.slice(2));`
+`//-> (3) ["camel", "duck", "elephant"]`
+
+`console.log(animals.slice(1, 3));`
+`//-> (2) ["bison", "camel"]`
+
+`console.log(animals.slice(animals.length - 1));`
+`//-> ["elephant"]`
+
+
+
+
+
+
 ### Removing Items from an Array
 
 ![f](https://imgur.com/avU9nKy.png)
