@@ -212,7 +212,29 @@ In addition to using `++` or `--` to increment. You can also use another `variab
 
 Individual items within an array are known as `elements` or array elements.
 
-## Array.Split
+## Arrays and Strings Used Together
+
+Arrays and strings are often used together to complete tasks, because arrays are very flexible and come with many useful built in methods and properties. 
+
+## Converting Numbers to Strings
+
+Converting a number to a string gives us access to the `.length` property which is useful. We can then iterate through each character in the string using indices. 
+
+![f](https://imgur.com/DFBPERL.png)
+
+Demo: https://codepen.io/bluehabit/pen/ELaYYm
+
+The way this code works is it takes a users number, and then converts it to a string using the `.toString()` method. As shown here:
+
+```
+var numString = number.toString();
+var step = this.width + 2;
+```
+
+We can then iterate through each individual character in the string using `numString[i]` to perform a specific task. 
+
+
+## String.split
 
 ### Syntax
 
@@ -287,9 +309,11 @@ Do this:
 `snakePokemon = snakePokemon.join('');`
 `snakePokemon = snakePokemon.toLowerCase();`
 
-## Slice()
+## array.slice()
 
-Slice is useful for **removing** items from an array. For example, if you use a knife to slice a fruit you are removing pieces from it. In a similar manner, array.slice() will **remove array elements* from an array.
+Slice is useful for **removing** items from an array. For example, if you use a knife to slice a fruit you are removing pieces from it. In a similar manner, array.slice() will **remove array elements* from an array. 
+
+In other words we are returning a *subset of an array*.
 
 ![f](https://imgur.com/1PFxrkh.png)
 
@@ -312,8 +336,9 @@ If no end is provided, from the begin point until the very end of the array will
 `console.log(animals.slice(animals.length - 1));`
 `//-> ["elephant"]`
 
+### string.slice()
 
-
+`string.slice()` works identically to `array.slice()`. Only instead of returning a subset of an array, we are returning a *subset of a string*. 
 
 
 
