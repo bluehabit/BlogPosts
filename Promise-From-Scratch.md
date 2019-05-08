@@ -4,6 +4,10 @@ Before we jump in how to create a promise from scratch, we need to work through 
 
 Very important to understand in JS functions are just values that can be passed around, just like a number, string, object etc.  
 
+## Constructor Function & New Keyword
+
+![f](https://imgur.com/d8JssI5.png)
+
 ## Classes and Prototypes
 
 Methods that are shared on the prototype are typically called `public methods` while those that are created for each object instance are `private methods`. 
